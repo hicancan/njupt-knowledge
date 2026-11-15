@@ -1,6 +1,7 @@
 """Check every link in the knowledge and write what readers need: build/knowledge.json and the documents beside it.
 
-    courses/<code>.md        a course's outline: chapters in teaching order, each a list of topic links
+    courses/<subject>.md     a subject's outline: chapters in teaching order, each a list of topic links; the course
+                             codes taught now (codes) and before (former) that teach it
     topics/<subject>/<t>.md  one topic; `requires:` names the topics it builds on
     materials/<src>/<code>/  one source document made into Markdown, each question under its own heading
                              with a 知识点 line linking the topics it tests
@@ -94,17 +95,17 @@ def main() -> None:
 
     for path in sorted((ROOT / "courses").glob("*.md")):
         meta, body = front(path.read_text(encoding="utf-8"), path)
-        if meta["code"] != path.stem:
-            raise SystemExit(f"{path.name}: code {meta['code']} is not its file name")
+        if not meta.get("codes"):
+            raise SystemExit(f"{path.name}: names no course code taught now")
         chapters = []
         for block in re.split(r"^## ", body, flags=re.M)[1:]:
             title, _, rest = block.partition("\n")
             ids = linked_topics(path, rest)
             chapters.append({"title": title.strip(), "topics": ids})
             for tid in ids:
-                topics[tid]["taught_by"].append(meta["code"])
-        courses.append({"code": meta["code"], "name": meta["name"], "former": meta.get("former", []),
-                        "subject": meta["subject"], "chapters": chapters, "path": path.relative_to(ROOT).as_posix()})
+                topics[tid]["taught_by"].append(path.stem)
+        courses.append({"id": path.stem, "name": meta["name"], "codes": meta["codes"], "former": meta.get("former", []),
+                        "chapters": chapters, "path": path.relative_to(ROOT).as_posix()})
 
     for path in sorted((ROOT / "materials").rglob("*.md")):
         meta, body = front(path.read_text(encoding="utf-8"), path)
@@ -124,6 +125,8 @@ def main() -> None:
                 for tid in ids:
                     topics[tid]["tested_by"].append({"material": rel, "heading": heading, "anchor": slug(heading)})
         linked_topics(path, body)
+        if not (ROOT / "courses" / f"{meta['course']}.md").exists():
+            raise SystemExit(f"{rel}: course {meta['course']} has no courses/{meta['course']}.md")
         materials.append({"path": rel, "title": meta["title"], "kind": meta["kind"], "course": meta["course"],
                           "term": meta.get("term"), "source": meta["source"], "questions": len(questions)})
 

@@ -1,7 +1,7 @@
 ---
 title: 《数据结构B》复习练习
 kind: 复习练习
-course: JS140201S
+course: 数据结构
 source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0300053S%E3%80%91%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84B%E5%A4%8D%E4%B9%A0%E7%BB%83%E4%B9%A0.doc
 ---
 
