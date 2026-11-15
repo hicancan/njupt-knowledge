@@ -1,0 +1,25 @@
+name: Release
+
+# Every change to main is checked and, when the knowledge itself changed, published as a release that readers pin.
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: python3 tools/build.py
+      - name: Publish
+        if: github.event_name == 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="knowledge-$(date -u +%Y%m%d-%H%M)"
+          tar -czf "njupt-knowledge-$tag.tar.gz" -C build .
+          gh release create "$tag" "njupt-knowledge-$tag.tar.gz" --title "$tag" --notes "Built from ${GITHUB_SHA::7}." --latest
