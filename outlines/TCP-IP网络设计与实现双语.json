@@ -1,0 +1,412 @@
+{
+ "chapters": [
+  {
+   "title": "Chapter 1 Introduction",
+   "topics": [
+    {
+     "id": "net3代码组织层次",
+     "title": "Net/3 代码的组织层次与体系结构",
+     "requires": []
+    },
+    {
+     "id": "bsd网络支持与应用",
+     "title": "4.4BSD 网络支持与应用接口概述",
+     "requires": [
+      "net3代码组织层次"
+     ]
+    },
+    {
+     "id": "协议初始化过程",
+     "title": "domaininit 等协议初始化过程",
+     "requires": [
+      "net3代码组织层次"
+     ]
+    },
+    {
+     "id": "字节序转换",
+     "title": "主机字节序与网络字节序及其转换",
+     "requires": []
+    },
+    {
+     "id": "接口与地址结构概览",
+     "title": "网络接口与地址结构概览",
+     "requires": [
+      "net3代码组织层次"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 2 Mbufs: Memory Buffers",
+   "topics": [
+    {
+     "id": "mbuf用途与结构",
+     "title": "mbuf 的用途及基本结构（m_data、m_len 等）",
+     "requires": []
+    },
+    {
+     "id": "带簇的mbuf",
+     "title": "带簇的 mbuf（M_EXT）包含的内容与使用场景",
+     "requires": [
+      "mbuf用途与结构"
+     ]
+    },
+    {
+     "id": "mbuf链表指针",
+     "title": "m_next 与 m_nextpkt 指针的作用与区别",
+     "requires": [
+      "mbuf用途与结构"
+     ]
+    },
+    {
+     "id": "mbuf分配函数",
+     "title": "分配 mbuf 的函数（如 m_get、m_gethdr）",
+     "requires": [
+      "mbuf用途与结构"
+     ]
+    },
+    {
+     "id": "mtod与dtom宏",
+     "title": "宏 mtod 和 dtom 的作用",
+     "requires": [
+      "mbuf用途与结构"
+     ]
+    },
+    {
+     "id": "以太网帧接收处理",
+     "title": "收到以太网帧时设备驱动程序调用的函数及 m_devget 何时使用簇",
+     "requires": [
+      "mbuf分配函数",
+      "带簇的mbuf"
+     ]
+    },
+    {
+     "id": "首部拉齐机制",
+     "title": "第一个 mbuf 中数据量小于最小协议首部时的拉齐（pullup）调用",
+     "requires": [
+      "mbuf链表指针"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 3 Interface Layer",
+   "topics": [
+    {
+     "id": "ifnet结构",
+     "title": "接口层 ifnet 结构体的作用与字段",
+     "requires": [
+      "mbuf用途与结构"
+     ]
+    },
+    {
+     "id": "接口输出队列",
+     "title": "接口的输出队列与发送调度机制",
+     "requires": [
+      "ifnet结构"
+     ]
+    },
+    {
+     "id": "接口输入处理",
+     "title": "接口层的输入处理流程与层间通信队列",
+     "requires": [
+      "ifnet结构",
+      "mbuf链表指针"
+     ]
+    },
+    {
+     "id": "接口地址链表",
+     "title": "接口的地址链表管理",
+     "requires": [
+      "ifnet结构"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 4 Interfaces: Ethernet",
+   "topics": [
+    {
+     "id": "以太网帧格式",
+     "title": "以太网帧格式与首部解析",
+     "requires": [
+      "接口输入处理"
+     ]
+    },
+    {
+     "id": "csma_cd机制",
+     "title": "CSMA/CD 介质访问控制机制",
+     "requires": []
+    },
+    {
+     "id": "以太网输入输出",
+     "title": "以太网的输入输出过程详解",
+     "requires": [
+      "以太网帧格式",
+      "接口输出队列"
+     ]
+    },
+    {
+     "id": "arp与以太网寻址",
+     "title": "ARP 协议在以太网接口中的地址解析作用",
+     "requires": [
+      "以太网帧格式"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 6 IP Addressing",
+   "topics": [
+    {
+     "id": "ip地址分类",
+     "title": "IP 地址分类（A/B/C/D/E 类）与子网掩码",
+     "requires": []
+    },
+    {
+     "id": "子网划分与cidr",
+     "title": "子网划分与 CIDR 无类别域间路由",
+     "requires": [
+      "ip地址分类"
+     ]
+    },
+    {
+     "id": "特殊ip地址",
+     "title": "特殊 IP 地址（广播、组播、环回、全零）及无 IP 地址时的广播包处理",
+     "requires": [
+      "ip地址分类"
+     ]
+    },
+    {
+     "id": "sockaddr_in结构",
+     "title": "IPv4 地址结构 sockaddr_in",
+     "requires": [
+      "接口与地址结构概览"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 7 Domains and Protocols",
+   "topics": [
+    {
+     "id": "域与协议族常量",
+     "title": "Net/3 域（domain）与协议族常量的定义",
+     "requires": [
+      "net3代码组织层次"
+     ]
+    },
+    {
+     "id": "protosw结构",
+     "title": "protosw 结构的分配、初始化及 inetsw 数组中的多个条目",
+     "requires": [
+      "域与协议族常量"
+     ]
+    },
+    {
+     "id": "pffindproto与pffindtype",
+     "title": "pffindproto 和 pffindtype 函数的功能、调用示例及返回值说明",
+     "requires": [
+      "protosw结构"
+     ]
+    },
+    {
+     "id": "ip_init初始化",
+     "title": "ip_init 初始化内容与 ip_protox 数组的作用",
+     "requires": [
+      "pffindproto与pffindtype",
+      "协议初始化过程"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 8 IP: Internet Protocol",
+   "topics": [
+    {
+     "id": "ip头部格式",
+     "title": "IP 头部长度、字段解析与校验和错误处理",
+     "requires": [
+      "字节序转换"
+     ]
+    },
+    {
+     "id": "ip转发逻辑",
+     "title": "路由器转发逻辑与 ip_forward 中的字节序转换",
+     "requires": [
+      "ip头部格式"
+     ]
+    },
+    {
+     "id": "源地址选择",
+     "title": "源地址选择规则与多宿主主机源地址",
+     "requires": [
+      "ip地址分类",
+      "sockaddr_in结构"
+     ]
+    },
+    {
+     "id": "ttl递减",
+     "title": "TTL 递减时机与路由环路检测",
+     "requires": [
+      "ip转发逻辑"
+     ]
+    },
+    {
+     "id": "ip重定向",
+     "title": "IP 重定向的产生条件与 ICMP 重定向报文发送",
+     "requires": [
+      "ip转发逻辑",
+      "源地址选择"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 9 IP Forwarding and Routing",
+   "topics": [
+    {
+     "id": "路由表结构",
+     "title": "路由表的数据结构与查找算法",
+     "requires": [
+      "ip转发逻辑"
+     ]
+    },
+    {
+     "id": "路由查询过程",
+     "title": "IP 路由查询过程与最长前缀匹配",
+     "requires": [
+      "路由表结构",
+      "子网划分与cidr"
+     ]
+    },
+    {
+     "id": "路由添加与删除",
+     "title": "路由条目的动态添加、删除与更新",
+     "requires": [
+      "路由表结构"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 10 IP Fragmentation and Reassembly",
+   "topics": [
+    {
+     "id": "分片触发条件",
+     "title": "IP 分片的触发条件与 MTU 限制",
+     "requires": [
+      "ip头部格式"
+     ]
+    },
+    {
+     "id": "片段大小确定",
+     "title": "如何确定每个片段中的数据字节数（分片偏移计算）",
+     "requires": [
+      "分片触发条件"
+     ]
+    },
+    {
+     "id": "目的主机重组",
+     "title": "为何只有目的主机能重组原始数据报及重组函数实现",
+     "requires": [
+      "片段大小确定"
+     ]
+    },
+    {
+     "id": "分片异常与icmp差错",
+     "title": "IP 分片处理过程中可能遇到的错误或异常及发送的 ICMP 差错报文",
+     "requires": [
+      "分片触发条件",
+      "icmp差错报文汇总"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 11 ICMP: Internet Control Message Protocol",
+   "topics": [
+    {
+     "id": "icmp报文类型",
+     "title": "ICMP 报文类型（差错报告与查询报文）概览",
+     "requires": [
+      "ip头部格式"
+     ]
+    },
+    {
+     "id": "icmp_input处理",
+     "title": "icmp_input 函数处理流程及过时 Information Request 传递给 rip_input 的原因",
+     "requires": [
+      "icmp报文类型"
+     ]
+    },
+    {
+     "id": "icmp差错报文汇总",
+     "title": "IP 差错与 ICMP 差错报文汇总（不可达、超时、参数问题等）",
+     "requires": [
+      "icmp报文类型",
+      "ip转发逻辑"
+     ]
+    },
+    {
+     "id": "icmp字节序细节",
+     "title": "Net/3 构造 ICMP 差错报文时不转换 IP 偏移量和长度字段字节序的原因分析",
+     "requires": [
+      "icmp_input处理",
+      "字节序转换"
+     ]
+    },
+    {
+     "id": "ip_output返回值丢弃",
+     "title": "为什么在特定代码路径中丢弃 ip_output 的返回值",
+     "requires": [
+      "icmp_input处理"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Chapter 22 Network Input and Output",
+   "topics": [
+    {
+     "id": "网络io层间通信队列",
+     "title": "网络输入和输出时层间通信用哪些队列",
+     "requires": [
+      "接口输出队列",
+      "mbuf链表指针"
+     ]
+    },
+    {
+     "id": "ip输入处理",
+     "title": "IP 输入（ip_input）在 4.4BSD-Lite 发行版中的处理流程",
+     "requires": [
+      "ip头部格式",
+      "网络io层间通信队列"
+     ]
+    },
+    {
+     "id": "udp输入处理",
+     "title": "UDP 输入（udp_input）在 4.4BSD-Lite 发行版中的处理流程",
+     "requires": [
+      "ip输入处理"
+     ]
+    },
+    {
+     "id": "socket阻塞通知机制",
+     "title": "阻塞在 recvfrom 调用中的进程存放在套接字结构的何处以便被通知",
+     "requires": [
+      "udp输入处理",
+      "bsd网络支持与应用"
+     ]
+    },
+    {
+     "id": "应用本地端口号分配",
+     "title": "例子程序从未为应用指定本地端口号时的自动分配机制",
+     "requires": [
+      "udp输入处理"
+     ]
+    }
+   ]
+  }
+ ]
+}

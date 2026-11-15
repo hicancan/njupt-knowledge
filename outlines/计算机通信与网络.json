@@ -1,0 +1,299 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 概论",
+   "topics": [
+    {
+     "id": "network_basics",
+     "title": "计算机网络的定义、组成与拓扑分类",
+     "requires": []
+    },
+    {
+     "id": "switching_tech",
+     "title": "数据交换技术（电路交换、报文交换、分组交换）",
+     "requires": [
+      "network_basics"
+     ]
+    },
+    {
+     "id": "performance_metrics",
+     "title": "计算机网络性能指标（速率、时延、吞吐量计算）",
+     "requires": [
+      "network_basics"
+     ]
+    },
+    {
+     "id": "architecture_protocols",
+     "title": "网络体系结构与协议（OSI/RM与TCP/IP模型、协议三要素）",
+     "requires": [
+      "network_basics"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第2章 数据通信技术基础",
+   "topics": [
+    {
+     "id": "comm_basics_media",
+     "title": "数据通信系统模型与传输媒体",
+     "requires": []
+    },
+    {
+     "id": "channel_capacity",
+     "title": "信道容量与传输速率计算（奈氏准则与香农公式）",
+     "requires": [
+      "comm_basics_media"
+     ]
+    },
+    {
+     "id": "encoding_modulation",
+     "title": "数据编码与调制技术（曼彻斯特编码、PCM、基带与频带传输）",
+     "requires": [
+      "comm_basics_media"
+     ]
+    },
+    {
+     "id": "multiplexing",
+     "title": "信道复用技术（FDM、TDM、WDM、CDM）",
+     "requires": [
+      "comm_basics_media"
+     ]
+    },
+    {
+     "id": "error_control",
+     "title": "差错控制与检测编码（汉明码、CRC循环冗余校验）",
+     "requires": [
+      "comm_basics_media"
+     ]
+    },
+    {
+     "id": "physical_layer_interface",
+     "title": "物理层接口特性与标准（机械、电气、功能、规程特性）",
+     "requires": [
+      "comm_basics_media"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第3章 数据链路层",
+   "topics": [
+    {
+     "id": "dll_functions",
+     "title": "数据链路层功能与透明传输（HDLC、PPP协议）",
+     "requires": [
+      "error_control"
+     ]
+    },
+    {
+     "id": "flow_control",
+     "title": "流量控制与可靠传输（停止等待、连续ARQ、选择ARQ及窗口尺寸）",
+     "requires": [
+      "dll_functions"
+     ]
+    },
+    {
+     "id": "mac_basics",
+     "title": "介质访问控制基础（信道共享、竞争系统与令牌机制）",
+     "requires": [
+      "dll_functions"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第4章 局域网与广域网",
+   "topics": [
+    {
+     "id": "lan_ieee802",
+     "title": "局域网体系结构与IEEE 802标准（LLC与MAC子层）",
+     "requires": [
+      "mac_basics"
+     ]
+    },
+    {
+     "id": "csmacd_ethernet",
+     "title": "CSMA/CD协议与以太网（争用期、最短帧长、MAC帧格式）",
+     "requires": [
+      "lan_ieee802",
+      "error_control"
+     ]
+    },
+    {
+     "id": "lan_extension",
+     "title": "局域网的扩展与互连设备（集线器、网桥、交换机、冲突域与广播域）",
+     "requires": [
+      "csmacd_ethernet"
+     ]
+    },
+    {
+     "id": "high_speed_wireless_lan",
+     "title": "高速以太网与无线局域网（VLAN、CSMA/CA）",
+     "requires": [
+      "lan_extension"
+     ]
+    },
+    {
+     "id": "wan_concepts",
+     "title": "广域网基本概念与虚电路服务（X.25、帧中继、ATM）",
+     "requires": [
+      "switching_tech"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第5章 网络层与网络互连",
+   "topics": [
+    {
+     "id": "ipv4_datagram",
+     "title": "IPv4协议与数据报格式（分类IP地址、分片计算、首部字段）",
+     "requires": [
+      "architecture_protocols"
+     ]
+    },
+    {
+     "id": "arp_icmp",
+     "title": "ARP地址解析协议与ICMP控制报文",
+     "requires": [
+      "ipv4_datagram",
+      "csmacd_ethernet"
+     ]
+    },
+    {
+     "id": "subnet_cidr",
+     "title": "子网划分与CIDR（子网掩码计算、路由聚合、最长前缀匹配）",
+     "requires": [
+      "ipv4_datagram"
+     ]
+    },
+    {
+     "id": "routing_protocols",
+     "title": "互联网路由选择协议（RIP距离向量、OSPF链路状态、BGP）",
+     "requires": [
+      "subnet_cidr"
+     ]
+    },
+    {
+     "id": "network_interconnection",
+     "title": "网络互连与IP转发（路由器转发过程、NAT、VPN、移动IP、组播）",
+     "requires": [
+      "routing_protocols"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第6章 传输层",
+   "topics": [
+    {
+     "id": "transport_services_ports",
+     "title": "传输层服务与端口（复用与分用、五元组、熟知端口）",
+     "requires": [
+      "architecture_protocols"
+     ]
+    },
+    {
+     "id": "udp_protocol",
+     "title": "UDP协议（无连接特性、报文段格式、伪首部校验和计算）",
+     "requires": [
+      "transport_services_ports"
+     ]
+    },
+    {
+     "id": "tcp_connection_reliability",
+     "title": "TCP连接管理与可靠传输（三次握手、四次挥手、序号确认、RTT与RTO）",
+     "requires": [
+      "transport_services_ports",
+      "flow_control"
+     ]
+    },
+    {
+     "id": "tcp_flow_congestion",
+     "title": "TCP流量控制与拥塞控制（滑动窗口、慢开始、拥塞避免、快重传与快恢复）",
+     "requires": [
+      "tcp_connection_reliability"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第7章 应用层",
+   "topics": [
+    {
+     "id": "dns",
+     "title": "域名系统DNS（层次名字空间、递归与迭代查询解析）",
+     "requires": [
+      "transport_services_ports",
+      "udp_protocol"
+     ]
+    },
+    {
+     "id": "ftp_telnet",
+     "title": "文件传送与远程登录（FTP双连接机制、TFTP、Telnet）",
+     "requires": [
+      "tcp_connection_reliability"
+     ]
+    },
+    {
+     "id": "email_protocols",
+     "title": "电子邮件系统（SMTP、POP3、IMAP、MIME）",
+     "requires": [
+      "tcp_connection_reliability"
+     ]
+    },
+    {
+     "id": "www_http",
+     "title": "万维网与HTTP协议（URL、请求与响应报文、Web缓存）",
+     "requires": [
+      "tcp_connection_reliability"
+     ]
+    },
+    {
+     "id": "dhcp",
+     "title": "动态主机配置协议DHCP（工作原理、中继代理）",
+     "requires": [
+      "ipv4_datagram",
+      "udp_protocol"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第8章 网络管理和网络安全",
+   "topics": [
+    {
+     "id": "network_management_snmp",
+     "title": "网络管理功能与SNMP协议（FCAPS五大功能、MIB、ASN.1）",
+     "requires": [
+      "transport_services_ports",
+      "udp_protocol"
+     ]
+    },
+    {
+     "id": "cryptography_encryption",
+     "title": "密码学与数据加密技术（对称与非对称密钥、数字签名、报文摘要）",
+     "requires": []
+    },
+    {
+     "id": "auth_access_control",
+     "title": "身份认证与访问控制（防火墙、RADIUS）",
+     "requires": [
+      "cryptography_encryption",
+      "network_interconnection"
+     ]
+    },
+    {
+     "id": "vpn_high_layer_security",
+     "title": "虚拟专用网与高层安全（隧道协议、IPSec、SSL/TLS）",
+     "requires": [
+      "cryptography_encryption",
+      "network_interconnection",
+      "tcp_connection_reliability"
+     ]
+    }
+   ]
+  }
+ ]
+}

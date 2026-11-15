@@ -1,0 +1,395 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 创业与创业思维",
+   "topics": [
+    {
+     "id": "chuangye-siwei",
+     "title": "创业思维的内涵与特征（因果推理与效果推理）",
+     "requires": []
+    },
+    {
+     "id": "pintu-beizi",
+     "title": "拼图与被子设计实践练习（创业者认知差异）",
+     "requires": [
+      "chuangye-siwei"
+     ]
+    },
+    {
+     "id": "chuangye-guocheng",
+     "title": "创业过程的基本要素与阶段划分",
+     "requires": []
+    }
+   ]
+  },
+  {
+   "title": "第2章 成为创业者",
+   "topics": [
+    {
+     "id": "chuangyezhe-jingliren",
+     "title": "创业者与职业经理人的区别",
+     "requires": []
+    },
+    {
+     "id": "chuangyezhe-suzhi",
+     "title": "创业者的能力与素质要求（含善于思考、勇于探索的创新精神）",
+     "requires": []
+    },
+    {
+     "id": "chengwei-chuangyezhe",
+     "title": "为什么要成为创业者（创业动机）",
+     "requires": []
+    },
+    {
+     "id": "chuangye-yali",
+     "title": "造成创业压力的四个原因",
+     "requires": []
+    },
+    {
+     "id": "shehui-zeren",
+     "title": "企业社会责任及创业者承担社会责任的看法",
+     "requires": []
+    },
+    {
+     "id": "xianjin-yujing",
+     "title": "创业公司账上现金低于三个月时的应对措施",
+     "requires": []
+    }
+   ]
+  },
+  {
+   "title": "第3章 认识创业机会",
+   "topics": [
+    {
+     "id": "jihui-renzhi",
+     "title": "创业机会的认知本质",
+     "requires": []
+    },
+    {
+     "id": "jihui-laizuan",
+     "title": "创业机会的来源与识别方法",
+     "requires": [
+      "jihui-renzhi"
+     ]
+    },
+    {
+     "id": "jihui-pinggu",
+     "title": "创业机会的评价标准与实践练习",
+     "requires": [
+      "jihui-laizuan"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第4章 组建创业团队",
+   "topics": [
+    {
+     "id": "tuandui-qunti",
+     "title": "团队较之群体在信息共享、角色定位、参与决策等方面的进步",
+     "requires": []
+    },
+    {
+     "id": "kongzhijue-quan",
+     "title": "控制权与决策权统一原则",
+     "requires": []
+    },
+    {
+     "id": "tuandui-chengyuan",
+     "title": "创业团队经常包括的成员构成",
+     "requires": []
+    },
+    {
+     "id": "tuandui-zujian",
+     "title": "创业团队的组建策略与股权分配",
+     "requires": [
+      "tuandui-chengyuan",
+      "kongzhijue-quan"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第5章 整合创业资源",
+   "topics": [
+    {
+     "id": "ziyuan-leixing",
+     "title": "创业资源的类型与分类",
+     "requires": []
+    },
+    {
+     "id": "ziyuan-zhenghe",
+     "title": "创业资源整合的策略与方法（拼凑策略等）",
+     "requires": [
+      "ziyuan-leixing"
+     ]
+    },
+    {
+     "id": "ziyuan-huoqu",
+     "title": "新企业获取外部资源的途径",
+     "requires": [
+      "ziyuan-zhenghe"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第6章 设计商业模式",
+   "topics": [
+    {
+     "id": "mubiao-guke",
+     "title": "分析并确定目标顾客",
+     "requires": []
+    },
+    {
+     "id": "jiazhi-zhuzhang",
+     "title": "价值主张的提出及谋求实现这种价值主张的资源和能力",
+     "requires": [
+      "mubiao-guke"
+     ]
+    },
+    {
+     "id": "mofang-sheji",
+     "title": "如何通过模仿设计商业模式",
+     "requires": [
+      "jiazhi-zhuzhang"
+     ]
+    },
+    {
+     "id": "jingzheng-hubu",
+     "title": "变竞争为互补（不同商业模式的竞争对手成为价值创造的合作伙伴）",
+     "requires": [
+      "jiazhi-zhuzhang"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第7章 明确目标市场",
+   "topics": [
+    {
+     "id": "shichang-xifen",
+     "title": "市场细分的依据与方法",
+     "requires": []
+    },
+    {
+     "id": "mubiao-shichang",
+     "title": "目标市场的选择策略",
+     "requires": [
+      "shichang-xifen"
+     ]
+    },
+    {
+     "id": "shichang-dingwei",
+     "title": "市场定位与竞争优势构建",
+     "requires": [
+      "mubiao-shichang"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第8章 撰写商业计划",
+   "topics": [
+    {
+     "id": "shangye-jihua",
+     "title": "商业计划书的核心结构与要素",
+     "requires": []
+    },
+    {
+     "id": "jihua-zhuanxie",
+     "title": "撰写商业计划的步骤与技巧",
+     "requires": [
+      "shangye-jihua"
+     ]
+    },
+    {
+     "id": "jihua-yanshi",
+     "title": "商业计划的展示与路演沟通",
+     "requires": [
+      "jihua-zhuanxie"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第9章 开展创业融资",
+   "topics": [
+    {
+     "id": "rongzi-xuqiu",
+     "title": "创业融资需求分析与资金缺口测算",
+     "requires": []
+    },
+    {
+     "id": "rongzi-qudao",
+     "title": "创业融资渠道与资金来源（天使投资、VC等）",
+     "requires": [
+      "rongzi-xuqiu"
+     ]
+    },
+    {
+     "id": "guzhi-pinggu",
+     "title": "新企业估值方法与股权稀释",
+     "requires": [
+      "rongzi-qudao"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第10章 成立新企业",
+   "topics": [
+    {
+     "id": "diyibi-xiaoshou",
+     "title": "第一笔销售的意义与实现",
+     "requires": []
+    },
+    {
+     "id": "zhuce-dengji",
+     "title": "注册登记成合法实体的流程与税率影响",
+     "requires": []
+    },
+    {
+     "id": "falv-zuzhi",
+     "title": "不同的法律组织形式分别适合什么类型的新企业及其优势",
+     "requires": [
+      "zhuce-dengji"
+     ]
+    },
+    {
+     "id": "falv-fagui",
+     "title": "成立新企业需要了解的法律法规及其对新企业的影响",
+     "requires": [
+      "falv-zuzhi"
+     ]
+    },
+    {
+     "id": "zhuce-xuanzhi",
+     "title": "新企业注册选址应该考虑的因素与具体步骤",
+     "requires": []
+    },
+    {
+     "id": "texu-jingying",
+     "title": "特许经营的特点（含加盟商和以往加盟商之间责任不清、相互推脱责任问题）",
+     "requires": []
+    }
+   ]
+  },
+  {
+   "title": "第11章 发展新企业",
+   "topics": [
+    {
+     "id": "xinjinru-quexian",
+     "title": "新进入缺陷及产生的原因",
+     "requires": []
+    },
+    {
+     "id": "hefaxing-goujian",
+     "title": "构建企业的合法性",
+     "requires": [
+      "xinjinru-quexian"
+     ]
+    },
+    {
+     "id": "xianjinliu-weiji",
+     "title": "应对现金流危机的措施",
+     "requires": []
+    },
+    {
+     "id": "shengmingzhouqi",
+     "title": "企业生命周期理论",
+     "requires": []
+    },
+    {
+     "id": "geleina-moxing",
+     "title": "葛雷纳的企业成长模型",
+     "requires": [
+      "shengmingzhouqi"
+     ]
+    },
+    {
+     "id": "aidisi-moxing",
+     "title": "爱迪思的十阶段成长模型",
+     "requires": [
+      "shengmingzhouqi"
+     ]
+    },
+    {
+     "id": "chengcheng-guanli",
+     "title": "企业成长的管理重点与管理传承（变革成本与切入点、如何实现管理传承）",
+     "requires": [
+      "geleina-moxing",
+      "aidisi-moxing"
+     ]
+    },
+    {
+     "id": "gongsi-chuangye",
+     "title": "公司创业的实施过程、动力与阻力及促进公司创业的战略策略",
+     "requires": []
+    },
+    {
+     "id": "jiyou-chuangye",
+     "title": "既有企业为什么重视创业及公司创业与个体创业活动的差异",
+     "requires": [
+      "gongsi-chuangye"
+     ]
+    },
+    {
+     "id": "zhanlue-lianxi",
+     "title": "公司创业的实施与战略管理联系",
+     "requires": [
+      "gongsi-chuangye"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第12章 完善创业决策",
+   "topics": [
+    {
+     "id": "juecelun-jichu",
+     "title": "创业决策的理论基础与认知偏差",
+     "requires": []
+    },
+    {
+     "id": "buxingding-juece",
+     "title": "不确定环境下的创业决策方法（效果推理决策）",
+     "requires": [
+      "juecelun-jichu"
+     ]
+    },
+    {
+     "id": "juece-youhua",
+     "title": "创业决策的迭代优化与反馈机制",
+     "requires": [
+      "buxingding-juece"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第13章 健全创业机制",
+   "topics": [
+    {
+     "id": "chuangye-jizhi",
+     "title": "创业机制的内涵与构成要素",
+     "requires": []
+    },
+    {
+     "id": "jili-jizhi",
+     "title": "创业激励机制与约束机制的设计",
+     "requires": [
+      "chuangye-jizhi"
+     ]
+    },
+    {
+     "id": "zuzhi-jizhi",
+     "title": "支持持续创新的组织机制与文化保障",
+     "requires": [
+      "chuangye-jizhi"
+     ]
+    }
+   ]
+  }
+ ]
+}

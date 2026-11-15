@@ -1,0 +1,213 @@
+{
+ "chapters": [
+  {
+   "title": "Unit 1 Confucianism（儒家思想）",
+   "topics": [
+    {
+     "id": "U1-TextA课文理解",
+     "title": "Text A: Confucianism 课文主旨与段落结构",
+     "requires": []
+    },
+    {
+     "id": "U1-参考译文对照",
+     "title": "Text A 参考译文与中英表达对照",
+     "requires": [
+      "U1-TextA课文理解"
+     ]
+    },
+    {
+     "id": "U1-Words-in-use",
+     "title": "Unit 1 Words in use（核心词汇选词填空）",
+     "requires": [
+      "U1-TextA课文理解"
+     ]
+    },
+    {
+     "id": "U1-Expressions-in-use",
+     "title": "Unit 1 Expressions in use（重点短语与固定搭配）",
+     "requires": [
+      "U1-Words-in-use"
+     ]
+    },
+    {
+     "id": "U1-Banked-cloze",
+     "title": "Unit 1 Banked cloze（十五选十选词填空）",
+     "requires": [
+      "U1-Words-in-use",
+      "U1-Expressions-in-use"
+     ]
+    },
+    {
+     "id": "U1-课后翻译",
+     "title": "Unit 1 课后翻译（汉译英段落翻译技巧与参考答案）",
+     "requires": [
+      "U1-Expressions-in-use"
+     ]
+    },
+    {
+     "id": "U1-文化翻译",
+     "title": "Unit 1 文化与翻译（中国文化术语的英文表达）",
+     "requires": [
+      "U1-课后翻译"
+     ]
+    }
+   ],
+   "requires": []
+  },
+  {
+   "title": "Unit 2（第二单元）",
+   "topics": [
+    {
+     "id": "U2-TextA课文理解",
+     "title": "Unit 2 Text A 课文主旨与长难句分析",
+     "requires": []
+    },
+    {
+     "id": "U2-Words-in-use",
+     "title": "Unit 2 Words in use（核心词汇辨析与应用）",
+     "requires": [
+      "U2-TextA课文理解"
+     ]
+    },
+    {
+     "id": "U2-Expressions-in-use",
+     "title": "Unit 2 Expressions in use（重点短语与句型操练）",
+     "requires": [
+      "U2-Words-in-use"
+     ]
+    },
+    {
+     "id": "U2-填空练习",
+     "title": "Unit 2 词汇与短语填空综合练习（填空4-10）",
+     "requires": [
+      "U2-Words-in-use",
+      "U2-Expressions-in-use"
+     ]
+    },
+    {
+     "id": "U2-课后翻译",
+     "title": "Unit 2 课后翻译（汉译英参考答案与采分点）",
+     "requires": [
+      "U2-Expressions-in-use"
+     ]
+    }
+   ],
+   "requires": []
+  },
+  {
+   "title": "Unit 3（第三单元）",
+   "topics": [
+    {
+     "id": "U3-TextA课文理解",
+     "title": "Unit 3 Text A 课文内容与篇章逻辑",
+     "requires": []
+    },
+    {
+     "id": "U3-Banked-cloze",
+     "title": "Unit 3 Banked cloze（选词填空与词性判断）",
+     "requires": [
+      "U3-TextA课文理解"
+     ]
+    },
+    {
+     "id": "U3-课后翻译",
+     "title": "Unit 3 课后翻译（汉译英参考答案）",
+     "requires": [
+      "U3-TextA课文理解"
+     ]
+    },
+    {
+     "id": "U3-综合练习",
+     "title": "Unit 3 Exercise A/C/E/G 综合课后练习",
+     "requires": [
+      "U3-TextA课文理解"
+     ]
+    }
+   ],
+   "requires": []
+  },
+  {
+   "title": "Unit 4（第四单元）",
+   "topics": [
+    {
+     "id": "U4-TextA课文理解",
+     "title": "Unit 4 Text A 课文阅读与细节理解",
+     "requires": []
+    },
+    {
+     "id": "U4-课后翻译",
+     "title": "Unit 4 课后翻译（汉译英参考答案与句式转换）",
+     "requires": [
+      "U4-TextA课文理解"
+     ]
+    },
+    {
+     "id": "U4-综合练习",
+     "title": "Unit 4 词汇与语法综合练习",
+     "requires": [
+      "U4-TextA课文理解"
+     ]
+    }
+   ],
+   "requires": []
+  },
+  {
+   "title": "Unit 5 - Unit 6（第五、六单元）",
+   "topics": [
+    {
+     "id": "U5-Banked-cloze",
+     "title": "Unit 5 Banked cloze（选词填空）",
+     "requires": []
+    },
+    {
+     "id": "U5-翻译练习",
+     "title": "Unit 5 翻译练习（Exercise D/F/I 文化与翻译）",
+     "requires": [
+      "U5-Banked-cloze"
+     ]
+    },
+    {
+     "id": "U5-综合练习",
+     "title": "Unit 5 Exercise A/C/E/G 综合练习",
+     "requires": []
+    },
+    {
+     "id": "U6-单元内容",
+     "title": "Unit 6 课文与练习概览",
+     "requires": []
+    }
+   ],
+   "requires": []
+  },
+  {
+   "title": "词汇与语法专项（Vocabulary & Grammar）",
+   "topics": [
+    {
+     "id": "词汇结构单选1",
+     "title": "词汇与结构单项选择题练习(1)（选择1-20：词义辨析与语法结构）",
+     "requires": []
+    },
+    {
+     "id": "词汇语法单选2",
+     "title": "词汇与语法单项选择题练习(2)（选择21-40：时态语态与非谓语动词）",
+     "requires": [
+      "词汇结构单选1"
+     ]
+    },
+    {
+     "id": "四级词根联想记忆法",
+     "title": "四级词汇词根+联想记忆法（乱序版核心词缀与词根构词规律）",
+     "requires": []
+    },
+    {
+     "id": "真题例句应用",
+     "title": "四级词汇真题例句与语境应用（图解记忆与词源透析）",
+     "requires": [
+      "四级词根联想记忆法"
+     ]
+    }
+   ],
+   "requires": []
+  }
+ ]
+}

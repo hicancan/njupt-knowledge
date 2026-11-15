@@ -1,0 +1,599 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 软件建模概述",
+   "topics": [
+    {
+     "id": "软件建模概念",
+     "title": "软件建模的概念与重要性",
+     "requires": []
+    },
+    {
+     "id": "软件模型类型",
+     "title": "软件模型的类型（功能、结构、行为等）",
+     "requires": [
+      "软件建模概念"
+     ]
+    },
+    {
+     "id": "建模语言与UML",
+     "title": "建模语言与UML概述",
+     "requires": [
+      "软件模型类型"
+     ]
+    },
+    {
+     "id": "模型驱动开发",
+     "title": "模型驱动开发（MDD）与代码生成",
+     "requires": [
+      "软件建模概念"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第2章 软件开发过程",
+   "topics": [
+    {
+     "id": "统一过程阶段",
+     "title": "统一过程（UP）的四个阶段：先启、精化、构建、产品化",
+     "requires": []
+    },
+    {
+     "id": "迭代与增量开发",
+     "title": "迭代式开发与增量式开发",
+     "requires": [
+      "统一过程阶段"
+     ]
+    },
+    {
+     "id": "核心工作流",
+     "title": "统一过程的核心工作流（需求、分析、设计、实现、测试）",
+     "requires": [
+      "统一过程阶段"
+     ]
+    },
+    {
+     "id": "敏捷方法论",
+     "title": "敏捷方法论（Scrum、XP）与建模",
+     "requires": [
+      "迭代与增量开发"
+     ]
+    },
+    {
+     "id": "软件开发方法论",
+     "title": "软件开发方法论概览",
+     "requires": [
+      "统一过程阶段",
+      "敏捷方法论"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第3章 用例建模",
+   "topics": [
+    {
+     "id": "用例概念",
+     "title": "用例（Use Case）与参与者（Actor）的定义",
+     "requires": []
+    },
+    {
+     "id": "用例图",
+     "title": "用例图的绘制与元素（系统边界、关联、包含、扩展、泛化）",
+     "requires": [
+      "用例概念"
+     ]
+    },
+    {
+     "id": "用例规约",
+     "title": "用例规约（Use Case Specification）的编写",
+     "requires": [
+      "用例概念"
+     ]
+    },
+    {
+     "id": "用例识别方法",
+     "title": "用例识别方法与最佳实践",
+     "requires": [
+      "用例概念"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第4章 静态建模",
+   "topics": [
+    {
+     "id": "类与对象",
+     "title": "类（Class）与对象（Object）的概念",
+     "requires": []
+    },
+    {
+     "id": "类图元素",
+     "title": "类图的元素：属性、操作、可见性",
+     "requires": [
+      "类与对象"
+     ]
+    },
+    {
+     "id": "类间关系",
+     "title": "类之间的关系：关联、聚合、组合、依赖、泛化、实现",
+     "requires": [
+      "类与对象"
+     ]
+    },
+    {
+     "id": "关联类与多重性",
+     "title": "关联类（Association Class）与多重性（Multiplicity）",
+     "requires": [
+      "类间关系"
+     ]
+    },
+    {
+     "id": "对象图",
+     "title": "对象图（Object Diagram）与类图的关系",
+     "requires": [
+      "类图元素"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第5章 动态建模-活动图",
+   "topics": [
+    {
+     "id": "活动图基本元素",
+     "title": "活动图的基本元素（活动节点、起始节点、终止节点、判断节点、合并节点）",
+     "requires": []
+    },
+    {
+     "id": "活动图控制流",
+     "title": "活动图的控制流与对象流",
+     "requires": [
+      "活动图基本元素"
+     ]
+    },
+    {
+     "id": "并发与同步",
+     "title": "活动图中的并发（分叉与汇合）与同步",
+     "requires": [
+      "活动图控制流"
+     ]
+    },
+    {
+     "id": "泳道",
+     "title": "泳道（Swimlane）与活动分区",
+     "requires": [
+      "活动图基本元素"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第6章 动态建模-交互图",
+   "topics": [
+    {
+     "id": "交互图概览",
+     "title": "交互图的概念与分类（顺序图、通信图）",
+     "requires": []
+    },
+    {
+     "id": "顺序图",
+     "title": "顺序图（Sequence Diagram）的元素：生命线、激活、消息",
+     "requires": [
+      "交互图概览"
+     ]
+    },
+    {
+     "id": "消息类型",
+     "title": "消息的类型：同步、异步、返回、创建、销毁",
+     "requires": [
+      "顺序图"
+     ]
+    },
+    {
+     "id": "组合片段",
+     "title": "顺序图的组合片段（alt、opt、loop、par等）",
+     "requires": [
+      "顺序图"
+     ]
+    },
+    {
+     "id": "通信图",
+     "title": "通信图（Communication Diagram）与顺序图的转换",
+     "requires": [
+      "交互图概览",
+      "顺序图"
+     ]
+    },
+    {
+     "id": "交互图应用",
+     "title": "交互图的应用（以BookingSystem为例）",
+     "requires": [
+      "顺序图",
+      "通信图"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第7章 动态建模-状态机图",
+   "topics": [
+    {
+     "id": "状态机图概念",
+     "title": "状态机图（State Machine Diagram）的概念与适用场景",
+     "requires": []
+    },
+    {
+     "id": "状态与转换",
+     "title": "状态（State）、转换（Transition）与事件（Event）",
+     "requires": [
+      "状态机图概念"
+     ]
+    },
+    {
+     "id": "动作与活动",
+     "title": "状态中的动作（Action）与活动（Activity）",
+     "requires": [
+      "状态与转换"
+     ]
+    },
+    {
+     "id": "复合状态与子状态",
+     "title": "复合状态（Composite State）与子状态（Substate）",
+     "requires": [
+      "状态与转换"
+     ]
+    },
+    {
+     "id": "状态机图应用",
+     "title": "状态机图的应用（以exchange、play、coin为例）",
+     "requires": [
+      "状态与转换"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第8章 物理建模",
+   "topics": [
+    {
+     "id": "物理建模概览",
+     "title": "物理建模（Physical Modeling）的概念",
+     "requires": []
+    },
+    {
+     "id": "组件图",
+     "title": "组件图（Component Diagram）的符号与用途",
+     "requires": [
+      "物理建模概览"
+     ]
+    },
+    {
+     "id": "部署图",
+     "title": "部署图（Deployment Diagram）的符号与用途",
+     "requires": [
+      "物理建模概览"
+     ]
+    },
+    {
+     "id": "物理图",
+     "title": "物理图（Physical Diagram）在系统实现中的应用",
+     "requires": [
+      "组件图",
+      "部署图"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第9章 约束（OCL）",
+   "topics": [
+    {
+     "id": "OCL概述",
+     "title": "对象约束语言（OCL）的概念与用途",
+     "requires": []
+    },
+    {
+     "id": "OCL导航表达式",
+     "title": "OCL导航表达式（Navigation Expression）",
+     "requires": [
+      "OCL概述"
+     ]
+    },
+    {
+     "id": "OCL数据类型",
+     "title": "OCL数据类型与操作",
+     "requires": [
+      "OCL概述"
+     ]
+    },
+    {
+     "id": "OCL约束类型",
+     "title": "OCL约束类型（不变量、前置条件、后置条件）",
+     "requires": [
+      "OCL概述"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第10章 软件体系结构概览",
+   "topics": [
+    {
+     "id": "软件体系结构概念",
+     "title": "软件体系结构（Software Architecture）的定义与重要性",
+     "requires": []
+    },
+    {
+     "id": "体系结构视图",
+     "title": "体系结构的4+1视图模型",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "体系结构风格",
+     "title": "体系结构风格（Architectural Styles）概览",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "质量属性",
+     "title": "质量属性（Quality Attributes）与体系结构决策",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "体系结构设计方法",
+     "title": "体系结构设计方法与评估（ATAM等方法）",
+     "requires": [
+      "质量属性"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第11章 软件子系统体系结构设计",
+   "topics": [
+    {
+     "id": "子系统划分",
+     "title": "子系统（Subsystem）的划分原则与粒度",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "子系统接口设计",
+     "title": "子系统之间的接口设计与依赖管理",
+     "requires": [
+      "子系统划分"
+     ]
+    },
+    {
+     "id": "层次化体系结构",
+     "title": "层次化体系结构（Layered Architecture）",
+     "requires": [
+      "子系统划分"
+     ]
+    },
+    {
+     "id": "高内聚低耦合",
+     "title": "子系统设计中的高内聚与低耦合原则",
+     "requires": [
+      "子系统划分"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第12章 面向对象的软件体系结构",
+   "topics": [
+    {
+     "id": "面向对象体系结构特点",
+     "title": "面向对象体系结构的特点与优势",
+     "requires": [
+      "技术体系结构概念"
+     ]
+    },
+    {
+     "id": "设计模式与体系结构",
+     "title": "设计模式（Design Patterns）在体系结构中的作用",
+     "requires": [
+      "面向对象体系结构特点"
+     ]
+    },
+    {
+     "id": "框架与类库",
+     "title": "框架（Framework）与类库（Class Library）的区别与使用",
+     "requires": [
+      "面向对象体系结构特点"
+     ]
+    },
+    {
+     "id": "依赖注入与控制反转",
+     "title": "依赖注入（Dependency Injection）与控制反转（Inversion of Control）",
+     "requires": [
+      "面向对象体系结构特点"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第13章 客户端/服务器的软件体系结构",
+   "topics": [
+    {
+     "id": "客户服务器基本模型",
+     "title": "客户端/服务器（C/S）体系结构的基本模型",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "两层体系结构",
+     "title": "两层C/S体系结构（瘦客户端与胖客户端）",
+     "requires": [
+      "客户服务器基本模型"
+     ]
+    },
+    {
+     "id": "三层体系结构",
+     "title": "三层C/S体系结构（表示层、业务逻辑层、数据层）",
+     "requires": [
+      "两层体系结构"
+     ]
+    },
+    {
+     "id": "多层与N层结构",
+     "title": "多层/N层体系结构与B/S架构",
+     "requires": [
+      "三层体系结构"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第14章 面向服务的软件体系结构",
+   "topics": [
+    {
+     "id": "SOA概念",
+     "title": "面向服务架构（SOA）的概念与核心原则",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "Web服务技术",
+     "title": "Web服务技术（SOAP、REST）基础",
+     "requires": [
+      "SOA概念"
+     ]
+    },
+    {
+     "id": "服务契约与编排",
+     "title": "服务契约（Service Contract）与服务编排（Choreography）、服务编排（Orchestration）",
+     "requires": [
+      "SOA概念"
+     ]
+    },
+    {
+     "id": "企业服务总线",
+     "title": "企业服务总线（ESB）与消息队列",
+     "requires": [
+      "SOA概念"
+     ]
+    },
+    {
+     "id": "微服务架构",
+     "title": "微服务架构（Microservices）及其与SOA的关系",
+     "requires": [
+      "SOA概念"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第15章 基于构件的软件体系结构",
+   "topics": [
+    {
+     "id": "软件构件概念",
+     "title": "软件构件（Component）的概念与特征",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "构件模型与接口",
+     "title": "构件模型（Component Model）与构件接口规范",
+     "requires": [
+      "软件构件概念"
+     ]
+    },
+    {
+     "id": "构件组装",
+     "title": "构件组装（Component Composition）与部署",
+     "requires": [
+      "构件模型与接口"
+     ]
+    },
+    {
+     "id": "构件技术标准",
+     "title": "构件技术标准（CORBA、COM、EJB等）",
+     "requires": [
+      "构件模型与接口"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第16章 并发和实时软件体系结构设计",
+   "topics": [
+    {
+     "id": "并发系统概念",
+     "title": "并发系统与实时系统的基本概念",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "并发设计模式",
+     "title": "并发体系结构设计模式（线程池、生产者-消费者等）",
+     "requires": [
+      "并发系统概念"
+     ]
+    },
+    {
+     "id": "任务调度",
+     "title": "实时系统中的任务调度与优先级",
+     "requires": [
+      "并发系统概念"
+     ]
+    },
+    {
+     "id": "同步与通信机制",
+     "title": "进程间同步与通信机制（信号量、互斥锁、消息队列）",
+     "requires": [
+      "并发设计模式"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第17章 软件产品线体系结构设计",
+   "topics": [
+    {
+     "id": "产品线概念",
+     "title": "软件产品线（Software Product Line）的概念与核心资产",
+     "requires": [
+      "软件体系结构概念"
+     ]
+    },
+    {
+     "id": "产品线可变性",
+     "title": "产品线中的可变性（Variability）管理",
+     "requires": [
+      "产品线概念"
+     ]
+    },
+    {
+     "id": "核心资产开发",
+     "title": "核心资产（Core Assets）的识别与开发",
+     "requires": [
+      "产品线概念"
+     ]
+    },
+    {
+     "id": "产品线生产与配置",
+     "title": "基于产品线的产品派生与配置",
+     "requires": [
+      "产品线可变性",
+      "核心资产开发"
+     ]
+    }
+   ]
+  }
+ ]
+}

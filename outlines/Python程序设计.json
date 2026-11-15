@@ -1,0 +1,57 @@
+{
+ "chapters": [
+  {
+   "title": "第10章 Python网络爬虫",
+   "topics": [
+    {
+     "id": "网络爬虫基本原理",
+     "title": "网络爬虫基本原理与应用场景",
+     "requires": []
+    },
+    {
+     "id": "requests库获取网页",
+     "title": "使用requests库获取网页源代码",
+     "requires": [
+      "网络爬虫基本原理"
+     ]
+    },
+    {
+     "id": "正则表达式翻页",
+     "title": "使用正则表达式实现翻页功能",
+     "requires": [
+      "requests库获取网页"
+     ]
+    },
+    {
+     "id": "Xpath页面定位",
+     "title": "使用Xpath进行页面定位",
+     "requires": [
+      "requests库获取网页"
+     ]
+    },
+    {
+     "id": "chromedriver模拟浏览器",
+     "title": "使用chromedriver模拟浏览器操作",
+     "requires": [
+      "网络爬虫基本原理"
+     ]
+    },
+    {
+     "id": "百度贴吧进阶实例",
+     "title": "百度贴吧进阶实例",
+     "requires": [
+      "Xpath页面定位",
+      "正则表达式翻页"
+     ]
+    },
+    {
+     "id": "爬取微信公众号文章",
+     "title": "使用chromedriver爬取微信公众号文章",
+     "requires": [
+      "chromedriver模拟浏览器"
+     ]
+    }
+   ]
+  }
+ ]
+}

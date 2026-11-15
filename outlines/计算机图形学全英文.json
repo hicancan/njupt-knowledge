@@ -1,0 +1,482 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 概论 (Introduction)",
+   "topics": [
+    {
+     "id": "图形学定义",
+     "title": "计算机图形学的定义与研究范畴 (Definition & Scope of Computer Graphics)",
+     "requires": []
+    },
+    {
+     "id": "图形系统架构",
+     "title": "图形系统的硬件与软件架构 (Graphics System Architecture)",
+     "requires": []
+    },
+    {
+     "id": "图形管线概述",
+     "title": "图形渲染管线概述 (Overview of Graphics Pipeline)",
+     "requires": []
+    },
+    {
+     "id": "应用领域",
+     "title": "计算机图形学的应用领域 (Applications of CG)",
+     "requires": []
+    }
+   ]
+  },
+  {
+   "title": "第2章 OpenGL编程基础 (OpenGL Basics)",
+   "topics": [
+    {
+     "id": "OpenGL环境配置",
+     "title": "OpenGL开发环境配置 (OpenGL Configuration for Windows/Mac)",
+     "requires": []
+    },
+    {
+     "id": "SOIL2库",
+     "title": "Simple OpenGL Image Library 2 (SOIL2) 图像加载库配置与使用",
+     "requires": [
+      "OpenGL环境配置"
+     ]
+    },
+    {
+     "id": "Assimp库",
+     "title": "Assimp模型导入库配置 (Assimp Library Configuration)",
+     "requires": [
+      "OpenGL环境配置"
+     ]
+    },
+    {
+     "id": "GLFW窗口",
+     "title": "GLFW创建窗口与上下文 (Window & Context Creation with GLFW)",
+     "requires": [
+      "OpenGL环境配置"
+     ]
+    },
+    {
+     "id": "GLEW初始化",
+     "title": "GLEW扩展加载与初始化 (Extension Loading with GLEW)",
+     "requires": [
+      "GLFW窗口"
+     ]
+    },
+    {
+     "id": "视口设置",
+     "title": "视口变换 glViewport (Viewport Transform)",
+     "requires": [
+      "GLFW窗口"
+     ]
+    },
+    {
+     "id": "着色器程序",
+     "title": "Shader Program的编译、链接与使用 (Compile, Link & Use Shader Program)",
+     "requires": [
+      "GLEW初始化"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第3章 输出图元 (Output Primitives)",
+   "topics": [
+    {
+     "id": "点与直线",
+     "title": "点(Point)与直线(Line)的绘制",
+     "requires": [
+      "着色器程序"
+     ]
+    },
+    {
+     "id": "DDA算法",
+     "title": "DDA画线算法 (DDA Line Drawing Algorithm)",
+     "requires": [
+      "点与直线"
+     ]
+    },
+    {
+     "id": "Bresenham画线",
+     "title": "Bresenham画线算法 (Bresenham's Line Algorithm)",
+     "requires": [
+      "点与直线"
+     ]
+    },
+    {
+     "id": "中点画圆",
+     "title": "中点画圆算法 (Midpoint Circle Algorithm)",
+     "requires": [
+      "点与直线"
+     ]
+    },
+    {
+     "id": "多边形填充",
+     "title": "多边形表示与填充规则 (Polygon Representation & Fill Rules)",
+     "requires": [
+      "点与直线"
+     ]
+    },
+    {
+     "id": "扫描线填充",
+     "title": "扫描线多边形填充算法 (Scan-Line Polygon Fill Algorithm)",
+     "requires": [
+      "多边形填充"
+     ]
+    },
+    {
+     "id": "区域填充",
+     "title": "边界填充与泛洪填充算法 (Boundary-Fill & Flood-Fill Algorithms)",
+     "requires": [
+      "多边形填充"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第4章 二维几何变换 (2D Geometric Transformations)",
+   "topics": [
+    {
+     "id": "二维平移",
+     "title": "二维平移变换 (2D Translation)",
+     "requires": []
+    },
+    {
+     "id": "二维旋转",
+     "title": "二维旋转变换 (2D Rotation)",
+     "requires": []
+    },
+    {
+     "id": "二维缩放",
+     "title": "二维缩放变换 (2D Scaling)",
+     "requires": []
+    },
+    {
+     "id": "齐次坐标",
+     "title": "齐次坐标与二维仿射变换矩阵 (Homogeneous Coordinates & 2D Affine Matrix)",
+     "requires": [
+      "二维平移",
+      "二维旋转",
+      "二维缩放"
+     ]
+    },
+    {
+     "id": "复合变换",
+     "title": "复合变换与矩阵级联 (Composite Transformations & Matrix Concatenation)",
+     "requires": [
+      "齐次坐标"
+     ]
+    },
+    {
+     "id": "绕任意点旋转",
+     "title": "绕任意基准点旋转 (Rotation About an Arbitrary Pivot Point)",
+     "requires": [
+      "复合变换"
+     ]
+    },
+    {
+     "id": "其他二维变换",
+     "title": "反射(Reflection)与错切(Shear)变换",
+     "requires": [
+      "齐次坐标"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第5章 二维观察 (2D Viewing)",
+   "topics": [
+    {
+     "id": "观察坐标系",
+     "title": "观察坐标系与窗口-视口映射 (Viewing Coordinate System & Window-to-Viewport Mapping)",
+     "requires": [
+      "复合变换"
+     ]
+    },
+    {
+     "id": "裁剪窗口",
+     "title": "世界坐标系中的裁剪窗口 (Clipping Window)",
+     "requires": [
+      "观察坐标系"
+     ]
+    },
+    {
+     "id": "Cohen-Sutherland裁剪",
+     "title": "Cohen-Sutherland线段裁剪算法 (Cohen-Sutherland Line Clipping)",
+     "requires": [
+      "裁剪窗口"
+     ]
+    },
+    {
+     "id": "Liang-Barsky裁剪",
+     "title": "Liang-Barsky线段裁剪算法 (Liang-Barsky Line Clipping)",
+     "requires": [
+      "裁剪窗口"
+     ]
+    },
+    {
+     "id": "多边形裁剪",
+     "title": "Sutherland-Hodgman多边形裁剪算法 (Sutherland-Hodgman Polygon Clipping)",
+     "requires": [
+      "裁剪窗口"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第6章 三维几何变换 (3D Geometric Transformations)",
+   "topics": [
+    {
+     "id": "三维平移缩放",
+     "title": "三维平移与缩放变换 (3D Translation & Scaling)",
+     "requires": [
+      "齐次坐标"
+     ]
+    },
+    {
+     "id": "三维旋转",
+     "title": "绕三维坐标轴旋转 (3D Rotation About Coordinate Axes)",
+     "requires": [
+      "齐次坐标"
+     ]
+    },
+    {
+     "id": "绕任意轴旋转",
+     "title": "绕空间任意轴旋转 (3D Rotation About an Arbitrary Axis)",
+     "requires": [
+      "三维旋转",
+      "复合变换"
+     ]
+    },
+    {
+     "id": "三维复合变换",
+     "title": "三维复合变换 (3D Composite Transformations)",
+     "requires": [
+      "三维平移缩放",
+      "三维旋转"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第7章 三维观察 (3D Viewing)",
+   "topics": [
+    {
+     "id": "三维观察管线",
+     "title": "三维观察管线概述 (3D Viewing Pipeline)",
+     "requires": [
+      "三维复合变换"
+     ]
+    },
+    {
+     "id": "观察参考点",
+     "title": "观察参考点VRP、观察方向VPN与向上向量VUP (View Reference Point, Normal & Up Vector)",
+     "requires": [
+      "三维观察管线"
+     ]
+    },
+    {
+     "id": "投影分类",
+     "title": "平行投影与透视投影的分类 (Parallel vs. Perspective Projection)",
+     "requires": [
+      "三维观察管线"
+     ]
+    },
+    {
+     "id": "正交投影",
+     "title": "正交投影与规范观察体 (Orthographic Projection & Canonical View Volume)",
+     "requires": [
+      "投影分类"
+     ]
+    },
+    {
+     "id": "透视投影",
+     "title": "透视投影矩阵推导 (Perspective Projection Matrix Derivation)",
+     "requires": [
+      "投影分类"
+     ]
+    },
+    {
+     "id": "深度缓冲",
+     "title": "Z-Buffer深度测试算法 (Z-Buffer / Depth Testing Algorithm)",
+     "requires": [
+      "正交投影",
+      "透视投影"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第8章 曲线与曲面 (Curves and Surfaces)",
+   "topics": [
+    {
+     "id": "参数曲线",
+     "title": "参数曲线表示与连续性 (Parametric Curves & Continuity C0/C1/C2)",
+     "requires": []
+    },
+    {
+     "id": "三次样条",
+     "title": "三次样条插值 (Cubic Spline Interpolation)",
+     "requires": [
+      "参数曲线"
+     ]
+    },
+    {
+     "id": "Bezier曲线",
+     "title": "Bezier曲线的定义、Bernstein基函数与控制多边形性质 (Bezier Curves & Properties)",
+     "requires": [
+      "参数曲线"
+     ]
+    },
+    {
+     "id": "de-Casteljau算法",
+     "title": "Bezier曲线的de Casteljau递推算法 (de Casteljau Algorithm)",
+     "requires": [
+      "Bezier曲线"
+     ]
+    },
+    {
+     "id": "B样条曲线",
+     "title": "B样条曲线(B-Splines)与节点向量 (Knot Vectors)",
+     "requires": [
+      "参数曲线"
+     ]
+    },
+    {
+     "id": "NURBS",
+     "title": "非均匀有理B样条 NURBS (Non-Uniform Rational B-Splines)",
+     "requires": [
+      "B样条曲线"
+     ]
+    },
+    {
+     "id": "曲面生成",
+     "title": "由曲线张成曲面 (Surfaces from Curves: Bezier/B-Spline Surfaces)",
+     "requires": [
+      "Bezier曲线",
+      "B样条曲线"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第9章 真实感图形学：光照与着色 (Illumination and Shading)",
+   "topics": [
+    {
+     "id": "颜色模型",
+     "title": "RGB与HSV颜色模型 (RGB & HSV Color Models)",
+     "requires": []
+    },
+    {
+     "id": "Phong光照模型",
+     "title": "Phong局部光照模型(环境光、漫反射、镜面反射) (Phong Illumination Model)",
+     "requires": [
+      "颜色模型"
+     ]
+    },
+    {
+     "id": "衰减因子",
+     "title": "光源距离衰减与聚光灯效果 (Distance Attenuation & Spotlights)",
+     "requires": [
+      "Phong光照模型"
+     ]
+    },
+    {
+     "id": "Flat着色",
+     "title": "Flat Shading平面着色 (Flat Shading)",
+     "requires": [
+      "Phong光照模型"
+     ]
+    },
+    {
+     "id": "Gouraud着色",
+     "title": "Gouraud Shading双线性光强插值 (Gouraud Shading)",
+     "requires": [
+      "Flat着色"
+     ]
+    },
+    {
+     "id": "Phong着色",
+     "title": "Phong Shading法向量插值 (Phong Shading)",
+     "requires": [
+      "Gouraud着色"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第10章 纹理映射 (Texture Mapping)",
+   "topics": [
+    {
+     "id": "纹理坐标",
+     "title": "纹理坐标UV与纹理映射原理 (Texture Coordinates & Texture Mapping)",
+     "requires": [
+      "着色器程序"
+     ]
+    },
+    {
+     "id": "SOIL2加载纹理",
+     "title": "使用SOIL2加载图像生成纹理 (Loading Textures with SOIL2)",
+     "requires": [
+      "SOIL2库",
+      "纹理坐标"
+     ]
+    },
+    {
+     "id": "纹理滤波",
+     "title": "纹理放大缩小滤波 GL_NEAREST与GL_LINEAR (Texture Filtering: Nearest & Linear)",
+     "requires": [
+      "纹理坐标"
+     ]
+    },
+    {
+     "id": "Mipmap",
+     "title": "多级渐远纹理 Mipmap 及其生成 (Mipmaps Generation)",
+     "requires": [
+      "纹理滤波"
+     ]
+    },
+    {
+     "id": "纹理环绕",
+     "title": "纹理环绕方式 GL_REPEAT等 (Texture Wrapping Modes)",
+     "requires": [
+      "纹理坐标"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第11章 网格与模型加载 (Meshes and Model Loading)",
+   "topics": [
+    {
+     "id": "顶点数据",
+     "title": "顶点属性与VAO/VBO/EBO配置 (Vertex Attributes, VAO, VBO & EBO)",
+     "requires": [
+      "着色器程序"
+     ]
+    },
+    {
+     "id": "Mesh类",
+     "title": "Mesh类的封装(顶点、索引、材质) (Encapsulating the Mesh Class)",
+     "requires": [
+      "顶点数据",
+      "SOIL2加载纹理"
+     ]
+    },
+    {
+     "id": "Assimp导入",
+     "title": "使用Assimp导入3D模型场景树 (Importing 3D Models with Assimp Scene Graph)",
+     "requires": [
+      "Assimp库"
+     ]
+    },
+    {
+     "id": "Model类",
+     "title": "Model类的递归节点处理与渲染 (Recursive Node Processing in Model Class)",
+     "requires": [
+      "Assimp导入",
+      "Mesh类"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 嵌入式系统基础",
+   "topics": [
+    {
+     "id": "Linux内核模块编程",
+     "title": "Linux可加载内核模块（LKM）的编写、编译（insmod/rmmod）与测试",
+     "requires": [
+      "Linux内核裁剪与编译"
+     ]
+    },
+    {
+     "id": "字符设备驱动框架",
+     "title": "Linux字符设备驱动程序的基本框架与数据结构（cdev、file_operations）",
+     "requires": [
+      "Linux内核模块编程"
+     ]
+    },
+    {
+     "id": "设备号注册与节点创建",
+     "title": "主/次设备号的申请注册（register_chrdev）与/dev下设备节点创建",
+     "requires": [
+      "字符设备驱动框架"
+     ]
+    },
+    {
+     "id": "驱动与应用交互接口",
+     "title": "用户空间应用程序通过open/read/write/ioctl与底层驱动交互的接口实现",
+     "requires": [
+      "设备号注册与节点创建"
+     ]
+    },
+    {
+     "id": "LED报警灯驱动设计",
+     "title": "S3C6410 LED报警灯字符设备驱动代码（s3c6410_leddrv.c）设计实例",
+     "requires": [
+      "驱动与应用交互接口",
+      "GPIO口及LED灯编程"
+     ]
+    },
+    {
+     "id": "看门狗驱动设计",
+     "title": "S3C6410 看门狗定时器设备驱动代码（s3c6410_wdtdrv.c）设计实例",
+     "requires": [
+      "驱动与应用交互接口",
+      "看门狗硬件原理与驱动"
+     ]
+    }
+   ],
+   "title2": "第2章 ARM处理器架构",
+   "title3": "第3章 S3C6410与硬件操作",
+   "title4": "第4章 交叉编译与调试",
+   "title5": "第5章 Bootloader与Linux系统构建",
+   "title6": "第6章 嵌入式Linux应用编程与移植",
+   "title7": "第7章 Qt与GUI开发",
+   "title8": "第8章 设备驱动与内核模块"
+  }
+ ]
+}

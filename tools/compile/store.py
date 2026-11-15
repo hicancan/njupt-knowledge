@@ -7,6 +7,8 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
+import threading
 from pathlib import Path
 from typing import Callable
 
@@ -27,5 +29,7 @@ def cached(step: str, version: int, parts: tuple, make: Callable[[], object]):
         return json.loads(path.read_text(encoding="utf-8"))
     value = make()
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
+    tmp = path.with_name(f"{path.name}.{os.getpid()}.{threading.get_ident()}.tmp")
+    tmp.write_text(json.dumps(value, ensure_ascii=False), encoding="utf-8")
+    os.replace(tmp, path)
     return value

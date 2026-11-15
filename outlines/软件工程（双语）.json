@@ -1,0 +1,992 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 软件与软件工程",
+   "topics": [
+    {
+     "id": "软件的本质与定义",
+     "title": "软件的本质与定义（What is Software）",
+     "requires": []
+    },
+    {
+     "id": "软件应用领域与遗留软件",
+     "title": "软件应用领域与遗留软件（Legacy Software）",
+     "requires": [
+      "软件的本质与定义"
+     ]
+    },
+    {
+     "id": "软件危机",
+     "title": "软件危机（Software Crisis）及其原因",
+     "requires": [
+      "软件的本质与定义"
+     ]
+    },
+    {
+     "id": "软件工程的层次化技术",
+     "title": "软件工程是一种层次化的技术（A Layered Technology）",
+     "requires": [
+      "软件危机"
+     ]
+    },
+    {
+     "id": "传统方法学与OO方法学",
+     "title": "传统方法学与面向对象（OO）方法学",
+     "requires": [
+      "软件工程的层次化技术"
+     ]
+    },
+    {
+     "id": "通用过程框架活动",
+     "title": "五个通用框架活动（Five Framework Activities）",
+     "requires": [
+      "软件工程的层次化技术"
+     ]
+    },
+    {
+     "id": "伞形活动",
+     "title": "伞形活动（Umbrella Activities）",
+     "requires": [
+      "通用过程框架活动"
+     ]
+    },
+    {
+     "id": "Hooker通用原则",
+     "title": "Hooker的通用原则（General Principles）",
+     "requires": [
+      "软件工程的层次化技术"
+     ]
+    },
+    {
+     "id": "OO基本概念",
+     "title": "面向对象基本概念（类、对象、实例）",
+     "requires": []
+    }
+   ]
+  },
+  {
+   "title": "第2章 软件过程",
+   "topics": [
+    {
+     "id": "通用过程模型",
+     "title": "通用过程模型（A Generic Process Model）",
+     "requires": [
+      "通用过程框架活动"
+     ]
+    },
+    {
+     "id": "任务集识别",
+     "title": "定义框架活动与识别任务集（Identifying a Task Set）",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "过程模式",
+     "title": "过程模式（Process Patterns）的类型与模板",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "瀑布模型",
+     "title": "瀑布模型（The Waterfall Model）",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "V模型",
+     "title": "V模型（The V-Model）",
+     "requires": [
+      "瀑布模型"
+     ]
+    },
+    {
+     "id": "增量模型",
+     "title": "增量模型（The Incremental Model）",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "原型法",
+     "title": "演化模型之原型法（Prototyping Paradigm）",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "螺旋模型",
+     "title": "螺旋模型（The Spiral Model）",
+     "requires": [
+      "原型法"
+     ]
+    },
+    {
+     "id": "协同模型",
+     "title": "并发/协同模型（Concurrent Models）",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "统一过程UP",
+     "title": "专用过程模型：统一过程（Unified Process, UP）",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "敏捷思想与原则",
+     "title": "敏捷思想（Agility）、敏捷原则及变更成本",
+     "requires": [
+      "通用过程模型"
+     ]
+    },
+    {
+     "id": "极限编程XP",
+     "title": "极限编程（Extreme Programming, XP）的计划、设计、编码与测试",
+     "requires": [
+      "敏捷思想与原则"
+     ]
+    },
+    {
+     "id": "Scrum框架",
+     "title": "Scrum架构、过程流与关键工件",
+     "requires": [
+      "敏捷思想与原则"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第3章 理解需求",
+   "topics": [
+    {
+     "id": "需求工程任务",
+     "title": "需求工程（Requirements Engineering）的任务步骤",
+     "requires": []
+    },
+    {
+     "id": "起始Inception",
+     "title": "起始（Inception）与建立基础工作",
+     "requires": [
+      "需求工程任务"
+     ]
+    },
+    {
+     "id": "获取Elicitation",
+     "title": "需求获取（Elicitation）与需求收集会议",
+     "requires": [
+      "起始Inception"
+     ]
+    },
+    {
+     "id": "细化Elaboration",
+     "title": "需求细化（Elaboration）与分析建模",
+     "requires": [
+      "获取Elicitation"
+     ]
+    },
+    {
+     "id": "协商Negotiation",
+     "title": "需求协商（Negotiation）",
+     "requires": [
+      "细化Elaboration"
+     ]
+    },
+    {
+     "id": "规格说明Specification",
+     "title": "规格说明（Specification）与软件需求规格说明书（SRS）模板",
+     "requires": [
+      "协商Negotiation"
+     ]
+    },
+    {
+     "id": "确认Validation",
+     "title": "需求确认（Validation）涉及的问题",
+     "requires": [
+      "规格说明Specification"
+     ]
+    },
+    {
+     "id": "需求管理",
+     "title": "需求管理（Requirements Management）",
+     "requires": [
+      "确认Validation"
+     ]
+    },
+    {
+     "id": "利益相关者",
+     "title": "确认利益相关者（Stakeholders）与识别多种观点",
+     "requires": [
+      "获取Elicitation"
+     ]
+    },
+    {
+     "id": "质量功能部署QFD",
+     "title": "质量功能部署（Quality Function Deployment, QFD）",
+     "requires": [
+      "细化Elaboration"
+     ]
+    },
+    {
+     "id": "用例开发",
+     "title": "开发用例（Developing Use Cases）与绘制用例图",
+     "requires": [
+      "细化Elaboration"
+     ]
+    },
+    {
+     "id": "域分析与分析模式",
+     "title": "域分析（Domain Analysis）与分析模式（Analysis Patterns）",
+     "requires": [
+      "细化Elaboration"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第4章 需求建模",
+   "topics": [
+    {
+     "id": "需求分析方法学",
+     "title": "需求分析的总体目标、哲学与两种方法学（结构化与OO）",
+     "requires": [
+      "细化Elaboration"
+     ]
+    },
+    {
+     "id": "基于场景的建模",
+     "title": "基于场景的建模（Scenario-Based Modeling）",
+     "requires": [
+      "需求分析方法学"
+     ]
+    },
+    {
+     "id": "初始用例创建与细化",
+     "title": "创建初始用例（Preliminary Use Case）与细化用例",
+     "requires": [
+      "用例开发",
+      "基于场景的建模"
+     ]
+    },
+    {
+     "id": "正规用例编写",
+     "title": "编写正规的用例（Formal Use Case）",
+     "requires": [
+      "初始用例创建与细化"
+     ]
+    },
+    {
+     "id": "活动图补充用例",
+     "title": "用活动图（Activity Diagram）做用例补充",
+     "requires": [
+      "正规用例编写"
+     ]
+    },
+    {
+     "id": "数据建模与ERD",
+     "title": "数据建模：数据对象、属性、关系与构建ERD",
+     "requires": [
+      "需求分析方法学"
+     ]
+    },
+    {
+     "id": "基于类的建模",
+     "title": "基于类的建模（Class-Based Modeling）与识别分析类",
+     "requires": [
+      "需求分析方法学"
+     ]
+    },
+    {
+     "id": "CRC建模",
+     "title": "CRC建模（类-职责-协作）与评审",
+     "requires": [
+      "基于类的建模"
+     ]
+    },
+    {
+     "id": "关联与依赖",
+     "title": "关联（Associations）、依赖（Dependencies）与分析包",
+     "requires": [
+      "基于类的建模"
+     ]
+    },
+    {
+     "id": "行为建模",
+     "title": "行为建模（Behavioral Modeling）：状态图与顺序图",
+     "requires": [
+      "基于场景的建模",
+      "基于类的建模"
+     ]
+    },
+    {
+     "id": "面向流的建模DFD",
+     "title": "面向流的建模：数据流图（DFD）符号、指导原则与创建",
+     "requires": [
+      "需求分析方法学"
+     ]
+    },
+    {
+     "id": "PSPEC与CSPEC",
+     "title": "加工规格说明（PSPEC）与控制规格说明（CSPEC）",
+     "requires": [
+      "面向流的建模DFD"
+     ]
+    },
+    {
+     "id": "UML五视图与九图",
+     "title": "UML体系结构描述（5视图）与UML图（9+4图）",
+     "requires": [
+      "OO基本概念"
+     ]
+    },
+    {
+     "id": "UML类图与类关系",
+     "title": "UML类图与类之间的关系",
+     "requires": [
+      "基于类的建模",
+      "UML五视图与九图"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第5章 设计概念",
+   "topics": [
+    {
+     "id": "设计步骤与特征",
+     "title": "设计步骤与指导良好设计演化的3个特征",
+     "requires": [
+      "需求分析方法学"
+     ]
+    },
+    {
+     "id": "设计与质量",
+     "title": "设计与质量（Design and Quality）的关系",
+     "requires": [
+      "设计步骤与特征"
+     ]
+    },
+    {
+     "id": "抽象",
+     "title": "抽象（Abstraction）：过程抽象与数据抽象",
+     "requires": [
+      "设计步骤与特征"
+     ]
+    },
+    {
+     "id": "体系结构概念",
+     "title": "体系结构（Architecture）及其属性",
+     "requires": [
+      "抽象"
+     ]
+    },
+    {
+     "id": "设计模式",
+     "title": "设计模式（Patterns）的名称与要素",
+     "requires": [
+      "抽象"
+     ]
+    },
+    {
+     "id": "关注点分离",
+     "title": "关注点分离（Separation of Concerns）",
+     "requires": [
+      "设计步骤与特征"
+     ]
+    },
+    {
+     "id": "模块化与信息隐藏",
+     "title": "模块化（Modularity）与信息隐藏（Information Hiding）",
+     "requires": [
+      "关注点分离"
+     ]
+    },
+    {
+     "id": "功能独立性",
+     "title": "功能独立性（Functional Independence）",
+     "requires": [
+      "模块化与信息隐藏"
+     ]
+    },
+    {
+     "id": "精化与方面",
+     "title": "精化（Refinement）与方面（Aspects）",
+     "requires": [
+      "模块化与信息隐藏"
+     ]
+    },
+    {
+     "id": "重构",
+     "title": "重构（Refactoring）",
+     "requires": [
+      "精化与方面"
+     ]
+    },
+    {
+     "id": "OO设计类",
+     "title": "面向对象与设计类（OO and Design Classes）",
+     "requires": [
+      "基于类的建模"
+     ]
+    },
+    {
+     "id": "依赖倒置",
+     "title": "依赖倒置原则（Dependency Inversion Principle, DIP）",
+     "requires": [
+      "OO设计类"
+     ]
+    },
+    {
+     "id": "设计模型元素",
+     "title": "设计模型（The Design Model）：数据、体系结构、接口、构件级、部署级设计元素",
+     "requires": [
+      "设计步骤与特征"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第6章 架构设计",
+   "topics": [
+    {
+     "id": "软件体系结构定义",
+     "title": "什么是体系结构（What is Architecture）及其重要性",
+     "requires": [
+      "体系结构概念"
+     ]
+    },
+    {
+     "id": "体系结构描述",
+     "title": "体系结构描述（Architectural Descriptions）：逻辑视图、进程视图、实现视图、部署视图",
+     "requires": [
+      "软件体系结构定义"
+     ]
+    },
+    {
+     "id": "体系结构风格分类",
+     "title": "体系结构风格/流派（Architectural Genres）分类",
+     "requires": [
+      "体系结构描述"
+     ]
+    },
+    {
+     "id": "常见体系结构风格",
+     "title": "MVC、管道-过滤器、面向对象、事件驱动、分层、数据共享风格实例",
+     "requires": [
+      "体系结构风格分类"
+     ]
+    },
+    {
+     "id": "组织与精化",
+     "title": "体系结构的组织与精化（Organization and Refinement）",
+     "requires": [
+      "常见体系结构风格"
+     ]
+    },
+    {
+     "id": "体系结构设计上下文",
+     "title": "体系结构设计（Architectural Design）与体系结构上下文（Context）",
+     "requires": [
+      "组织与精化"
+     ]
+    },
+    {
+     "id": "定义原型",
+     "title": "定义原型（Defining Archetypes）",
+     "requires": [
+      "体系结构设计上下文"
+     ]
+    },
+    {
+     "id": "精化为构件",
+     "title": "将体系结构精化为构件（Refining into Components）与描述系统实例",
+     "requires": [
+      "定义原型"
+     ]
+    },
+    {
+     "id": "变换流与事务流映射",
+     "title": "使用数据流进行体系结构映射：变换流与事务流",
+     "requires": [
+      "面向流的建模DFD",
+      "精化为构件"
+     ]
+    },
+    {
+     "id": "体系结构分解",
+     "title": "第一级分解、第二级分解与继续精化体系结构",
+     "requires": [
+      "变换流与事务流映射"
+     ]
+    },
+    {
+     "id": "分析体系结构设计",
+     "title": "分析体系结构设计（Analyzing Architectural Design）的方法",
+     "requires": [
+      "体系结构分解"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第7章 构件级设计",
+   "topics": [
+    {
+     "id": "构件定义",
+     "title": "什么是构件（What is a Component）及示例",
+     "requires": [
+      "精化为构件"
+     ]
+    },
+    {
+     "id": "开闭原则OCP",
+     "title": "开闭原则（Open-Closed Principle, OCP）与多态条件",
+     "requires": [
+      "OO设计类"
+     ]
+    },
+    {
+     "id": "Liskov替换原则LSP",
+     "title": "Liskov替换原则（Liskov Substitution Principle, LSP）",
+     "requires": [
+      "开闭原则OCP"
+     ]
+    },
+    {
+     "id": "依赖倒置原则DIP",
+     "title": "依赖倒置原则（Dependency Inversion Principle, DIP）在构件级设计中的应用",
+     "requires": [
+      "依赖倒置"
+     ]
+    },
+    {
+     "id": "接口隔离原则ISP",
+     "title": "接口隔离原则（Interface Segregation Principle, ISP）",
+     "requires": [
+      "开闭原则OCP"
+     ]
+    },
+    {
+     "id": "共同封闭与共同重用原则",
+     "title": "共同封闭原则（CCP）与共同重用原则（CRP）",
+     "requires": [
+      "开闭原则OCP"
+     ]
+    },
+    {
+     "id": "构件级设计指南",
+     "title": "实施构件级设计的指南（Design Guidelines）",
+     "requires": [
+      "精化为构件"
+     ]
+    },
+    {
+     "id": "内聚",
+     "title": "内聚（Cohesion）的类型：功能、分层、通信、顺序、过程、时间、实用内聚",
+     "requires": [
+      "功能独立性"
+     ]
+    },
+    {
+     "id": "耦合",
+     "title": "耦合（Coupling）的类型：内容、共用、控制、标记、数据、例程调用、类型使用、包含导入、外部耦合",
+     "requires": [
+      "功能独立性"
+     ]
+    },
+    {
+     "id": "实施构件级设计",
+     "title": "实施构件级设计（Conducting Component-Level Design）的过程",
+     "requires": [
+      "内聚",
+      "耦合",
+      "构件级设计指南"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第8章 软件测试策略",
+   "topics": [
+    {
+     "id": "测试战略方法",
+     "title": "软件测试的战略方法（Strategic Approach）与谁来测试",
+     "requires": [
+      "设计步骤与特征"
+     ]
+    },
+    {
+     "id": "V与V",
+     "title": "验证与确认（V & V: Verification and Validation）",
+     "requires": [
+      "测试战略方法"
+     ]
+    },
+    {
+     "id": "传统与OO测试策略",
+     "title": "传统方法与面向对象方法的测试策略对比",
+     "requires": [
+      "测试战略方法"
+     ]
+    },
+    {
+     "id": "单元测试",
+     "title": "单元测试（Unit Testing）的时机与内容（模块接口、局部数据结构、独立路径、出错处理、边界条件）",
+     "requires": [
+      "传统与OO测试策略"
+     ]
+    },
+    {
+     "id": "集成测试",
+     "title": "集成测试（Integration Testing）：自顶向下、自底向上、三明治混合增量式",
+     "requires": [
+      "单元测试"
+     ]
+    },
+    {
+     "id": "回归测试与冒烟测试",
+     "title": "回归测试（Regression Testing）与冒烟测试（Smoke Testing）",
+     "requires": [
+      "集成测试"
+     ]
+    },
+    {
+     "id": "面向对象测试",
+     "title": "面向对象测试（OO Testing）：拓宽测试视野、测试CRC模型、OO测试策略",
+     "requires": [
+      "传统与OO测试策略"
+     ]
+    },
+    {
+     "id": "高级测试",
+     "title": "高级测试（High Order Testing）：确认测试/软件合格性测试、系统测试",
+     "requires": [
+      "集成测试"
+     ]
+    },
+    {
+     "id": "调试过程",
+     "title": "调试（Debugging）作为诊断过程：调试技术、错误类型与纠正错误",
+     "requires": [
+      "单元测试"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第9章 应用程序测试",
+   "topics": [
+    {
+     "id": "测试目标与可测试性",
+     "title": "测试的目标（Goal of Testing）与软件可测试性（Testability）",
+     "requires": [
+      "测试战略方法"
+     ]
+    },
+    {
+     "id": "测试特征与内外视图",
+     "title": "测试特征（Test Characteristics）与内部/外部视图（Internal and External Views）",
+     "requires": [
+      "测试目标与可测试性"
+     ]
+    },
+    {
+     "id": "白盒测试",
+     "title": "白盒测试（White-Box Testing）与基本路径测试（Basis Path Testing）",
+     "requires": [
+      "测试特征与内外视图"
+     ]
+    },
+    {
+     "id": "控制结构测试",
+     "title": "控制结构测试（Control Structure Testing）：条件测试与循环测试",
+     "requires": [
+      "白盒测试"
+     ]
+    },
+    {
+     "id": "黑盒测试",
+     "title": "黑盒测试（Black-Box Testing / Behavioral Testing）：等价类划分与边界值分析",
+     "requires": [
+      "测试特征与内外视图"
+     ]
+    },
+    {
+     "id": "基于模型的测试",
+     "title": "基于模型的测试（Model-Based Testing）",
+     "requires": [
+      "黑盒测试"
+     ]
+    },
+    {
+     "id": "软件测试模式",
+     "title": "软件测试模式（Software Testing Patterns）",
+     "requires": [
+      "白盒测试",
+      "黑盒测试"
+     ]
+    },
+    {
+     "id": "OOT随机与划分测试",
+     "title": "面向对象测试方法（OOT Methods）：随机测试（Random Testing）与划分测试（Partition Testing）",
+     "requires": [
+      "面向对象测试"
+     ]
+    },
+    {
+     "id": "OOT类间测试",
+     "title": "面向对象测试方法：类间测试（Inter-Class Testing）",
+     "requires": [
+      "OOT随机与划分测试"
+     ]
+    },
+    {
+     "id": "OOT行为测试",
+     "title": "面向对象测试方法：行为测试（Behavior Testing）",
+     "requires": [
+      "OOT随机与划分测试"
+     ]
+    },
+    {
+     "id": "JUnit核心类与接口",
+     "title": "JUnit框架核心类及接口（TestCase、Assert、TestSuite、TestResult）",
+     "requires": [
+      "单元测试"
+     ]
+    },
+    {
+     "id": "JUnit注解与Fixture",
+     "title": "JUnit4注解（@Test、@Ignore等）、setUp/tearDown与Fixture机制",
+     "requires": [
+      "JUnit核心类与接口"
+     ]
+    },
+    {
+     "id": "JUnit高级特性",
+     "title": "JUnit高级特性：限时测试、异常测试、参数化测试、打包测试",
+     "requires": [
+      "JUnit注解与Fixture"
+     ]
+    },
+    {
+     "id": "TDD测试驱动开发",
+     "title": "测试驱动开发（TDD）的本质、优势与流程",
+     "requires": [
+      "JUnit核心类与接口"
+     ]
+    },
+    {
+     "id": "Mock技术与代码覆盖率",
+     "title": "使用Mock技术隔离外部依赖与代码覆盖率分析",
+     "requires": [
+      "JUnit核心类与接口"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第10章 软件配置管理",
+   "topics": [
+    {
+     "id": "SCM基本概念",
+     "title": "软件配置管理（SCM）的概念、第一定律与主要活动",
+     "requires": []
+    },
+    {
+     "id": "基线与配置项",
+     "title": "基线（Baselines）与软件配置项（Software Configuration Items, SCIs）",
+     "requires": [
+      "SCM基本概念"
+     ]
+    },
+    {
+     "id": "SCM仓库",
+     "title": "SCM仓库（Repository）的内容与特性",
+     "requires": [
+      "基线与配置项"
+     ]
+    },
+    {
+     "id": "SCM过程标识",
+     "title": "SCM过程1：配置项标识（Identification）",
+     "requires": [
+      "基线与配置项"
+     ]
+    },
+    {
+     "id": "版本控制",
+     "title": "SCM过程2：版本控制（Version Control）",
+     "requires": [
+      "SCM过程标识"
+     ]
+    },
+    {
+     "id": "变更控制",
+     "title": "SCM过程3：变更控制（Change Control）",
+     "requires": [
+      "版本控制"
+     ]
+    },
+    {
+     "id": "配置审核",
+     "title": "SCM过程4：配置审核（Configuration Audit）",
+     "requires": [
+      "变更控制"
+     ]
+    },
+    {
+     "id": "状态报告",
+     "title": "SCM过程5：状态报告（Status Reporting）",
+     "requires": [
+      "配置审核"
+     ]
+    },
+    {
+     "id": "SVN工作原理与模式",
+     "title": "SVN（Subversion）简单工作原理、复制-修改-合并与锁定-修改-解锁方案",
+     "requires": [
+      "版本控制"
+     ]
+    },
+    {
+     "id": "SVN服务器与客户端配置",
+     "title": "VisualSVN Server服务端安装配置与TortoiseSVN/Subclipse客户端配置",
+     "requires": [
+      "SVN工作原理与模式"
+     ]
+    },
+    {
+     "id": "SVN检出更新提交",
+     "title": "SVN常用操作：检出（Checkout）、更新（Update）、提交（Commit）",
+     "requires": [
+      "SVN服务器与客户端配置"
+     ]
+    },
+    {
+     "id": "SVN分支标签合并",
+     "title": "SVN高级操作：建立分支（Branch）、标签（Tag）与合并（Merge）",
+     "requires": [
+      "SVN检出更新提交"
+     ]
+    },
+    {
+     "id": "SVN冲突解决",
+     "title": "SVN冲突（Conflict）的产生原因、提示与解决方案",
+     "requires": [
+      "SVN分支标签合并"
+     ]
+    },
+    {
+     "id": "SVN其他功能",
+     "title": "SVN其他功能：显示日志、还原（Revert）、锁定/解锁、忽略列表、导出、清理",
+     "requires": [
+      "SVN检出更新提交"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第11章 项目管理概念",
+   "topics": [
+    {
+     "id": "四个P",
+     "title": "项目管理的四个P（People, Product, Process, Project）",
+     "requires": []
+    },
+    {
+     "id": "人员与干系人",
+     "title": "人员（People）：利益相关者（Stakeholders）",
+     "requires": [
+      "四个P"
+     ]
+    },
+    {
+     "id": "软件团队与领导",
+     "title": "软件团队（Software Teams）与团队领导（Team Leader）",
+     "requires": [
+      "人员与干系人"
+     ]
+    },
+    {
+     "id": "敏捷团队",
+     "title": "敏捷团队（Agile Teams）的特点",
+     "requires": [
+      "软件团队与领导"
+     ]
+    },
+    {
+     "id": "产品范围与分解",
+     "title": "产品（Product）：产品范围（Scope）与问题分解（Problem Decomposition）",
+     "requires": [
+      "四个P"
+     ]
+    },
+    {
+     "id": "过程分解",
+     "title": "过程（Process）：过程分解与沟通活动的任务",
+     "requires": [
+      "四个P"
+     ]
+    },
+    {
+     "id": "项目与90-90法则",
+     "title": "项目（Project）：90-90法则与良好的开端",
+     "requires": [
+      "四个P"
+     ]
+    },
+    {
+     "id": "W5HH原则",
+     "title": "W5HH原则（Why, What, When, Who, Where, How, How much）",
+     "requires": [
+      "项目与90-90法则"
+     ]
+    },
+    {
+     "id": "关键实践",
+     "title": "关键实践（Critical Practices）",
+     "requires": [
+      "W5HH原则"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "实验与文档规范",
+   "topics": [
+    {
+     "id": "SRS模板规范",
+     "title": "软件需求规格说明书（SRS）模板结构与撰写规范（引言、总体描述、外部接口、系统特性、非功能需求）",
+     "requires": [
+      "规格说明Specification"
+     ]
+    },
+    {
+     "id": "SDD模板规范",
+     "title": "软件设计说明书（SDD）模板结构（体系结构设计、组件设计、未解决问题列表）",
+     "requires": [
+      "设计模型元素"
+     ]
+    },
+    {
+     "id": "软件单元测试报告",
+     "title": "软件单元测试报告的撰写规范与环境配置（JDK、Eclipse、JUnit）",
+     "requires": [
+      "JUnit核心类与接口"
+     ]
+    },
+    {
+     "id": "软件配置管理报告",
+     "title": "软件配置管理报告的撰写规范",
+     "requires": [
+      "SCM基本概念"
+     ]
+    }
+   ]
+  }
+ ]
+}

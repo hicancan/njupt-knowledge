@@ -1,0 +1,614 @@
+{
+ "chapters": [
+  {
+   "title": "第1章 Web基础",
+   "topics": [
+    {
+     "id": "internet-history",
+     "title": "Internet历史与起源（ARPANET、TCP/IP发展）",
+     "requires": []
+    },
+    {
+     "id": "ip-address-dns",
+     "title": "IP地址与域名系统（DNS）",
+     "requires": [
+      "internet-history"
+     ]
+    },
+    {
+     "id": "internet-protocols",
+     "title": "Internet协议栈与应用层协议端口号",
+     "requires": [
+      "ip-address-dns"
+     ]
+    },
+    {
+     "id": "www-concept",
+     "title": "万维网（WWW）的概念及其与Internet的区别",
+     "requires": [
+      "internet-history"
+     ]
+    },
+    {
+     "id": "web-browsers",
+     "title": "Web浏览器的工作原理",
+     "requires": [
+      "www-concept"
+     ]
+    },
+    {
+     "id": "web-servers",
+     "title": "Web服务器操作与常见服务器（Apache、IIS）",
+     "requires": [
+      "www-concept"
+     ]
+    },
+    {
+     "id": "url-structure",
+     "title": "统一资源定位符（URL）的结构解析与本地文件URL构建规则",
+     "requires": [
+      "www-concept"
+     ]
+    },
+    {
+     "id": "http-request",
+     "title": "HTTP请求阶段（GET方法、常见请求字段）",
+     "requires": [
+      "url-structure",
+      "internet-protocols"
+     ]
+    },
+    {
+     "id": "http-response-cache",
+     "title": "HTTP响应（状态码如200 OK、常见响应字段、缓存机制）",
+     "requires": [
+      "http-request"
+     ]
+    },
+    {
+     "id": "web-toolbox",
+     "title": "Web程序员工具箱概览（XHTML、XML、JavaScript、PHP）",
+     "requires": [
+      "www-concept"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第2章 XHTML基础",
+   "topics": [
+    {
+     "id": "html-evolution",
+     "title": "HTML的起源与演进（HTML到XHTML/HTML5）",
+     "requires": [
+      "web-toolbox"
+     ]
+    },
+    {
+     "id": "xhtml-syntax",
+     "title": "XHTML基本语法规则与大小写敏感性",
+     "requires": [
+      "html-evolution"
+     ]
+    },
+    {
+     "id": "html-doc-structure",
+     "title": "HTML文档结构（head、body、meta元素）",
+     "requires": [
+      "xhtml-syntax"
+     ]
+    },
+    {
+     "id": "text-markup",
+     "title": "基本文本标记（段落、换行、标题、块引用、水平线、字符实体、上下标）",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "images-links",
+     "title": "图像（img）与超文本链接（a标签、文档内部目标）",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "lists",
+     "title": "列表（无序列表、有序列表、定义列表）",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "tables",
+     "title": "表格（基本标签、rowspan与colspan、表格分块、align与valign）",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "forms-controls",
+     "title": "表单与控件（form标签、input元素、菜单select、label的for属性、placeholder属性）",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "form-submit-method",
+     "title": "表单提交方法（GET与POST的选择与应用场景）",
+     "requires": [
+      "forms-controls"
+     ]
+    },
+    {
+     "id": "html5-elements",
+     "title": "HTML5新增元素（如canvas等）",
+     "requires": [
+      "html-evolution"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第3章 层叠样式表（CSS）",
+   "topics": [
+    {
+     "id": "css-intro",
+     "title": "CSS简介与作用",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "style-levels",
+     "title": "样式表的三个级别（内联级Inline、文档级Document、外部External）",
+     "requires": [
+      "css-intro"
+     ]
+    },
+    {
+     "id": "css-selectors",
+     "title": "选择器形式（简单选择器、类选择器Class、通用选择器Generic、id选择器、上下文选择器Contextual、伪类Pseudo class、通配符Universal）",
+     "requires": [
+      "css-intro"
+     ]
+    },
+    {
+     "id": "css-properties-font",
+     "title": "CSS属性：字体属性（Font Properties）",
+     "requires": [
+      "css-selectors"
+     ]
+    },
+    {
+     "id": "css-properties-list",
+     "title": "CSS属性：列表属性（List properties）",
+     "requires": [
+      "css-selectors"
+     ]
+    },
+    {
+     "id": "css-properties-text",
+     "title": "CSS属性：文本对齐（Alignment of text）",
+     "requires": [
+      "css-selectors"
+     ]
+    },
+    {
+     "id": "css-properties-color",
+     "title": "CSS属性：颜色（Colors）",
+     "requires": [
+      "css-selectors"
+     ]
+    },
+    {
+     "id": "css-properties-margin-bg",
+     "title": "CSS属性：边距（Margins）与背景图像（Background images）",
+     "requires": [
+      "css-selectors"
+     ]
+    },
+    {
+     "id": "css-div-span",
+     "title": "div和span标签在CSS中的应用",
+     "requires": [
+      "css-selectors"
+     ]
+    },
+    {
+     "id": "css-positioning",
+     "title": "元素定位（绝对定位、相对定位、静态定位）与堆叠元素",
+     "requires": [
+      "css-properties-margin-bg"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第4章 JavaScript基础",
+   "topics": [
+    {
+     "id": "js-overview",
+     "title": "JavaScript概述、起源与用途（事件驱动计算Event-driven Computation）",
+     "requires": [
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "js-in-xhtml",
+     "title": "在XHTML文档中嵌入JavaScript的方法",
+     "requires": [
+      "js-overview"
+     ]
+    },
+    {
+     "id": "js-objects",
+     "title": "基于对象的概念与JavaScript内置对象",
+     "requires": [
+      "js-overview"
+     ]
+    },
+    {
+     "id": "js-primitives",
+     "title": "基本数据类型（Primitive Types）、字面量（Numeric and String Literals）及布尔类型",
+     "requires": [
+      "js-objects"
+     ]
+    },
+    {
+     "id": "js-vars-operators",
+     "title": "变量声明、数值运算符、字符串连接与赋值语句",
+     "requires": [
+      "js-primitives"
+     ]
+    },
+    {
+     "id": "js-type-conversion",
+     "title": "隐式类型转换（Implicit）与显式类型转换（Explicit）、typeof运算符",
+     "requires": [
+      "js-primitives"
+     ]
+    },
+    {
+     "id": "js-built-in-objects",
+     "title": "内置对象的使用（Math对象、Number对象、String属性与方法、Date对象）",
+     "requires": [
+      "js-vars-operators"
+     ]
+    },
+    {
+     "id": "js-io",
+     "title": "屏幕输出与键盘输入（alert、confirm、prompt方法）",
+     "requires": [
+      "js-built-in-objects"
+     ]
+    },
+    {
+     "id": "js-control-flow",
+     "title": "控制表达式与语句（if/else选择、switch语法与语义、while/for/do-while循环）",
+     "requires": [
+      "js-vars-operators"
+     ]
+    },
+    {
+     "id": "js-arrays-functions",
+     "title": "数组（创建、特性、方法、二维数组）、函数基础（局部变量、参数、构造函数Constructor）与动态属性（for-in循环）",
+     "requires": [
+      "js-control-flow"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第5章 JavaScript与HTML文档",
+   "topics": [
+    {
+     "id": "dom-model",
+     "title": "文档对象模型（DOM）概念与结构",
+     "requires": [
+      "js-objects",
+      "html-doc-structure"
+     ]
+    },
+    {
+     "id": "element-access",
+     "title": "JavaScript中的元素访问方式（forms数组、name属性、id属性、隐式数组implicit arrays）",
+     "requires": [
+      "dom-model"
+     ]
+    },
+    {
+     "id": "event-handling",
+     "title": "事件与事件处理（Events、Attributes、Tags、注册处理程序Registering a Handler及方法比较）",
+     "requires": [
+      "element-access"
+     ]
+    },
+    {
+     "id": "body-button-events",
+     "title": "处理Body元素与Button元素的事件",
+     "requires": [
+      "event-handling"
+     ]
+    },
+    {
+     "id": "checkbox-radio-events",
+     "title": "复选框（Checkboxes）与单选按钮（Radio Buttons）的事件处理",
+     "requires": [
+      "event-handling"
+     ]
+    },
+    {
+     "id": "form-validation",
+     "title": "表单输入验证（Validating Form Input，如密码输入Password Input）",
+     "requires": [
+      "element-access",
+      "js-control-flow"
+     ]
+    },
+    {
+     "id": "navigator-object",
+     "title": "navigator对象的使用",
+     "requires": [
+      "js-built-in-objects"
+     ]
+    },
+    {
+     "id": "dynamic-dom",
+     "title": "动态修改DOM（移动元素、可见性、修改颜色和字体、动态内容、定位鼠标光标、响应鼠标单击）",
+     "requires": [
+      "dom-model",
+      "css-positioning"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第9章 PHP语言基础",
+   "topics": [
+    {
+     "id": "php-overview",
+     "title": "PHP的起源、用途与概述（服务端脚本）",
+     "requires": [
+      "web-servers"
+     ]
+    },
+    {
+     "id": "php-syntax",
+     "title": "PHP的一般语法特征",
+     "requires": [
+      "php-overview"
+     ]
+    },
+    {
+     "id": "php-primitives",
+     "title": "PHP基本数据类型（变量、整数Integer、双精度Double、字符串String、布尔Boolean）",
+     "requires": [
+      "php-syntax"
+     ]
+    },
+    {
+     "id": "php-operations",
+     "title": "PHP运算符与表达式（算术运算、字符串操作、标量类型转换、赋值运算符）",
+     "requires": [
+      "php-primitives"
+     ]
+    },
+    {
+     "id": "php-output",
+     "title": "PHP的输出语句",
+     "requires": [
+      "php-syntax"
+     ]
+    },
+    {
+     "id": "php-control",
+     "title": "PHP控制语句（关系运算符、布尔运算符、选择语句Selection、循环语句Loop）",
+     "requires": [
+      "php-operations"
+     ]
+    },
+    {
+     "id": "php-arrays",
+     "title": "PHP数组（创建、访问元素、作为函数参数、作为栈Stacks、遍历Iterating、排序Sorting）",
+     "requires": [
+      "php-control"
+     ]
+    },
+    {
+     "id": "php-functions",
+     "title": "PHP函数（参数Parameters、变量作用域Scope、变量生命周期Lifetime）",
+     "requires": [
+      "php-control"
+     ]
+    },
+    {
+     "id": "php-form-handling",
+     "title": "PHP表单处理（Form Handling，接收客户端表单数据）",
+     "requires": [
+      "php-arrays",
+      "forms-controls"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第7章（Part 7）数据库访问",
+   "topics": [
+    {
+     "id": "relational-db",
+     "title": "关系型数据库基础与逻辑数据模型（Logical Data Model）",
+     "requires": []
+    },
+    {
+     "id": "sql-create",
+     "title": "SQL语言：CREATE TABLE命令与约束（Constraints）",
+     "requires": [
+      "relational-db"
+     ]
+    },
+    {
+     "id": "sql-insert-select",
+     "title": "SQL语言：INSERT命令与SELECT命令（含查询示例）",
+     "requires": [
+      "sql-create"
+     ]
+    },
+    {
+     "id": "sql-join",
+     "title": "SQL语言：连接查询（Joins）",
+     "requires": [
+      "sql-insert-select"
+     ]
+    },
+    {
+     "id": "sql-update-delete-drop",
+     "title": "SQL语言：UPDATE、DELETE与DROP命令",
+     "requires": [
+      "sql-insert-select"
+     ]
+    },
+    {
+     "id": "db-architecture",
+     "title": "客户机/服务器数据库体系结构（C/S Architecture，含Access架构对比）",
+     "requires": [
+      "relational-db"
+     ]
+    },
+    {
+     "id": "mysql-system",
+     "title": "MySQL数据库系统简介",
+     "requires": [
+      "db-architecture"
+     ]
+    },
+    {
+     "id": "php-mysql-connect",
+     "title": "使用PHP连接MySQL数据库（Connecting to MySQL）",
+     "requires": [
+      "mysql-system",
+      "php-overview"
+     ]
+    },
+    {
+     "id": "php-mysql-query",
+     "title": "使用PHP请求MySQL操作与综合示例（Requesting MySQL Operations）",
+     "requires": [
+      "php-mysql-connect",
+      "sql-insert-select"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "第8章 XML基础与应用",
+   "topics": [
+    {
+     "id": "xml-intro",
+     "title": "XML简介与目的",
+     "requires": [
+      "web-toolbox"
+     ]
+    },
+    {
+     "id": "xml-syntax-structure",
+     "title": "XML的语法规则与文档结构",
+     "requires": [
+      "xml-intro"
+     ]
+    },
+    {
+     "id": "dtd-elements-attrs",
+     "title": "文档类型定义DTD（声明元素Declaring Elements、声明属性Declaring Attributes）",
+     "requires": [
+      "xml-syntax-structure"
+     ]
+    },
+    {
+     "id": "dtd-entities-types",
+     "title": "DTD实体声明（Declaring Entities）、示例及内部与外部DTD（Internal and External DTDs）",
+     "requires": [
+      "dtd-elements-attrs"
+     ]
+    },
+    {
+     "id": "xml-display",
+     "title": "显示原始XML文档与使用CSS显示XML文档",
+     "requires": [
+      "xml-syntax-structure",
+      "css-intro"
+     ]
+    },
+    {
+     "id": "xslt",
+     "title": "XSLT样式表概述与XSLT处理过程（自学部分）",
+     "requires": [
+      "xml-display"
+     ]
+    },
+    {
+     "id": "xml-processors",
+     "title": "XML处理器（Processors）的目的与解析（Parsing）概念",
+     "requires": [
+      "xml-syntax-structure"
+     ]
+    },
+    {
+     "id": "sax-dom",
+     "title": "SAX解析方法与DOM解析方法（含示例对比）",
+     "requires": [
+      "xml-processors"
+     ]
+    }
+   ]
+  },
+  {
+   "title": "实验与环境配置",
+   "topics": [
+    {
+     "id": "lamp-setup",
+     "title": "Linux下LAMP环境的安装与配置及常用命令",
+     "requires": [
+      "web-servers",
+      "php-overview",
+      "mysql-system"
+     ]
+    },
+    {
+     "id": "wamp-setup",
+     "title": "Windows下WAMP环境的安装、配置、常见问题与使用方法",
+     "requires": [
+      "web-servers",
+      "php-overview",
+      "mysql-system"
+     ]
+    },
+    {
+     "id": "lab-html-client",
+     "title": "实验1：客户端HTML脚本编写（综合XHTML/CSS/JS）",
+     "requires": [
+      "xhtml-syntax",
+      "css-selectors",
+      "js-control-flow"
+     ]
+    },
+    {
+     "id": "lab-php-server",
+     "title": "实验2：Web服务端脚本编写（PHP综合应用）",
+     "requires": [
+      "php-functions",
+      "php-form-handling"
+     ]
+    },
+    {
+     "id": "lab-db-access",
+     "title": "实验3：Web数据库访问（PHP+MySQL综合实践）",
+     "requires": [
+      "php-mysql-query",
+      "lab-php-server"
+     ]
+    }
+   ]
+  }
+ ]
+}

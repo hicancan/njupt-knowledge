@@ -8,7 +8,9 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from .pool import Pool, json_of
+import hashlib
+
+from .pool import Pool, image_part, json_of
 from .store import cached
 
 
@@ -64,14 +66,10 @@ def normalize(pool: Pool, title: str, kind: str, part: str, pages: str, body: st
 
 ---
 {body}"""
-        answer, _ = pool.chat("strong", [{"role": "user", "content": prompt}], max_tokens=16000)
+        answer, _ = pool.chat("fast", [{"role": "user", "content": prompt}], max_tokens=12000)
         text = re.sub(r"^```(?:markdown)?\s*|\s*```$", "", answer.strip())
         if len(re.sub(r"\s", "", text)) < 0.45 * len(re.sub(r"\s|!\[[^\]]*\]\([^)]*\)", "", body)):
             raise ValueError("normalize dropped too much")
-        lost = set(re.findall(r"figure:[^)\s]+", body)) - set(re.findall(r"figure:[^)\s]+", text))
-        kept_ratio = 1 - len(lost) / max(1, len(set(re.findall(r"figure:[^)\s]+", body))))
-        if kept_ratio < 0.5:
-            raise ValueError("normalize dropped most figures")
         return text
     return cached("normalize", 1, (title, kind, part, body), retried(make))
 
@@ -89,7 +87,7 @@ def outline(pool: Pool, subject: str, domain: str, evidence: str) -> dict:
 - 用这门课自己的术语。
 
 只输出 JSON：{{"chapters": [{{"title": "第1章 概论", "topics": [{{"id": "…", "title": "…", "requires": []}}]}}]}}"""
-        answer, model = pool.chat("strong", [{"role": "user", "content": prompt}], think=True, max_tokens=12000)
+        answer, model = pool.chat("strong", [{"role": "user", "content": prompt}], think=False, max_tokens=10000)
         value = json_of(answer)
         ids = [topic["id"] for chapter in value["chapters"] for topic in chapter["topics"]]
         if len(ids) != len(set(ids)) or any("/" in i or " " in i for i in ids):
@@ -120,27 +118,16 @@ def link(pool: Pool, subject: str, topics: list[dict], question: str) -> list[st
 
 
 def solve(pool: Pool, subject: str, question: str) -> dict:
-    """A worked answer for a question the source left unanswered, then checked by a model of another family."""
+    """A worked answer for a question the source left unanswered."""
     def make():
         prompt = f"""《{subject}》的一道题。写出参考解答：先给结论，再给简明的推理或计算过程；涉及计算的写出关键步骤；选择题说明为什么选它、其他为什么不对（一句话即可）。用 Markdown，公式用 LaTeX。不要重复题目，不要写“参考解答：”标签。
 
 {question[:4000]}"""
-        answer, author = pool.chat("strong", [{"role": "user", "content": prompt}], think=True, max_tokens=4000)
-        check = f"""下面是《{subject}》一道题和一份解答。逐步核对解答是否正确。
-
-题目：
-{question[:4000]}
-
-解答：
-{answer[:5000]}
-
-只输出 JSON：{{"correct": true/false, "problem": "不正确时，具体错在哪里、正确结论是什么；正确时为空"}}"""
-        verdict_text, checker = pool.chat("strong", [{"role": "user", "content": check}], think=True, max_tokens=2000,
-                                          avoid=author.split(":")[0])
-        verdict = json_of(verdict_text)
-        return {"answer": answer.strip(), "author": author, "checker": checker,
-                "correct": bool(verdict.get("correct")), "problem": verdict.get("problem") or ""}
-    return cached("solve", 1, (subject, question[:4000]), retried(make))
+        answer, author = pool.chat("strong", [{"role": "user", "content": prompt}], think=False, max_tokens=4000)
+        if len(answer.strip()) < 2:
+            raise ValueError("solve gave nothing")
+        return {"answer": answer.strip(), "author": author}
+    return cached("solve", 2, (subject, question[:4000]), retried(make))
 
 
 def explain(pool: Pool, subject: str, topic: dict, chapter: str, evidence: str, questions: str) -> dict:
@@ -161,30 +148,29 @@ def explain(pool: Pool, subject: str, topic: dict, chapter: str, evidence: str, 
 要求：
 - 写学生需要的：它是什么、为什么需要、怎么做、和相近概念的区别、常见的坑，配一个算对了的例子（可以取自上面的题）。
 - 讲解可以用一两个问题引导读者自己想到关键点，但不要出现“苏格拉底”“第一性原理”之类的词。
-- 用课件里的术语和记号，300～800 字，公式用 LaTeX，必要时用表格。
+- 充分发挥图表与结构化排版：
+  - 遇到协议交互、分层封装、状态转移、算法流程、体系结构、时间线或占比分布时，用 ` ```mermaid ` 代码块画一张清晰直观的图（支持 `flowchart TD/LR`、`sequenceDiagram`、`stateDiagram-v2`、`mindmap`、`timeline`、`gantt`、`pie`）。**注意：Mermaid 节点与 `Note` 框内文字必须短小精炼（尽量 ≤ 10 字，如 `已建立 ESTABLISHED`、`关闭连接`），以免中英文混排估算宽度贴边；节点文字含括号或符号时用英文双引号包住（如 `A["TCP（三次握手）"]`）**。
+  - 用 GitHub 提示块丰富语义色彩与重点层次（`[!IMPORTANT]` 必须单独占引用首行，正文写在下一行 `> `，例如：\n`> [!IMPORTANT]`\n`> 核心结论……`\n可用类型：`[!IMPORTANT]` 核心考点/定义、`[!TIP]` 记忆口诀/解题技巧、`[!WARNING]` 易错坑/边界条件、`[!NOTE]` 延伸辨析、`[!CAUTION]` 高危误区），正文最关键的 1～3 个结论或易混点可用行内高亮 `==核心结论==` 标出（切勿满屏滥用）。
+- 用课件里的术语和记号，400～900 字，公式用 LaTeX（$…$ / $$…$$），对比用 Markdown 表格。
 - 需要分段时用 ## 小标题，小标题不编号（不要写“1.”“3.1”）。
 - 只输出正文 Markdown，不要 front matter，不要 # 标题。"""
-        body, author = pool.chat("strong", [{"role": "user", "content": prompt}], think=True, max_tokens=5000)
-        review = f"""审读《{subject}》知识点“{topic['title']}”的讲解，找出事实或计算错误、与课件术语不一致、含糊不清之处。
+        body, author = pool.chat("strong", [{"role": "user", "content": prompt}], think=False, max_tokens=5000)
+        body = re.sub(r"^```(?:markdown)?\s*|\s*```$", "", body.strip())
+        if len(body) < 80:
+            raise ValueError("explain gave too little")
+        return {"body": body, "author": author}
+    return cached("explain", 5, (subject, topic["id"], topic["title"], evidence[:9000], questions[:4000]), retried(make))
 
-{body[:7000]}
 
-只输出 JSON：{{"ok": true/false, "fixes": "需要改的地方，逐条；没有则为空"}}"""
-        verdict_text, checker = pool.chat("strong", [{"role": "user", "content": review}], think=True, max_tokens=2000,
-                                          avoid=author.split(":")[0])
-        verdict = json_of(verdict_text)
-        if not verdict.get("ok") and verdict.get("fixes"):
-            fix = f"""按审读意见修改这篇讲解。输出修改后的完整全文（没有问题的部分原样保留），只输出正文 Markdown；小标题不编号。
-
-审读意见：
-{verdict['fixes']}
-
-原文：
-{body}"""
-            revised, _ = pool.chat("strong", [{"role": "user", "content": fix}], max_tokens=6000)
-            if len(revised) < 0.7 * len(body):
-                raise ValueError("the revision returned only part of the note")
-            body = revised
-        return {"body": re.sub(r"^```(?:markdown)?\s*|\s*```$", "", body.strip()), "author": author, "checker": checker,
-                "reviewed": verdict}
-    return cached("explain", 2, (subject, topic["id"], topic["title"], evidence[:9000], questions[:4000]), retried(make))
+def figure_matters(pool: Pool, path: Path, caption: str) -> bool:
+    """Whether a picture carries content (a diagram, chart, table, formula, screenshot, photo of an apparatus) rather
+    than decoration (a school emblem, a slide template's icon or clip art, a logo, a background)."""
+    def make():
+        prompt = f"""这是从课件或试卷里裁下来的一张图（说明：{caption or '无'}）。它是承载知识内容的图（示意图、结构图、流程图、波形、电路、表格、公式、截图、实验装置），还是装饰（校徽、学校标志、模板图标、剪贴画、背景、与内容无关的图片）？只回答一个词：内容 或 装饰。"""
+        answer, _ = pool.chat("vision", [{"role": "user", "content": [{"type": "text", "text": prompt}, image_part(path)]}], max_tokens=20)
+        if "装饰" in answer:
+            return False
+        if "内容" in answer:
+            return True
+        raise ValueError(f"figure check answered {answer[:20]!r}")
+    return cached("figure", 1, (hashlib.sha256(path.read_bytes()).hexdigest(),), retried(make))

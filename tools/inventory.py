@@ -28,7 +28,7 @@ ARCHIVES = {".zip", ".rar", ".7z"}
 SKIP = {".pyc", ".ds_store", ".gitattributes", ".gitignore"}
 
 KINDS = [  # first match wins; tested against the path below the source root
-    ("软件", r"软件|\.exe$|\.msi$|安装包|编译器"),
+    ("软件", r"\.exe$|\.msi$|\.dmg$|\.deb$|\.apk$|安装包|编译器|注册机|破解补丁"),
     ("竞赛论文", r"美赛|数学建模竞赛|O奖|特等奖|论文集"),
     ("教材", r"大话|第\s*\d+\s*版|教材(?!.*(习题|答案))|教程(?!.*(习题|答案))|电子书|原著"),
     ("答案", r"答案|解答|题解|参考解|活页答案"),

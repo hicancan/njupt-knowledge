@@ -28,20 +28,55 @@ DPI = 110
 VERSION = 2
 
 
+_office_thread_lock = threading.Lock()
+_OFFICE_LOCK = WORK / ".office.lock"
+
+
 def _office_pdf(path: Path, sha: str) -> Path:
     out = WORK / "pdf" / f"{sha}.pdf"
     if out.exists():
         return out
     out.parent.mkdir(parents=True, exist_ok=True)
-    app = OFFICE[path.suffix.lower()]
-    script = (f"$a = New-Object -ComObject Word.Application; $a.Visible = $false; $d = $a.Documents.Open('{path}', $false, $true); "
-              f"$d.ExportAsFixedFormat('{out}', 17); $d.Close(0); $a.Quit()" if app == "Word" else
-              f"$a = New-Object -ComObject PowerPoint.Application; $p = $a.Presentations.Open('{path}', $true, $false, $false); "
-              f"$p.SaveAs('{out}', 32); $p.Close(); $a.Quit()")
-    result = subprocess.run(["pwsh", "-NoProfile", "-Command", script], capture_output=True, text=True, timeout=600)
-    if not out.exists():
-        raise RuntimeError(f"Office could not export {path.name}: {result.stderr[-300:]}")
-    return out
+    with _office_thread_lock:
+        if out.exists():
+            return out
+        # Serialize Office COM automation across concurrent processes on Windows.
+        fd = None
+        while True:
+            try:
+                _OFFICE_LOCK.parent.mkdir(parents=True, exist_ok=True)
+                fd = os.open(_OFFICE_LOCK, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+                os.write(fd, str(os.getpid()).encode())
+                break
+            except FileExistsError:
+                try:
+                    if time.time() - _OFFICE_LOCK.stat().st_mtime > 240:
+                        _OFFICE_LOCK.unlink(missing_ok=True)
+                        continue
+                except OSError:
+                    pass
+                time.sleep(1.0)
+        try:
+            if out.exists():
+                return out
+            tmp = WORK / "pdf" / f"{sha}.{os.getpid()}.pdf"
+            app = OFFICE[path.suffix.lower()]
+            script = (f"$a = New-Object -ComObject Word.Application; $a.Visible = $false; $a.DisplayAlerts = 0; "
+                      f"try {{ $d = $a.Documents.Open('{path}', $false, $true, $false, ''); "
+                      f"$d.ExportAsFixedFormat('{tmp}', 17); $d.Close(0) }} finally {{ $a.Quit() }}" if app == "Word" else
+                      f"$a = New-Object -ComObject PowerPoint.Application; $a.DisplayAlerts = 1; "
+                      f"try {{ $p = $a.Presentations.Open('{path}', $true, $false, $false); "
+                      f"$p.SaveAs('{tmp}', 32); $p.Close() }} finally {{ $a.Quit() }}")
+            result = subprocess.run(["pwsh", "-NoProfile", "-Command", script], capture_output=True, text=True, timeout=180)
+            if tmp.exists():
+                os.replace(tmp, out)
+            if not out.exists():
+                raise RuntimeError(f"Office could not export {path.name}: {result.stderr[-300:]}")
+            return out
+        finally:
+            if fd is not None:
+                os.close(fd)
+            _OFFICE_LOCK.unlink(missing_ok=True)
 
 
 def _render(pdf: Path, sha: str) -> list[dict]:
@@ -68,8 +103,11 @@ class MinerU:
     @classmethod
     def read(cls, pdf: Path) -> list[str]:
         """The Markdown of every page of a PDF, by page."""
+        last: Exception | None = None
         for _ in range(8):
             with cls.lock:
+                if not cls.tokens:
+                    raise RuntimeError("no MinerU account given: set MINERU_TOKEN, MINERU_TOKEN_2, …")
                 live = [i for i in range(len(cls.tokens)) if i not in cls.spent]
                 if not live:
                     raise RuntimeError("every MinerU account is out of quota")
@@ -77,16 +115,27 @@ class MinerU:
             try:
                 return cls._read(pdf, cls.tokens[index])
             except PermissionError:
-                cls.spent.add(index)
-        raise RuntimeError(f"MinerU could not read {pdf.name}")
+                with cls.lock:
+                    cls.spent.add(index)
+            except (OSError, RuntimeError) as error:   # a dropped connection or a failed task: try again, next account
+                last = error
+                time.sleep(15)
+        raise RuntimeError(f"MinerU could not read {pdf.name}: {last}")
 
     @staticmethod
     def _call(token: str, method: str, path: str, body: dict | None = None) -> dict:
         request = urllib.request.Request(f"https://mineru.net/api/v4{path}", method=method,
                                          data=json.dumps(body).encode() if body else None,
                                          headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"})
-        with urllib.request.urlopen(request, timeout=120) as response:
-            answer = json.load(response)
+        for attempt in range(5):
+            try:
+                with urllib.request.urlopen(request, timeout=120) as response:
+                    answer = json.load(response)
+                break
+            except OSError:
+                if attempt == 4:
+                    raise
+                time.sleep(5 * (attempt + 1))
         if answer.get("code") != 0:
             if "quota" in str(answer).lower() or "额度" in str(answer):
                 raise PermissionError(str(answer))
