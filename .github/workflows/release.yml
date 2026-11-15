@@ -21,5 +21,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           tag="knowledge-$(date -u +%Y%m%d-%H%M)"
-          tar -czf "njupt-knowledge-$tag.tar.gz" -C build .
+          # pax records file names as UTF-8, so every tar reads the Chinese paths alike.
+          tar --format=pax -czf "njupt-knowledge-$tag.tar.gz" -C build .
           gh release create "$tag" "njupt-knowledge-$tag.tar.gz" --title "$tag" --notes "Built from ${GITHUB_SHA::7}." --latest
