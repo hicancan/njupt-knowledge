@@ -51,8 +51,19 @@ def target(source: Path, href: str) -> Path:
 
 
 def slug(title: str) -> str:
-    """The anchor docstream and GitHub give a heading: lower case, spaces to hyphens, punctuation dropped."""
-    return re.sub(r"[^\w一-鿿-]", "", title.strip().lower().replace(" ", "-"))
+    """A question's anchor: its heading with spaces as hyphens, which every reader computes the same way."""
+    return re.sub(r"\s+", "-", title.strip())
+
+
+IMAGE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
+
+
+def published(path: Path, body: str) -> str:
+    """A document as readers get it: no front matter, every link and image as a path from the knowledge's root."""
+    def rooted(href: str) -> str:
+        return target(path, href).relative_to(ROOT).as_posix()
+    body = IMAGE.sub(lambda m: f"![{m.group(1)}]({rooted(m.group(2))})", body)
+    return LINK.sub(lambda m: f"[{m.group(1)}]({rooted(m.group(2))}{m.group(3) or ''})", body)
 
 
 def main() -> None:
@@ -119,7 +130,16 @@ def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     for folder in ("courses", "topics", "materials"):
-        shutil.copytree(ROOT / folder, OUT / folder)
+        for source in (ROOT / folder).rglob("*"):
+            if source.is_dir():
+                continue
+            dest = OUT / source.relative_to(ROOT)
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            if source.suffix == ".md":
+                _, body = front(source.read_text(encoding="utf-8"), source)
+                dest.write_text(published(source, body).lstrip("\n"), encoding="utf-8")
+            else:
+                shutil.copyfile(source, dest)
     index = {
         "courses": courses,
         "topics": [{k: (v.relative_to(ROOT).as_posix() if k == "path" else v) for k, v in t.items()}

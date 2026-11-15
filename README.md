@@ -19,7 +19,7 @@ tools/                         构建与资料解析
 python3 tools/build.py      # 检查所有链接，生成 build/knowledge.json 和文档
 ```
 
-每次合入 main 都会构建并发布一个 `knowledge-YYYYMMDD-HHMM` Release。
+发布出去的文档去掉了 front matter，链接和图片都改写成从仓库根开始的路径（如 `topics/数据结构/堆栈.md`、`materials/…#选择-2`），各端用同一种方式解析。每次合入 main 都会构建并发布一个 `knowledge-YYYYMMDD-HHMM` Release。
 
 ## 资料解析
 
