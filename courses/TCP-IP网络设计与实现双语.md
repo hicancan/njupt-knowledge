@@ -6,8 +6,6 @@ former: [B0301162C]
 
 # TCP/IP网络设计与实现（双语）
 
-南京邮电大学《TCP/IP网络设计与实现（双语）》。章节和知识点由课件、历年复习提纲整理。
-
 ## Chapter 1 Introduction
 
 - [Net/3 代码的组织层次与体系结构](../topics/TCP-IP网络/net3代码组织层次.md)

@@ -6,8 +6,6 @@ former: [B0302281C]
 
 # Java软件开发
 
-南京邮电大学《Java软件开发》。章节和知识点由课件、历年复习提纲整理。
-
 ## 第1章 Java概述
 
 - [Java平台、JVM定义及编译解释执行原理](../topics/Java开发/Java平台与JVM.md)

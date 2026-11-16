@@ -6,8 +6,6 @@ former: [B0301230S]
 
 # Web技术（双语）
 
-南京邮电大学《Web技术（双语）》。章节和知识点由课件、历年复习提纲整理。
-
 ## 第1章 Web基础
 
 - [Internet历史与起源（ARPANET、TCP/IP发展）](../topics/Web开发技术/internet-history.md)

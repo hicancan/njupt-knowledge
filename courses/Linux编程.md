@@ -6,8 +6,6 @@ former: [B0301371S]
 
 # Linux编程
 
-南京邮电大学《Linux编程》。章节和知识点由课件、历年复习提纲整理。
-
 ## 第1章 Linux系统概述与开发环境
 
 - [Linux操作系统的特点与体系结构](../topics/Linux系统编程/Linux系统特点.md)
