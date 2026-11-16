@@ -4,9 +4,6 @@ requires: [TCP-IP网络/接口与地址结构概览]
 ---
 
 # IPv4 地址结构 sockaddr_in
-
-## IPv4 地址结构 sockaddr_in
-
 在编写 Socket 程序时，我们为何不能直接传递一个 32 位整数作为 IP 地址，而必须将其封装在 `sockaddr_in` 结构体中？这涉及到网络编程的==协议无关性设计==。通用套接字 API 需要支持多种协议族，因此定义了通用的 `struct sockaddr`，而 `sockaddr_in` 正是其在 IPv4 下的具体实现。
 
 > [!IMPORTANT]
