@@ -380,8 +380,6 @@ Our model and simulation are based on the following assumptions:
 
 # 2017年美国大学生数学建模竞赛O奖论文（ICM Problem F）：Society Planning: Model, Simulation And Visualization
 
-教材第 7 部分（共 13 部分），由识别工具读出的内容（第 13–13 页）。整理自《2017年美国大学生数学建模竞赛O奖论文（ICM Problem F）：Society Planning: Model, Simulation And Visualization》。
-
 ## 5.3 Job System
 
 ### 变量定义与数据库结构

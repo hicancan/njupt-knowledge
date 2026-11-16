@@ -339,8 +339,6 @@ We then created a quasi-Markov chain model to study the effects of various age d
 
 # 2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）
 
-本资料由识别工具读取《2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）》第3部分（第5–6页）整理而成，修正了明显的断行与乱码错误。
-
 ## 一、生育率政策与人口结构优化
 
 参考解答：## 结论
@@ -550,8 +548,6 @@ $$
 因此，大约 2287.59 人应受雇于健康行业。此时，我们还剩下 1263.86 个需要确定角色的个体。转向另一个重要的需求领域——科学研究，我们需要估算在类似火星的条件下发生的科学兴趣量——物理、化学、天体生物、宇宙学以及与殖民化相关的研究。为此，我们可以使用位于犹他州的火星沙漠研究站（Mars Desert Research Station, MDRS）的兴趣量和使用情况，该站模拟了火星的环境和条件。在其存在期间，已有超过 1000 人访问并居住在该站（"About MDRS"）。应努力说服尽可能多的这些科学家定居火星，以扩展对火星大气层和环境的当前知识和认知，进一步努力殖民和适应火星，并在未来继续追求有效的太空殖民方法。理想情况下，ICM 能够说服这 1000 名科学家、工程师和研究人员中的最优数量加入殖民地。让我们假设 ICM 计划带来其中的 60%（600 人），并将其余人员留在地球，与该团队保持联系并进行远程研究和分析。
 
 # 2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）
-
-本资料整理自《2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）》第5部分，由识别工具读取的第8–9页内容。
 
 ## 一、社会角色分配与模型验证
 
@@ -819,8 +815,6 @@ $$
 
 # 2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）
 
-习题部分第6节，由识别工具读出的原文内容整理。
-
 ## 3.3 Developing the Models
 
 参考解答：## 3.3 模型建立
@@ -960,7 +954,6 @@ $$
 11264-10800=464.
 $$
 
-
 每年因退休或死亡产生 $120$ 个技术岗位空缺。若大学平均培养年限为 $T$，稳定状态下每年毕业的技术人才约为 $464/T$。令人才补充量等于岗位需求：
 
 $$
@@ -968,7 +961,6 @@ $$
 \quad\Longrightarrow\quad
 T=\frac{464}{120}\approx3.87\ \text{年}.
 $$
-
 
 于是，全体学生平均受教育年限按两类学生加权计算：
 
@@ -994,7 +986,6 @@ $$
 \frac{289.613\times10^6}{6000}
 \approx4.8269\times10^4\ \text{美元/人}.
 $$
-
 
 知识点：[任务分解与目标明确](../../../topics/数学建模/renwu_fenjie.md)、[模型参数的确定（基于数据拟合或实验选择）](../../../topics/数学建模/canshu_queding.md)、[确定模型的定点与稳定性分析](../../../topics/数学建模/dingdian_wending.md)
 
@@ -1410,13 +1401,6 @@ For these first question, we weight the responses as follows in Table 1.
 
 Then we use the responses to compute an importance metric for each priority for all three income categories. Then, we normalized the importance values so that the sum of the importance values of all priorities is 1, so that we could compare the priorities of individuals across different economic levels. We obtained the following results, which are summarized in Table 2. Once we computed the weights of the different major income groups in our society, we were able to infer their various preferences. Public health employees and teachers, for example, in tier B were more concerned with education and economic efficiency, while farmers, law enforcement, sanitation, and commercial vendors in less lucrative positions were more concerned with economic and social equality.
 
----
-title: 2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）习题
-kind: 习题
-course: 数学建模
-source: 《2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）》第10部分（共14部分），识别自第18–19页
----
-
 # 2017年美国大学生数学建模竞赛F题O奖论文（Population Zero）习题
 
 本部分整理了论文中关于权重分配、人口细分优先级分析以及模型验证和迁移测试的相关数据表格与分析内容。
@@ -1706,11 +1690,9 @@ The first scenario is a one-time migration of 10,000 individuals much like the i
 参考解答：设初始定居者人口数为 $P_0$，一次性迁入 $M=10{,}000$ 人，且迁入者与现有人口具有相同的人口统计特征。  
 设模型为带承载力的种群增长：
 
-
 $$
 \frac{dP}{dt}=rP\left(1-\frac{P}{K}\right)
 $$
-
 
 其中 $r$ 为内禀增长率，$K$ 为环境承载力。
 
@@ -1719,11 +1701,9 @@ $$
 结论：  
 如果迁入后总人口不超过承载力 $K$，即
 
-
 $$
 P_0+M\le K
 $$
-
 
 则人口会单调增长并趋于 $K$，不会崩溃；  
 如果 $P_0+M>K$，则人口会单调下降并趋于 $K$，同样不会崩溃。  
@@ -1733,32 +1713,26 @@ $$
 
 1. 平衡点由
 
-
 $$
 rP\left(1-\frac{P}{K}\right)=0
 $$
-
 
 得到 $P=0$ 或 $P=K$。  
 $P=K$ 是稳定平衡点。
 
 2. 若 $P(0)=P_0+M<K$，则
 
-
 $$
 \frac{dP}{dt}>0
 $$
-
 
 人口增加并趋近于 $K$。
 
 3. 若 $P(0)=P_0+M>K$，则
 
-
 $$
 \frac{dP}{dt}<0
 $$
-
 
 人口减少并趋近于 $K$。
 
@@ -1803,8 +1777,6 @@ Our third scenario involves the gradual migration of individuals from Earth over
 
 As a result, the optimal gradual migration pattern would allow the population to reach equilibrium, about 50 years after the addition of the migrant population, before the next wave of migrants. Alternatively, the next wave of migrants could likely enter society after 30 years, when the population was starting to lower to its equilibrium value.
 
-
-
 ## 六、Evacuating Planet Earth
 
 In this scenario we attempt to maximize the number of people from Earth who can be saved while keeping the parameters defined previously in the problem in mind. There are several limiting factors which limit the number of migrants from Earth. Looking first at government spending, we calculate that the current goverment spending can support up to 8304 migrants from Earth given no warning and no time to change the current rates of government spending. This number comes from the calculation of the minimum amount government must spend per capita on a migrant ($7745.5$) from our earlier economic model. This means a population of $10,000$ could support another $80\%$ of its weight given a sudden migration from Earth from an economic government perspective. Another factor to consider would be the increased tax in order to support migrants. The taxation rate of $73\%$ indicates that in order to support an additional $80\%$ of the population government would need to subsidize many other aspects of citizen’s lives such as the goods they consume in order for individuals to be able to a↵ord goods with such a high taxation rate. In addition, another limiting factor is food consumption. Currently, farmers work $8$ hour workdays. If the population grows by $83\%$, then they must work $14.6$ hour days if it is assumed that they have enough land to grow an increased number of crops.
@@ -1825,30 +1797,24 @@ Overall, unexpected migration places a huge burden on the existing society and m
 2. 峰值后，由于新增人口出生率、死亡率及资源承载量之间的综合作用，种群逐渐下降。
 3. 继续等待约 $20$ 年，即首批移民迁入约
 
-
 $$
 30+20=50\text{ 年},
 $$
-
 
 种群将接近新的平衡状态。此时安排下一批移民，可以避免在种群尚未稳定时再次叠加人口压力。
 4. 如果等待时间超过 $50$ 年，则首批移民带来的新增资源与经济负担基本已经稳定，间隔过长会降低分批迁移的连续性，并增加后续批次规模失控的风险。
 
 因此，推荐的迁移间隔为
 
-
 $$
 \boxed{50\text{ 年左右}}
 $$
 
-
 在资源压力允许、希望更早启动下一批迁移的情况下，也可选择在
-
 
 $$
 \boxed{30\text{ 年左右}}
 $$
-
 
 进行；但此时种群仍处于由峰值向平衡值下降的阶段，下一批移民应采用更小规模。
 
@@ -1858,11 +1824,9 @@ $$
 
 **结论：** 在不改变政府支出、税率、农业生产条件等既有参数的前提下，地球最多只能额外接收约
 
-
 $$
 \boxed{8304\text{ 人}},
 $$
-
 
 即在原有 $10\,000$ 人基础上增加约 $83\%$。因此，突然大规模迁移不可行；渐进式迁移是更合理的撤离方案。
 
@@ -1870,46 +1834,36 @@ $$
 
 每名新增移民至少需要的政府支出为
 
-
 $$
 \$7745.5.
 $$
 
-
 当前政府支出可支持的新增移民人数为
-
 
 $$
 N_{\max}=\frac{\text{当前可用的政府支出总额}}{\$7745.5}
 =8304.
 $$
 
-
 因此，财政方面的最大新增人口为
-
 
 $$
 \boxed{8304\text{ 人}}.
 $$
 
-
 这意味着原人口为 $10\,000$ 时，新增人口占比约为
-
 
 $$
 \frac{8304}{10000}\times100\%=83.04\%\approx83\%.
 $$
 
-
 ### 2. 税收与生活水平约束
 
 当前税率为
 
-
 $$
 73\%.
 $$
-
 
 若人口突然增加 $83\%$，政府虽然能够从新增人口中获得税收，但也必须承担更多公共服务、物资补贴和社会福利支出。由于税率已经很高，继续依赖税收来支持新增人口，会明显压缩居民用于日常消费的能力，并要求政府补贴更多生活必需品。
 
@@ -1919,27 +1873,21 @@ $$
 
 目前农民每天工作
 
-
 $$
 8\text{ 小时}.
 $$
 
-
 若人口增加 $83\%$，在土地和作物产量足够的前提下，农民的工作时间需近似按人口比例增加：
-
 
 $$
 h_{\text{new}}=8(1+0.83)=8\times1.83=14.64\text{ 小时}.
 $$
 
-
 即每天约需工作
-
 
 $$
 \boxed{14.6\text{ 小时}}.
 $$
-
 
 这会显著降低农业劳动者的劳动强度和生活质量，说明突变式人口增长会造成不可接受的农业负担。
 
@@ -2058,11 +2006,9 @@ Team 72283
 
 设初始人口为 $N$。若取 40% 为学生、60% 为劳动年龄成人，则抚养比为
 
-
 $$
 \frac{0.4N}{0.6N}=\frac{2}{3}\approx 0.667.
 $$
-
 
 这意味着每名劳动年龄成人平均只需抚养约 0.67 名学生。与该群体较高的教育、医疗和食物需求相比，这一比例仍可承受；同时保留了足够劳动力从事生产、建设和公共服务。若学生比例过高，则抚养负担加重，可能抑制初期经济增长；若过低，则长期人口更替不足。因此 40:60 是兼顾增长与稳定的比例。
 
@@ -2072,19 +2018,15 @@ $$
 
 设移民者到达火星后的有效贡献年限为
 
-
 $$
 T = 65 - a,
 $$
 
-
 其中 $a$ 为到达年龄。若要求每个移民在正常退休前至少贡献 25 年，则
-
 
 $$
 65-a \ge 25 \Rightarrow a \le 40.
 $$
-
 
 因此 40 岁上限可以保证第一代移民仍有足够时间参与建设、纳税和抚养下一代。年龄过大不仅贡献期短，还会增加医疗和养老负担。
 
@@ -2094,11 +2036,9 @@ $$
 
 在封闭小群体中，有效种群大小受性别比例影响。若男女人数分别为 $N_m$ 和 $N_f$，则有效种群大小近似为
 
-
 $$
 N_e \approx \frac{4N_m N_f}{N_m+N_f}.
 $$
-
 
 在总人口固定 $N=N_m+N_f$ 时，当 $N_m=N_f$ 时，$N_e$ 达到最大值 $N$。因此 50:50 的性别比例可以最大化遗传有效群体，减少近亲繁殖和遗传漂变风险。种族与遗传多样性可以进一步扩大初始基因库，提高长期适应能力。
 
@@ -2108,11 +2048,9 @@ $$
 
 设食物供给和医疗服务是殖民地的“瓶颈资源”。模型可写为
 
-
 $$
 S = \min\{F, H, L, K\},
 $$
-
 
 其中 $S$ 为可持续人口规模，$F$ 为食物生产能力，$H$ 为医疗服务能力，$L$ 为劳动力供给，$K$ 为基础设施。在火星环境中，$F$ 和 $H$ 最容易成为短板，因此应优先配置人员到农业和医疗部门。25% 和 23% 的比例来自对温室农业、食品加工、医疗轮班、公共卫生监测和应急响应所需人力进行的估算。其他职业比例可以适当压缩，但不能削弱这两个基础部门。
 
@@ -2122,21 +2060,17 @@ $$
 
 设公共部门工资为
 
-
 $$
 w_i = a + b s_i,
 $$
-
 
 其中 $s_i$ 为第 $i$ 类职业所需技能水平，$b>0$ 表示技能水平越高工资越高。若令 $b=0$，则所有公共部门工资完全相同，收入基尼系数会进一步下降，但会降低人们接受教育和技能培训的动力。模型显示，这种完全均等会导致劳动力市场中的自选择隔离加剧：高技能者更倾向流入私人部门或减少劳动投入，从而降低整体生产效率。
 
 根据美国相关职业平均工资校准公共部门工资后，计算得到基尼系数约为
 
-
 $$
 G \approx 0.0336.
 $$
-
 
 该数值非常低，说明公共部门收入已经高度均等，同时保留了一定的技能激励。
 

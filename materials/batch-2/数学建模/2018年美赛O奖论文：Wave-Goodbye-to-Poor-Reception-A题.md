@@ -323,7 +323,6 @@ $$
 - **基准**：相对于各向同性辐射体（isotropic radiator），后者向所有方向均匀辐射。
 - **说明**：增益源于天线信号在某些方向上被聚焦，而非均匀分布。虽然物理长度可能使其不切实际，但在数学上它代表了一种基本天线情况。发射和接收天线均使用此数值。
 
-
 ### 简答 3
 
 题干：无线电波的损耗如何确定？一旦所有参数计算完毕，可以确定什么？
@@ -343,7 +342,6 @@ $$
 - **现象名称**：自由空间损耗（free space loss）。
 - **特点**：随距离增加而增加。
 
-
 ### 简答 5
 
 题干：自由空间损耗是否包括障碍物或干扰的影响？信号在传播过程中还经历哪些其他损耗？
@@ -354,7 +352,6 @@ $$
     - **大气吸收**：如水蒸气或气态氧分子衰减信号。
     - **多径效应**：信号与物体相互作用分裂成不同路径，以不同相位到达造成干涉。
     - **阴影与衰落**：大物体造成阴影（shadowing），小物体造成衰落（fading）。
-
 
 ### 简答 6
 
@@ -411,7 +408,6 @@ $$
     - 数学构建的表面。
     - 实际的地理数据（仅适用于陆地模型）。
 
-
 ### 简答 10
 
 题干：衍射主要发生在什么情况下？对于地形反射，哪种现象占主导地位？
@@ -430,7 +426,6 @@ $$
 - **取决于**：介质的电导率（conductivity）和介电常数（permittivity）。
 - **影响**：由于相位干涉，影响 resulting signal（结果信号）的幅度。
 
-
 ### 简答 12
 
 题干：根据表面粗糙度，反射可分为哪两类？如何确定因反射造成的信号损失？
@@ -440,7 +435,6 @@ $$
     - **镜面反射（Specular）**：具有相干的主信号。
     - **漫反射（Diffuse）**：向所有方向 spread out（扩散）。
 - **确定损失方法**：比较镜面分量与散射分量。
-
 
 ### 简答 13
 
@@ -461,7 +455,6 @@ $$
 参考解答：
 - **意义**：确定哪些地点可能接收到强天波信号（基于信号在地球上的密度）。
 - **确定方法**：利用信号反射的距离和方向，确定最后几次弹跳的纬度和经度。
-
 
 # 2018年美赛O奖论文：Wave Goodbye to Poor Reception (A题)
 
@@ -533,20 +526,17 @@ $$
 \frac{P_r}{P_t}=G_tG_r\left(\frac{\lambda}{4\pi d}\right)^2
 $$
 
-
 取对数：
 
 $$
 L=20\lg\left(\frac{4\pi d}{\lambda}\right)-G_t-G_r
 $$
 
-
 $\lambda=\frac{c}{f}$，若 $f$ 用 MHz，$d$ 用 km，则：
 
 $$
 L_{\text{FS}}=32.44+20\lg f_{\text{MHz}}+20\lg d_{\text{km}}\;(\text{dB})
 $$
-
 
 ---
 
@@ -560,13 +550,11 @@ $$
 P_r \ge -120\ \text{dBm}
 $$
 
-
 即：
 
 $$
 P_t+5.03+5.03-L \ge -120
 $$
-
 
 ---
 
@@ -622,7 +610,6 @@ $$
 $$
 P_r=P_t+G_t+G_r-L
 $$
-
 
 若：
 
@@ -999,7 +986,6 @@ $$
 180-10=170\text{ dB}
 $$
 
-
 每次反射后计算  
 
 $$
@@ -1056,14 +1042,6 @@ The first application of our model focuses on reflection of the signal off of th
 
 We send this signal initially at an elevation angle of 30°, a frequency of 3 MHz, a power of 100 W, an antenna gain of 5.03 dBi, and a receiver antenna sensitivity of -120 dBm. We will determine a mean, median, and standard deviation of signal strength after a single bounce and the max number of bounces (where bounce 2 and onward are over calm water) given the above initial conditions. We will simulate 10000 signals for a first bounce on calm seas with <1 m waves (because this is our base case) and 1000 for a first bounce on rough seas with < 10 m waves.
 
----
-title: 2018年美赛O奖论文：Wave Goodbye to Poor Reception (A题)（习题）
-kind: 习题
-course: 数学建模
-source: 2018 COMAP Mathematical Contest in Modeling (MCM/ICM) - Problem A
-term: 2018
----
-
 # 2018年美赛O奖论文：Wave Goodbye to Poor Reception (A题)（习题）
 
 本部分为《2018年美赛O奖论文：Wave Goodbye to Poor Reception (A题)》第7部分（共11部分），对应原文第15–16页。内容主要涉及模型验证及不同场景（海洋湍流、地形粗糙度）下的结果分析。
@@ -1086,47 +1064,36 @@ term: 2018
 
 发射功率为
 
-
 $$
 P_t=100\ \mathrm{W}.
 $$
 
-
 换算为 dBm：
-
 
 $$
 P_{t,\mathrm{dBm}}=10\log_{10}(100\times 10^3})
 =50\ \mathrm{dBm}.
 $$
 
-
 发射天线增益为
-
 
 $$
 G_t=5.03\ \mathrm{dBi},
 $$
 
-
 因此等效辐射功率为
-
 
 $$
 \mathrm{EIRP}=50+5.03=55.03\ \mathrm{dBm}.
 $$
 
-
 接收机灵敏度为
-
 
 $$
 S_r=-120\ \mathrm{dBm}.
 $$
 
-
 若单程自由空间传播损耗为
-
 
 $$
 L_{\mathrm{FS}}
@@ -1134,9 +1101,7 @@ L_{\mathrm{FS}}
 +20\log_{10} d_{\mathrm{km}},
 $$
 
-
 则接收端信号强度可写为
-
 
 $$
 P_r
@@ -1144,29 +1109,23 @@ P_r
 55.03-L_{\mathrm{FS}}-L_{\mathrm{ref}}-L_{\mathrm{other}},
 $$
 
-
 其中 $L_{\mathrm{ref}}$ 为海面反射损耗，$L_{\mathrm{other}}$ 表示其他系统损耗。
 
 由于信号经过一次海面反射，传播路径通常包含入射路径和出射路径。若总传播距离为 $d$，且采用两段等长路径近似，则应使用
-
 
 $$
 d_{\mathrm{one-way}}=\frac d2
 $$
 
-
 计算自由空间损耗；也可以直接将总路径长度代入自由空间损耗公式，但必须保证模型定义前后一致。
 
 接收机能够检测到信号的条件为
-
 
 $$
 P_r\ge -120\ \mathrm{dBm}.
 $$
 
-
 因此允许的最大附加损耗为
-
 
 $$
 L_{\mathrm{allow}}
@@ -1176,11 +1135,9 @@ L_{\mathrm{allow}}
 175.03-L_{\mathrm{FS}}-L_{\mathrm{other}}.
 $$
 
-
 ### 2. 反射次数的计算
 
 设第 $n$ 次反射时，信号已经经过 $n$ 段传播路径。若每次路径长度相同，记为 $d_n$，则单段自由空间损耗为
-
 
 $$
 L_{\mathrm{FS},n}
@@ -1189,9 +1146,7 @@ L_{\mathrm{FS},n}
 +20\log_{10}d_{n,\mathrm{km}}.
 $$
 
-
 对于经过 $n$ 次反射的信号，其接收功率为
-
 
 $$
 P_r(n)
@@ -1205,17 +1160,13 @@ P_r(n)
 L_{\mathrm{other}}.
 $$
 
-
 当
-
 
 $$
 P_r(n)\ge -120\ \mathrm{dBm}
 $$
 
-
 时，第 $n$ 次反射仍可被接收。于是最大反射次数为
-
 
 $$
 N_{\max}
@@ -1230,9 +1181,7 @@ n\in\mathbb N:
 \right\}.
 $$
 
-
 在频率固定为 $3\ \mathrm{MHz}$ 时，
-
 
 $$
 20\log_{10}f_{\mathrm{MHz}}
@@ -1241,9 +1190,7 @@ $$
 \approx 9.54.
 $$
 
-
 因此
-
 
 $$
 L_{\mathrm{FS},i}
@@ -1251,9 +1198,7 @@ L_{\mathrm{FS},i}
 41.98+20\log_{10}d_{i,\mathrm{km}}.
 $$
 
-
 若忽略各段距离差异，并把每次传播路径近似为同一长度 $d$，则
-
 
 $$
 P_r(n)
@@ -1261,9 +1206,7 @@ P_r(n)
 55.03-nL_{\mathrm{FS}}-nL_{\mathrm{ref}}-L_{\mathrm{other}}.
 $$
 
-
 从而
-
 
 $$
 N_{\max}
@@ -1273,7 +1216,6 @@ N_{\max}
 {L_{\mathrm{FS}}+L_{\mathrm{ref}}}
 \right\rfloor,
 $$
-
 
 前提是分子为非负，且反射次数至少取 $1$。
 
@@ -1295,7 +1237,6 @@ P_r^{(j)}
    -L_{\mathrm{other}}^{(j)};
 $$
 
-
 5. 判断是否满足
 
    
@@ -1303,9 +1244,7 @@ $$
 P_r^{(j)}\ge -120\ \mathrm{dBm}.
 $$
 
-
 对第 $j$ 次模拟得到的信号强度 $P_r^{(j)}$，均值为
-
 
 $$
 \bar P_r
@@ -1313,9 +1252,7 @@ $$
 \frac1M\sum_{j=1}^{M}P_r^{(j)},
 $$
 
-
 中位数为将所有 $P_r^{(j)}$ 排序后位于中间的数值，记为
-
 
 $$
 \operatorname{Median}(P_r)
@@ -1323,9 +1260,7 @@ $$
 P_r^{((M+1)/2)}
 $$
 
-
 （当 $M$ 为偶数时，取中间两个数的平均值），标准差为
-
 
 $$
 s_{P_r}
@@ -1337,22 +1272,17 @@ s_{P_r}
 }.
 $$
 
-
 平静海面模拟使用
-
 
 $$
 M=10\,000,
 $$
 
-
 粗糙海面模拟使用
-
 
 $$
 M=1\,000.
 $$
-
 
 两种情形应使用相同的统计公式，只改变海面反射模型。对于粗糙海面，应根据波高或海况参数引入额外的反射损耗、散射损耗以及接收功率波动。
 
@@ -1372,18 +1302,15 @@ d_{\mathrm{geo}}
   2h,
 $$
 
-
   其中 $h$ 为电离层有效反射高度；若信号由地面接收并经历一次海面反射，则实际传播距离还应根据反射点位置和接收点位置计算。
 
 ### 5. 选择题判断原则
 
 应选择包含完整链路预算
 
-
 $$
 P_r=P_t+G_t-L_{\mathrm{path}}-L_{\mathrm{ref}}-L_{\mathrm{other}}
 $$
-
 
 的选项，因为该式同时体现了发射功率、天线增益、传播损耗、海面反射损耗和接收灵敏度。只计算电离层反射损耗、只计算自由空间损耗、忽略天线增益或忽略接收灵敏度的选项均不完整，因此不正确。
 
@@ -1448,7 +1375,6 @@ $$
 H_0:\mu_C=\mu_T,\qquad H_1:\mu_C\neq\mu_T .
 $$
 
-
 1. **一次反射功率**  
    均值差为
    
@@ -1502,7 +1428,6 @@ Table 4. Distance of Signal by Varying Ruggedness of Terrain
 | Rugged | 997.47 | 316.37 | 1.25 | 0.44 |
 
 As we extend our analysis to include all signals that do not fall below the SNR threshold of 10 dB, we find that the maximum number of bounces that we observe with an initial angle of $30^\circ$ and a frequency of 3 MHz over smooth and mountainous terrain is 2 bounces. Using the same t-test on the average signal distance over the Earth, we get a p-value of $2.74 \times 10^{-4}$ and reject the null hypothesis because the p-value is well below any reasonable statistical measure. Therefore, we can say that the distance data from the smooth and rugged terrain simulations are different. The p-value for bounces is $3.74 \times 10^{-10}$, which is similarly significant.
-
 
 ## D. Sensitivity Results
 
@@ -1633,11 +1558,9 @@ As in the previous cases, we plugged these parameters into the simulation and re
 设三组样本量相同为 $n$（题表未给出具体值，但 t 检验结论已由 p 值确定）。  
 两独立样本 t 检验统计量一般为
 
-
 $$
 t = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{s_1^2/n + s_2^2/n}}
 $$
-
 
 其中 $\bar{x}$ 为均值，$s$ 为标准差。
 
@@ -2212,7 +2135,6 @@ $$
 1 - 0.688 = 0.312 = 31.2\%
 $$
 
-
 ### 陆地（Part I）
 - 地面反射系数：$R_{\text{land}} = 0.944$。
 - 剩余信号：
@@ -2220,7 +2142,6 @@ $$
 $$
 1 - 0.944 = 0.056 = 5.6\%
 $$
-
 
 > 注：若题目给定的是振幅反射系数而非功率反射系数，剩余功率应为 $1-R^2$，需按题目定义调整。
 
@@ -2335,11 +2256,9 @@ $$
 
 电离层电子密度的变化可表示为
 
-
 $$
 N_e = N_e\left(S,F,\mathbf{G},t,\lambda,\phi,\ldots\right),
 $$
-
 
 其中：
 
@@ -2353,21 +2272,17 @@ $$
 
 太阳活动增强时，极区紫外辐射增加，使中性粒子电离增强：
 
-
 $$
 q \propto I_{\mathrm{UV}},
 $$
-
 
 其中 $q$ 为单位体积内的电子产生率。由于电子产生率增加，电子密度总体上升。因此，太阳活动强度与电子密度之间通常具有明显的正相关关系。
 
 常用太阳活动指标包括：
 
-
 $$
 F_{10.7},\qquad R,\qquad S_{\mathrm{w}}.
 $$
-
 
 其中 $F_{10.7}$ 是太阳射电流量，常用于表征太阳活动水平。
 
@@ -2375,13 +2290,11 @@ $$
 
 地磁暴期间，地球磁场扰动会增加能量粒子沉降，并改变电离层中性大气和电场结构。在扰动条件下，可用局地模型近似表示电子密度的相对变化：
 
-
 $$
 \frac{\Delta N_e}{N_e}
 =
 a_0+a_1S+a_2G+a_3S^2+a_4SG+a_5G^2+\cdots
 $$
-
 
 其中 $G$ 可取 $K_p$、$A_E$ 或 $Dst$ 指数。模型拟合或敏感性分析表明，地磁活动在磁暴期间对电子密度具有较强影响，尤其是在高纬和低纬地区。
 
@@ -2389,14 +2302,12 @@ $$
 
 电子密度还受到太阳天顶角和地方时的影响。太阳天顶角为 $\chi$ 时，简单光化学平衡模型给出
 
-
 $$
 N_e \approx
 \sqrt{
 \frac{q}{\alpha_e(\chi)}
 },
 $$
-
 
 其中：
 
@@ -2418,12 +2329,10 @@ $$
 
 若采用多元线性回归模型，可设
 
-
 $$
 N_e=\beta_0+\beta_1S+\beta_2G+\beta_3\sin\theta
 +\beta_4\cos\theta+\beta_5H+\varepsilon,
 $$
-
 
 其中：
 
@@ -2434,18 +2343,15 @@ $$
 
 可通过标准化系数比较各因素的相对影响：
 
-
 $$
 z_i=\frac{x_i-\bar{x}_i}{\sigma_i},
 \qquad
 y=\beta_0+\sum_{j=1}^{p}\beta_j^*z_j+\varepsilon,
 $$
 
-
 此时 $\beta_j^*$ 的绝对值越大，说明对应变量对模型预测的线性影响越强。
 
 也可采用局部敏感度指数：
-
 
 $$
 S_x=
@@ -2458,9 +2364,7 @@ N_e(x+\delta)-N_e(x)
 \frac{x}{N_e(x)},
 $$
 
-
 或采用扰动形式：
-
 
 $$
 S_x=
@@ -2470,7 +2374,6 @@ S_x=
 \Delta x/x
 }.
 $$
-
 
 该指标表示在其他变量保持不变时，变量 $x$ 发生相对变化所引起的电子密度相对变化。
 
@@ -2489,13 +2392,11 @@ $$
 
 因此，在一般性分析中应优先报告：
 
-
 $$
 \boxed{
 \text{太阳活动强度为主要长期影响因素，地磁活动为重要短时扰动因素}
 }
 $$
-
 
 而具体主导因素需根据分析尺度确定：长期尺度通常强调太阳活动和季节，短时尺度则应重点考察地磁活动。
 

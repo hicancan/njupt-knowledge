@@ -9,8 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# SPEC: A Climate-based Fragility Model
-
 本资料为 2018 年美国大学生数学建模竞赛（O奖）论文《SPEC: A Climate-based Fragility Model》的整理版，内容涵盖摘要、目录及引言部分。
 
 ## 摘要
@@ -123,7 +121,6 @@ $$
 \frac{\partial N}{\partial V^{(0)}}\approx 0.
 $$
 
-
 但在现实中，气候变化会带来农业减产、水资源紧张、灾害频发、人口迁移和财政压力，从而满足  
 
 $$
@@ -135,7 +132,6 @@ $$
 $$
 V\uparrow \Rightarrow \text{治理能力下降} \Rightarrow \text{气候适应能力下降} \Rightarrow N\text{ 的冲击更强}.
 $$
-
 
 因此更合理的是扩展为  
 
@@ -177,13 +173,6 @@ $$
 3. 将我们的模型应用于另一个不在前 10 名最脆弱名单中的国家。找出其脆弱趋势的独特指标和临界点。
 4. 使用我们的模型预测积极干预措施，以减少气候的负面影响并避免国家变得脆弱。
 5. 将我们的模型推广到不同规模的国家，小到城市，大到大陆。
-
----
-title: 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
-kind: 习题
-course: 数学建模
-source: 2018 MCM/ICM Problem C Paper - Team #72968 (Pages 5-6 excerpt)
----
 
 # 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
 
@@ -508,7 +497,6 @@ $$
 
 SPEC 模型分别用 **安全（Security）**、**政治（Politics）** 和 **经济（Economics）** 三个一级指标描述国家脆弱性。三者均由若干标准化指标加权求和得到：
 
-
 $$
 \begin{aligned}
 \text{Security}
@@ -525,9 +513,7 @@ $$
 \end{aligned}
 $$
 
-
 按照题目给出的后续赋值方案，三个一级指标可写为：
-
 
 $$
 \boxed{
@@ -542,7 +528,6 @@ $$
 +4E_{\text{ineq}}+5E_{\text{reg}}.
 \end{aligned}}
 $$
-
 
 其中，各原始指标均须先转换到统一的 $0$ 至 $10$ 分尺度，且分数越高表示相应脆弱性越严重。
 
@@ -564,7 +549,6 @@ $$
 
 政变指标采用明确的二元转换规则：
 
-
 $$
 S_{\text{coups}}=
 \begin{cases}
@@ -573,9 +557,7 @@ S_{\text{coups}}=
 \end{cases}
 $$
 
-
 代入权重 $1,2,3,4,5$，得到：
-
 
 $$
 \text{Security}
@@ -583,20 +565,17 @@ $$
 +4S_{\text{abuse}}+5S_{\text{ref}}.
 $$
 
-
 ---
 
 ### 2. 政治指标
 
 政治部分包含政府效能、法治、腐败控制和话语权与问责制四项指标。题目说明四项指标同等重要，但后续权重设置指定为 $1,2,3,4$，因此按后者计算：
 
-
 $$
 \text{Politics}
 =P_{\text{gov}}+2P_{\text{law}}
 +3P_{\text{corpt}}+4P_{\text{acc}}.
 $$
-
 
 该式的含义是：在统一的 $0$ 至 $10$ 分尺度下，话语权与问责制对政治脆弱性得分的乘法贡献最大，政府效能的贡献最小。
 
@@ -616,24 +595,20 @@ $$
 
 通胀指标采用年度消费价格变化的绝对值：
 
-
 $$
 E_{\text{inf}}\propto
 \left|\frac{CPI_t-CPI_{t-1}}{CPI_{t-1}}\times100\%\right|,
 $$
 
-
 使用绝对值是为了使通货紧缩和通货膨胀都表示为经济不稳定因素，而不是让负值抵消正向风险。
 
 代入权重 $1,2,3,4,5$，有：
-
 
 $$
 \text{Economics}
 =E_{\text{GNI}}+2E_{\text{GDP}}+3E_{\text{inf}}
 +4E_{\text{ineq}}+5E_{\text{reg}}.
 $$
-
 
 ---
 
@@ -645,20 +620,16 @@ $$
 
 当同一指标存在多个年度观测值时，可按时间新旧赋权。例如，对最近 $m$ 年的观测值使用递减权重：
 
-
 $$
 w_i=\lambda^{m-i},\qquad 0<\lambda<1,
 $$
 
-
 其中最近的年份权重最大。处理后的指标为：
-
 
 $$
 X_{\text{obs}}
 =\frac{\sum_{i=1}^{m}w_iX_i}{\sum_{i=1}^{m}w_i}.
 $$
-
 
 这样可以兼顾历史持续性与近期变化。
 
@@ -666,41 +637,33 @@ $$
 
 若研究重点是当前脆弱性，可直接采用最近一期数据：
 
-
 $$
 X_{\text{obs}}=X_{\text{latest}}.
 $$
 
-
 该方法适用于政策制定者更关心最新状态的情形，但可能忽略长期趋势。
 
 若原始指标量纲不同，例如 GDP 为绝对数值、GNI 为人均数值、基尼系数为百分比，则不能直接相加，应先通过统一的标准化规则转换到 $0$ 至 $10$ 分尺度。一种常见的极差标准化方法为：
-
 
 $$
 X_{\text{norm}}
 =10\cdot\frac{X-X_{\min}}{X_{\max}-X_{\min}},
 $$
 
-
 其中 $X_{\min}$ 和 $X_{\max}$ 分别为样本或可比国家样本中的最小值和最大值。
 
 对于方向与脆弱性相反的指标，例如收入水平、增长能力、政府效能和监管质量，可采用反向转换：
-
 
 $$
 X_{\text{norm}}
 =10\cdot\frac{X_{\max}-X}{X_{\max}-X_{\min}}.
 $$
 
-
 这样处理后，所有指标均满足：
-
 
 $$
 0\leq X_{\text{norm}}\leq10,
 $$
-
 
 且数值越大表示该国在相应方面的脆弱性越高。
 
@@ -1272,14 +1235,6 @@ $$
 - 通过停止社会冲突改善安全状况。
 - 与邻国和睦相处，以便在面临气候问题时获得帮助。
 
----
-title: 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
-kind: 习题
-course: 数学建模
-term: 2018
-source: 《2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model》第 7 部分（共 12 部分），第 19–21 页（对应原稿第 13-15 页内容）
----
-
 # 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
 
 本节整理自 O 奖论文《SPEC: A Climate-based Fragility Model》的第 7 部分，主要涵盖基于自我调节因子的临界点模型构建、印度案例应用以及针对印度的干预措施建议。
@@ -1387,8 +1342,6 @@ $$\frac{\partial t^*}{\partial G} > 0, \qquad \frac{\partial t^*}{\partial \alph
 **自我调节因子与 SPEC 指数的关系：**
 由于二氧化碳排放量受限于当前技术且与未来发展密切相关，长期内可能保持稳定，因此主要工作在于讨论自我调节因子。利用已计算的 SPEC 数据发现，SPEC 指数与自我调节因子之间存在良好的线性关系。当自我调节因子增加时，相关的 SPEC 指数也随之增加。这一关系证实了上述假设和讨论。
 
-
-
 *图 4：气候变化的决定性影响指标。*
 
 **临界点模型定义：**
@@ -1425,8 +1378,6 @@ $$\frac{\partial t^*}{\partial G} > 0, \qquad \frac{\partial t^*}{\partial \alph
 ### 简答 2
 
 **印度案例应用分析：**
-
-
 
 *图 6：印度概况。*
 
@@ -1513,7 +1464,6 @@ $$
 1. **耕地控制**：根据世界银行发展指标收集的数据，2015年印度耕地面积报告为 1.56463 亿公顷，比 2004 年减少了约 50 万公顷。为了应对耕地萎缩，印度必须严格控制耕地的重新分区。非农业用途的土地需要更有效地利用。
 2. **城市密度与住房**：面对人口增长，需要通过缩小地块规模并用联排别墅替换旧房子来增加住宅区的密度。
 3. **粮食生产与基础设施**：报告指出，印度的人口增长速度快于其生产大米和小麦的能力。为了养活不断增长的人口，印度应通过减少主食腐烂和改善基础设施来提高农业生产率。
-
 
 ## 5.4.1 Predict the total cost of intervention
 
@@ -1631,12 +1581,10 @@ Policy silos are more impossible to exist, it is essential rearrange evaluation 
 
 将研究对象划分为若干区域或国家 $i=1,\dots,n$。每个区域包含四个部门：
 
-
 $$
 \mathbf x_i(t)=
 \big(E_i(t),H_i(t),G_i(t),S_i(t)\big),
 $$
-
 
 其中：
 
@@ -1647,7 +1595,6 @@ $$
 
 区域总体状态不应简单取四者之和，而应体现短板效应，例如
 
-
 $$
 R_i(t)=E_i(t)^{\alpha_E}H_i(t)^{\alpha_H}
 G_i(t)^{\alpha_G}S_i(t)^{\alpha_S},
@@ -1655,18 +1602,15 @@ G_i(t)^{\alpha_G}S_i(t)^{\alpha_S},
 \alpha_E+\alpha_H+\alpha_G+\alpha_S=1.
 $$
 
-
 该形式表示：任一部门严重薄弱，都会显著降低整体韧性。
 
 ### 2. 引入大国的资源规模与应急动员能力
 
 设区域 $i$ 的常规资源为 $B_i(t)$，包括人力、能源、财政和物资。危机时，可额外动员的资源为
 
-
 $$
 M_i(t)=\eta_i u_i(t)B_i(t),
 $$
-
 
 其中：
 
@@ -1677,12 +1621,10 @@ $$
 
 但资源并非可以无限集中使用，应满足
 
-
 $$
 0\le u_i(t)\le 1,\qquad
 \sum_{k\in\{E,H,G,S\}}a_{ik}(t)\le B_i(t)+M_i(t),
 $$
-
 
 其中 $a_{ik}(t)$ 为分配给部门 $k$ 的资源。
 
@@ -1690,24 +1632,19 @@ $$
 
 设 $w_{ij}\ge 0$ 表示区域 $j$ 对区域 $i$ 的援助或资源转移强度，则区域间净资源流入为
 
-
 $$
 F_i(t)=\sum_{j\ne i}w_{ij}(t)-\sum_{j\ne i}w_{ji}(t).
 $$
 
-
 协调程度可用 $c(t)\in[0,1]$ 表示，并令
-
 
 $$
 w_{ij}(t)=c(t)\,\widetilde w_{ij}(t),
 $$
 
-
 其中 $\widetilde w_{ij}$ 是由距离、交通、产能、政治协议等决定的最大可转移量。
 
 于是区域 $i$ 的有效资源为
-
 
 $$
 \widetilde B_i(t)
@@ -1715,11 +1652,9 @@ $$
 B_i(t)+M_i(t)+F_i(t).
 $$
 
-
 这可以表达大洲的优势：某些地区提供能源，某些地区提供医疗物资，某些地区提供教育和财政支持，从而形成互补，而不是各地独立应对危机。
 
 同时应加入协调成本或时滞，例如
-
 
 $$
 F_i(t)=\sum_{j\ne i}
@@ -1729,13 +1664,11 @@ F_i(t)=\sum_{j\ne i}
 \big],
 $$
 
-
 其中 $\kappa_{ij}\in[0,1]$ 为传输效率，$\tau_{ij}$ 为援助时滞。这样可避免把“区域协调”理想化为无成本、瞬时完成。
 
 ### 4. 建立跨部门动态方程
 
 一种可计算的简化形式为
-
 
 $$
 \frac{d\mathbf x_i}{dt}
@@ -1745,7 +1678,6 @@ $$
 +\sum_{j\ne i}A_{ij}(\mathbf x_j-\mathbf x_i),
 $$
 
-
 其中：
 
 - $\Phi_i$：资源投入对教育、医疗、治理和社会韧性的改善作用；
@@ -1753,7 +1685,6 @@ $$
 - $A_{ij}$：区域间政策学习、技术扩散和人员合作矩阵。
 
 例如，医疗部门可写为
-
 
 $$
 \frac{dH_i}{dt}
@@ -1764,13 +1695,11 @@ $$
 -d_{iH}(t)H_i,
 $$
 
-
 其中 $\beta_{EH}$ 表示教育对公共卫生素养和医疗人才供给的促进作用，$\beta_{GH}$ 表示治理能力对医疗资源执行效率的影响。
 
 ### 5. 用优化模型体现政策协调
 
 在危机期间，可选择资源分配和区域援助方案，使整体损失最小：
-
 
 $$
 \min_{a_{ik},w_{ij},u_i}
@@ -1782,7 +1711,6 @@ $$
 \right]dt,
 $$
 
-
 其中：
 
 - $1-R_i(t)$：区域韧性缺口；
@@ -1792,13 +1720,11 @@ $$
 
 约束包括资源上限、援助能力、运输时滞、最低公共服务保障以及各部门最低投入：
 
-
 $$
 a_{ik}(t)\ge \underline a_{ik},
 \qquad
 0\le w_{ij}(t)\le \overline w_{ij}.
 $$
-
 
 ---
 
@@ -1818,14 +1744,12 @@ $$
 
 除综合韧性 $R_i$ 外，至少报告以下指标：
 
-
 $$
 \text{恢复时间 }T_i^{\mathrm{rec}},\qquad
 \text{危机期间最低韧性 }R_i^{\min},\qquad
 \text{单位资源收益 }
 \frac{\Delta R_i}{\text{投入资源}}.
 $$
-
 
 并设置四组情景进行比较：
 
@@ -1900,7 +1824,6 @@ Each city has its own major industry which reflect the city's overall strength a
 
 对城市进行评分时，应将国家层面的数据转换为城市数据，并降低各 SPEC 字段的权重、突出城市自身的主导产业。可采用如下分配方式：
 
-
 $$
 \boxed{
 \text{城市总分}
@@ -1913,25 +1836,20 @@ w_{\text{全球化}}\text{全球化得分}
 }
 $$
 
-
 其中：
-
 
 $$
 w_{\text{产业}}>w_{\text{气候}},\qquad
 w_{\text{产业}}>w_{\text{全球化}}
 $$
 
-
 建议参考权重为：
-
 
 $$
 w_{\text{产业}}=0.5,\qquad
 w_{\text{气候}}=0.3,\qquad
 w_{\text{全球化}}=0.2
 $$
-
 
 具体权重可根据数据量和评分模型调整，但应保持“城市产业最重要、国家信息作为补充”的基本思路。
 
@@ -1943,12 +1861,10 @@ $$
 
 例如，对国家某项指标 $X$ 按城市规模 $s_i$ 进行分解，可设：
 
-
 $$
 X_i^{(c)}=s_iX^{(n)},\qquad
 \sum_{i=1}^{m}s_i=1
 $$
-
 
 其中：
 
@@ -1958,11 +1874,9 @@ $$
 
 若缺乏更细致的城市数据，也可采用国家数据乘以折算系数：
 
-
 $$
 X_i^{(c)}=\alpha_iX^{(n)},\qquad 0<\alpha_i<1
 $$
-
 
 这里的 $\alpha_i$ 用来降低国家数据对城市评分的影响。
 
@@ -1970,11 +1884,9 @@ $$
 
 城市的基本气候条件通常与所在国家或地区密切相关，因此在缺少城市气象数据时，可采用国家数据作为代理变量：
 
-
 $$
 C_i=\beta_iC^{(n)}
 $$
-
 
 其中 $C^{(n)}$ 为国家气候指标，$\beta_i$ 为城市与国家之间的匹配系数。
 
@@ -1986,11 +1898,9 @@ $$
 
 设城市 $i$ 的主导产业得分为 $I_i$，产业相关指标可表示为：
 
-
 $$
 I_i=\gamma_1 O_i+\gamma_2 E_i+\gamma_3 R_i+\gamma_4 V_i
 $$
-
 
 其中：
 
@@ -2002,19 +1912,15 @@ $$
 
 城市产业脆弱性越高，说明其经济或关键基础设施越容易受到冲击；因此在综合评价中，可根据评价目标对 $V_i$ 设置正向或反向处理。例如，若评分越高表示风险越大，则：
 
-
 $$
 I_i^*=I_i+\gamma_4V_i
 $$
 
-
 若评分越高表示发展状况越好，则：
-
 
 $$
 I_i^*=I_i-\gamma_4V_i
 $$
-
 
 #### 4. 全球化因素作为区域性修正
 
@@ -2022,11 +1928,9 @@ $$
 
 设城市 $i$ 的全球化程度为 $G_i$，则可将其作为一个辅助指标：
 
-
 $$
 G_i=\delta_1T_i+\delta_2F_i+\delta_3L_i
 $$
-
 
 其中：
 
@@ -2040,22 +1944,17 @@ $$
 
 若某城市经过归一化后，各指标为：
 
-
 $$
 I=0.80,\qquad C=0.60,\qquad G=0.40
 $$
 
-
 按照建议权重：
-
 
 $$
 S=0.5I+0.3C+0.2G
 $$
 
-
 代入得：
-
 
 $$
 S=0.5(0.80)+0.3(0.60)+0.2(0.40)
@@ -2063,14 +1962,11 @@ S=0.5(0.80)+0.3(0.60)+0.2(0.40)
 =0.66
 $$
 
-
 因此，该城市的综合得分为：
-
 
 $$
 \boxed{S=0.66}
 $$
-
 
 该结果表明，城市评分以主导产业为主，国家气候条件和全球化程度作为辅助因素。
 
@@ -2168,13 +2064,6 @@ Cape Town is the legislative capital of South Africa. Its urban development char
 – noted for its architectural heritage and natural setting, once named the best place in the world to visit
 
 – serves as the regional manufacturing centre
-
----
-title: 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
-kind: 习题
-course: 数学建模
-source: <原件地址或来源路径>
----
 
 # 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
 
@@ -2431,24 +2320,20 @@ $$
 = \frac{4\times1+6\times2+8\times3}{18} = \frac{4+12+24}{18} = \frac{40}{18} \approx 2.2222
 $$
 
-
 组间平方和  
 
 $$
 SSB = n_1(\bar{x}_1-\bar{x})^2 + n_2(\bar{x}_2-\bar{x})^2 + n_3(\bar{x}_3-\bar{x})^2
 $$
 
-
 $$
 = 4(1-2.2222)^2 + 6(2-2.2222)^2 + 8(3-2.2222)^2
 $$
-
 
 $$
 = 4(1.4938) + 6(0.04938) + 8(0.60494)
 \approx 5.9753 + 0.2963 + 4.8395 = 11.1111
 $$
-
 
 组内平方和  
 
@@ -2457,13 +2342,11 @@ SSE = (n_1-1)s_1^2 + (n_2-1)s_2^2 + (n_3-1)s_3^2
 = 3\times0.5 + 5\times0.5 + 7\times0.5 = 1.5 + 2.5 + 3.5 = 7.5
 $$
 
-
 检验统计量  
 
 $$
 F = \frac{SSB/(k-1)}{SSE/(n-k)} = \frac{11.1111/2}{7.5/15} = \frac{5.5556}{0.5} = 11.1112
 $$
-
 
 查表 $F_{0.05}(2,15)=3.68$，$11.11 > 3.68$，拒绝 $H_0$，认为有显著差异。故选 B。
 
@@ -2477,7 +2360,6 @@ $$
 n_0 = \frac{1}{k-1}\left( \sum n_i - \frac{\sum n_i^2}{\sum n_i} \right)
 = \frac{1}{2}\left( 18 - \frac{16+36+64}{18} \right) = \frac{1}{2}\left( 18 - \frac{116}{18} \right) \approx 5.7778
 $$
-
 
 $$
 \sigma_a^2 = \frac{5.5556 - 0.5}{5.7778} \approx 0.875
@@ -2494,8 +2376,6 @@ A 错：组内离差平方和 7.5 小于组间 11.11；B 错：均方比不等�
 <table><tr><td>k</td><td>Country</td><td>Governance</td><td>Rule of</td><td>Control</td><td>Voice &amp;</td><td>Social</td><td>CPf</td><td>Prlitic</td><td>Incidence</td><td>Gross</td><td>Hu</td><td>Refugees</td><td>GNT per</td><td>Growth</td><td>Inflastic</td><td>Income</td><td>Regulate</td><td>Populati</td><td>Forest</td><td>Aable</td><td>L People</td><td>Country</td><td>GNT per</td><td>COL2</td><td>enl</td><td>Self-reg</td><td>Extreme</td><td>SPRC</td><td>Ind</td></tr><tr><td>1</td><td>South Su</td><td>0.05</td><td>0.29</td><td>0.19</td><td>0.54</td><td>2.74</td><td>0.19</td><td>0.00</td><td>1.32</td><td>0.00</td><td>5.99</td><td>0.00</td><td>7.16</td><td>5.37</td><td>0.29</td><td>4.98</td><td>1.94</td><td>2.50</td><td>3.25</td><td>0.83</td><td>0.60</td><td>1.02</td><td>0.43</td><td>3.30</td><td></td><td>7.42</td><td></td><td></td><td></td></tr><tr><td>2</td><td>Sudan</td><td>0.72</td><td>0.91</td><td>0.14</td><td>0.34</td><td>3.36</td><td>0.24</td><td>0.00</td><td>1.02</td><td>3.49</td><td>6.86</td><td>5.60</td><td>7.18</td><td>6.46</td><td>0.48</td><td>4.98</td><td>1.94</td><td>4.65</td><td>3.88</td><td>0.92</td><td>0.60</td><td>1.10</td><td>0.52</td><td>3.27</td><td>12.72</td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td>Central</td><td>0.29</td><td>0.19</td><td>0.91</td><td>1.87</td><td>8.41</td><td>0.71</td><td>0.00</td><td>3.00</td><td>5.09</td><td>5.29</td><td>0.00</td><td>8.28</td><td>4.38</td><td>0.58</td><td>5.00</td><td>2.69</td><td>2.54</td><td>2.83</td><td>0.83</td><td>0.53</td><td>1.04</td><td>0.54</td><td>3.02</td><td>12.96</td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td>Burundi</td><td>0.77</td><td>0.77</td><td>1.06</td><td>0.79</td><td>8.98</td><td>0.52</td><td>0.00</td><td>3.30</td><td>5.92</td><td>5.04</td><td>5.16</td><td>9.16</td><td>6.08</td><td>2.07</td><td>5.00</td><td>4.03</td><td>3.63</td><td>2.91</td><td>0.63</td><td>0.50</td><td>1.14</td><td>0.48</td><td>3.52</td><td>14.80</td><td></td><td></td><td></td><td></td></tr><tr><td>5</td><td>Afghanistan</td><td>0.98</td><td>0.39</td><td>0.34</td><td>2.12</td><td>8.57</td><td>0.10</td><td>10.00</td><td>1.67</td><td>0.00</td><td>5.88</td><td>7.23</td><td>9.44</td><td>5.60</td><td>0.72</td><td>5.00</td><td>2.72</td><td>2.67</td><td>10.24</td><td>0.94</td><td>0.57</td><td>1.37</td><td>0.59</td><td>3.80</td><td>15.70</td><td></td><td></td><td></td><td></td></tr><tr><td>6</td><td>Somalia</td><td>0.05</td><td>0.05</td><td>0.05</td><td>0.30</td><td>5.00</td><td>0.29</td><td>10.00</td><td>1.89</td><td>0.00</td><td>5.88</td><td>3.00</td><td>10.00</td><td>5.00</td><td>0.10</td><td>4.87</td><td>2.33</td><td>2.93</td><td>6.92</td><td>0.83</td><td>0.59</td><td>1.03</td><td>0.58</td><td>2.88</td><td>16.35</td><td></td><td></td><td></td><td></td></tr><tr><td>7</td><td>Yemen</td><td>0.24</td><td>0.48</td><td>0.10</td><td>0.59</td><td>8.85</td><td>0.05</td><td>0.00</td><td>1.76</td><td>9.82</td><td>6.22</td><td>0.00</td><td>9.16</td><td>6.33</td><td>0.53</td><td>4.92</td><td>2.72</td><td>2.47</td><td>5.19</td><td>0.82</td><td>0.62</td><td>1.03</td><td>0.60</td><td>2.83</td><td>16.38</td><td></td><td></td><td></td><td></td></tr><tr><td>8</td><td>Congo De</td><td>0.58</td><td>0.43</td><td>0.77</td><td>1.08</td><td>0.00</td><td>0.43</td><td>10.00</td><td>0.00</td><td>4.63</td><td>5.43</td><td>10.00</td><td>9.59</td><td>5.79</td><td>0.77</td><td>5.00</td><td>2.64</td><td>2.89</td><td>3.38</td><td>0.91</td><td>0.54</td><td>1.26</td><td>0.59</td><td>3.47</td><td>16.98</td><td></td><td></td><td></td><td></td></tr><tr><td>9</td><td>Chad</td><td>0.63</td><td>0.72</td><td>0.48</td><td>1.23</td><td>8.63</td><td>1.10</td><td>0.00</td><td>6.15</td><td>9.86</td><td>5.89</td><td>7.66</td><td>9.58</td><td>5.67</td><td>0.96</td><td>5.00</td><td>2.16</td><td>4.33</td><td>2.95</td><td>0.88</td><td>0.59</td><td>1.28</td><td>0.64</td><td>3.38</td><td>18.20</td><td></td><td></td><td></td><td></td></tr><tr><td>10</td><td>Libya</td><td>0.14</td><td>0.14</td><td>0.29</td><td>1.18</td><td>9.44</td><td>0.38</td><td>0.00</td><td>2.17</td><td>9.91</td><td>7.57</td><td>0.00</td><td>9.63</td><td>5.00</td><td>0.05</td><td>4.89</td><td>2.72</td><td>2.58</td><td>2.72</td><td>0.90</td><td>0.76</td><td>1.02</td><td>0.67</td><td>2.61</td><td>18.29</td><td></td><td></td><td></td><td></td></tr><tr><td>11</td><td>Syria</td><td>0.19</td><td>0.10</td><td>0.24</td><td>0.15</td><td>9.48</td><td>0.05</td><td>10.00</td><td>0.00</td><td>0.00</td><td>6.73</td><td>3.00</td><td>9.33</td><td>6.42</td><td>0.38</td><td>4.99</td><td>3.12</td><td>2.66</td><td>2.77</td><td>0.76</td><td>0.67</td><td>0.96</td><td>0.60</td><td>2.63</td><td>19.37</td><td></td><td></td><td></td><td></td></tr><tr><td>12</td><td>Equatorial</td><td>0.67</td><td>0.67</td><td>0.05</td><td>0.20</td><td>10.00</td><td>3.90</td><td>0.00</td><td>5.38</td><td>10.00</td><td>7.94</td><td>2.15</td><td>9.67</td><td>6.00</td><td>0.63</td><td>4.95</td><td>2.46</td><td>2.52</td><td>2.76</td><td>0.64</td><td>0.79</td><td>1.07</td><td>0.64</td><td>2.81</td><td>20.60</td><td></td><td></td><td></td><td></td></tr><tr><td>13</td><td>Haiti</td><td>0.10</td><td>1.63</td><td>0.72</td><td>2.66</td><td>9.77</td><td>2.24</td><td>0.00</td><td>5.95</td><td>9.70</td><td>5.96</td><td>6.05</td><td>9.32</td><td>5.91</td><td>0.82</td><td>4.91</td><td>2.43</td><td>3.94</td><td>3.12</td><td>0.64</td><td>0.60</td><td>1.08</td><td>0.58</td><td>3.02</td><td>20.89</td><td></td><td></td><td></td><td></td></tr><tr><td>14</td><td>Venezuel</td><td>0.87</td><td>0.05</td><td>0.67</td><td>1.82</td><td>10.00</td><td>1.29</td><td>0.00</td><td>0.00</td><td>9.92</td><td>8.39</td><td>3.89</td><td>4.11</td><td>5.31</td><td>0.24</td><td>4.88</td><td>2.59</td><td>2.82</td><td>2.76</td><td>0.85</td><td>0.84</td><td>1.01</td><td>0.67</td><td>2.56</td><td>20.98</td><td></td><td></td><td></td><td></td></tr><tr><td>15</td><td>Congo Re</td><td>1.20</td><td>1.44</td><td>0.96</td><td>1.72</td><td>0.00</td><td>2.52</td><td>10.00</td><td>0.00</td><td>9.87</td><td>6.66</td><td>7.05</td><td>9.65</td><td>5.11</td><td>1.06</td><td>4.98</td><td>2.69</td><td>3.15</td><td>3.33</td><td>0.79</td><td>0.67</td><td>1.21</td><td>0.66</td><td>3.14</td><td>21.18</td><td></td><td></td><td></td><td></td></tr><tr><td>16</td><td>Guinea R</td><td>0.43</td><td>0.63</td><td>0.38</td><td>2.76</td><td>0.00</td><td>2.91</td><td>10.00</td><td>0.00</td><td>9.82</td><td>5.82</td><td>7.31</td><td>9.77</td><td>6.63</td><td>0.87</td><td>4.24</td><td>2.53</td><td>3.02</td><td>3.44</td><td>0.77</td><td>0.58</td><td>1.12</td><td>0.63</td><td>2.96</td><td>22.07</td><td></td><td></td><td></td><td></td></tr><tr><td>17</td><td>North Eo</td><td>0.38</td><td>0.34</td><td>0.53</td><td>0.05</td><td>0.00</td><td>2.19</td><td>10.00</td><td>0.00</td><td>9.99</td><td>6.71</td><td>3.00</td><td>10.00</td><td>6.00</td><td>0.05</td><td>4.74</td><td>2.07</td><td>2.78</td><td>2.71</td><td>0.73</td><td>0.67</td><td>0.95</td><td>0.64</td><td>2.51</td><td>22.34</td><td></td><td></td><td></td><td></td></tr><tr><td>18</td><td>Comoros</td><td>0.53</td><td>1.15</td><td>3.17</td><td>3.94</td><td>10.00</td><td>4.67</td><td>0.00</td><td>9.24</td><td>9.99</td><td>5.95</td><td>5.29</td><td>9.67</td><td>5.50</td><td>1.25</td><td>4.96</td><td>2.28</td><td>2.72</td><td>2.63</td><td>0.47</td><td>0.59</td><td>1.09</td><td>0.57</td><td>3.08</td><td>22.64</td><td></td><td></td><td></td><td></td></tr><tr><td>19</td><td>Myanmar</td><td>1.63</td><td>1.68</td><td>3.08</td><td>2.41</td><td>0.00</td><td>2.33</td><td>10.00</td><td>2.28</td><td>5.10</td><td>6.34</td><td>10.00</td><td>9.38</td><td>6.19</td><td>1.88</td><td>4.45</td><td>2.30</td><td>3.13</td><td>3.43</td><td>0.84</td><td>0.63</td><td>1.10</td><td>0.62</td><td>2.96</td><td>23.77</td><td></td><td></td><td></td><td></td></tr><tr><td>20</td><td>Eritrea</td><td>0.34</td><td>0.58</td><td>1.15</td><td>0.10</td><td>9.70</td><td>1.71</td><td>10.00</td><td>2.00</td><td>5.41</td><td>5.60</td><td>4.22</td><td>10.00</td><td>6.00</td><td>0.14</td><td>4.96</td><td>2.61</td><td>4.00</td><td>3.15</td><td>0.72</td><td>0.56</td><td>1.02</td><td>0.66</td><td>2.64</td><td>23.94</td><td></td><td></td><td></td><td></td></tr><tr><td>21</td><td>Guinea</td><td>1.49</td><td>0.87</td><td>1.49</td><td>2.61</td><td>9.95</td><td>3.10</td><td>0.00</td><td>5.12</td><td>9.82</td><td>5.82</td><td>7.31</td><td>8.77</td><td>6.63</td><td>1.92</td><td>4.70</td><td>2.51</td><td>3.02</td><td>3.44</td><td>0.77</td><td>0.58</td><td>1.05</td><td>0.63</td><td>2.79</td><td>24.31</td><td></td><td></td><td></td><td></td></tr><tr><td>22</td><td>Madagascar</td><td>1.06</td><td>2.55</td><td>1.63</td><td>3.74</td><td>10.00</td><td>3.14</td><td>0.00</td><td>6.47</td><td>10.00</td><td>5.36</td><td>5.75</td><td>9.31</td><td>5.73</td><td>2.60</td><td>4.92</td><td>2.60</td><td>3.52</td><td>3.97</td><td>0.83</td><td>0.54</td><td>1.08</td><td>0.64</td><td>2.82</td><td>24.36</td><td></td><td></td><td></td><td></td></tr><tr><td>23</td><td>Niger</td><td>3.13</td><td>2.98</td><td>3.13</td><td>3.45</td><td>10.00</td><td>1.19</td><td>0.00</td><td>6.32</td><td>9.99</td><td>5.29</td><td>9.10</td><td>9.86</td><td>6.60</td><td>2.64</td><td>5.00</td><td>2.36</td><td>3.65</td><td>3.34</td><td>0.88</td><td>0.53</td><td>1.18</td><td>0.64</td><td>3.11</td><td>24.62</td><td></td><td></td><td></td><td></td></tr><tr><td>24</td><td>Kyrgyz B</td><td>1.78</td><td>1.30</td><td>1.20</td><td>3.25</td><td>0.00</td><td>2.29</td><td>10.00</td><td>0.00</td><td>9.97</td><td>6.27</td><td>7.92</td><td>9.25</td><td>7.10</td><td>4.04</td><td>5.00</td><td>2.10</td><td>2.64</td><td>2.96</td><td>0.76</td><td>0.63</td><td>1.11</td><td>0.64</td><td>2.94</td><td>24.77</td><td></td><td></td><td></td><td></td></tr><tr><td>25</td><td>Bangladesh</td><td>2.55</td><td>3.08</td><td>2.12</td><td>3.10</td><td>10.00</td><td>1.05</td><td>0.00</td><td>2.91</td><td>9.86</td><td>6.44</td><td>9.32</td><td>9.27</td><td>6.79</td><td>2.21</td><td>4.55</td><td>2.65</td><td>2.46</td><td>2.80</td><td>0.73</td><td>0.64</td><td>1.08</td><td>0.60</td><td>2.95</td><td>24.96</td><td></td><td></td><td></td><td></td></tr><tr><td>26</td><td>Mali</td><td>1.59</td><td>2.26</td><td>2.98</td><td>3.99</td><td>9.84</td><td>0.86</td><td>0.00</td><td>3.37</td><td>8.44</td><td>5.95</td><td>6.99</td><td>9.80</td><td>6.70</td><td>2.84</td><td>5.00</td><td>2.22</td><td>19.37</td><td>4.52</td><td>0.87</td><td>0.59</td><td>1.08</td><td>0.62</td><td>2.90</td><td>25.02</td><td></td><td></td><td></td><td></td></tr><tr><td>27</td><td>Honduras</td><td>2.31</td><td>1.20</td><td>2.79</td><td>3.35</td><td>10.00</td><td>3.38</td><td>0.00</td><td>4.68</td><td>9.90</td><td>6.87</td><td>6.45</td><td>9.49</td><td>4.99</td><td>3.08</td><td>4.95</td><td>2.05</td><td>1.96</td><td>3.07</td><td>0.73</td><td>0.69</td><td>1.06</td><td>0.64</td><td>2.80</td><td>25.22</td><td></td><td></td><td></td><td></td></tr><tr><td>28</td><td>Mauritien</td><td>2.12</td><td>2.31</td><td>2.18</td><td>2.46</td><td>10.00</td><td>2.10</td><td>0.00</td><td>6.82</td><td>9.64</td><td>6.29</td><td>7.46</td><td>9.66</td><td>6.76</td><td>2.40</td><td>4.04</td><td>2.03</td><td>2.92</td><td>3.68</td><td>0.86</td><td>0.63</td><td>1.11</td><td>0.67</td><td>2.84</td><td>25.32</td><td></td><td></td><td></td><td></td></tr><tr><td>29</td><td>Zimbabwe</td><td>1.11</td><td>0.92</td><td>0.87</td><td>1.97</td><td>10.00</td><td>2.43</td><td>0.00</td><td>4.01</td><td>9.82</td><td>6.08</td><td>9.64</td><td>9.79</td><td>5.68</td><td>0.34</td><td>5.00</td><td>2.10</td><td>3.81</td><td>2.57</td><td>0.80</td><td>0.61</td><td>1.00</td><td>0.63</td><td>2.64</td><td>25.43</td><td></td><td></td><td></td><td></td></tr><tr><td>30</td><td>Timor-Lie</td><td>1.39</td><td>1.01</td><td>3.46</td><td>5.42</td><td>0.00</td><td>4.33</td><td>10.00</td><td>7.40</td><td>10.00</td><td>6.83</td><td>7.52</td><td>9.37</td><td>6.97</td><td>1.39</td><td>4.95</td><td>2.23</td><td>3.64</td><td>3.86</td><td>0.60</td><td>0.68</td><td>1.21</td><td>0.65</td><td>3.16</td><td>25.56</td><td></td><td></td><td></td><td></td></tr><tr><td>31</td><td>Malawi</td><td>2.26</td><td>3.85</td><td>2.40</td><td>4.83</td><td>10.00</td><td>4.52</td><td>0.00</td><td>7.15</td><td>10.00</td><td>5.16</td><td>7.07</td><td>7.87</td><td>5.39</td><td>1.97</td><td>5.00</td><td>2.42</td><td>5.22</td><td>3.68</td><td>0.71</td><td>0.52</td><td>1.06</td><td>0.62</td><td>2.85</td><td>26.34</td><td></td><td></td><td></td><td></td></tr><tr><td>32</td><td>Burkins</td><td>3.46</td><td>3.41</td><td>5.24</td><td>4.88</td><td>10.00</td><td>1.52</td><td>0.00</td><td>6.79</td><td>9.98</td><td>5.75</td><td>8.17</td><td>9.86</td><td>6.47</td><td>3.80</td><td>5.00</td><td>2.35</td><td>5.68</td><td>3.17</td><td>0.78</td><td>0.58</td><td>1.15</td><td>0.63</td><td>3.08</td><td>26.58</td><td></td><td></td><td></td><td></td></tr><tr><td>33</td><td>Laos</td><td>3.94</td><td>2.40</td><td>1.54</td><td>0.44</td><td>10.00</td><td>6.24</td><td>0.00</td><td>0.00</td><td>9.93</td><td>6.87</td><td>10.00</td><td>9.57</td><td>6.36</td><td>2.45</td><td>5.00</td><td>3.11</td><td>6.74</td><td>5.79</td><td>0.77</td><td>0.69</td><td>1.12</td><td>0.65</td><td>2.91</td><td>26.69</td><td></td><td></td><td></td><td></td></tr><tr><td>34</td><td>Benin</td><td>3.32</td><td>2.93</td><td>3.65</td><td>6.31</td><td>10.00</td><td>4.86</td><td>0.00</td><td>7.65</td><td>10.00</td><td>6.00</td><td>7.64</td><td>9.80</td><td>5.22</td><td>3.03</td><td>4.41</td><td>2.34</td><td>5.24</td><td>3.05</td><td>0.73</td><td>0.60</td><td>1.17</td><td>0.65</td><td>3.06</td><td>26.75</td><td></td><td></td><td></td><td></td></tr><tr><td>35</td><td>Iraq</td><td>0.91</td><td>0.24</td><td>0.63</td><td>2.22</td><td>5.44</td><td>0.33</td><td>10.00</td><td>1.21</td><td>6.84</td><td>7.69</td><td>9.11</td><td>9.69</td><td>7.05</td><td>1.11</td><td>4.71</td><td>2.76</td><td>2.80</td><td>2.88</td><td>0.81</td><td>0.77</td><td>1.06</td><td>0.69</td><td>2.65</td><td>27.04</td><td></td><td></td><td></td><td></td></tr><tr><td>36</td><td>Montenegro</td><td>5.77</td><td>5.34</td><td>5.43</td><td>4.93</td><td>0.00</td><td>5.10</td><td>0.00</td><td>8.01</td><td>9.99</td><td>7.94</td><td>5.02</td><td>9.79</td><td>6.81</td><td>6.25</td><td>4.50</td><td>3.75</td><td>1.05</td><td>2.79</td><td>0.59</td><td>0.79</td><td>1.01</td><td>0.55</td><td>2.90</td><td>27.27</td><td></td><td></td><td></td><td></td></tr><tr><td>37</td><td>Maldives</td><td>4.09</td><td>3.61</td><td>2.89</td><td>2.56</td><td>0.00</td><td>6.00</td><td>10.00</td><td>7.24</td><td>10.00</td><td>8.30</td><td>8.33</td><td>9.49</td><td>6.16</td><td>3.46</td><td>2.59</td><td>2.72</td><td>3.67</td><td>3.02</td><td>0.36</td><td>0.83</td><td>1.17</td><td>0.62</td><td>3.16</td><td>27.67</td><td></td><td></td><td></td><td></td></tr><tr><td>38</td><td>Philippi</td><td>5.19</td><td>3.65</td><td>3.41</td><td>5.07</td><td>6.82</td><td>1.00</td><td>0.00</td><td>2.41</td><td>10.00</td><td>7.32</td><td>9.04</td><td>9.69</td><td>5.99</td><td>5.38</td><td>4.72</td><td>3.14</td><td>2.80</td><td>2.86</td><td>0.79</td><td>0.73</td><td>1.04</td><td>0.61</td><td>2.82</td><td>28.21</td><td></td><td></td><td></td><td></td></tr><tr><td>39</td><td>Ecuador</td><td>3.85</td><td>2.69</td><td>2.93</td><td>3.79</td><td>10.00</td><td>4.29</td><td>0.00</td><td>5.98</td><td>9.99</td><td>7.75</td><td>6.90</td><td>9.61</td><td>5.35</td><td>1.30</td><td>4.74</td><td>2.49</td><td>2.97</td><td>3.05</td><td>0.78</td><td>0.78</td><td>1.06</td><td>0.69</td><td>2.68</td><td>28.70</td><td></td><td></td><td></td><td></td></tr><tr><td>40</td><td>Lesotho</td><td>2.02</td><td>4.76</td><td>5.77</td><td>4.78</td><td>10.00</td><td>3.71</td><td>0.00</td><td>7.34</td><td>10.00</td><td>6.39</td><td>6.72</td><td>9.52</td><td>4.58</td><td>3.85</td><td>4.99</td><td>3.21</td><td>2.27</td><td>2.94</td><td>0.64</td><td>0.64</td><td>1.04</td><td>0.62</td><td>2.79</td><td>28.80</td><td></td><td></td><td></td><td></td></tr><tr><td>41</td><td>Papua Ne</td><td>2.36</td><td>2.45</td><td>1.59</td><td>5.27</td><td>10.00</td><td>2.90</td><td>0.00</td><td>5.91</td><td>10.00</td><td>7.06</td><td>10.00</td><td>9.48</td><td>5.82</td><td>2.98</td><td>4.98</td><td>2.71</td><td>4.77</td><td>2.71</td><td>0.81</td><td>0.71</td><td>1.08</td><td>0.67</td><td>2.77</td><td>28.89</td><td></td><td></td><td></td><td></td></tr><tr><td>42</td><td>Gambia</td><td>1.92</td><td>2.50</td><td>2.21</td><td>1.38</td><td>10.00</td><td>2.76</td><td>10.00</td><td>5.36</td><td>9.88</td><td>5.43</td><td>5.62</td><td>9.43</td><td>5.27</td><td>3.17</td><td>3.82</td><td>2.88</td><td>15.12</td><td>2.96</td><td>0.58</td><td>0.54</td><td>1.13</td><td>0.68</td><td>2.85</td><td>29.08</td><td></td><td></td><td></td><td></td></tr><tr><td>43</td><td>Russia</td><td>4.42</td><td>2.12</td><td>1.88</td><td>1.53</td><td>0.00</td><td>1.67</td><td>10.00</td><td>0.00</td><td>9.37</td><td>8.22</td><td>4.10</td><td>9.07</td><td>6.23</td><td>3.70</td><td>4.94</td><td>2.74</td><td>2.54</td><td>2.75</td><td>1.00</td><td>0.82</td><td>1.01</td><td>0.74</td><td>2.39</td><td>29.18</td><td></td><td></td><td></td><td></td></tr><tr><td>44</td><td>Pakistan</td><td>2.88</td><td>2.02</td><td>1.92</td><td>2.96</td><td>4.86</td><td>0.14</td><td>10.00</td><td>2.33</td><td>8.95</td><td>6.54</td><td>7.17</td><td>9.29</td><td>6.93</td><td>2.74</td><td>4.95</td><td>2.01</td><td>2.77</td><td>2.71</td><td>0.85</td><td>0.65</td><td>1.04</td><td>0.70</td><td>2.58</td><td>29.52</td><td></td><td></td><td></td><td></td></tr><tr><td>45</td><td>Pakistanian</td><td>2.88</td><td>2.02</td><td>1.92</td><td>2.96</td><td>4.86</td><td>0.14</td><td>10.00</td><td>2.33</td><td>8.95</td><td>6.54</td><td>7.17</td><td>9.29</td><td>6.93</td><td>2.74</td><td>4.95</td><td>2.01</td><td>2.77</td><td>2.71</td><td>0.85</td><td>0. 65</td><td>1.04</td><td>0 .70</td><td>2 .58</td><td>29 .52</td><td></td><td></td><td></td><td></td></tr><tr><td>46</td><td>Thailand</td><td>6 .63</td><td>5 .53</td><td>4 .09</td><td>2 .</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></table>
 
 # 2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model（习题）
-
-本部分整理自《2018年美国大学生数学建模竞赛(O奖)论文：SPEC: A Climate-based Fragility Model》第 11 部分（共 12 部分），识别工具读出的内容主要包含国家脆弱性指数数据表及附录中关于层次分析法（AHP）的 MATLAB 代码片段。
 
 ## 一、数据表格
 
@@ -2752,7 +2632,6 @@ $$
 w_2\approx(0.1136,\;0.0503,\;0.4797,\;0.3564)^T.
 $$
 
-
 **计算过程：**
 
 对判断矩阵 $a$，用 MATLAB 求其特征值和特征向量，取最大特征值对应的特征向量，并归一化得到权重：
@@ -2776,7 +2655,6 @@ $$
 \lambda_{\max}=4.0710,\qquad
 CI=\frac{4.0710-4}{3}=0.0237,
 $$
-
 
 $$
 CR=\frac{0.0237}{0.90}=0.0263<0.1,

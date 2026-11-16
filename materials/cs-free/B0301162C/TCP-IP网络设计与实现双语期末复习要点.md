@@ -9,10 +9,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# TCP/IP网络设计与实现（双语）期末复习要点
-
-本资料由识别工具读取《TCP/IP网络设计与实现（双语）》第 1–3 页内容整理而成，修正了明显的断行与乱码，按章节逻辑重组。
-
 ## Chapter 1: 代码的组织层次
 
 ### 选择 1
@@ -269,14 +265,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 **题干**：IP 软件中断是由哪一层设置的？（socket layer / protocol layer / interface layer）
 - **答案**：Interface layer（接口层）。
 
----
-title: 《TCP/IP网络设计与实现（双语）》期末复习要点
-kind: 复习要点
-course: TCP/IP网络设计与实现
-term: 
-source: 识别工具读出内容（第 4–6 页）
----
-
 # 《TCP/IP网络设计与实现（双语）》期末复习要点
 
 本部分整理了《TCP/IP网络设计与实现（双语）》教材中关于 IP、UDP、mbuf 等核心机制的问答与知识点，主要涉及 BSD-Lite 实现细节及内存缓冲管理。
@@ -348,7 +336,6 @@ UDP 输入例程验证 UDP 头部中的字段（长度和可选校验和），�
 
 参考解答：
 *(注：原文仅给出问题，未直接给出答案文本，通常存储在该套接字的等待队列或阻塞列表中，具体取决于实现细节，此处保留原题供复习)*
-
 
 ## 三、Mbufs 内存缓冲机制
 
@@ -450,7 +437,6 @@ UDP 输入例程验证 UDP 头部中的字段（长度和可选校验和），�
 (当一个协议（IP、ICMP、IGMP、UDP 或 TCP）发现第一个 mbuf 中的数据量 (m_len) 小于最小协议头部的大小（例如，IP 为 20，UDP 为 8，TCP 为 20）时，假设头部的剩余部分在链中的下一个 mbuf 中，将调用 m_pullup。代码如下：)
 
 Chapter 2. Mbufs: Memory Buffers
-
 
 # TCP/IP网络设计与实现（双语）期末复习要点
 

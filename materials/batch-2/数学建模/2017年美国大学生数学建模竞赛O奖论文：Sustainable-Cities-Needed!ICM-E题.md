@@ -383,26 +383,21 @@ These apply to the ten smart growth principles as follows:
 
 Boulder currently has 73.3% of its total land area as open space land [13]. As the population grows and there is an increased need for housing and commercial buildings, there may be proposals to rezone some open space land for these buildings. However, in following with the smart growth principle of preserving open space, Boulder should not develop any of its current open space land.
 
-
 ### 段落 7
 
 Boulder has little to no surrounding land to expand to, so it is already focused on redeveloping existing areas. This redevelopment should include introducing mixed land areas to areas that are currently residential only. Also, redeveloping existing neighborhoods allows communities to maintain their current sense of community and can increase the population density in the area to accommodate the additional people who want to live in the city. This metric has a value of 1.
-
 
 ### 段落 8
 
 Boulder should increase availability of public transportation as the population increases. By 2050, Boulder would ideally have 45% of its commuters use a mode of transportation other than driving to arrive at work. As the amount of low income housing in Boulder increases as part of our proposed smart growth plan, there will be higher demand for public transportation by those who cannot afford personal cars. Boulder can reach this goal by continuing its collaboration with RTD to provide buses around the city. Also, Boulder should continue its efforts to build a light rail train route between Boulder and Denver to aid commuters traveling much farther for work.
 
-
 ### 段落 9
 
 Boulder should continue its public-private partnerships for new developments [10]. As the city redevelops residential areas with higher building density, construction should be done by private companies that align with the smart growth principles the city is adhering to with its development. This metric has a value of 1.
 
-
 ### 段落 10
 
 Boulder is already doing well in asking for community feedback on development decisions. As the city works toward the development plan presented above, city officials should ensure the plans are transparent to citizens, and that that all citizens understand the smart growth principles to which the plans adhere. This metric has a value of 1.
-
 
 ### 综合结果
 
@@ -424,7 +419,6 @@ Table 3: Table of individual metrics and final success level for our proposed gr
 | P10 | 1 |
 | L | 0.8338 |
 
-
 ## 二、堪培拉市增长计划
 
 ### 4.2 Canberra, ACT, AUS
@@ -443,21 +437,17 @@ These initiatives relate to the 10 smart growth principles (and our metrics) as 
 
 Ideally, 15% of Canberra’s city area would be zoned for mixed use. Canberra’s current plan includes converting some urban areas to mixed use. We recommend also redeveloping some of its current residential areas to mixed use areas. This will help to prevent excessive greenfield development and promote preservation of open space. The little greenfield development that Canberra then does should also be in areas newly zoned for mixed use.
 
-
 ### 段落 2
 
 In the next 30 years, Canberra’s population density is expected to grow to 1455 people per square mile [4]. This growth will result in more housing demand. Redeveloping some urban and residential areas for mixed use should alleviate this to some extent. Enforcing a less stringent height restriction on buildings than is currently present will also allow more space for building upwards, resulting in a more compact city.
-
 
 ### 段落 3
 
 Canberra’s current plan for affordable housing aims for 20% of new development to be affordable. We believe that Canberra could aim higher and reach our optimal value of 25% permanently affordable housing. We believe that Canberra should focus on redeveloping current areas to be higher-density (e.g. building townhouses instead of detached houses). Having mixed-use areas will help with this, as in Boulder, since low-income people could walk to work more easily, reducing their overall expenses. To encourage this, Canberra’s government should offer tax benefits to private developers who are willing to complete construction of affordable housing at a discounted rate.
 
-
 ### 段落 4
 
 Canberra should aim to have 15% of its working population walk to work. This should account for most people living in existing and new mixed use areas, near existing and new mixed use areas, and near commercial/industrial areas.
-
 
 # 2017年美国大学生数学建模竞赛O奖论文：Sustainable Cities Needed!（ICM E题）
 

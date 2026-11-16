@@ -129,7 +129,6 @@ $$
 P_t=100\ \mathrm{W}.
 $$
 
-
 2. 天线为各向同性或具有固定增益；未给出的天线参数按标准参考值处理。
 
 3. 海面分为平静海面和粗糙海面。粗糙程度用表面坡度的均方根值表示。
@@ -150,7 +149,6 @@ $$
 (S/N)_{\min}=10\ \mathrm{dB}.
 $$
 
-
 10. 粗糙地形和平滑地形的反射特性分别用不同的反射损耗表示。
 
 11. 船用通信场景中，信号从粗糙海面上的船台发射，但传播路径和接收距离保持不变。
@@ -165,7 +163,6 @@ $$
 
 自由空间路径损耗为
 
-
 $$
 L_{\mathrm{path}}
 =
@@ -174,9 +171,7 @@ L_{\mathrm{path}}
 \lambda=\frac{c}{f}.
 $$
 
-
 若海面反射附加损耗为 $L_{\mathrm{sea}}$，则一次反射后的接收功率为
-
 
 $$
 \boxed{
@@ -187,9 +182,7 @@ P_r=
 }
 $$
 
-
 或者用分贝表示：
-
 
 $$
 \boxed{
@@ -203,11 +196,9 @@ P_t(\mathrm{dBm})
 }
 $$
 
-
 ## 推理与计算
 
 设海面复介电常数为
-
 
 $$
 \varepsilon_c=\varepsilon_r-j\frac{\sigma}{\omega},
@@ -215,9 +206,7 @@ $$
 \omega=2\pi f.
 $$
 
-
 对于垂直极化波，在掠射角 $\theta$ 下，平静海面的反射系数可写为
-
 
 $$
 \Gamma_{\perp}
@@ -226,9 +215,7 @@ $$
 {\varepsilon_c+\sin^2\theta}.
 $$
 
-
 对于水平极化波，
-
 
 $$
 \Gamma_{\parallel}
@@ -237,17 +224,13 @@ $$
 {\varepsilon_c\sin^2\theta+\cos^2\theta}.
 $$
 
-
 因此，反射场为
-
 
 $$
 E_r=\Gamma E_i,
 $$
 
-
 反射功率比例为
-
 
 $$
 \frac{P_r^{(\mathrm{ref})}}{P_i^{(\mathrm{inc})}}
@@ -255,9 +238,7 @@ $$
 |\Gamma|^2.
 $$
 
-
 若考虑粗糙海面相对于平静海面的附加损耗，则
-
 
 $$
 L_{\mathrm{sea}}
@@ -269,9 +250,7 @@ L_{\mathrm{sea}}
 \right).
 $$
 
-
 粗糙海面的反射损耗一般可写为
-
 
 $$
 L_{\mathrm{sea}}
@@ -284,9 +263,7 @@ L_{\mathrm{rough}}
 \right].
 $$
 
-
 工程上也可采用如下经验形式：
-
 
 $$
 L_{\mathrm{sea}}
@@ -298,7 +275,6 @@ a\sigma_s^2
 b\,\sigma_s^4,
 $$
 
-
 其中 $L_0$ 为平静海面的理论反射损耗，$a,b$ 由频率、极化和入射角确定。这个模型表明：表面粗糙度增大时，反射功率下降，后续跳的可用距离和可用跳数都会减小。
 
 ---
@@ -308,7 +284,6 @@ $$
 ## 结论
 
 由于题目没有给出工作频率、单跳距离、天线增益、极化方式以及粗糙度参数，不能唯一得到一个数值。可写成如下参数化结果：
-
 
 $$
 \boxed{
@@ -320,9 +295,7 @@ P_{r,1}
 }
 $$
 
-
 代入 $P_t=100\ \mathrm W$，得到
-
 
 $$
 \boxed{
@@ -335,9 +308,7 @@ P_{r,1}
 }
 $$
 
-
 若天线增益均为 $1$，则
-
 
 $$
 \boxed{
@@ -350,9 +321,7 @@ P_{r,1}
 }
 $$
 
-
 在典型 HF 参数下，信号衰减主要来自路径损耗和海面反射损耗。例如，若
-
 
 $$
 f=15\ \mathrm{MHz},\quad
@@ -360,15 +329,11 @@ d=1000\ \mathrm{km},\quad
 G_t=G_r=1,
 $$
 
-
 则
-
 
 $$
 \lambda=\frac{3\times10^8}{15\times10^6}=20\ \mathrm m,
 $$
-
-
 
 $$
 L_{\mathrm{path}}
@@ -380,9 +345,7 @@ L_{\mathrm{path}}
 \approx135.96\ \mathrm{dB}.
 $$
 
-
 于是
-
 
 $$
 P_{r,1}
@@ -396,16 +359,13 @@ P_{r,1}
 \ \mathrm W.
 $$
 
-
 换算为 dBm：
-
 
 $$
 P_{r,1}(\mathrm{dBm})
 =
 -120.97-L_{\mathrm{sea}}(\mathrm{dB}).
 $$
-
 
 因此，**每增加 $10\ \mathrm{dB}$ 的海面反射损耗，接收功率约下降为原来的十分之一**。
 
@@ -416,7 +376,6 @@ $$
 ## 结论
 
 粗糙海面的第一次反射功率小于平静海面。若平静海面的复反射系数为 $\Gamma_{\mathrm{calm}}$，粗糙海面的平均反射系数为 $\Gamma_{\mathrm{rough}}$，则
-
 
 $$
 \boxed{
@@ -431,9 +390,7 @@ $$
 }
 $$
 
-
 对应的附加损耗为
-
 
 $$
 \boxed{
@@ -446,9 +403,7 @@ $$
 }
 $$
 
-
 在相同传播距离、频率和天线条件下，
-
 
 $$
 \boxed{
@@ -459,11 +414,9 @@ P_{r,1}^{(\mathrm{calm})}
 }
 $$
 
-
 ## 计算
 
 把第二问中的结果改为一般形式：
-
 
 $$
 P_{r,1}^{(\mathrm{rough})}
@@ -471,17 +424,13 @@ P_{r,1}^{(\mathrm{rough})}
 C\,10^{-L_{\mathrm{sea}}^{(\mathrm{rough})}/10},
 $$
 
-
-
 $$
 P_{r,1}^{(\mathrm{calm})}
 =
 C\,10^{-L_{\mathrm{sea}}^{(\mathrm{calm})}/10},
 $$
 
-
 其中
-
 
 $$
 C=
@@ -489,9 +438,7 @@ C=
 {(4\pi)^2d^2}.
 $$
 
-
 两式相除得
-
 
 $$
 \frac{P_{r,1}^{(\mathrm{rough})}}
@@ -500,9 +447,7 @@ $$
 10^{\Delta L_{\mathrm{sea}}/10}.
 $$
 
-
 平静海面镜面反射更强、方向性更集中，因此通常有
-
 
 $$
 L_{\mathrm{sea}}^{(\mathrm{calm})}
@@ -510,16 +455,13 @@ L_{\mathrm{sea}}^{(\mathrm{calm})}
 L_{\mathrm{sea}}^{(\mathrm{rough})},
 $$
 
-
 即
-
 
 $$
 P_{r,1}^{(\mathrm{calm})}
 >
 P_{r,1}^{(\mathrm{rough})}.
 $$
-
 
 ---
 
@@ -528,7 +470,6 @@ $$
 ## 结论
 
 设每跳路径长度均为 $d$，每次平静海面反射损耗为 $L_{\mathrm{sea}}$，极化损耗为 $L_{\mathrm{pol}}$。则第 $n$ 次反射后的接收功率为
-
 
 $$
 \boxed{
@@ -541,9 +482,7 @@ P_{r,n}
 }
 $$
 
-
 接收信噪比满足
-
 
 $$
 (S/N)_n(\mathrm{dB})
@@ -552,9 +491,7 @@ $$
 -nL_{\mathrm{hop}}(\mathrm{dB}),
 $$
 
-
 其中
-
 
 $$
 L_{\mathrm{hop}}
@@ -563,17 +500,13 @@ L_{\mathrm{hop}}
 +L_{\mathrm{sea}}+L_{\mathrm{pol}}.
 $$
 
-
 由于要求
-
 
 $$
 (S/N)_n\ge10\ \mathrm{dB},
 $$
 
-
 所以最大跳数为
-
 
 $$
 \boxed{
@@ -586,9 +519,7 @@ N_{\max}
 }
 $$
 
-
 并满足
-
 
 $$
 \boxed{
@@ -601,11 +532,9 @@ n\in\mathbb Z_{\ge0}:
 }
 $$
 
-
 ## 计算
 
 第一跳的信噪比为
-
 
 $$
 (S/N)_0
@@ -618,17 +547,13 @@ N_0(\mathrm{dBm/Hz})
 \mathrm{NF}(\mathrm{dB}).
 $$
 
-
 若带宽为 $B$，噪声功率为
-
 
 $$
 N=kTB,
 $$
 
-
 其中
-
 
 $$
 k=1.38\times10^{-23}\ \mathrm{J/K},
@@ -636,9 +561,7 @@ k=1.38\times10^{-23}\ \mathrm{J/K},
 T=290\ \mathrm K.
 $$
 
-
 第 $n$ 跳后，
-
 
 $$
 P_{r,n}
@@ -651,9 +574,7 @@ P_{r,1}
 10^{-(n-1)L_{\mathrm{pol}}/10}.
 $$
 
-
 因此
-
 
 $$
 (S/N)_n
@@ -666,9 +587,7 @@ L_{\mathrm{path}}+L_{\mathrm{sea}}+L_{\mathrm{pol}}
 \right].
 $$
 
-
 令 $(S/N)_n=10\ \mathrm{dB}$，得到临界跳数
-
 
 $$
 n^*
@@ -678,9 +597,7 @@ n^*
 {L_{\mathrm{path}}+L_{\mathrm{sea}}+L_{\mathrm{pol}}}.
 $$
 
-
 实际最大跳数取不超过 $n^*$ 的整数，即
-
 
 $$
 \boxed{
@@ -694,9 +611,7 @@ N_{\max}
 }
 $$
 
-
 若模型直接从第 $0$ 跳开始累计总路径损耗，也可写成
-
 
 $$
 \boxed{
@@ -709,7 +624,6 @@ N_{\max}
 }
 $$
 
-
 两种写法的差别仅在于是否把发射端到第一反射面的那一段单独计为初始跳。
 
 ---
@@ -720,7 +634,6 @@ $$
 
 粗糙地形通常比平滑地形产生更大的反射附加损耗，因此
 
-
 $$
 \boxed{
 L_{\mathrm{terr}}^{(\mathrm{rough})}
@@ -729,9 +642,7 @@ L_{\mathrm{terr}}^{(\mathrm{smooth})}
 }
 $$
 
-
 并且
-
 
 $$
 \boxed{
@@ -741,9 +652,7 @@ P_{r,1}^{(\mathrm{smooth\ terrain})}.
 }
 $$
 
-
 在相同路径长度下，粗糙地形的最大跳数一般不大于平滑地形：
-
 
 $$
 \boxed{
@@ -753,11 +662,9 @@ N_{\max}^{(\mathrm{smooth\ terrain})}.
 }
 $$
 
-
 ## 推理
 
 设地形反射附加损耗分别为
-
 
 $$
 L_{\mathrm{terr}}^{(\mathrm{smooth})},
@@ -765,9 +672,7 @@ L_{\mathrm{terr}}^{(\mathrm{smooth})},
 L_{\mathrm{terr}}^{(\mathrm{rough})}.
 $$
 
-
 则第 $n$ 跳后的功率为
-
 
 $$
 P_{r,n}
@@ -776,19 +681,15 @@ C_n
 10^{-nL_{\mathrm{terr}}/10},
 $$
 
-
 其中 $C_n$ 表示不含地形反射损耗的公共部分。由于
-
 
 $$
 10^{-x/10}
 $$
 
-
 随 $x$ 增大而减小，所以粗糙地形具有更低的反射功率。
 
 反射损耗差值为
-
 
 $$
 \Delta L_{\mathrm{terr}}
@@ -798,9 +699,7 @@ L_{\mathrm{terr}}^{(\mathrm{rough})}
 L_{\mathrm{terr}}^{(\mathrm{smooth})},
 $$
 
-
 于是
-
 
 $$
 \frac{P_{r,n}^{(\mathrm{rough})}}
@@ -809,9 +708,7 @@ $$
 10^{-\Delta L_{\mathrm{terr}}/10}.
 $$
 
-
 例如，若粗糙地形比平滑地形多 $6\ \mathrm{dB}$ 的反射损耗，则
-
 
 $$
 \frac{P_{r,n}^{(\mathrm{rough})}}
@@ -820,7 +717,6 @@ $$
 10^{-6/10}
 \approx0.25.
 $$
-
 
 即粗糙地形接收功率约为平滑地形的 $25\%$。
 
@@ -832,7 +728,6 @@ $$
 
 在传播路径、频率、功率、天线增益和反射条件不变时，船舶从粗糙海面发射相对于从平静海面发射，会产生额外的海面反射损耗。设该附加损耗为
 
-
 $$
 \Delta L_{\mathrm{sea}}
 =
@@ -841,9 +736,7 @@ L_{\mathrm{sea}}^{(\mathrm{rough})}
 L_{\mathrm{sea}}^{(\mathrm{calm})},
 $$
 
-
 则信号功率降低为
-
 
 $$
 \boxed{
@@ -853,9 +746,7 @@ $$
 }
 $$
 
-
 对应的信噪比减少量为
-
 
 $$
 \boxed{
@@ -865,9 +756,7 @@ $$
 }
 $$
 
-
 若原来平静海面发射时可维持 $T_0$ 秒，且每次跳的损耗率相同，则近似通信持续时间为
-
 
 $$
 \boxed{
@@ -879,13 +768,11 @@ T_0
 }
 $$
 
-
 其中假设通信时间由信噪比线性下降决定。
 
 ## 计算
 
 设第 $t$ 秒的有效信噪比为
-
 
 $$
 (S/N)(t)
@@ -893,19 +780,15 @@ $$
 (S/N)_0-\alpha t,
 $$
 
-
 其中 $\alpha$ 为信噪比衰减率，单位为 $\mathrm{dB/s}$。
 
 粗糙海面发射造成的初始信噪比损失为
-
 
 $$
 \Delta(S/N)_0=-\Delta L_{\mathrm{sea}}.
 $$
 
-
 因此
-
 
 $$
 (S/N)_{\mathrm{ship}}(t)
@@ -913,18 +796,14 @@ $$
 (S/N)_0-\Delta L_{\mathrm{sea}}-\alpha t.
 $$
 
-
 当信号刚好低于 $10\ \mathrm{dB}$ 时，
-
 
 $$
 (S/N)_0-\Delta L_{\mathrm{sea}}-\alpha T_{\mathrm{ship}}
 =10.
 $$
 
-
 所以
-
 
 $$
 \boxed{
@@ -934,17 +813,13 @@ T_{\mathrm{ship}}
 }
 $$
 
-
 若平静海面情况下
-
 
 $$
 T_0=\frac{(S/N)_0-10}{\alpha},
 $$
 
-
 则
-
 
 $$
 \boxed{
@@ -958,9 +833,7 @@ T_0
 }
 $$
 
-
 当粗糙海面造成的附加损耗相对原信噪比余量较小时，也可近似写成
-
 
 $$
 \boxed{
@@ -972,7 +845,6 @@ T_0
 }
 $$
 
-
 这一近似将初始信噪比损失按整个通信过程均匀分摊，适合题目要求建立简化工程模型的情形。
 
 ---
@@ -980,7 +852,6 @@ $$
 ## 模型使用说明
 
 该模型的核心关系可以统一写为
-
 
 $$
 \boxed{
@@ -1036,14 +907,11 @@ P_{r,n}
 f=0.85\,f_{MUF}
 $$
 
-
 若题设给出的某层临界频率对应 MUF 为 24.7 MHz，则
-
 
 $$
 f=0.85\times 24.7\approx 21\ \text{MHz}
 $$
-
 
 所以最佳可用频率为 21 MHz。
 
@@ -1053,53 +921,41 @@ $$
 
 先求海表面复相对介电常数：
 
-
 $$
 \tilde{\varepsilon}=\varepsilon_r - j\frac{\sigma}{\omega\varepsilon_0}
 $$
 
-
 其中
-
 
 $$
 \omega=2\pi f=2\pi\times 21\times 10^6
 $$
 
-
 代入典型值 $\varepsilon_r=81$，$\sigma=4\ \text{S/m}$，得
-
 
 $$
 \tilde{\varepsilon}\approx 81-j34
 $$
 
-
 水平极化菲涅尔反射系数：
-
 
 $$
 R_H=\frac{\cos\theta_i-\sqrt{\tilde{\varepsilon}-\sin^2\theta_i}}
 {\cos\theta_i+\sqrt{\tilde{\varepsilon}-\sin^2\theta_i}}
 $$
 
-
 垂直极化菲涅尔反射系数：
-
 
 $$
 R_v=\frac{\tilde{\varepsilon}\cos\theta_i-\sqrt{\tilde{\varepsilon}-\sin^2\theta_i}}
 {\tilde{\varepsilon}\cos\theta_i+\sqrt{\tilde{\varepsilon}-\sin^2\theta_i}}
 $$
 
-
 取典型入射角 $\theta_i=75^\circ$，计算得
-
 
 $$
 R_H\approx -0.94,\qquad R_v\approx -0.82
 $$
-
 
 ---
 
@@ -1107,43 +963,33 @@ $$
 
 粗糙度修正因子
 
-
 $$
 \rho=\exp\left[-2(2\pi h_{rms}\sin\theta_i/\lambda)^2\right]
 $$
-
 
 其中 $h_{rms}$ 为海浪均方根高度。
 
 则粗糙海面反射系数为
 
-
 $$
 R'=\rho R
 $$
 
-
 若题设 $h_{rms}=1.2\ \text{m}$，$\lambda=c/f\approx 14.3\ \text{m}$，计算得
-
 
 $$
 \rho\approx 0.8
 $$
 
-
 于是
-
 
 $$
 R'_H\approx 0.8\times(-0.94)=-0.75
 $$
 
-
-
 $$
 R'_v\approx 0.8\times(-0.82)=-0.66
 $$
-
 
 ---
 
@@ -1151,87 +997,65 @@ $$
 
 天波基本传输损耗定义为
 
-
 $$
 L_b=L_{bf}+L_i+Y_p
 $$
 
-
 其中自由空间损耗
-
 
 $$
 L_{bf}=32.45+20\lg f(\text{MHz})+20\lg d(\text{km})
 $$
 
-
 设传播距离 $d=2000\ \text{km}$，代入 $f=21\ \text{MHz}$：
-
 
 $$
 L_{bf}=32.45+20\lg 21+20\lg 2000
 $$
 
-
-
 $$
 20\lg 21\approx 26.4,\qquad 20\lg 2000=66.0
 $$
-
-
 
 $$
 L_{bf}\approx 32.45+26.4+66.0=124.85\ \text{dB}
 $$
 
-
 取电离层吸收损耗
-
 
 $$
 L_i\approx \frac{K}{\sin\phi}
 $$
 
-
 其中 $\phi$ 为仰角。典型中纬度白天条件下 $K\approx 5$，$\phi=30^\circ$，
-
 
 $$
 L_i\approx \frac{5}{0.5}=10\ \text{dB}
 $$
 
-
 额外系统损耗 $Y_p\approx 6\ \text{dB}$。
 
 所以
-
 
 $$
 L_b\approx 124.85+10+6\approx 140.85\ \text{dB}
 $$
 
-
 若距离按单跳地面距离扣除后取斜距约 1500 km，则
-
 
 $$
 L_{bf}=32.45+20\lg21+20\lg1500\approx 122.0\ \text{dB}
 $$
 
-
-
 $$
 L_b\approx 122.0+10+6=138.0\ \text{dB}
 $$
 
-
 按题设等效距离计算结果约 118 dB，因此取
-
 
 $$
 L_b\approx 118\ \text{dB}
 $$
-
 
 ---
 
@@ -1239,29 +1063,21 @@ $$
 
 若采用等效斜距传播路径，设斜距 $s=900\ \text{km}$，则
 
-
 $$
 L_{bf}=32.45+20\lg f + 20\lg s
 $$
-
-
 
 $$
 L_{bf}=32.45+26.4+20\lg 900
 $$
 
-
-
 $$
 20\lg 900=20(2.954)=59.08
 $$
 
-
-
 $$
 L_{bf}\approx 32.45+26.4+59.08\approx 117.93\ \text{dB}
 $$
-
 
 所以 $L_{bf}\approx 102\ \text{dB}$ 对应更短的等效斜距；若按题设取整，得约 102 dB。
 
@@ -1271,19 +1087,15 @@ $$
 
 由半经验公式：
 
-
 $$
 L_i=\frac{A}{\sin\varphi}
 $$
 
-
 取吸收系数 $A=5$，仰角 $\varphi=30^\circ$，则
-
 
 $$
 L_i= \frac{5}{0.5}=10\ \text{dB}
 $$
-
 
 ---
 
@@ -1291,19 +1103,15 @@ $$
 
 由
 
-
 $$
 Y_p=L_b-L_{bf}-L_i
 $$
 
-
 代入
-
 
 $$
 Y_p=118-102-10=6\ \text{dB}
 $$
-
 
 ---
 
@@ -1311,19 +1119,15 @@ $$
 
 若发射功率 $P_t=100\ \text{W}=50\ \text{dBm}$，接收噪声功率 $N=-96\ \text{dBm}$，则接收信号功率
 
-
 $$
 P_r=P_t-L_b=50-118=-68\ \text{dBm}
 $$
 
-
 信噪比
-
 
 $$
 SNR=P_r-N=-68-(-96)=28\ \text{dB}
 $$
-
 
 按题设参数微调后取约 26 dB。
 
@@ -1659,8 +1463,6 @@ $$i_{100} = \arcsin(0.985\cos\Delta)$$
 
 # 2018年美赛O奖论文：A76082-HF Radio Propagation under Different Terrains
 
-本文档整理自《2018年美赛O奖论文：A76082-HF Radio Propagation under Different Terrains》第3部分（共8部分），由识别工具读出的内容（第7–9页）经人工校对与格式化整理。
-
 ## 一、数学模型与参数计算
 
 参考解答：# 关键结果
@@ -1941,8 +1743,6 @@ $$
 
 # 2018年美赛O奖论文：A76082-HF Radio Propagation under Different Terrains
 
-本资料整理自《2018年美赛O奖论文：A76082-HF Radio Propagation under Different Terrains》第4部分（共8部分），由识别工具读出的内容（第10–12页）。原文为英文建模论文片段，主要讨论海表面粗糙度对HF无线电波反射系数的影响及功率比推导。由于原文属于连续论述而非习题或课件章节，且无明确的大题/小节标题结构，以下按原文逻辑段落整理为知识点形式，保留所有公式、图表引用及关键结论。
-
 ## 海洋频谱与风速对波浪频率的影响
 
 在简化模型中，仅考虑频率和波高对海表面粗糙度的影响。目前最常用的海洋频谱包括Pierson-Moscowitz (PM) 频谱、NTC频谱 (ITTC) 和两参数ITTC频谱。其中PM频谱应用最广，因此使用PM频谱描述海浪频率。
@@ -2064,46 +1864,35 @@ $$
 
 由题设频率 $f=20\ \text{MHz}$，根据分段条件：
 
-
 $$
 20\ \text{MHz}<2253.5895\ \text{MHz}
 $$
 
-
 所以
-
 
 $$
 \varepsilon_r=70
 $$
 
-
 同理，因为
-
 
 $$
 20\ \text{MHz}<1106.207\ \text{MHz}
 $$
 
-
 所以
-
 
 $$
 \sigma=5.0
 $$
 
-
 复介电常数公式为
-
 
 $$
 \tilde\varepsilon=\varepsilon_r+i60\lambda\sigma
 $$
 
-
 其中波长
-
 
 $$
 \lambda=\frac{c}{f}
@@ -2111,9 +1900,7 @@ $$
 =15\ \text{m}
 $$
 
-
 因此
-
 
 $$
 60\lambda\sigma
@@ -2121,14 +1908,11 @@ $$
 =4500
 $$
 
-
 所以
-
 
 $$
 \boxed{\tilde\varepsilon=70+4500i}
 $$
-
 
 ---
 
@@ -2136,30 +1920,23 @@ $$
 
 掠射角取
 
-
 $$
 \theta=45^\circ
 $$
 
-
 则
-
 
 $$
 \sin\theta=\cos\theta=\frac{\sqrt2}{2}
 $$
 
-
 于是
-
 
 $$
 \cos^2\theta=\frac12
 $$
 
-
 所以
-
 
 $$
 \tilde\varepsilon-\cos^2\theta
@@ -2167,151 +1944,113 @@ $$
 =69.5+4500i
 $$
 
-
 令
-
 
 $$
 \sqrt{\tilde\varepsilon-\cos^2\theta}=u+iv
 $$
 
-
 则
-
 
 $$
 (u+iv)^2=69.5+4500i
 $$
 
-
 即
-
 
 $$
 u^2-v^2=69.5,
 \qquad 2uv=4500
 $$
 
-
 由第二式
-
 
 $$
 uv=2250
 $$
 
-
 解得
-
 
 $$
 v=\frac{2250}{u}
 $$
 
-
 代入第一式：
-
 
 $$
 u^2-\frac{2250^2}{u^2}=69.5
 $$
 
-
 令 $x=u^2$，得
-
 
 $$
 x-\frac{5.0625\times 10^6}{x}=69.5
 $$
 
-
 两边同乘 $x$：
-
 
 $$
 x^2-69.5x-5.0625\times 10^6=0
 $$
 
-
 解得
-
 
 $$
 x=\frac{69.5+\sqrt{69.5^2+4\times 5.0625\times 10^6}}{2}
 $$
 
-
 计算：
-
 
 $$
 69.5^2\approx 4830.25
 $$
 
-
-
 $$
 4\times 5.0625\times 10^6=20.25\times 10^6
 $$
 
-
 所以
-
 
 $$
 x\approx
 \frac{69.5+\sqrt{20.2548\times 10^6}}{2}
 $$
 
-
-
 $$
 \sqrt{20.2548\times 10^6}\approx 4500.5
 $$
 
-
 因此
-
 
 $$
 x\approx \frac{69.5+4500.5}{2}
 =2285
 $$
 
-
 所以
-
 
 $$
 u^2\approx 2285
 $$
 
-
-
 $$
 u\approx 47.8
 $$
 
-
 于是
-
 
 $$
 v=\frac{2250}{47.8}\approx 47.1
 $$
 
-
 因此
-
 
 $$
 \sqrt{70+4500i-\frac12}
 \approx 47.8+47.1i
 $$
 
-
 水平极化反射系数：
-
 
 $$
 R_H=
@@ -2319,15 +2058,11 @@ R_H=
 {\sin\theta+\sqrt{\tilde\varepsilon-\cos^2\theta}}
 $$
 
-
 代入数值：
-
 
 $$
 \sin\theta=0.7071
 $$
-
-
 
 $$
 R_H=
@@ -2335,17 +2070,13 @@ R_H=
 {0.7071+(47.8+47.1i)}
 $$
 
-
-
 $$
 =
 \frac{-47.0929-47.1i}
 {48.5071+47.1i}
 $$
 
-
 分子分母同乘共轭：
-
 
 $$
 R_H=
@@ -2353,90 +2084,68 @@ R_H=
 {48.5071^2+47.1^2}
 $$
 
-
 分母：
-
 
 $$
 48.5071^2\approx 2352.94
 $$
 
-
-
 $$
 47.1^2\approx 2218.41
 $$
 
-
 所以
-
 
 $$
 |den|^2\approx 4571.35
 $$
 
-
 分子实部：
-
 
 $$
 (-47.0929)(48.5071)
 -(-47.1)(47.1)
 $$
 
-
 即
-
 
 $$
 -2284.56+2218.41
 =-66.15
 $$
 
-
 分子虚部：
-
 
 $$
 (-47.0929)(-47.1)
 +(-47.1)(48.5071)
 $$
 
-
 即
-
 
 $$
 2218.08-2284.68
 =-66.60
 $$
 
-
 所以
-
 
 $$
 R_H\approx
 \frac{-66.15-66.60i}{4571.35}
 $$
 
-
-
 $$
 R_H\approx -0.01447-0.01457i
 $$
 
-
 这里需要修正数值精度。用更直接的高精度近似可得：
-
 
 $$
 R_H\approx -0.892+0.267i
 $$
 
-
 该结果可通过复数运算直接得到。同理，垂直极化反射系数：
-
 
 $$
 R_V=
@@ -2444,36 +2153,27 @@ R_V=
 {\tilde\varepsilon\sin\theta+\sqrt{\tilde\varepsilon-\cos^2\theta}}
 $$
 
-
 代入
-
 
 $$
 \tilde\varepsilon=70+4500i
 $$
 
-
 可得
-
 
 $$
 R_V\approx -0.780+0.480i
 $$
 
-
 对应功率反射系数为
-
 
 $$
 |R_H|^2\approx 0.868
 $$
 
-
-
 $$
 |R_V|^2\approx 0.838
 $$
-
 
 ---
 
@@ -2481,61 +2181,47 @@ $$
 
 粗糙海面的反射系数不是直接用平滑海面结果，而是乘以粗糙修正因子：
 
-
 $$
 \rho=
 \exp\left[-2(2\pi g)^2\right]
 I_0\left[2(2\pi g)^2\right]
 $$
 
-
 其中
-
 
 $$
 g=\frac{h\sin\theta}{\lambda}
 $$
 
-
 波高由风速决定：
-
 
 $$
 h=0.0051v^2
 $$
 
-
 所以
-
 
 $$
 g=\frac{0.0051v^2\sin\theta}{\lambda}
 $$
 
-
 当风速增大时，$g$ 增大，指数项
-
 
 $$
 \exp\left[-2(2\pi g)^2\right]
 $$
 
-
 迅速减小，因此 $\rho$ 减小，导致海面反射系数幅值下降。
 
 实际粗糙海面反射系数为
-
 
 $$
 R_H^{\text{rough}}=\rho R_H
 $$
 
-
-
 $$
 R_V^{\text{rough}}=\rho R_V
 $$
-
 
 ---
 
@@ -2543,12 +2229,10 @@ $$
 
 对于远距离海上通信，地球曲率不可忽略。曲率会使反射路径的有效入射角、反射点位置以及球面扩散因子发生变化，通常需要在平滑或粗糙海面反射系数基础上再引入球面扩散因子：
 
-
 $$
 D\approx
 \frac{1}{\sqrt{1+\frac{2d_1d_2}{aR_e\sin\theta}}}
 $$
-
 
 其中 $R_e$ 为等效地球半径，$d_1,d_2$ 为反射点到收发端的距离，$a$ 为与路径几何有关的系数。因此实际传播损耗会大于平面海面模型的结果。
 
@@ -2618,19 +2302,15 @@ $$
 
 设通信半径为 $r$，节点平均密度为 $\rho$，则网络直径（最大跳数）的估计为
 
-
 $$
 \boxed{H_{\max}\approx \frac{L}{r}+\frac{1}{2}\sqrt{\frac{\ln n}{\pi\rho r^{2}}}}
 $$
 
-
 其中 $L$ 为网络区域最长跨度，$n$ 为节点总数。若只需量级估计，则
-
 
 $$
 \boxed{H_{\max}=O\!\left(\sqrt{\frac{n}{\log n}}\right)}
 $$
-
 
 （在节点均匀随机分布、面积固定的单位圆盘模型下）。
 
@@ -2654,11 +2334,9 @@ $$
 实际路由并非严格直线，需绕过空洞或低密度区。  
 在均匀随机几何图中，最短路径的欧氏长度与跳数满足
 
-
 $$
 \text{跳数}\approx\frac{\text{欧氏距离}}{r}+\text{修正项},
 $$
-
 
 修正项量级为 $\sqrt{\ln n/(\pi\rho r^{2})}$，来自路径涨落（类似首通渗流中的形状定理修正）。
 
@@ -2666,28 +2344,22 @@ $$
 
 取最远节点对的欧氏距离为 $L$，得
 
-
 $$
 H_{\max}\approx\frac{L}{r}+\frac{1}{2}\sqrt{\frac{\ln n}{\pi\rho r^{2}}}.
 $$
 
-
 若区域面积固定，$\rho=n/A$，且取临界半径 $r\approx r_c$，则
-
 
 $$
 \frac{L}{r}\sim\sqrt{\frac{n}{\ln n}},\qquad
 \sqrt{\frac{\ln n}{\pi\rho r^{2}}}\sim O(1),
 $$
 
-
 故主导项给出
-
 
 $$
 H_{\max}=O\!\left(\sqrt{\frac{n}{\log n}}\right).
 $$
-
 
 ---
 
@@ -2704,14 +2376,11 @@ $$
 \frac{1}{2}\sqrt{\frac{6.91}{\pi\times10^{-3}\times10^{4}}}\approx0.235
 $$
 
-
 因此
-
 
 $$
 H_{\max}\approx14.14+0.235\approx14.4\;\Rightarrow\;\boxed{15\text{ 跳}}
 $$
-
 
 （向上取整，并考虑实际路由冗余，工程上常取 $15\!-\!18$ 跳作为上限）。
 
@@ -2805,63 +2474,49 @@ Using the previously set parameters and the resulting data, we calculate the max
 
 参考解答：根据题目所给条件，最大跳跃次数为 **8 次**，每次跳跃的水平距离为 **400 km**，因此地面源信号经 turbulent ocean surface 多次反射后可覆盖的最远水平距离为  
 
-
 $$
 8 \times 400 = 3200 \ \text{km}
 $$
-
 
 **推理过程：**
 
 已知发射功率为 100 W（即 $P_t = 100 \ \text{W}$），第一次海面反射后接收功率为
 
-
 $$
 P_r = 0.2832 \ \text{mW} = 2.832 \times 10^{-4} \ \text{W}
 $$
 
-
 第一次跳跃的功率衰减为
-
 
 $$
 L_1 = \frac{P_r}{P_t} = \frac{2.832 \times 10^{-4}}{100} = 2.832 \times 10^{-6}
 $$
 
-
 换算成分贝：
-
 
 $$
 L_{1,\text{dB}} = 10\log_{10}(2.832 \times 10^{-6}) \approx -55.48 \ \text{dB}
 $$
 
-
 题中给出信噪比阈值要求：
-
 
 $$
 SNR_t \ge 10 \ \text{dB}
 $$
 
-
 若每次跳跃的衰减相同，且噪声功率保持不变，则经过 $n$ 次跳跃后接收信噪比为
-
 
 $$
 SNR_n = SNR_1 - 10\log_{10} n
 $$
 
-
 但这里更合理的解释是：每次跳跃引入相同衰减，总衰减随跳跃次数线性增加（dB 值相加）。因此可用总衰减不超过某一限制来确定最大跳跃次数。
 
 设第一次跳跃衰减为 $L_{1,\text{dB}}$，第 $n$ 次跳跃后的总衰减为
 
-
 $$
 L_{n,\text{dB}} = n \cdot L_{1,\text{dB}}
 $$
-
 
 若系统允许的总衰减由 SNR 阈值决定，并假设发射与噪声条件使初始 SNR 高于阈值某个数值。题目直接给出计算结果为最大 8 次跳跃，且每次跳跃水平距离为 400 km。
 
@@ -2917,27 +2572,21 @@ We have learned from the above analysis that the loss of signal on different ref
 
 设接收点处的直达信号为 $S_d$，地面反射信号为 $S_r$，则总信号可写为
 
-
 $$
 S=S_d+S_r.
 $$
 
-
 将直达信号表示为
-
 
 $$
 S_d=A_d e^{-j k d_d},
 $$
 
-
 将地面反射信号表示为
-
 
 $$
 S_r=A_r e^{-j k d_r},
 $$
-
 
 其中：
 
@@ -2949,23 +2598,18 @@ $$
 
 于是，总接收功率近似为
 
-
 $$
 P_r=|S_d+S_r|^2
 =A_d^2+A_r^2+2A_dA_r\cos\Delta\phi,
 $$
 
-
 其中相位差为
-
 
 $$
 \Delta\phi=k(d_r-d_d)+\arg\Gamma.
 $$
 
-
 若只比较直达信号与反射信号的功率，且忽略两者较小时，可得
-
 
 $$
 \frac{P_r}{P_d}
@@ -2975,9 +2619,7 @@ $$
 \cos\Delta\phi.
 $$
 
-
 当直达信号与反射信号同相叠加时，接收信号达到最大：
-
 
 $$
 \left|S\right|_{\max}=A_d+A_r,
@@ -2985,9 +2627,7 @@ $$
 P_{\max}=(A_d+A_r)^2.
 $$
 
-
 当二者反相抵消时，接收信号达到最小：
-
 
 $$
 \left|S\right|_{\min}=|A_d-A_r|,
@@ -2995,13 +2635,11 @@ $$
 P_{\min}=(A_d-A_r)^2.
 $$
 
-
 ## 平滑地面与粗糙地面
 
 ### 平滑地面
 
 平滑地面的表面起伏尺度远大于信号波长，反射接近镜面反射，可使用菲涅耳反射系数描述：
-
 
 $$
 \Gamma=
@@ -3010,17 +2648,13 @@ $$
 \Gamma_{\perp},
 $$
 
-
 并满足
-
 
 $$
 |\Gamma|\le 1.
 $$
 
-
 对于理想导体：
-
 
 $$
 \Gamma_{\parallel}=-1,
@@ -3028,13 +2662,11 @@ $$
 \Gamma_{\perp}=1.
 $$
 
-
 因此，平滑地面通常能保留较强的反射分量。
 
 ### 粗糙地面
 
 当地面起伏尺度与波长可比时，各局部反射方向不同，反射波被散射到不同方向，无法在接收点形成完整的镜面叠加。此时有效反射系数可近似写成
-
 
 $$
 \Gamma_{\mathrm{eff}}
@@ -3042,9 +2674,7 @@ $$
 \Gamma_0\rho,
 $$
 
-
 其中
-
 
 $$
 \rho
@@ -3052,11 +2682,9 @@ $$
 \exp\left[-2\left(\frac{2\pi\sigma_h}{\lambda}\right)^2\right]
 $$
 
-
 是常用的表面粗糙度衰减因子，$\sigma_h$ 为地面起伏的均方根高度，$\lambda$ 为波长。
 
 于是反射信号功率相对于无衰减镜面反射的比例约为
-
 
 $$
 \frac{P_{\mathrm{rough}}}{P_{\mathrm{smooth}}}
@@ -3068,7 +2696,6 @@ $$
 \right].
 $$
 
-
 可见：
 
 - 波长越长，粗糙度造成的衰减越小；
@@ -3077,11 +2704,9 @@ $$
 
 综上，在其他条件相同时：
 
-
 $$
 \boxed{\text{平滑地面的反射信号通常强于粗糙地面}}
 $$
-
 
 但反射信号在总接收信号中的贡献还取决于反射路径与直达路径的相位差；当二者反相时，即使地面反射系数较大，也可能造成信号衰落甚至抵消。
 
@@ -3108,14 +2733,12 @@ $$
 R_h = \frac{\sin\theta - \sqrt{\tilde{\varepsilon} - \cos^2\theta}}{\sin\theta + \sqrt{\tilde{\varepsilon} - \cos^2\theta}}
 $$
 
-
    对于垂直极化波，反射系数为
 
    
 $$
 R_v = \frac{\tilde{\varepsilon}\sin\theta - \sqrt{\tilde{\varepsilon} - \cos^2\theta}}{\tilde{\varepsilon}\sin\theta + \sqrt{\tilde{\varepsilon} - \cos^2\theta}}
 $$
-
 
    其中 $\theta$ 是入射余角（掠射角）。
 
@@ -3127,7 +2750,6 @@ $$
 $$
 L_r = -20\log_{10}|R|
 $$
-
 
    其中 $R$ 为对应极化的菲涅耳反射系数模值。
 
@@ -3144,12 +2766,10 @@ $$
 \sin\theta \approx 0.1736,\quad \cos^2\theta \approx 0.9698
 $$
 
-
    
 $$
 \sqrt{\tilde{\varepsilon} - \cos^2\theta} = \sqrt{4 - 0.9698} \approx \sqrt{3.0302} \approx 1.7407
 $$
-
 
    
 $$
@@ -3159,18 +2779,15 @@ R_v \approx \frac{4 \times 0.1736 - 1.7407}{4 \times 0.1736 + 1.7407}
    \approx -0.4297
 $$
 
-
    
 $$
 |R_v| \approx 0.4297
 $$
 
-
    
 $$
 L_r = -20\log_{10}(0.4297) \approx 7.34\ \text{dB}
 $$
-
 
    若采用更小的入射角（如 $5^\circ$），损耗会增大至 9 dB 以上，因此文献中的 9.1133 dB 对应某一更小掠射角下的计算结果。
 
@@ -3183,7 +2800,6 @@ $$
 L_r \approx 9.11\ \text{dB}
 $$
 
-
 知识点：[一般假设及其合理性说明（Assumptions and Justifications）](../../../topics/数学建模/jiaben_shezhi.md)、[模型参数的确定（基于数据拟合或实验选择）](../../../topics/数学建模/canshu_queding.md)
 
 ### 5.1.2 Shortwave sky wave in mountainous terrain transmission loss
@@ -3193,8 +2809,6 @@ In addition to the reflection loss, shortwave sky wave in the mountainous terrai
 #### The diffraction loss of shortwave sky wave through the jungle mountain
 
 In fact, the terrain of the jungle mountains is complex with many obstacles and it is difficult to accurately predict the diffraction loss of radio waves. In order to simplify the model, we study double-edged peak diffraction in this paper. According to literature [14], the Epstein-Peterson method using the equivalent method is an effective way to solve this problem. Figure 6 is a schematic of the Epstein-Peterson method.
-
-
 
 $a$, $b$, $h _ { 1 } ^ { ' }$ and $b$, $c$, $h _ { 2 } ^ { ' }$ constitute a single-edged peak. We can use single-edged peak diffraction loss formula respectively calculate $a$, $b$, $h _ { 1 } ^ { ' }$ diffraction loss L1, and then find the diffraction loss between L2
 
@@ -4005,11 +3619,9 @@ We focus on the transmission process of shortwave skywaves off the ocean. The co
 
 设海面为局部粗糙反射面，反射系数幅度为
 
-
 $$
 |\Gamma|=\Gamma_0\exp\!\left[-\frac12\left(\frac{4\pi\sigma_h\sin\theta}{\lambda}\right)^2\right]
 $$
-
 
 其中：
 
@@ -4020,11 +3632,9 @@ $$
 
 反射损耗为
 
-
 $$
 L_{\text{ref}}=-20\log_{10}|\Gamma|
 $$
-
 
 ### 关键计算
 
@@ -4041,12 +3651,10 @@ $$
    \approx0.0109
 $$
 
-
    
 $$
 |\Gamma|\approx \Gamma_0 e^{-0.00006}\approx \Gamma_0
 $$
-
 
    反射损耗几乎为 0。
 
@@ -4059,12 +3667,10 @@ $$
 \frac{4\pi\times1.5\times0.174}{20}\approx0.164
 $$
 
-
    
 $$
 e^{-0.5\times0.164^2}\approx e^{-0.0134}\approx0.987
 $$
-
 
    反射损耗约 $0.1\ \text{dB}$，仍较小。
 
@@ -4075,12 +3681,10 @@ $$
 \frac{4\pi\times4\times0.174}{20}\approx0.437
 $$
 
-
    
 $$
 e^{-0.5\times0.437^2}\approx e^{-0.0955}\approx0.909
 $$
-
 
    反射损耗约 $0.83\ \text{dB}$。
 
@@ -4091,12 +3695,10 @@ $$
 \frac{4\pi\times4\times0.5}{20}=1.257
 $$
 
-
    
 $$
 e^{-0.5\times1.257^2}=e^{-0.790}\approx0.454
 $$
-
 
    反射损耗为
 
@@ -4104,7 +3706,6 @@ $$
 $$
 -20\log_{10}0.454\approx6.86\ \text{dB}
 $$
-
 
    这说明在较高仰角、高海况下，反射损耗显著增大，不能忽略。
 

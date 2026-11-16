@@ -67,7 +67,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 - constructors: 构造函数
 - regular expression: 正则表达式
 
-
 ## 二、简答题
 
 知识点：[基本数据类型（Primitive Types）、字面量（Numeric and String Literals）及布尔类型](../../../topics/Web开发技术/js-primitives.md)、[变量声明、数值运算符、字符串连接与赋值语句](../../../topics/Web开发技术/js-vars-operators.md)、[内置对象的使用（Math对象、Number对象、String属性与方法、Date对象）](../../../topics/Web开发技术/js-built-in-objects.md)
@@ -157,7 +156,6 @@ person.name = "Alice"; // 创建并赋值 name 属性
    - `new Array(element0, element1, ..., elementN)`
 2. **使用数组字面量（Array Literal）**：
    - `[element0, element1, ..., elementN]`
-
 
 ## 三、编程题
 

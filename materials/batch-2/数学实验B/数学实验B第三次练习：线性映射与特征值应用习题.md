@@ -69,7 +69,6 @@ $$
 
 参考解答：结论：
 
-
 $$
 x_n=\frac13 2^n\begin{pmatrix}-1\\1\end{pmatrix}
 +\frac53 5^n\begin{pmatrix}2\\1\end{pmatrix}
@@ -80,52 +79,40 @@ x_n=\frac13 2^n\begin{pmatrix}-1\\1\end{pmatrix}
 \end{pmatrix}.
 $$
 
-
 简明的推理或计算过程：
 
 矩阵
-
 
 $$
 A=\begin{pmatrix}4&2\\1&3\end{pmatrix}
 $$
 
-
 的特征值为
-
 
 $$
 \lambda_1=2,\qquad \lambda_2=5.
 $$
 
-
 对应特征向量可取
-
 
 $$
 v_1=\begin{pmatrix}-1\\1\end{pmatrix},\qquad
 v_2=\begin{pmatrix}2\\1\end{pmatrix}.
 $$
 
-
 初始向量
-
 
 $$
 x_0=\begin{pmatrix}1\\2\end{pmatrix}
 $$
 
-
 用特征向量线性表示：
-
 
 $$
 x_0=c_1v_1+c_2v_2.
 $$
 
-
 解
-
 
 $$
 \begin{pmatrix}1\\2\end{pmatrix}
@@ -133,17 +120,13 @@ $$
 +c_2\begin{pmatrix}2\\1\end{pmatrix}
 $$
 
-
 得
-
 
 $$
 c_1=\frac13,\qquad c_2=\frac53.
 $$
 
-
 因此
-
 
 $$
 x_n=A^n x_0
@@ -152,9 +135,7 @@ x_n=A^n x_0
 +\frac53 5^n\begin{pmatrix}2\\1\end{pmatrix}.
 $$
 
-
 即
-
 
 $$
 x_n=
@@ -163,7 +144,6 @@ x_n=
 \frac{2^n}{3}+\frac{5}{3}5^n
 \end{pmatrix}.
 $$
-
 
 知识点：[矩阵特征值与特征向量计算（eig）](../../../topics/数学实验/特征值与特征向量.md)、[矩阵运算与线性映射基础](../../../topics/数学实验/矩阵运算实验.md)
 

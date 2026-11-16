@@ -234,13 +234,6 @@ $$
 
 - **净迁移率 $X _ { 1 0 }$**：由于自然资源负担日益加重，气候变化的影响威胁着人类的自给自足能力。因此，我们定义净迁移率作为评价指标。
 
----
-title: 2018年MCM/ICM E题O奖论文：Climate counts! Less Fragility & better Countries（第4部分）
-kind: 课件
-course: 数学建模
-source: 《数学建模》教材，2018年MCM/ICM E题O奖论文《Climate counts! Less Fragility & better Countries》第10-11页识别内容
----
-
 # 2018年MCM/ICM E题O奖论文：Climate counts! Less Fragility & better Countries（第4部分）
 
 本资料整理自2018年MCM/ICM E题O奖论文的第4部分（共8部分），主要涵盖指标权重确定方法（熵权法、变异系数法）、模糊聚类分析以及脆弱性识别模型的构建过程。
@@ -399,8 +392,6 @@ Because of the many plateau and mountainous areas, the climate of Mexico is comp
 
 As is illustrated in the Fig.11, the FCI of Kenya rise up rapidly between 2006 and 2008, and then it fluctuates at a high level. It is displayed by the linear trend line of CCI that though the level of CCI doesn’t keep increasing, the overall trend is to rise up, and the impact of the CCI is to improve the index FCI .
 
-
-
 #### 6.2 Fragility-climate change correlation
 
 In order to confirm the correlation between climate change and fragility of the country, we will conduct Chi-square analysis between FCI and CCI . According to the values of FCI , CCI , we will have the basis matrix $M$
@@ -439,8 +430,6 @@ $$
 
 The good-of-fit test of our coupling model is 0.5317. The result is not perfect, because climate is random complexity, however, our fitting model still elaborate vital phenomenon. That is when climate change is very intense, the country is rather fragile. Without the effects of climate change, the value of CCI is 0 and FCI is a constant. The country’s fragility will be so small that we can identify it as stable or impregnable.
 
-
-
 #### 6.3 Definition of tipping point
 
 The climate change always exists and every country more or less is influenced by it. But not all of the country will fall into the ‘fragile’ country under the pressure of climate change. However, some of them inevitably change into fragile country, and each of them has gone through the tipping point between ‘stable’ and ‘fragile’. In this part we will discuss about the definition of tipping point based on the conclusion of Fragility-Climate Change Coupling Model.
@@ -456,14 +445,6 @@ To begin with, it’s hard to give a precise point of time when will the country
 When the value of above parameters reach the level in the table, the country should keep vigilant against the influence of climate change, which already goes to a high level and the country would slid to the rank of fragile country.
 
 According to the research of IPCC, it comes to us clearly that the world is Irreversibly warming and different weather disasters take place more frequently. Based on the conclusion of Fragility-Climate Change Coupling Model, we can easily get the relationship between CCI and FCI . Substitute the value of tipping point into the formula, we will derive that when the CCI comes to 58.72, the country experiences the critical point, which should be attached close attention to.
-
----
-title: Climate counts! Less Fragility & better Countries (MCM/ICM 2018 E题 O奖论文)
-kind: 课件
-course: 数学建模
-term: 2018
-source: MCM/ICM 2018 E题 O奖论文 Team#74971
----
 
 # Climate counts! Less Fragility & better Countries
 
@@ -541,17 +522,7 @@ $$
 
 在现实生活中，统计数据往往不准确，我们的模型输入可能存在偏差。这些偏差可能会影响模型的结果。为了测试我们模型的鲁棒性，在本节中，我们将分析任务三中气候变化预测模型的敏感性。敏感性分析的结果表明，我们的模型表现出完美的稳定性。
 
----
-title: 《数学建模》2018年MCM/ICM E题O奖论文：Climate counts! Less Fragility & better Countries 第8部分
-kind: 课件
-course: 数学建模
-term: 2018
-source: 教材第 22–23 页
----
-
 # 《数学建模》2018年MCM/ICM E题O奖论文：Climate counts! Less Fragility & better Countries 第8部分
-
-本部分为论文的第8部分，包含预测分析、优缺点总结及参考文献。内容整理自识别工具读出的原文，已修正明显的断行和乱码错误。
 
 ## 一、预测与模型稳定性分析
 

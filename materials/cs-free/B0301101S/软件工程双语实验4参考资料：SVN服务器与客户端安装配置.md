@@ -12,8 +12,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 # 《软件工程（双语）》实验 4：SVN 服务器与客户端安装配置
 
-本资料整理自《软件工程（双语）》实验 4 参考资料，由识别工具读取并修正了明显的断行、乱码及格式错误。
-
 ## 一、SVN 服务器端安装与配置
 
 ### 安装服务器端 Visual SVN Server
@@ -88,8 +86,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 ![文件列表视图](软件工程双语实验4参考资料：SVN服务器与客户端安装配置.assets/图12.jpg)
 
-
-
 ## 三、SVN 常用功能操作
 
 完成 SVN 的添加、提交、更新、分支、合并等操作。
@@ -103,13 +99,9 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 | 🔵 蓝色加号 | 文件已添加到仓库，但尚未提交 (file has been added to the repository, but it must still be committed) |
 | 无标记 | 文件不在仓库中 (file is not in repository) |
 
-
-
 ### 文件编辑与提交
 
 可以通过“记事本”打开文件进行编辑，例如 `test.txt`。
-
-
 
 在 TortoiseSVN 菜单中选择 "Add" 添加文件，或 "Commit" 提交修改。
 

@@ -9,16 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2018年美赛O奖论文：A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy（第1部分）
-kind: 课件
-course: 数学建模
-term: 2018
-source: 《数学建模》教材 / 2018 ICM Summary Sheet
----
-
-# 2018年美赛O奖论文：A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy（第1部分）
-
 本文档整理自2018年美国大学生数学建模竞赛（ICM）获得特等奖（Outstanding Winner, O奖）的论文《A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy》的第一部分，即摘要页（Summary Sheet）。内容涵盖了模型构建思路、核心方法、结果分析及创新点。
 
 ## 一、模型概述
@@ -758,13 +748,6 @@ Function: The code realized the DBSCAN classification algorithm
 Input: X : data to be classified(data of each person) Epsilon : the epsilon of Density-based Clustering MinPts : the MinPts of Density-based Clustering
 Output: ID : The result(Group name) according to DBSCAN Noise : The Noise point
 
----
-title: 《数学建模》2018年美赛O奖论文：A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy（第 14 部分）
-kind: 课件
-course: 数学建模
-source: 教材《数学建模》2018年美赛O奖论文 A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy，第 14 部分（共 14 部分），识别页码 26–29
----
-
 # 《数学建模》2018年美赛O奖论文：A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy（第 14 部分）
 
 本资料整理自《数学建模》教材中引用的2018年美国大学生数学建模竞赛（MCM/ICM）特等奖（Outstanding Winner, O奖）论文《A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy》的第14部分内容。内容主要涉及该论文所使用的MATLAB代码函数说明，包括K-means聚类、熵权法计算权重以及数据可视化相关脚本。
@@ -777,13 +760,11 @@ source: 教材《数学建模》2018年美赛O奖论文 A Smart Privacy Commodit
 - **Input**: `data` stored the index of each person; `N` stands for the number of categories.
 - **Output**: `result` presents the result of classification.
 
-
 ### 代码 No.5 entropy.m
 
 - **Function**: The code realized the entropy to obtain the weight of each index.
 - **Input**: `data` is according to Original data matrix.
 - **Output**: `s` stored the score of each person; `w` stored weight of each index result.
-
 
 ### 代码 No.6 myplot1.m
 
@@ -791,13 +772,11 @@ source: 教材《数学建模》2018年美赛O奖论文 A Smart Privacy Commodit
 - **Input**: `data` is according to Original data matrix.
 - **Output**: pictures.
 
-
 ### 代码 No.7 myplot2.m
 
 - **Function**: To see the distribution of scores on the pictures.
 - **Input**: `data` is according to Original data matrix.
 - **Output**: pictures.
-
 
 ### 代码 No.8 myplot3.m
 

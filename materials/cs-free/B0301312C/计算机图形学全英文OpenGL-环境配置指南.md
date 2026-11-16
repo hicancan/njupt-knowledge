@@ -59,6 +59,4 @@ There is a way for relative link setting which the GLEW and GLFW are in the same
 
 The file and folder structure is shown in the following figure.
 
-
-
 Great!!! You should have a window and enjoy yourself!

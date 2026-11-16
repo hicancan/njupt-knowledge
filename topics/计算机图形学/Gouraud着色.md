@@ -5,11 +5,6 @@ requires: [计算机图形学/Flat着色]
 
 # Gouraud Shading双线性光强插值 (Gouraud Shading)
 
----
-title: Gouraud 着色（双线性光强插值）
-requires: [计算机图形学/Phong 光照模型, 计算机图形学/平面明暗处理]
----
-
 ## 它是什么，为什么需要
 
 ==Gouraud 着色（Gouraud Shading）== 是在**多边形内部**做明暗处理的一种方法：先在**每个顶点**用完整光照模型（如 Phong 模型）算出光强 $I$，然后在三角形内部对顶点光强做**双线性插值**，得到每一点的光强。它由 Henri Gouraud 于 1971 年提出，也叫 *intensity interpolation shading*（光强插值着色）。

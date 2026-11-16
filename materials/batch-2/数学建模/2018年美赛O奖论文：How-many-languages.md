@@ -541,14 +541,6 @@ Neighborhood Effect: If the speakers of two language live near to each other, it
 
 Policy-led Effect: When the home country of language speakers is strongly promoting the country's relations with some special countries, the likelihood of those languages learning from each other's languages will also increase, such as China's the Belt and Road Policy making it more motivated for the people along the policy to learn Chinese. For example, Pakistan uses Chinese as its second language.
 
----
-title: 2018年美赛O奖论文：How many languages?（习题）第 5 部分
-kind: 习题
-course: 数学建模
-source: 2018 MCM/ICM Problem O Award Paper
-term: 2018
----
-
 # 2018年美赛O奖论文：How many languages?（习题）第 5 部分
 
 本部分整理自《2018年美赛O奖论文：How many languages?》第 8–9 页，主要涉及语言演化模型中文化、经济、技术及网络社交等因素对第二语言学习者数量变化的影响公式推导，以及模型 I 的总差分方程和初始数据表。
@@ -742,11 +734,9 @@ $C$ is the velocity of technology development. $k_4$ describes the change of $2^
 
 翻译软件技术进步对第二语言学习者数量的影响为**常数负增量**：
 
-
 $$
 \Delta_{i,\mathrm{Tech}}=k_4 c<0
 $$
-
 
 其中 $c>0$ 为技术发展速率，$k_4<0$ 为负影响系数。该影响与语言种类 $i$ 无关，也与当前该语言学习者数量无关。
 
@@ -756,11 +746,9 @@ $$
 
 题目已直接给出模型假设：翻译软件更新速率为常数，因此技术进步对第二语言学习者数量变化的影响是线性的、均匀的：
 
-
 $$
 \Delta_{i,\mathrm{Tech}}=k_4 c
 $$
-
 
 - $c>0$：技术发展速率，常数；
 - $k_4<0$：表示技术进步抑制第二语言学习；
@@ -905,14 +893,6 @@ In the section above, we build a difference equation model, which could predict 
 
 According to the data we collected in [1, 4-7, 9], we can set indices in the formula (4) and formula (5). The indices are given as follows:
 
----
-title: 2018年美赛O奖论文：How many languages?（习题）
-kind: 习题
-course: 数学建模
-term: 2018
-source: Team # 79002, Page 9-10 of 29
----
-
 # 2018年美赛O奖论文：How many languages?（习题）
 
 本部分为《How many languages?》论文第6部分（共13部分），主要涉及模型参数敏感性分析结果、语言排名预测及地理分布模型的引入。
@@ -930,7 +910,6 @@ source: Team # 79002, Page 9-10 of 29
 
 设第 $i$ 种语言在初始年份的母语者、第二语言使用者分别为 $L_{1,i}^{(0)}$、$L_{2,i}^{(0)}$，则初始状态为
 
-
 $$
 \mathbf{x}_i^{(0)}
 =
@@ -942,21 +921,15 @@ L_{2,i}^{(0)}
 T_i^{(0)}=L_{1,i}^{(0)}+L_{2,i}^{(0)}.
 $$
 
-
 按 $T_i^{(0)}$ 从大到小排序，即得表中的初始排名。例如：
-
 
 $$
 T_{\text{Mandarin}}=897+193=1090,
 $$
 
-
-
 $$
 T_{\text{English}}=371+611=982,
 $$
-
-
 
 $$
 T_{\text{Hindustani}}=329+215=544,
@@ -964,11 +937,9 @@ T_{\text{Hindustani}}=329+215=544,
 T_{\text{Spanish}}=436+91=527.
 $$
 
-
 因此，前四名依次为普通话、英语、印度斯坦语和西班牙语。总人数排名与母语人数排名并不相同：西班牙语的母语者人数为 $436$，高于英语的 $371$，但英语依靠大量第二语言使用者，在总人数上领先。
 
 若差分模型写为一般形式
-
 
 $$
 \mathbf{x}_i^{(t+1)}
@@ -976,14 +947,11 @@ $$
 F_i\!\left(\mathbf{x}_i^{(t)};\boldsymbol{\theta}_i\right),
 $$
 
-
 则本表提供 $\mathbf{x}_i^{(0)}$，文献资料用于估计参数向量 $\boldsymbol{\theta}_i$，进而递推未来各年的 $L_{1,i}^{(t)}$ 和 $L_{2,i}^{(t)}$，并重新计算
-
 
 $$
 T_i^{(t)}=L_{1,i}^{(t)}+L_{2,i}^{(t)}
 $$
-
 
 以预测语言排名。
 
@@ -1113,11 +1081,9 @@ $$
 
 以“50 年后名次减去原名次”为排名变化量：
 
-
 $$
 \Delta r=r_{50}-r_0
 $$
-
 
 其中，$\Delta r<0$ 表示排名上升，$\Delta r>0$ 表示排名下降。
 
@@ -1173,7 +1139,6 @@ $$
 5.  **日语（Japanese）母语speakers从前10名列表中下降：**
     这主要是因为日本近期的自然增长率为负。此外，由于豪萨语（Hausa）在非洲的自然增长率迅速提高，它已成为第10大母语speakers语言。
 
-
 ## 二、模型 II：地理分布差异模型
 
 参考解答：## 简答 2：基于排名的五大主要结论
@@ -1220,7 +1185,6 @@ $$
 *(注：原文此处提及2017年语言分布，但提供的文本片段在此处结束，未包含具体分布数据或图表)*
 
 ![图 1](<资料名>.assets/图1.png) 替代文字：2017年全球语言地理分布示意图（原文图片占位）
-
 
 ![Figure 6 Language distribution in 2017](2018年美赛O奖论文：How-many-languages.assets/图2.jpg)
 
@@ -1385,7 +1349,6 @@ $$
 $$
 \sum_{l=1}^{6} L_l\,I_{\{\text{destination}=j\}}\,I_{\{\text{lang}=i\}}.
 $$
-
 
 4. **移民下一代转化部分（模型假设）**  
    题意假设：移民后代中转用当地语言的年增量与移民数成正比，整体比例系数为 $k_6$，且按当地语言占比 $p_j^i$ 分配，故对第 $i$ 语言增量为
@@ -1898,8 +1861,6 @@ $$ S_\theta = \frac{\Delta Y / Y}{\Delta \theta / \theta} = \frac{\partial Y}{\p
 
 如饼图所示，自然增长率的微小变化并未改变亚洲的语言分布。因此，我们认为我们对自然增长率的选择不敏感于结果。
 
-
-
 #### 知识点 自然增长率
 
 参考解答：### 结论
@@ -2002,38 +1963,30 @@ $k_5$ 是第二种语言增长率与媒体之间的比例系数。我们将不�
 
 敏感性指数通常用输出量的相对变化率与输入参数的相对变化率之比来度量。若取 $k_5$ 从 $0.2$ 变化到 $0.3$，则
 
-
 $$
 \frac{\Delta k_5}{k_5}=\frac{0.3-0.2}{0.2}=0.5=50\%
 $$
 
-
 对应的 L2 speaker 数量变化率为
-
 
 $$
 \frac{\Delta N}{N}=\frac{400.12-397.27}{397.27}
 \approx 0.007174=0.7174\%
 $$
 
-
 因此敏感性指数为
-
 
 $$
 S=\frac{0.007174}{0.5}\approx 0.01435
 $$
 
-
 这与题中给出的 $0.013190022$ 接近但不完全相同，差异可能来自于计算时使用了不同的基准值或数值舍入。若取 $k_5$ 从 $0.1$ 到 $0.2$，则
-
 
 $$
 \frac{\Delta k_5}{k_5}=1=100\%,
 \quad
 \frac{\Delta N}{N}=\frac{397.27-394.88}{394.88}\approx 0.006053
 $$
-
 
 对应敏感性指数约为 $0.00605$，与表中数值不一致。所以题中指数更可能对应的是 $k_5$ 从 $0.2$ 到 $0.3$ 这一区间。
 
@@ -2352,20 +2305,16 @@ https://en.wikipedia.org/wiki/List_of_countries_by_natural_increase
 
 根据表中数据，各语言的人口占比为：
 
-
 $$
 \text{Proportion A}
 =\frac{\text{Value A}}{\text{总人口对应数值}}
 $$
 
-
 其中非零数据的总和为：
-
 
 $$
 22.8+28.2+2.1+5.2+2+2.1+3.4+4.2+4.9+5.6+19.5=100
 $$
-
 
 因此各语言占比分别为：
 
@@ -2391,7 +2340,6 @@ $$
 
 将这些语言按人口占比从高到低排列：
 
-
 $$
 \begin{aligned}
 &\text{English }(0.282),\\
@@ -2407,7 +2355,6 @@ $$
 &\text{Arabic }(0.020).
 \end{aligned}
 $$
-
 
 题目要求“学校教授的外语”，应从母语人口占比最高、覆盖范围最广的语言中选择。英语和普通话占比最高，但 **GDP（国内生产总值）** 与“教授的外语”之间没有直接对应关系，不能作为该问题的合理答案。
 
@@ -2486,11 +2433,9 @@ Source:
 
 第 1、3、5、6、7、8、9、11、12、13、15、16 行完全相同，均为
 
-
 $$
 (9.59,30.37,10.69,\ldots,4.52).
 $$
-
 
 这意味着普通话、阿拉伯语、马来语、俄语、日语等语言对其他所有语言的相似度完全一样，显然不合理，可能是复制或导入数据时发生了错误。
 
@@ -2498,20 +2443,16 @@ $$
 
 语言相似度通常应满足
 
-
 $$
 s_{ij}=s_{ji}.
 $$
 
-
 但表中例如：
-
 
 $$
 s_{\text{Mandarin,English}}=30.37,\qquad
 s_{\text{English,Mandarin}}=3.90\%,
 $$
-
 
 二者数值和单位均不一致。因此不能直接把它当作对称相似度矩阵。
 
@@ -2540,11 +2481,9 @@ English 行使用百分数，如 $3.90\%$、$50.60\%$；Spanish 行使用 $79.8$
 
 设清洗后的相似度矩阵为
 
-
 $$
 S=(s_{ij})_{16\times16}.
 $$
-
 
 建议按以下步骤处理：
 
@@ -2573,21 +2512,17 @@ $$
 \widehat{s}_{ii}=1.
 $$
 
-
 若需要转换为距离矩阵，可采用
-
 
 $$
 d_{ij}=1-\widehat{s}_{ij},
 $$
-
 
 此时 $d_{ii}=0$，且相似度越高，距离越小。若要做严格的多维尺度分析，还应检查距离是否满足三角不等式；不满足时，可把 $d_{ij}$ 仅视为非相似度，或采用适用于非度量数据的 MDS 方法。
 
 ## 三、可明确提取的数值关系
 
 将明确给出的数值统一理解为百分数，有：
-
 
 $$
 \begin{aligned}
@@ -2606,21 +2541,17 @@ s_{\text{German,French}}&=16.90\%.
 \end{aligned}
 $$
 
-
 对应方向的数值差异很大，例如英语—西班牙语两个方向分别为 $50.60\%$ 和 $79.8\%$。这可能说明原指标其实是“某种有方向的借用比例”或“某语言词汇在另一语言中的占比”，而非对称相似度。若是方向性指标，则应记为有向矩阵，不能强行对称化。
 
 ## 四、若仅作方法演示
 
 在额外假设“所有数值均为百分数、‘-’表示 0、重复行属于无效数据并暂时剔除”的情况下，可只保留 English、Spanish、French、German 四种语言，并用双向平均值构造示范相似度：
 
-
 $$
 \bar s_{ij}=\frac{s_{ij}+s_{ji}}{2}.
 $$
 
-
 计算得：
-
 
 $$
 \begin{array}{c|cccc}
@@ -2632,25 +2563,19 @@ $$
 \end{array}
 $$
 
-
 其中例如
-
 
 $$
 \bar s_{\text{English,Spanish}}
 =\frac{50.60+79.8}{2}=65.20,
 $$
 
-
-
 $$
 \bar s_{\text{Spanish,German}}
 =\frac{0.08+14.00}{2}=7.04.
 $$
 
-
 转换为百分比距离 $D=100-\bar S$，得到：
-
 
 $$
 \begin{array}{c|cccc}
@@ -2662,14 +2587,11 @@ $$
 \end{array}
 $$
 
-
 按这一示范矩阵，最小非零距离为
-
 
 $$
 d_{\text{English,Spanish}}=34.80,
 $$
-
 
 所以若进行单连接层次聚类，第一步会合并 English 与 Spanish。随后可再按所选连接准则继续聚类。
 

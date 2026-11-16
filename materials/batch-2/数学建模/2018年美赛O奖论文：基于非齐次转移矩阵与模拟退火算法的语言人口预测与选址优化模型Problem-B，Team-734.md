@@ -9,15 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）
-kind: 课件
-course: 数学建模
-source: 原件
----
-
-# 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）
-
 本文档整理了第 1–3 页的内容，包括摘要、目录及引言、初步模型的符号定义部分。
 
 ## 一、摘要
@@ -323,8 +314,6 @@ $$
 
 # 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）
 
-本资料整理自《2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型》第 4 部分（共 11 部分），由识别工具读出的内容（第 9–10 页）。
-
 ## 二、模型结果分析
 
 ### 计算 1
@@ -364,7 +353,6 @@ $$
 
 因此，为了进行更准确的长期预测，我们必须将时间作为新变量引入模型，即构建一个非齐次模型。
 
-
 ## 三、修正模型
 
 上述初步模型在短期内的不同语言组人口预测相当准确。然而，在长期预测方面，该模型的准确性不足。该模型的缺陷包括：
@@ -391,10 +379,7 @@ $$
 
 减少矩阵（Decrease matrix）是评估语言群体自然死亡和迁移的矩阵。
 
-
 # 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）
-
-本节整理自《2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型》第 5 部分（共 11 部分），由识别工具读出的内容（第 11–12 页）。
 
 ## 一、符号说明
 
@@ -546,15 +531,11 @@ According to this ranking, Portuguese and French both drop out of the top ten, w
 
 Additionally, we can easily derive the graph of the scale of migration starting from the year of 2017 (Figure 5).
 
-
-
 We only label in the graph the top four attractive language regions for immigrants, and it’s apparent that they are all developed countries except for Russia (Mostly due to the historical factor that the population is not clearly divided amongst neighboring countries after the disintegration of USSR). Furthermore, the quantity of immigrants to English region (Over one hundred million) far exceeds that of other language regions’, mostly driven by the extensive acceptance of this language.
 
 ### 3.5.3 Distribution of Non-native English Speakers
 
 We can also easily derive the distribution of non-native English speakers (Figure 6):
-
-
 
 The scale of non-native English speakers is unparalleled. According to our projections, there are more than ninety million non-native English speakers amongst all native Chinese speakers.
 
@@ -579,8 +560,6 @@ $$
 
 The higher $k$ is, the lower the uniformity is. The initial model adopts $k = 1$, and when $k = 0; 1$, the graph of population of different language groups are as follows: (Figure 7).
 
-
-
 We can find that the population of English doesn’t exceed that of Mandarin’s. The attractiveness of English is impaired.
 
 #### 3.6.2 Low Uniformity Scenario
@@ -591,8 +570,6 @@ If a language group has low uniformity in terms of eagerness to learn, people’
 2. People are highly purposeful when it comes to learning foreign languages, eager to attain more opportunities through language learning.
 
 When $k = 10$, the graph of population of different language groups is as follows (Figure 8).
-
-
 
 We can find that the population of English is rocketing, surpassing that of Mandarin’s tens of years earlier. The attractiveness of English is further reinforced.
 
@@ -616,13 +593,6 @@ S_i = \epsilon^{k_i} \sum_{j=0}^{k_i} \frac{P_{ij}^{\eta_1} E_{ij}^{\eta_2}}{D_{
 h_i = \frac{10^{\eta_1} E_{i0}^{\eta_2}}{D_{i0}^{\eta_3}} 
 \end{cases} \tag{18}
 $$
-
----
-title: 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）第8部分
-kind: 课件
-course: 数学建模
-source: 《2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型》教材第19–20页
----
 
 # 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）第8部分
 
@@ -703,13 +673,6 @@ $$
 We make projections about the economy (GDP) of each language region (Evaluated based on major nations in each region), by establishing a cycle projection model. We integrate the Kitchin cycle, Juglar cycle, Kuznets swing and Kondratiev wave, and sim-ulate the integrated cycle with a trigonometric function. We then use the GDP data of each region in the past forty-six years to solve for the coefficients, and then employ the function to forecast GDP of each language region in 2067. See Appendix A[6] for our projected growth rate in each cycle and terminal GDP (Starting at 2015, with each cycle representing approximately thirteen years).
 
 Combined with the projected distribution of population of different languages in 2067 by our previous models, we can derive the optimal stable solution:
-
----
-title: 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）
-kind: 课件
-course: 数学建模
-source: 《2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型》第 9 部分（共 11 部分），识别工具读出内容（第 21–22 页）
----
 
 # 2018年美赛O奖论文：基于非齐次转移矩阵与模拟退火算法的语言人口预测与选址优化模型（Problem B，Team 73410）
 

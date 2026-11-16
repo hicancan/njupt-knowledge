@@ -76,7 +76,6 @@ Appendix B Differential Equation Model 35
 答案：A、B 均为正确描述。
 参考解答：根据原文第一段，该疫情被描述为“过去三十年中最严重的急性人类健康危机之一”，其影响远超 SARS 以及备受诟病的禽流感和猪流感。数据指出，自 2014 年 3 月发现以来，已感染超过 20,000 人，死亡人数接近感染人数的一半 [1]。
 
-
 ![图 1：埃博拉病毒 [3]](figure:4c20b266b9cf0dda28829d71bb7c0ed200d58b2698ed6e97e538a6f88937107f-0/50a18f4dbe332d217dec39793e72efd0530226c426d088d5411f735cafb870cc.jpg)
 
 **背景说明：**
@@ -110,7 +109,6 @@ Appendix B Differential Equation Model 35
 
 答案：A、B 均为正确描述。
 参考解答：根据原文第二部分，团队的目标是建立一个数学模型，用于制定有效的疫苗或治愈方法交付策略。核心目标是在资源受限的情况下，最小化生命损失、全球影响以及经济负担。
-
 
 ## 1.3. Previous Work
 
@@ -242,13 +240,11 @@ For the implementation of the vaccine, we assume the ideal situation of a 100% e
 
 题目给出的触发概率为
 
-
 $$
 P_{\text{interact}}
 =
 \frac{\text{区域内某类个体数量}}{\text{区域内个体总数}}
 $$
-
 
 其中“某类个体”可以是早期症状、晚期症状或未安葬的感染者。
 
@@ -262,14 +258,11 @@ $$
 
 则易感者触发与早期症状者接触的概率为
 
-
 $$
 P_{\text{interact, early}}=\frac{E}{N}.
 $$
 
-
 触发后，再用表 1 的感染概率 $p_{\text{inf}}$ 判定是否感染，因此一步内该易感者通过早期症状者感染的总概率为
-
 
 $$
 P_{\text{infection via early}}
@@ -277,9 +270,7 @@ P_{\text{infection via early}}
 \frac{E}{N}\cdot p_{\text{inf}}.
 $$
 
-
 类似地，可对晚期症状者和未安葬感染者分别写出：
-
 
 $$
 P_{\text{infection via late}}
@@ -287,14 +278,11 @@ P_{\text{infection via late}}
 \frac{L}{N}\cdot p_{\text{inf}},
 $$
 
-
-
 $$
 P_{\text{infection via unburied}}
 =
 \frac{U}{N}\cdot p_{\text{inf}}.
 $$
-
 
 ---
 
@@ -328,23 +316,19 @@ $$
 
 区域接触触发概率：
 
-
 $$
 P_{\text{interact}}
 =
 \frac{\text{区域内感染类型个体数}}{\text{区域内个体总数}}
 $$
 
-
 一步感染概率：
-
 
 $$
 P_{\text{infection}}
 =
 \frac{I_x}{N}\cdot p_{\text{inf}}
 $$
-
 
 其中 $I_x$ 表示某一类具有传染性的个体数量，$N$ 为区域总人数，$p_{\text{inf}}$ 为触发接触后成功感染的概率。
 
@@ -1221,8 +1205,6 @@ An interesting and unexpected result of all of our models is that, in every case
 
 # 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：Turning the Tables: Modeling the Fight against Ebola
 
-本文档为《2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：Turning the Tables: Modeling the Fight against Ebola》习题部分第 13 部分（共 17 部分），由识别工具读取的第 29–29 页内容整理而成。原文为英文，此处保留原文实质内容，修正了明显的拼写错误（如 stochasic→stochastic, diferent→different, afect→affect, cut of→cut off）。
-
 ## 4.2. Summary and Recommendations
 
 参考解答：**结论：** 该埃博拉模型呈现自限性（self-limiting）行为的根本原因是：随着感染人数增加，易感人群 $S$ 不断减少，当有效再生数降至 1 以下时，疫情自然衰减并终止。
@@ -1283,10 +1265,7 @@ However, we are acutely aware of our model’s extreme dependence on a large par
    - 真实世界数据不可靠、不完整、过时或不准确。
    - 因此，无法也不合理从试图捕捉如此多行为的模型中得出定量结论，只能提供定性洞察。
 
-
 # 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：Turning the Tables: Modeling the Fight against Ebola
-
-第 14 部分（共 17 部分），由识别工具读出的内容（第 30–31 页）。
 
 ## 一、章节内容
 
@@ -1499,52 +1478,40 @@ To examine the effects of this behavior, our model could be forced to distribute
 
 设区域集合为 $V$，区域 $i$ 在时刻 $t$ 拥有药物数量为
 
-
 $$
 S_i(t)\ge 0.
 $$
 
-
 令
-
 
 $$
 w_{ij}(t)
 $$
 
-
 表示区域 $i$ 在区域 $j$ 获得的药物分配比例，并满足
-
 
 $$
 w_{ij}(t)\ge 0,\qquad
 \sum_{j\in V}w_{ij}(t)=1.
 $$
 
-
 区域 $i$ 向区域 $j$ 分配的药物数量为
-
 
 $$
 A_{ij}(t)=S_i(t)w_{ij}(t).
 $$
 
-
 若区域 $j$ 的药物总量为
-
 
 $$
 S_j(t^+)=S_j(t)+\sum_{i\in V}A_{ij}(t)-A_{jj}(t),
 $$
 
-
 则可进一步令区域内分配规则为
-
 
 $$
 A_{jj}(t)=S_i(t)w_{ii}(t),
 $$
-
 
 并将其用于更新各区域的感染人数、康复人数和死亡人数。
 
@@ -1553,7 +1520,6 @@ $$
 ## 方法一：按相邻区域感染人数比例分配
 
 若区域 $i$ 只向与其直接相连的区域 $j$ 分配药物，则定义
-
 
 $$
 w_{ij}(t)=
@@ -1564,7 +1530,6 @@ w_{ij}(t)=
 \end{cases}
 $$
 
-
 其中：
 
 - $I_j(t)$ 是区域 $j$ 在时刻 $t$ 的感染人数；
@@ -1572,7 +1537,6 @@ $$
 - $\varepsilon>0$ 用于避免相邻区域感染人数均为零时分母为零。
 
 因此，
-
 
 $$
 A_{ij}(t)
@@ -1582,7 +1546,6 @@ S_i(t)
 {\sum_{k\in N(i)}(I_k(t)+\varepsilon)}.
 $$
 
-
 该方法的优点是能够优先支援感染人数较多的相邻区域，从而使药物尽快到达疫情较严重的地区；缺点是感染人数并不完全等同于死亡风险，可能造成分配效率不高。
 
 ---
@@ -1591,22 +1554,17 @@ $$
 
 设区域 $j$ 接受 $x$ 单位药物后，预计死亡人数减少量为
 
-
 $$
 D_j(x).
 $$
 
-
 若每个单位药物产生的平均死亡减少收益为 $r_j(t)$，可以采用线性近似：
-
 
 $$
 D_j(x)\approx r_j(t)x.
 $$
 
-
 区域 $i$ 的药物分配问题为
-
 
 $$
 \begin{aligned}
@@ -1618,9 +1576,7 @@ x_j\ge 0,\\
 \end{aligned}
 $$
 
-
 由于目标函数是线性的，最优分配为
-
 
 $$
 x_j^*=
@@ -1630,9 +1586,7 @@ S_i(t), & j=\arg\max\limits_{k\in N(i)}r_k(t),\\
 \end{cases}
 $$
 
-
 若要求按比例分配，则可使用归一化收益：
-
 
 $$
 w_{ij}(t)
@@ -1641,14 +1595,11 @@ w_{ij}(t)
 {\displaystyle\sum_{k\in N(i)}(r_k(t)+\varepsilon)}.
 $$
 
-
 其中，$r_j(t)$ 可以根据药物对感染人数、康复概率或死亡概率的边际影响估计。例如，若药物对感染者的治疗成功率为 $p_j(t)$，则可近似取
-
 
 $$
 r_j(t)=p_j(t)I_j(t),
 $$
-
 
 或者直接使用模型输出的“增加一单位药物所减少的预期死亡人数”。
 
@@ -1660,14 +1611,11 @@ $$
 
 应在相同初始条件和参数下，分别运行两种分配规则，并比较以下指标：
 
-
 $$
 \text{总死亡人数}
 =
 \sum_{i\in V}\sum_t D_i(t),
 $$
-
-
 
 $$
 \text{累计感染人数}
@@ -1675,9 +1623,7 @@ $$
 \sum_{i\in V}\sum_t I_i(t),
 $$
 
-
 以及
-
 
 $$
 \text{药物利用率}
@@ -1685,7 +1631,6 @@ $$
 \frac{\text{成功治疗人数}}
 {\text{分配药物总量}}.
 $$
-
 
 若方法二在总死亡人数上低于方法一，且药物利用率不显著下降，则说明按死亡风险进行分配更优；反之，若两种方法效果接近，则按感染人数比例分配具有更好的公平性和可解释性。
 
@@ -1699,11 +1644,9 @@ $$
 4. 分配规则不能直接修改感染传播过程，只能通过改变治疗资源影响传播结果；
 5. 若目标区域没有足够医疗人员或床位，应设置容量约束：
 
-
 $$
 x_j(t)\le C_j(t),
 $$
-
 
 其中 $C_j(t)$ 是区域 $j$ 在时刻 $t$ 能接收和治疗的药物上限。
 
@@ -1745,13 +1688,11 @@ $$
 
 该假设将疫苗视为供给充足时即可快速接种，忽略了医护人员数量、运输时间和接种效率等现实约束。若这些因素显著，应增加约束：
 
-
 $$
 V_i(t)\le S_i(t),
 \qquad
 V_i(t)\le H_i(t)T_i(t),
 $$
-
 
 其中 $H_i(t)$ 为可参与接种的医护人员数，$T_i(t)$ 为单位时间内每名医护人员可完成的接种数。
 
@@ -1759,19 +1700,15 @@ $$
 
 该设定便于单独计算新增免疫人群：
 
-
 $$
 R_i(t^+)=R_i(t)+V_i(t),
 $$
 
-
 并据此更新有效易感人口：
-
 
 $$
 S_i(t^+)=N_i(t)-I_i(t)-R_i(t).
 $$
-
 
 但真实疫苗可能对已感染者提供部分保护，也可能存在接种失败，因此该假设会简化免疫效果评价。
 
@@ -1843,27 +1780,21 @@ $$
 
 由 B.1：
 
-
 $$
 \partial_t S=-\frac{\beta_{c1}I_e+\beta_{c2}I_l+\beta_f U}{P_{total}}S
 $$
 
-
 所以新增感染人数为：
-
 
 $$
 -\partial_t S = \frac{\beta_{c1}I_e+\beta_{c2}I_l+\beta_f U}{P_{total}}S
 $$
 
-
 新增感染者全部先进入潜伏期 $L$，因此 B.2 中：
-
 
 $$
 \partial_t L = -\partial_t S - \gamma_{w1}L
 $$
-
 
 其中 $\gamma_{w1}L$ 是潜伏者转为早期感染者的速率。
 
@@ -1873,11 +1804,9 @@ $$
 
 B.3：
 
-
 $$
 \partial_t I_e = \gamma_{w1}L - (\gamma_{w2}+\gamma_{h1})I_e
 $$
-
 
 说明早期感染者有两个出口：
 
@@ -1890,11 +1819,9 @@ $$
 
 B.4：
 
-
 $$
 \partial_t I_l = \gamma_{w2}I_e - (\gamma_{h2}+\gamma_d)I_l
 $$
-
 
 晚期感染者有两个出口：
 
@@ -1907,11 +1834,9 @@ $$
 
 B.5：
 
-
 $$
 \partial_t H = \gamma_{h1}I_e + \gamma_{h2}I_l - (\gamma_{dh}+\gamma_R)H
 $$
-
 
 住院者有两个出口：
 
@@ -1924,21 +1849,17 @@ $$
 
 B.7：
 
-
 $$
 \partial_t U = \gamma_d I_l + \gamma_{dh}H - \gamma_f U
 $$
-
 
 死亡人数来自晚期感染者和住院者，遗体以 $\gamma_f$ 的速率被处理，转入 $B$：
 
 B.8：
 
-
 $$
 \partial_t B = \gamma_f U
 $$
-
 
 ---
 
@@ -1990,14 +1911,6 @@ $$
 
 [21] (2015) Ebola synthetic information. Network Dynamics and Simulation Science Laboratory. [Online]. Available: http://www.vbi.vt.edu/ndssl/ebola/ebola-data
 
----
-title: 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：Turning the Tables: Modeling the Fight against Ebola（习题）
-kind: 习题
-course: 数学建模
-term: 2015
-source: <原件地址或来源路径>
----
-
 # 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：Turning the Tables: Modeling the Fight against Ebola（习题）第 17 部分
 
 本资料整理自《2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：Turning the Tables: Modeling the Fight against Ebola》第 38–39 页，由识别工具读取后整理。内容涉及 WHO 公报模拟文本及模型结论摘要。
@@ -2018,7 +1931,6 @@ source: <原件地址或来源路径>
 
 采用改进的 SEIR 模型，将总人口 $N$ 分为易感者 $S$、暴露者 $E$、感染者 $I$、住院者 $H$、康复者 $R$ 及死亡未安全处理者 $D$（葬礼传播）：
 
-
 $$
 \begin{aligned}
 \frac{dS}{dt} &= -\beta \frac{S(I + \theta D)}{N}, \\
@@ -2030,16 +1942,13 @@ $$
 \end{aligned}
 $$
 
-
 其中 $\psi$ 为住院率（隔离强度），$\theta$ 为葬礼传播权重，$\mu$ 为安全埋葬速率。
 
 **有效再生数**：
 
-
 $$
 R_t = \frac{\beta S}{N} \left( \frac{1}{\gamma + \psi} + \frac{\theta \delta \gamma}{\mu(\gamma + \psi)} \right).
 $$
-
 
 **模拟结果**：截至 2015 年 2 月，通过提高住院率 $\psi$（床位增加）和加快安全埋葬 $\mu$，三国 $R_t$ 均降至 $0.6 \sim 0.8$，疫情呈指数衰减。
 
@@ -2047,21 +1956,17 @@ $$
 
 **床位需求峰值**：模型预测未来 4 周最大住院需求为
 
-
 $$
 H_{\max} = \max_{t \in [0,28]} \int_0^t \psi I(s) e^{-\gamma_H (t-s)} \, ds.
 $$
-
 
 以利比里亚为例，模拟得 $H_{\max} \approx 120$ 床，而现有 ETU（埃博拉治疗单元）可用床位为 450 床，**供需比 $> 3.5$**，满足冗余要求。
 
 **药品与防护装备**：基于当前库存 $Q_0$ 与日均消耗 $q$（与 $I+H$ 成正比），计算可维持天数：
 
-
 $$
 T = \frac{Q_0}{q} \approx \frac{12{,}000 \text{ 套}}{80 \text{ 套/日}} = 150 \text{ 天},
 $$
-
 
 远超疫情预期结束时间（模型预测 60 天内每日新增降至个位数）。
 

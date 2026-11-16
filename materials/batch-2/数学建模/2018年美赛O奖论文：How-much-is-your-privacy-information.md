@@ -634,28 +634,22 @@ The present value method of income is a kind of asset evaluation method to estim
 
 设某项隐私信息在未来第 $t$ 年产生的期望收益为 $R_t$，适用的折现率为 $r$，收益期为 $n$ 年，则隐私信息的价值 $V$ 为
 
-
 $$
 V=\sum_{t=1}^{n}\frac{R_t}{(1+r)^t}
 $$
 
-
 若假定未来每年收益恒定，即 $R_t=R$，则
-
 
 $$
 V=R\cdot \frac{1-(1+r)^{-n}}{r}
 $$
 
-
 例如，某商家利用消费者偏好数据预计未来 5 年每年多获利 $10$ 万元，折现率取 $8\%$，则
-
 
 $$
 V=10\times \frac{1-(1.08)^{-5}}{0.08}
 \approx 10\times 3.9927=39.927\ \text{万元}
 $$
-
 
 所以，该隐私信息对商家的量化价值约为 $39.93$ 万元。
 
@@ -760,11 +754,9 @@ Where
 
 标准差 $\sigma$ 只反映绝对离散程度，量纲与指标本身一致；当各指标量纲或均值差异较大时，直接比较 $\sigma$ 会失真。变异系数
 
-
 $$
 Cof=\frac{\sigma}{E}
 $$
-
 
 把离散程度相对于期望值 $E$ 归一化，无量纲，因此更适合多维指标之间的横向比较。
 
@@ -777,7 +769,6 @@ $$
 $$
 E=\bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i .
 $$
-
 
 2. **标准差**  
    若视为总体：
@@ -792,7 +783,6 @@ $$
 \sigma=\sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-E)^2}.
 $$
 
-
 3. **变异系数**
    
 $$
@@ -805,19 +795,15 @@ $$
 
 对第 $j$ 个指标分别计算
 
-
 $$
 Cof_j=\frac{\sigma_j}{E_j},\qquad j=1,2,\dots,m .
 $$
 
-
 若需汇总为总体风险，可在确定权重 $w_j$（$\sum_j w_j=1$）后采用
-
 
 $$
 R=\sum_{j=1}^{m}w_j Cof_j .
 $$
-
 
 权重可由信息增益、熵权法或专家赋权确定；图 3–3 所示的信息增益遍历可用于筛选重要指标，再据此调整权重。
 
@@ -907,11 +893,9 @@ Where:
 
 信息相关价值 $D$ 可由相关系数 $\delta$ 通过高斯型函数计算：
 
-
 $$
 \boxed{D(\delta)=a\exp\left[-\frac{(\delta-\mu)^2}{2\sigma^2}\right]}
 $$
-
 
 其中，$a$ 为价值尺度参数，$\mu$ 为最优相关系数，$\sigma$ 反映相关价值对相关系数变化的敏感程度。参数 $a,\mu,\sigma$ 可利用观测样本通过最大似然法估计。
 
@@ -919,14 +903,11 @@ $$
 
 设样本相关系数为 $\delta_1,\ldots,\delta_n$，相应的信息相关价值为 $D_1,\ldots,D_n$。令
 
-
 $$
 f(\delta)=a\exp\left[-\frac{(\delta-\mu)^2}{2\sigma^2}\right],
 $$
 
-
 则似然函数为
-
 
 $$
 L(a,\mu,\sigma)
@@ -934,9 +915,7 @@ L(a,\mu,\sigma)
 \exp\left[-\frac{(\delta_i-\mu)^2}{2\sigma^2}\right].
 $$
 
-
 取对数得
-
 
 $$
 \ell(a,\mu,\sigma)
@@ -944,9 +923,7 @@ $$
 \sum_{i=1}^{n}(\delta_i-\mu)^2.
 $$
 
-
 在约束 $a>0,\ \sigma>0$ 下，分别求偏导并令其为零：
-
 
 $$
 \frac{\partial \ell}{\partial a}
@@ -954,15 +931,11 @@ $$
 \sum_{i=1}^{n}(\delta_i-\mu)^2=0,
 $$
 
-
-
 $$
 \frac{\partial \ell}{\partial \mu}
 =\frac{1}{\sigma^2}
 \sum_{i=1}^{n}(\delta_i-\mu)=0,
 $$
-
-
 
 $$
 \frac{\partial \ell}{\partial \sigma}
@@ -971,24 +944,18 @@ $$
 -\frac{n}{\sigma}=0.
 $$
 
-
 由此得到最大似然估计：
-
 
 $$
 \boxed{\hat{\mu}=\frac1n\sum_{i=1}^{n}\delta_i}
 $$
-
-
 
 $$
 \boxed{\hat{\sigma}^2
 =\frac1n\sum_{i=1}^{n}(\delta_i-\hat{\mu})^2}
 $$
 
-
 以及
-
 
 $$
 \boxed{\hat a
@@ -997,17 +964,14 @@ $$
 \exp\left[-\frac{(\delta_i-\hat{\mu})^2}{2\hat{\sigma}^2}\right]}.
 $$
 
-
 将估计得到的 $\hat a,\hat\mu,\hat\sigma$ 代入模型，即可根据两名个体所提供数据之间的相关系数 $\delta$ 计算信息相关价值 $D(\delta)$，并进一步用于隐私定价。
 
 ### 模型性质
-
 
 $$
 \frac{\partial D}{\partial \delta}
 =-\frac{\delta-\mu}{\sigma^2}D.
 $$
-
 
 因此：
 
@@ -1044,7 +1008,6 @@ Where:
 参考解答：结论：  
 该式不能作为“隐私总成本”的严格数学定义直接使用，主要问题在于量纲不一致、求和下标混用、系数定义不匹配，以及风险项和信息价值项的表达式缺乏可解释的推导基础。若按题目给出的符号形式，应写成
 
-
 $$
 CP
 =I+K+D
@@ -1053,7 +1016,6 @@ CP
 +a\exp\left(-\frac{(\delta-\mu)^2}{2\sigma^2}\right)
 $$
 
-
 其中第一项为预期收益价值，第二项为风险价值，第三项为信息相关价值。
 
 ---
@@ -1061,7 +1023,6 @@ $$
 **关键推理或计算过程：**
 
 原式
-
 
 $$
 CP
@@ -1073,9 +1034,7 @@ CP
 \right)
 $$
 
-
 如果直接展开，会得到
-
 
 $$
 \sum_{j=1}^{26}\alpha_j C_j
@@ -1087,14 +1046,11 @@ $$
 a e^{-\frac{(\delta-\mu)^2}{2\sigma^2}}
 $$
 
-
 这与题目中定义的
-
 
 $$
 I+K+D
 $$
-
 
 并不自然对应，因为：
 
@@ -1134,7 +1090,6 @@ $$
 
 因此更合理的写法是：
 
-
 $$
 CP
 =
@@ -1145,14 +1100,11 @@ CP
 a e^{-\frac{(\delta-\mu)^2}{2\sigma^2}}
 $$
 
-
 也就是
-
 
 $$
 CP=I+K+D
 $$
-
 
 ---
 
@@ -1209,7 +1161,6 @@ $$
 \boxed{CP=1569.16\text{ 元}}。
 $$
 
-
 **计算过程：**
 
 1. **数据整理与标准化**  
@@ -1243,7 +1194,6 @@ $$
 \boxed{CP=I+K+D}.
 $$
 
-
 4. **代入 ID=1 的结果**  
    按该行 $x_j$ 的取值，仅对提供的信息项累加相应价值与风险贡献，得到
    
@@ -1257,7 +1207,6 @@ $$
 CP=926.04+472.93+170.18
    =\boxed{1569.16\text{ 元}}.
 $$
-
 
 其中，身份证号、肖像、联系方式、资产及健康信息等敏感项目会显著影响风险成本；未提供的信息项取 $x_j=0$，不计入本次定价。
 
@@ -1566,8 +1515,6 @@ $$
 
 # 2018年美赛O奖论文：How much is your privacy information?（习题）
 
-本资料整理自《2018年美赛O奖论文：How much is your privacy information?》第 7 部分（共 12 部分），由识别工具读取的第 14–16 页内容。
-
 ## 一、模型分析与动态评估
 
 参考解答：**结论**
@@ -1644,7 +1591,6 @@ $$
 
 With the development of time, the spread of privacy protection ideas is expanding. People are increasingly familiar with the consequences of privacy disclosure and pay more attention to privacy. Therefore, people's expectations for the return of privacy are getting higher and higher. According to the analysis of the privacy cost model, the risk value is changed due to the change of people's thought.
 
-
 #### 小节 5.3.2 The dynamic analysis of the model
 
 With the change of time, the value of risk increases gradually, we add dynamic factors on the basis of the original model. The risk factors of 26 indicators ($r_{j}$) are changed from constants to functions, which are changing by time($t$).
@@ -1664,7 +1610,6 @@ K = \sum_{j=1}^{26} I_j R_j = \sum_{j=1}^{26} \frac{\alpha_j r_j C_j \sigma}{E}
 $$
 
 We will add the functional relationship between the dynamic factors $(r_j)$ and the time $(t)$ into the upper formula, then it can calculate the change of risk value over time to realize the dynamic evaluation of the model.
-
 
 ## 二、代际差异与概念比较 (Task 5)
 
@@ -1784,7 +1729,6 @@ The conceptual relationships of PI, PP, and IP are shown in Figure 6 - 2.
 
 ![Figure 6–2 The conceptual relationships of PI, PP, and IP](2018年美赛O奖论文：How-much-is-your-privacy-information.assets/图6.jpg)
 
-
 ## 三、数据共享的网络效应 (Task 6)
 
 参考解答：## 结论
@@ -1850,7 +1794,6 @@ $$\frac{dU}{dn} = 2\alpha n - \beta c = 0 \implies n^* = \frac{\beta c}{2\alpha}
 
 We use Matlab to build a small world model for information leakage, and find that individuals who do not sell privacy are increasingly implicated with the development of privacy trading market. Then through the dynamic game theory, it is predicted that the information of the group will be leaked seriously because of the individual behavior, and if it is properly constrained, the interests of the group can be maximized.
 
-
 # 2018年美赛O奖论文：How much is your privacy information?（习题）
 
 本资料整理自2018年美国大学生数学建模竞赛O奖获奖论文《How much is your privacy information?》第7章至第8章部分（原文第16–18页），由识别工具读取后修正格式与错别字，保留原题结构与逻辑。
@@ -1890,11 +1833,9 @@ We use Matlab to build a small world model for information leakage, and find tha
 
 设个体 $i$ 的效用函数为
 
-
 $$
 U_i = b_i x_i - \frac{c}{n}\sum_{j=1}^{n} x_j - \alpha_i \left(\text{网络泄露程度}\right)
 $$
-
 
 其中 $x_i\in\{0,1\}$ 表示是否卖出隐私，$\alpha_i$ 反映个体对网络牵连的敏感度。
 
@@ -1913,11 +1854,9 @@ $$
 
 设约束参数为 $\lambda$，使卖出隐私的成本增加，个体效用变为
 
-
 $$
 U_i = b_i x_i - \lambda x_i - \frac{c}{n}\sum_{j=1}^{n} x_j - \alpha_i L(x)
 $$
-
 
 当 $\lambda$ 足够大时，部分个体选择不卖，交易总量下降，信息泄露减少。
 
@@ -2244,9 +2183,7 @@ $$
 ![图 1](2018年美赛O奖论文：How-much-is-your-privacy-information.assets/图9.jpg)
 *图 1：隐私定价模型相关示意图*
 
-
 *图 2：隐私定价模型相关示意图*
-
 
 *图 3：隐私定价模型相关示意图*
 
@@ -2322,7 +2259,6 @@ PI（个人信息）的定价建议如下：
 
 社交媒体数据的获取和整合成本相对较低。例如：
 
-
 $$
 C_{\text{基础}}
 =
@@ -2335,9 +2271,7 @@ C_{\text{基础}}
 \text{隐私保护成本}
 $$
 
-
 但其可复用价值较高。若一份数据可支持广告投放、内容推荐和用户画像三类用途，可按使用范围近似估算：
-
 
 $$
 V_{\text{社交}}
@@ -2348,7 +2282,6 @@ P_{\text{推荐}}
 +
 P_{\text{画像}}
 $$
-
 
 因此，原始数据的单独价格可以较低，而数据产品化后的服务价格应更高。身份信息、社交关系和行为记录组合后具有较强的识别性和画像能力，不能仅因采集成本低就视为几乎无价值。
 
@@ -2366,7 +2299,6 @@ $$
 
 金融交易数据的价值主要体现在风险识别。可用简单模型表示：
 
-
 $$
 \text{预期损失减少}
 =
@@ -2377,17 +2309,13 @@ $$
 \text{回收率}
 $$
 
-
 设预计交易规模为 $M$，授权数据使违约概率下降 $\Delta p$，损失回收率为 $r$，则该数据带来的期望收益约为：
-
 
 $$
 \Delta V=M\Delta p r
 $$
 
-
 例如，若数据使违约概率下降 $1\%$，交易规模为 $100$ 万元，回收率为 $50\%$，则：
-
 
 $$
 \Delta V
@@ -2396,7 +2324,6 @@ $$
 =
 0.5\text{ 万元}
 $$
-
 
 这说明金融交易数据具有较明确的、可量化的决策价值，因此其价格应高于普通社交媒体数据。
 
@@ -2416,7 +2343,6 @@ $$
 
 健康数据可能直接影响诊疗、保险定价和医疗资源配置。假设数据用于提高疾病预测准确率，并使高风险人群的识别率提高 $\Delta r$，则其价值可表示为：
 
-
 $$
 \Delta V
 \approx
@@ -2426,11 +2352,9 @@ C_{\text{避免损失}}
 \Delta r
 $$
 
-
 其中 $N$ 为相关人群规模，$C_{\text{避免损失}}$ 为每人可避免的平均损失。由于医疗错误可能造成较大的生命、健康和经济代价，健康数据的信息价值通常很高。
 
 但其风险也最高：
-
 
 $$
 \text{隐私风险}
@@ -2440,9 +2364,7 @@ $$
 \text{敏感信息损失}
 $$
 
-
 健康信息一旦泄露，可能导致污名化、就业与保险歧视，以及长期心理损害。因此其“数据价格”不能只由市场价值决定，还必须计入：
-
 
 $$
 P_{\text{合规}}
@@ -2456,7 +2378,6 @@ C_{\text{审计}}
 C_{\text{法律与责任}}
 $$
 
-
 所以应采用高价值、严授权的定价机制，而不宜与社交媒体数据采用同一定价方式。
 
 ---
@@ -2464,7 +2385,6 @@ $$
 ## 综合定价模型
 
 可将 PI 数据价格表示为：
-
 
 $$
 P_i
@@ -2476,7 +2396,6 @@ C_i
 R_i
 $$
 
-
 其中：
 
 - $C_i$：采集、清洗、存储和隐私保护成本；
@@ -2486,7 +2405,6 @@ $$
 
 按领域比较：
 
-
 $$
 V_{\text{健康}}
 >
@@ -2495,9 +2413,7 @@ V_{\text{金融}}
 V_{\text{社交}}
 $$
 
-
 而风险通常也满足：
-
 
 $$
 R_{\text{健康}}
@@ -2507,9 +2423,7 @@ R_{\text{金融}}
 R_{\text{社交}}
 $$
 
-
 因此推荐：
-
 
 $$
 \boxed{
@@ -2520,7 +2434,6 @@ $$
 \text{健康/医疗：高价且单独授权}
 }
 $$
-
 
 实际价格还应通过用户授权意愿、购买方预算、替代数据可得性、隐私法规和潜在损害进行修正。
 
@@ -2617,35 +2530,27 @@ Team 87280
 - 设群体对隐私信息价值的认知为随机变量 $V$。
 - 调查与模拟显示整体价值浮动 $\Delta V < 10$ 美元，即：
 
-
 $$
 \max(V_i)-\min(V_i)<10
 $$
 
-
 - 基础定价 $p_0$ 取为预期价值：
-
 
 $$
 p_0 = E[V]
 $$
 
-
 - 若愿意出售的条件为：
-
 
 $$
 p_0 \geq V_i
 $$
 
-
 则根据调查结果：
-
 
 $$
 P(V_i \leq p_0) > 0.5
 $$
-
 
 即超过一半的人愿意以该价格出售隐私信息。
 
@@ -2667,27 +2572,21 @@ $$
 **模型角度：**  
 若完全由市场定价，可能出现：
 
-
 $$
 p_{\text{market}} \to 0 \quad \text{或} \quad p_{\text{market}} \to +\infty
 $$
 
-
 政府可设定价格区间：
-
 
 $$
 [p_{\min}, p_{\max}]
 $$
 
-
 其中：
-
 
 $$
 p_{\min} = E[V] - 10,\quad p_{\max} = E[V] + 10
 $$
-
 
 与“浮动小于 10 美元”的结论一致。
 
@@ -2699,11 +2598,9 @@ $$
 **模型思路：**  
 设非法收益为 $B$，被发现概率为 $q$，罚金为 $F$。威慑条件为：
 
-
 $$
 qF > B
 $$
-
 
 因此需提高 $q$ 和 $F$。
 
@@ -2726,11 +2623,9 @@ $$
 
 在个人信息基础价值 $v_i$ 上增加增量赔偿 $\delta_i$：
 
-
 $$
 C_i = v_i + \delta_i
 $$
-
 
 其中 $\delta_i$ 可根据泄露类型、影响范围、责任程度确定。
 
@@ -2752,11 +2647,9 @@ $$
 
 建立应急响应机制，缩短从事件发生到处置完成的时间 $T$。损失 $L$ 与 $T$ 正相关：
 
-
 $$
 L \propto T
 $$
-
 
 因此应最小化 $T$。
 

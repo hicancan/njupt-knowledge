@@ -5,11 +5,6 @@ requires: [数学建模/seir_moxing]
 
 # SEIIR 模型（考虑不同感染阶段）
 
----
-title: SEIIR 模型（考虑不同感染阶段）
-requires: [传染病动力学模型/SEIR 模型]
----
-
 ## 为什么需要 SEIIR
 
 当感染人数达到一定规模，政府会在 WHO 建议下采取 ==隔离== 措施，这是普通 SEIR 没法刻画的。SEIIR 在 SEIR 基础上把感染者 $I$ 拆成 ==隔离感染者 $I_{\text{isolated}}$== 与 ==非隔离感染者 $I_{\text{free}}$== 两条通道，从而能分别设定死亡率 $f_2<f_1$、并引入隔离带来的传播阻断效应。

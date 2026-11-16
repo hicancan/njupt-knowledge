@@ -276,7 +276,6 @@ int b = 0;
 int result = a / b; // 抛出 ArithmeticException
 ```
 
-
 ## （3）ArrayIndexOutOfBoundsException 数组下标越界异常
 
 编程时需牢记：**Java 数组下标从 0 开始**，最大有效下标为“数组长度减 1”。
@@ -296,7 +295,6 @@ System.out.println(arr[9]);
 > 注意
 > 异常名称原文识别有误，规范名称应为 `ArrayIndexOutOfBoundsException`，而非 "ArrayIndexOfOutBoundsException"。
 
-
 ## （4）NullPointerException 空指针异常
 
 该异常针对调用**未经初始化**或**未定义**的对象（即对象引用为 `null`）时抛出。
@@ -308,14 +306,12 @@ String str = null;
 int len = str.length(); // 抛出 NullPointerException
 ```
 
-
 ## （5）ClassNotFoundException 不能加载所需的类
 
 在 Java 文件编译后，如果将 `.class` 文件移动到了其他文件夹，而程序引用路径未相应修改，则会抛出此异常。
 
 - **原因分析**：类路径（Classpath）配置错误，导致 JVM 无法在指定位置找到目标类文件。
 - **解决思路**：确保编译后的类文件路径正确包含在运行时的 Classpath 中，或修正导入路径。
-
 
 ## （6）InputMismatchException 输入的数据类型不匹配异常
 
@@ -327,7 +323,6 @@ int len = str.length(); // 抛出 NullPointerException
 Scanner scanner = new Scanner(System.in);
 int num = scanner.nextInt(); // 若用户输入 "abc"，则抛出 InputMismatchException
 ```
-
 
 ## （7）IllegalArgumentException 方法接受非法参数
 
@@ -351,7 +346,6 @@ public void setAge(int age) {
     }
 }
 ```
-
 
 ## （8）NumberFormatException 字符串转换成数字异常
 

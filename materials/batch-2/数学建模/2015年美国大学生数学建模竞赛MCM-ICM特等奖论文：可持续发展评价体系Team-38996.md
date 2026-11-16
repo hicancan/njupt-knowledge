@@ -9,15 +9,6 @@ source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
-kind: 习题
-course: 数学建模
-source: https://k.weidian.com/RHO6PSpA
----
-
-# 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
-
 本资料整理自《2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系》第1部分（共9部分），由识别工具读取并整理。
 
 ## 一、摘要与目录
@@ -653,7 +644,6 @@ $$
 EC_{\text{emergy}}.
 $$
 
-
 若  
 
 $$
@@ -777,7 +767,6 @@ We eventually devise a dynamic version of our model for the purpose to forecast 
 
 Finally, we test the sensitivity of our model and discuss the strengths and weakness of our model.
 
-
 ## 二、假设
 
 参考解答：**结论：选择 1。**
@@ -868,38 +857,30 @@ The economic state, demographics, resource consumption data and environment data
 
 设第 $i$ 个国家有 $p$ 个标准化后的指标变量
 
-
 $$
 x_i=(x_{i1},x_{i2},\dots,x_{ip})^T
 $$
-
 
 其中 $x_{i1}$ 为人均 GDP 增长率，$x_{i2}$ 为人口红利或抚养比，$x_{i3}$ 为人均能源消费，$x_{i4}$ 为碳排放强度，$x_{i5}$ 为森林覆盖率变化等。
 
 主成分分析通过线性变换得到
 
-
 $$
 y_{ik}=a_k^T x_i,\qquad k=1,\dots,m
 $$
 
-
 其中 $a_k$ 是样本协方差矩阵的第 $k$ 大特征值对应的特征向量。取前 $m$ 个主成分，使累计方差贡献率
-
 
 $$
 \frac{\sum_{k=1}^{m}\lambda_k}{\sum_{j=1}^{p}\lambda_j}\ge 85\%
 $$
 
-
 然后构造可持续指数
-
 
 $$
 S_i=\sum_{k=1}^{m}w_k y_{ik},\qquad 
 w_k=\frac{\lambda_k}{\sum_{j=1}^{m}\lambda_j}
 $$
-
 
 $S_i$ 越大表示可持续性越强。
 
@@ -938,7 +919,6 @@ The statistical data is valid. We suppose that the true value of every index loc
 
 The operating property and mechanism of a country is relatively independent from others. We hypothesize that every country all over the world respects the state sovereignty each other. In another word, the institutional structure and the operating mechanism within each country depends on the country itself only and will not be interfered by others. It is because every country has its sovereignty to determine which economic structure or political system to implement. And the inner political and economic structure will, to a great extent, determines various economic operating property and mechanism.
 
-
 ## 三、国家与政策的可持续性
 
 参考解答：### 结论
@@ -961,7 +941,6 @@ $$
 $$
 M_i=f(S_i),\qquad i\ne j.
 $$
-
 
 因此，在建立关于国家与政策可持续性的模型时，可以将各国视为具有较强自主性的独立决策主体，重点考察其内部制度、经济发展与政策执行之间的相互作用。
 
@@ -990,45 +969,35 @@ Last but not least, we will discuss some variates that can well indicate the lev
 
 设鱼种群增长满足逻辑斯蒂模型
 
-
 $$
 \frac{dx}{dt}=rx\left(1-\frac{x}{K}\right)-h
 $$
-
 
 其中 $x$ 为种群量，$r$ 为内禀增长率，$K$ 为环境容量，$h$ 为捕捞量。
 
 平衡时
 
-
 $$
 h=rx\left(1-\frac{x}{K}\right)
 $$
 
-
 为求最大持续产量，令
-
 
 $$
 \frac{dh}{dx}=r-\frac{2rx}{K}=0
 $$
 
-
 得
-
 
 $$
 x^*=\frac{K}{2}
 $$
 
-
 对应最大持续产量
-
 
 $$
 h^*=r\frac{K}{2}\left(1-\frac{1}{2}\right)=\frac{rK}{4}
 $$
-
 
 在该点，鱼类种群保持 $x=K/2$，增长率最大，捕捞可以长期维持而不导致资源枯竭。因此它兼顾当代捕捞收益与后代资源可得性，满足可持续发展要求。
 
@@ -1388,13 +1357,6 @@ Table 2 Sustainable Distance of five countries from 2003 to 2012
 
 We invoke the same method to evaluate remaining countries’ development. It turns out that both France and South Africa develops sustainably. Meanwhile, by calculating the sustainable distance of each country (Table 2), we draw the conclusion that France is the most sustainable development country among these five countries. On the other hand,
 
----
-title: 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
-kind: 习题
-course: 数学建模
-source: 2015 MCM/ICM Special Winner Paper Team 38996, pp. 12-14
----
-
 # 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
 
 本部分整理自《2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）》第 6 部分（共 9 部分），对应原件第 13–14 页内容。主要涉及模型动态过程讨论、政策可持续性评估、与其他方法的对比，以及尼泊尔案例的现状分析与无干预预测。
@@ -1547,7 +1509,6 @@ source: 2015 MCM/ICM Special Winner Paper Team 38996, pp. 12-14
   1. **稳定性高：** 通过一系列统计显著性检验来确保结果的合理性和合理性。只要数据有效，结果就是确定的。
   2. **实现简便：** 模型的实现相对容易。
 
-
 ## 二、尼泊尔可持续发展计划案例
 
 知识点：[多目标优化模型（药物相对充足阶段的配送策略）](../../../topics/数学建模/duo_mubiao_youhua.md)、[可持续发展指数 SDI 的构建与指标体系结构](../../../topics/数学建模/kechixu_zhibiao.md)、[文献综述与研究背景撰写方法](../../../topics/数学建模/wenxian_zongshu.md)
@@ -1589,7 +1550,6 @@ $$ D_t > D_0 $$
 2. **预示意义：**
    - 这意味着尼泊尔的发展倾向于牺牲环境以促进社会经济发展。
    - 这是不可持续发展的征兆（omen of unsustainable development）。
-
 
 # 可持续发展评价体系（Team 38996）：计划细节与最终方案
 
@@ -1819,16 +1779,7 @@ $$t = \frac{\ln(E_{target} / 65.82\%)}{\ln(1.014)}$$
 
 > **注**：文中提到的“政治不稳定指数”数据来源参考自 *Social unrest – ViewsWire* (http://viewswire.eiu.com/site_info.asp?info_name=social_unrest_table)。
 
----
-title: 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
-kind: 习题
-course: 数学建模
-source: <原件地址或来源路径>
----
-
 # 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
-
-本部分整理自《2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）》第 8 部分（共 9 部分），由识别工具读出的内容（第 17–19 页）。原文为英文，此处保留原文结构并进行格式规范化整理。
 
 ## 一、经济援助与动态改进模型
 
@@ -1847,43 +1798,33 @@ source: <原件地址或来源路径>
 
 若每年人均电力接入增加：
 
-
 $$
 r_E=11.7\%
 $$
 
-
 则第 $n$ 年电力接入率为：
-
 
 $$
 E_n=E_0(1+0.117)^n
 $$
 
-
 若每年每百人电话线路数增加：
-
 
 $$
 r_T=14.8\%
 $$
 
-
 则第 $n$ 年电话线路数为：
-
 
 $$
 T_n=T_0(1+0.148)^n
 $$
 
-
 从增长率看：
-
 
 $$
 14.8\%>11.7\%
 $$
-
 
 因此单从增长速度看，电话网络的扩张速度更快。
 
@@ -1893,11 +1834,9 @@ $$
 
 设现代化综合指数为：
 
-
 $$
 M=\alpha E+\beta T
 $$
-
 
 其中 $\alpha,\beta>0$，且 $\alpha+\beta=1$。
 
@@ -1910,19 +1849,15 @@ $$
 
 若采用等权重：
 
-
 $$
 \alpha=\beta=0.5
 $$
 
-
 则项目年增长效果为：
-
 
 $$
 \Delta M=0.5(0.117E_0)+0.5(0.148T_0)
 $$
-
 
 可见，当 $T_0$ 与 $E_0$ 相差不大时，电话网络增长对综合现代化指数的拉动更大。
 
@@ -1932,11 +1867,9 @@ $$
 
 因为：
 
-
 $$
 r_T-r_E=0.148-0.117=0.031
 $$
-
 
 即电话线路增速比电力接入增速高约 3.1 个百分点。
 
@@ -1950,11 +1883,9 @@ $$
 
 因此可持续现代化模型应为：
 
-
 $$
 M=\alpha E+\beta T+\gamma(E\cdot T)
 $$
-
 
 其中交叉项 $E\cdot T$ 表示电力与电信的协同效应。若 $E$ 过低，则 $T$ 的实际社会效益会受到限制。
 
@@ -2094,14 +2025,6 @@ It is worth noticing that the simulation without intervention of our improved mo
 我们通过 MATLAB 逐一模拟我们的提议来实现模型的改进。我们将每五年的可持续性距离与其他年份进行比较，并最终确定对 ICM 最有效的提议。
 
 我们将计划中每个项目的预期成就（教育项目、现代化项目和经济援助）应用于动态系统，然后预测 20 年的发展趋势。为了使模拟结果具有可比性，我们在图 10 的同一坐标系中绘制了每个提议的发展轨迹，并在表 6 中显示了每五年的可持续性距离 $D_t$。
-
-
----
-title: 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
-kind: 习题
-course: 数学建模
-source: 《2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）》第 20–21 页
----
 
 # 2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文：可持续发展评价体系（Team 38996）
 

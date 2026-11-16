@@ -5,11 +5,6 @@ requires: [Linux系统编程/fork创建进程]
 
 # exec函数族替换进程映像
 
----
-title: exec函数族替换进程映像
-requires: [Linux编程/fork系统调用]
----
-
 `fork` 能创建子进程，但子进程默认执行和父进程相同的代码。如果我想让子进程去运行一个全新的程序（比如在 shell 里输入 `ls` 后执行 `/bin/ls`），该怎么做？这就需要 `exec` 函数族。
 
 ## 是什么与为什么需要

@@ -227,11 +227,9 @@ System.out.println(MyIntArray[1] + MyIntArray[3] + MyIntArray[5]);
 
 即：
 
-
 $$
 20 + 40 + 60 = 120
 $$
-
 
 所以输出结果为 **120**。
 

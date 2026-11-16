@@ -9,8 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# 2018 MCM/ICM Summary Sheet
-
 ## Summary
 
 ### A New Keynesian Approach to Optimizing Energy Compact
@@ -390,7 +388,6 @@ $$
 CA > TX > NM > AZ
 $$
 
-
 2. **终端部门清洁与可再生能源消费占比**  
    比较表中第四行：
    
@@ -412,7 +409,6 @@ $$
 $$
 CA > AZ > TX > NM
 $$
-
 
 4. **化石能源平均价格**  
    比较表中最后一行：
@@ -499,7 +495,6 @@ $$
 
 Energy structure depends excessively on a state's population, economy and industry. The table below briefly summarizes the demographical, climatic and industrial feature of these four states:
 
-
 ## 二、EROI评估系统
 
 参考解答：**结论：** 能源结构过度依赖于各州的人口、经济和工业特征，这一观点在加利福尼亚州、亚利桑那州、德克萨斯州和新墨西哥州的比较中得到了体现。
@@ -541,7 +536,6 @@ Where $E_{i}^{O}$ denotes the equivalent caloric value of the total $i_{th}$ ene
 We find that non-clean energy is more cost effective to produce while may simultaneously generate huge amounts of environmental cost. By contrast, clean energy can virtually do little damage to the environment while the production is more complex and can cost a lot regarding the relevant research and production process. Therefore, we should take both internal cost and external expenditure into consideration in order to evaluate certain energy comprehensively. The investment consists of two parts – Energy Production Internal Cost(EIC) and Energy Production External Expenditure(EEE).
 
 The net energy yield refers to the amount of energy that is gained from harvesting an energy source. This yield is the total amount of energy gained from harvesting the source after deducting the amount of energy that was spent to harvest it. And here we take the total EIC of all kinds of energy as the energy yields given that the two have positive correlation.
-
 
 ## 三、修订后的EROI评估系统
 
@@ -588,15 +582,6 @@ Although energy prices have been increasing in the past 50 years, some of the in
 $$
 I = \frac {\text {GDP(2005)}}{\text {CurrentGDP}}\tag{3}
 $$
-
-
----
-title: 2018年美赛O奖论文：《A New Keynesian Approach to Optimizing Energy Compact》（问题C）（习题）第 4 部分
-kind: 习题
-course: 数学建模
-term: 2018
-source: 《2018年美赛O奖论文：《A New Keynesian Approach to Optimizing Energy Compact》（问题C）》
----
 
 # 2018年美赛O奖论文：《A New Keynesian Approach to Optimizing Energy Compact》（问题C）（习题）第 4 部分
 
@@ -661,7 +646,6 @@ source: 《2018年美赛O奖论文：《A New Keynesian Approach to Optimizing E
 参考解答：
 原文指出：“It's quite obvious that pollution in residential area poses larger threat on environment than that in industrial area.”（很明显，居民区的环境污染比工业区对环境构成更大的威胁。）因此，设置不同部门的影响率以平衡外部成本的真实影响。这表明居住和商业区域产生的污染对社会和环境健康的潜在危害被认为高于工业生产和交通运输，因此在计算综合外部成本时需赋予更高的权重。
 
-
 ## 二、修正后的EROI计算公式
 
 知识点：[影响因素评估指标体系构建（温度、湿度、经济、教育等）](../../../topics/数学建模/yingxiang_zhibiao.md)、[模型参数的确定（基于数据拟合或实验选择）](../../../topics/数学建模/canshu_queding.md)、[文献综述与研究背景撰写方法](../../../topics/数学建模/wenxian_zongshu.md)
@@ -700,7 +684,6 @@ $$
 \text{TotalEROI} = \text{PEE} * \text{ElectricpowerplantEROI} + (1 - \text{PEE}) * \text{End-useEROI}
 $$
 其中 PEE (Power Electricity Efficiency? 或 Power End-use Efficiency?) 原文未明确定义缩写，但根据公式结构，它是加权系数，代表电力生产端在总能源消耗中的占比或效率因子。
-
 
 ## 三、EROI评估系统结果分析
 
@@ -753,7 +736,6 @@ $$
 
 参考解答：
 原文提到：“According to the total EROI, it can be clearly observed that California has the best profile, followed by Texas, Arizona and New Mexico.” 具体数值为：CA (50.32%) > TX (39.49%) > AZ (37.27%) > NM (36.96%)。
-
 
 # 2018年美赛O奖论文：《A New Keynesian Approach to Optimizing Energy Compact》（问题C）
 
@@ -835,25 +817,20 @@ $$
 
 由原式整理得：
 
-
 $$
 x_t=E_t x_{t+1}+E_t\pi_{t+1}-\phi i_t,
 \qquad \phi>0.
 $$
 
-
 因此，在预期产出缺口 $E_t x_{t+1}$ 和预期通胀 $E_t\pi_{t+1}$ 给定时：
-
 
 $$
 \frac{\partial x_t}{\partial i_t}=-\phi<0.
 $$
 
-
 这说明实际利率上升会降低当期产出缺口，所以 IS 曲线向右下方倾斜。
 
 更一般地，将未来预期视为 $i_t$ 的递增函数，则
-
 
 $$
 \frac{dx_t}{di_t}
@@ -863,19 +840,15 @@ E_t\frac{dx_{t+1}}{di_t}
 -\phi.
 $$
 
-
 若未来产出缺口和预期通胀对利率的反应均为正，则
-
 
 $$
 \frac{dx_t}{di_t}<0,
 $$
 
-
 故 IS 曲线仍然向右下方倾斜。
 
 从支出角度看，IS 曲线也可由消费和投资等需求项目导出：
-
 
 $$
 x_t
@@ -885,34 +858,27 @@ x_t
 +\text{其他影响产出缺口的支出项}.
 $$
 
-
 其中，投资对实际利率的敏感度通常为负：
-
 
 $$
 I_t=I(i_t), \qquad \frac{dI_t}{di_t}<0.
 $$
 
-
 实际利率提高会降低投资需求，进而使总需求下降、产出缺口减小，因此产出缺口与实际利率负相关。
 
 例如，若其他条件不变，$i_t$ 增加 $1$ 个百分点，则由式（8）可得产出缺口下降
-
 
 $$
 \Delta x_t=-\phi\times 1,
 $$
 
-
 其中 $\phi>0$，这直接体现了 IS 曲线的负斜率。
 
 此外，式（8）还说明：
 
-
 $$
 \frac{\partial x_t}{\partial E_t x_{t+1}}=E_t>0,
 $$
-
 
 因此，未来产出缺口的预期提高会推动当期产出缺口上升。这体现了预期的自我实现效应：当前需求增加会改善经济状况，并提高下一期产出缺口。
 
@@ -1038,7 +1004,6 @@ $$
 $$
 \tilde{\alpha}=\frac{1}{0.95}[0.5,0.15,0.1,0.1,0.1]^{T}.
 $$
-
 
    - **保留六维权重**：将滞后向量扩展为  
      
@@ -1441,13 +1406,6 @@ As our models are mostly based on economic models, it has further economic meani
 - Direct governmental investment on renewable energy plants, such as construction of better facilities and infrastructures for access to clean energy.
 - Long term policy has a larger impact on the energy situation.
 
----
-title: 2018年美赛O奖论文：《A New Keynesian Approach to Optimizing Energy Compact》（问题C）
-kind: 习题
-course: 数学建模
-source: <原件地址或来源路径>
----
-
 # 2018年美赛O奖论文：《A New Keynesian Approach to Optimizing Energy Compact》（问题C）
 
 本文档整理自2018年美国大学生数学建模竞赛（MCM/ICM）获得特等奖（Outstanding Winner）的论文第8部分（共8部分，对应原稿第23–27页）。内容主要包含参考文献、致州长备忘录、政策建议及附录说明。
@@ -1576,7 +1534,6 @@ $$\text{LCOE} = \frac{\sum_{t=1}^{T} \frac{C_t}{(1+r)^t}}{\sum_{t=1}^{T} \frac{E
 - [6] OECD, 2005, *Environmentally Harmful Subsidies: Challenges for Reform*, Paris: OECD.
 - [7] European Environment Agency (EEA), 2004, *Energy Subsidies in the European Union: A Brief Overview*, Copenhagen: EEA.
 - [8] The Pew Center on Global Climate Challenge, 2009. *Wind and Solar Electricity: Challenge and Opportunities*.
-
 
 ## 二、致州长备忘录
 
@@ -1733,7 +1690,6 @@ $$
 3. Actions across the border: States with higher technological capabilities help other states build plants of high efficiency and low environmental cost.
 4. Construct more energy pipelines and transmission cables across states' border.
 
-
 ## 三、气候变化协定的实施
 
 参考解答：**结论：** 四项 Goals 分别对应能源政策中四类经典政策工具：财政激励/约束（Goal 1）、绿色金融支持（Goal 2）、跨区域技术转移与合作（Goal 3）、跨区能源基础设施互联互通（Goal 4）。在气候变化协定实施框架下，它们构成“经济杠杆—资金保障—技术扩散—物理网络”的完整政策组合。
@@ -1789,7 +1745,6 @@ A team of modelers who are enthusiastic about environmental preservation
 
 2/12/2018
 
-
 ## 四、附录
 
 参考解答：结论：应选择 **方案 2**，即优先构建跨州能源基础设施与传输系统合作机制，并以“清洁能源配额共享 + 统一并网标准 + 联合绿证市场”为制度核心。该方案在减排效果、经济可行性与实施阻力之间取得最优平衡。  
@@ -1837,11 +1792,9 @@ A team of modelers who are enthusiastic about environmental preservation
 
 这一组合的减排逻辑是：
 
-
 $$
 \text{减排量} \approx \Delta Q_{\text{可再生}} \cdot E_{\text{碳强度差}}
 $$
-
 
 其中 $\Delta Q_{\text{可再生}}$ 是可再生能源实际消纳量的增加量。跨州电网建设能提高可再生电力消纳率，避免“弃风弃光”，因此 $\Delta Q_{\text{可再生}}$ 显著上升，而碳强度差固定，故减排效果直接且可量化。
 

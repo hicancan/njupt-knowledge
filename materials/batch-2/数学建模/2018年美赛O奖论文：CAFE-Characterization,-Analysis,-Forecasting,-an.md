@@ -62,14 +62,6 @@ CAFE framework in Fig. 1 can be summarized as the following steps:
 
 [^1]: The energy profile primarily consists of energy production, consumption, import, and exports [2].
 
----
-title: 2018年美赛O奖论文：CAFE Characterization, Analysis, Forecasting, and Evaluation of Energy Profile
-kind: 课件
-course: 数学建模
-term: 2018
-source: 2018 MCM O Prize Paper CAFE
----
-
 # 2018年美赛O奖论文：CAFE Characterization, Analysis, Forecasting, and Evaluation of Energy Profile
 
 本部分整理了第 5–7 页内容，涵盖模型核心步骤、假设条件、术语缩写及能量画像构建方法。
@@ -198,7 +190,6 @@ $$
 
 该核函数使得时间上更接近的值具有更高的相关性，这与能源画像预测中“越近的信息对预测越重要”的事实相吻合。
 
-
 ### 计算 1
 
 题干：假设已知观测数据向量 $\mathbf{y} \in \mathbf{R}^{n \times 1}$，对于新的时间点 $x^*$，请写出其对应预测值 $y^*$ 的条件分布公式，并解释均值 $\mu_*$ 和方差 $\sigma_*^2$ 的计算方式。
@@ -229,7 +220,6 @@ $$
 
 补充：原文公式(7)中的 $\sigma$ 可能存在印刷错误，标准GPR预测不确定性通常不包含额外的 $\sigma$ 加法项，除非是指未平滑的噪声水平。此处依据原文记录。
 
-
 ### 简答 2
 
 题干：文中如何通过GPR模型的输出结果来解释不同能源指标的可预测性？请以亚利桑那州为例说明。
@@ -246,7 +236,6 @@ GPR模型不仅输出预测值，还输出95%置信区间（Confidence Interval�
    - 趋势：围绕某个值波动，波动幅度最大。
    - 置信区间：较大。
    - 结论：表明其演化具有高度随机性、低可预测性，且对外部影响因素高度敏感。
-
 
 ## 4.2.1 Regression Analysis of Energy Profile
 
@@ -511,8 +500,6 @@ $$
 (i) 由于我们的目标是基于可再生能源消费（RC），因此行动应首先有助于实现 RC 要求；
 
 # 2018年美赛O奖论文：CAFE Characterization, Analysis, Forecasting, and Evaluation of Energy Profile（第9部分）
-
-本资料整理自《2018年美赛O奖论文》第9部分（共10部分），由识别工具读出的第21–22页内容，主要包含针对新墨西哥州（NM）、德克萨斯州（TX）、亚利桑那州（AZ）及加利福尼亚州（CA）的能源政策建议及敏感性分析。
 
 ## 一、基于预测结果的行动建议
 

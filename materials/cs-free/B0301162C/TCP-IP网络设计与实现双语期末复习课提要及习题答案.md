@@ -9,8 +9,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# 复习要点
-
 ## Key point
 
 试卷题型：填空题（12空）、判断题5题、简答题5题、综合题 3题（其中一个是程序注释题）
@@ -524,7 +522,6 @@ Internet 地址可以按 8 位字节、16 位字或单个 32 位地址来访问�
 
 答案：B。
 
-
 ## 二、Chapter 7. Domains and Protocols
 
 知识点：[接口的地址链表管理](../../../topics/TCP-IP网络/接口地址链表.md)、[接口层 ifnet 结构体的作用与字段](../../../topics/TCP-IP网络/ifnet结构.md)
@@ -657,7 +654,6 @@ Net/3 将相关协议分组到一个域（domain）中，并使用协议族常�
 
 *(注：原文表格中使用了黑三角符号 $\blacktriangleright$ 表示箭头或特定含义，此处整理为标准文本)*
 
-
 ## 三、Chapter 8. IP: Internet Protocol
 
 知识点：[TTL 递减时机与路由环路检测](../../../topics/TCP-IP网络/ttl递减.md)、[IP 输入（ip_input）在 4.4BSD-Lite 发行版中的处理流程](../../../topics/TCP-IP网络/ip输入处理.md)
@@ -721,15 +717,6 @@ Net/3 将相关协议分组到一个域（domain）中，并使用协议族常�
 
 原文截断内容：“What happens when the first-hop router discovers that the packets should be going through a”
 
-
----
-title: 2019 年 TCP/IP 习题答案和复习课提要（第 5 部分）
-kind: 复习要点
-course: 计算机通信与网络
-term: 2019
-source: 《TCP/IP网络设计与实现（双语）》期末复习课提要及习题答案，第 12-13 页
----
-
 # 2019 年 TCP/IP 习题答案和复习课提要（第 5 部分）
 
 本资料整理自《TCP/IP网络设计与实现（双语）》期末复习课提要及习题答案的第 12–13 页内容，涵盖 Chapter 9、Chapter 10 和 Chapter 11 的部分习题解答。
@@ -784,7 +771,6 @@ ICMP error messages are generated only for the initial fragment of a datagram(�
 
 答案：ICMP 差错报文仅针对数据报的第一个分片生成，其偏移量始终为 0。0 的主机形式和网络形式相同，因此不需要转换。
 
-
 ## Chapter 10. IP Fragmentation and Reassembly（IP 分片与重组）
 
 知识点：[IP 分片处理过程中可能遇到的错误或异常及发送的 ICMP 差错报文](../../../topics/TCP-IP网络/分片异常与icmp差错.md)、[路由器转发逻辑与 ip_forward 中的字节序转换](../../../topics/TCP-IP网络/ip转发逻辑.md)
@@ -833,7 +819,6 @@ Because only the destination host has a chance to see all the fragments.
 
 答案：略（此为功能描述）。
 
-
 ## Chapter 11. ICMP: Internet Control Message Protocol（ICMP：互联网控制报文协议）
 
 知识点：[IP 头部长度、字段解析与校验和错误处理](../../../topics/TCP-IP网络/ip头部格式.md)、[IP 差错与 ICMP 差错报文汇总（不可达、超时、参数问题等）](../../../topics/TCP-IP网络/icmp差错报文汇总.md)
@@ -846,8 +831,6 @@ Because only the destination host has a chance to see all the fragments.
 1. ip\_forward 可能会由于 ip\_output 失败或重定向而发送 ICMP 报文（书 P180 5）
 2. 当收到数据报的第一个分片且定时器超时时，向源主机发送一个 ICMP 超时差错报文
 3. 当路由器收到一个需要分片的数据报，而 IP 首部’DF’位置 1 时，发送 ICMP 不可达差错报文
-
-
 
 答案：
 1. ip_forward 可能会由于 ip_output 失败或重定向而发送 ICMP 报文。

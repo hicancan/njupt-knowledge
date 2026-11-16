@@ -5,11 +5,6 @@ requires: [Web开发技术/xml-syntax-structure, Web开发技术/css-intro]
 
 # 显示原始XML文档与使用CSS显示XML文档
 
----
-title: 显示原始XML文档与使用CSS显示XML文档
-requires: [Web技术（双语）/XML文档结构, Web技术（双语）/CSS选择器]
----
-
 ## 为什么 XML 不能直接“看”？
 
 HTML 自带语义标签（`<h1>`、`<p>`），浏览器知道如何排版。但 XML 的标签是==自定义==的，浏览器不认识它们，默认只会把它当成一棵节点树来展示。那么问题来了：如果我想让 XML 数据在网页上“像模像样”地呈现，该怎么办？

@@ -9,8 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# 2018 MCM/ICM Summary Sheet
-
 ## Sustainable Energy Assessment
 
 ### Summary
@@ -501,14 +499,6 @@ $$
 ### 6.1 未来能源目标
 
 在为联盟设定目标时，我们主要关注结合后可再生能源利用性能 $U_r$ 的提升。
-
----
-title: 2018年美赛O奖论文：可持续能源评估（Sustainable Energy Assessment）第6部分
-kind: 课件
-course: 数学建模
-term: 2018-MCM/ICM
-source: 《数学建模》教材，2018年美赛O奖论文《Sustainable Energy Assessment》第19–21页
----
 
 # 2018年美赛O奖论文：可持续能源评估（Sustainable Energy Assessment）第6部分
 

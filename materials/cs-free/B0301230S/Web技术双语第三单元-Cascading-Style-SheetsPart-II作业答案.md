@@ -10,18 +10,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: Web技术（双语）第三单元 Cascading Style Sheets（Part II）作业答案
-kind: 答案
-course: Web技术（双语）
-term: 2018-2019-2
-source: <原件地址或来源路径>
----
-
-# Web技术（双语）第三单元 Cascading Style Sheets（Part II）作业答案
-
-本资料由识别工具读取的《Web技术（双语）》第三单元作业答案整理而成，包含专业词汇翻译、复习题解答及编程练习题。
-
 ## 一、专业词汇翻译
 
 ### 选择 1
@@ -55,7 +43,6 @@ source: <原件地址或来源路径>
 - font：字体
 - category：类别
 
-
 ## 二、复习题解答
 
 知识点：[选择器形式（简单选择器、类选择器Class、通用选择器Generic、id选择器、上下文选择器Contextual、伪类Pseudo class、通配符Universal）](../../../topics/Web开发技术/css-selectors.md)、[CSS属性：字体属性（Font Properties）](../../../topics/Web开发技术/css-properties-font.md)、[CSS简介与作用](../../../topics/Web开发技术/css-intro.md)
@@ -87,7 +74,6 @@ source: <原件地址或来源路径>
 参考解答：ID 选择器（id selector）具有更高的优先级。在 CSS 特异性（Specificity）计算中，ID 选择器的权重远高于通用选择器（universal selector）。ID 选择器权重为 (0, 1, 0, 0)，而通用选择器权重为 (0, 0, 0, 0)。因此，当两者冲突时，ID 选择器的样式规则将覆盖通用选择器的规则。
 
 答案：id selector
-
 
 ## 三、编程练习
 

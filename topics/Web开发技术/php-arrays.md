@@ -5,11 +5,6 @@ requires: [Web开发技术/php-control]
 
 # PHP数组（创建、访问元素、作为函数参数、作为栈Stacks、遍历Iterating、排序Sorting）
 
----
-title: PHP数组（创建、访问元素、作为函数参数、作为栈Stacks、遍历Iterating、排序Sorting）
-requires: [Web技术（双语）/PHP语言基础]
----
-
 在 Web 开发中，如果要把一个班级所有学生的成绩存起来，难道要定义几十个独立变量吗？显然不合理。我们需要一种能批量存储、按规则存取的数据结构——这就是 ==PHP 数组（Array）==。它本质上是**有序映射（ordered map）**，将键（key）映射到值（value）。
 
 ## 创建与访问元素

@@ -300,11 +300,9 @@ $$
 
 设沿 $x$ 轴正方向传播的余弦波为
 
-
 $$
 y(x,t)=A\cos(\omega t-kx+\varphi_0).
 $$
-
 
 - **图 (a)：** $t=0$ 时，$x=0$ 处质点位于平衡位置，且波形随 $x$ 增大而向上，即该处斜率为正。代入 $t=0,\ x=0$：
 
@@ -314,14 +312,12 @@ $$
   =Ak\sin\varphi_0>0,
 $$
 
-
   因此 $\sin\varphi_0>0$；又因该点位于平衡位置，故
 
   
 $$
 \varphi_0=\frac{\pi}{2}.
 $$
-
 
 - **图 (b)：** $t=0$ 时质点位于平衡位置，并沿负方向运动。对于
 
@@ -330,7 +326,6 @@ $$
 y=A\cos(\omega t+\varphi),
 $$
 
-
   初速度为
 
   
@@ -338,14 +333,12 @@ $$
 v(0)=-A\omega\sin\varphi<0,
 $$
 
-
   所以 $\sin\varphi>0$。结合 $t=0$ 时 $y(0)=0$，得
 
   
 $$
 \varphi=-\frac{\pi}{2}.
 $$
-
 
 A、B、C 均与上述相位判断不符，故选 **D**。
 
@@ -362,20 +355,17 @@ I=\int_0^2 F\,dt=\int_0^2 (4+6t)\,dt
 =\left[4t+3t^2\right]_0^2=8+12=20\ \mathrm{N\cdot s}
 $$
 
-
 由动量定理  
 
 $$
 \Delta P=I=20\ \mathrm{kg\cdot m/s}
 $$
 
-
 所以两空均填：  
 
 $$
 I=20\ \mathrm{N\cdot s},\quad \Delta P=20\ \mathrm{kg\cdot m/s}
 $$
-
 
 知识点：[动量定理与动量守恒定律](../../../topics/大学物理/动量定理与动量守恒.md)、[速度、加速度的定义与微分关系](../../../topics/大学物理/速度与加速度定义.md)
 
@@ -447,7 +437,6 @@ $$
 \omega = 4 \times \left( \frac{15}{5} \right)^2 = 4 \times 9 = 36 \, \mathrm{rad/s}.
 $$
 
-
 知识点：[角动量定理与角动量守恒定律](../../../topics/大学物理/角动量与角动量守恒.md)
 
 ### 填空 5
@@ -497,30 +486,23 @@ $$
 L=m\sqrt{GMR}
 $$
 
-
 **推理：** 地球绕太阳做圆周运动，万有引力提供向心力：
-
 
 $$
 \frac{GMm}{R^2}=m\frac{v^2}{R}
 $$
 
-
 解得地球公转速率
-
 
 $$
 v=\sqrt{\frac{GM}{R}}
 $$
 
-
 轨道角动量大小为
-
 
 $$
 L=mvR=m\sqrt{\frac{GM}{R}}\cdot R=m\sqrt{GMR}
 $$
-
 
 知识点：[圆周运动的角量描述（角速度、角加速度）](../../../topics/大学物理/圆周运动描述.md)、[角动量定理与角动量守恒定律](../../../topics/大学物理/角动量与角动量守恒.md)
 
@@ -641,20 +623,17 @@ $$
 \theta(t)=\theta_A\cos\left(\frac{2\pi}{T}t+\frac{\pi}{2}\right)
 $$
 
-
 (b)  
 
 $$
 \theta(t)=\theta_A\cos\left(\frac{2\pi}{T}t-\frac{\pi}{2}\right)
 $$
 
-
 (c)  
 
 $$
 \theta(t)=\theta_A\cos\left(\frac{2\pi}{T}t+\pi\right)
 $$
-
 
 ---
 
@@ -672,7 +651,6 @@ $$
 \dot{\theta}(t)=-\theta_A\frac{2\pi}{T}\sin\left(\frac{2\pi}{T}t+\varphi_0\right)
 $$
 
-
 - (a) 起始时摆球在平衡位置，向正方向（逆时针）运动：$\theta(0)=0$，$\dot{\theta}(0)>0$。  
   由 $\theta(0)=0$ 得 $\cos\varphi_0=0$，结合 $\dot{\theta}(0)>0$ 取  
   
@@ -680,13 +658,11 @@ $$
 \varphi_0=\frac{\pi}{2}
 $$
 
-
 - (b) 起始时摆球在平衡位置，向负方向（顺时针）运动：$\theta(0)=0$，$\dot{\theta}(0)<0$，所以取  
   
 $$
 \varphi_0=-\frac{\pi}{2}
 $$
-
 
 - (c) 起始时摆球在正最大角位移处（$\theta=\theta_A$），速度为零，因此  
   
@@ -784,11 +760,9 @@ $$\boxed{W_F = mga(1-\cos\theta_0) + \frac{1}{2}ka^2\theta_0^2}$$
 
 参考解答：**结论**
 
-
 $$
 \boxed{\,v=\sqrt{\frac{4mgh}{2m+m_{1}+m_{2}}}\,}
 $$
-
 
 **推理与计算**
 
@@ -803,14 +777,11 @@ $$
 
 由绳与轮无相对滑动，有
 
-
 $$
 v=R\omega_{1}=r\omega_{2}.
 $$
 
-
 于是
-
 
 $$
 mgh=\frac12 mv^{2}
@@ -818,30 +789,23 @@ mgh=\frac12 mv^{2}
 +\frac12\left(\frac12 m_{2}r^{2}\right)\left(\frac{v}{r}\right)^{2},
 $$
 
-
 即
-
 
 $$
 mgh=\frac12 mv^{2}+\frac14 m_{1}v^{2}+\frac14 m_{2}v^{2}.
 $$
 
-
 整理得
-
 
 $$
 4mgh=(2m+m_{1}+m_{2})v^{2},
 $$
 
-
 所以
-
 
 $$
 v=\sqrt{\frac{4mgh}{2m+m_{1}+m_{2}}}.
 $$
-
 
 知识点：[刚体定轴转动定律（M=Jα）](../../../topics/大学物理/刚体转动定律.md)、[力矩的功与刚体定轴转动的动能定理](../../../topics/大学物理/力矩做功.md)、[功能原理与机械能守恒定律](../../../topics/大学物理/功能原理与机械能守恒.md)
 

@@ -9,8 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# 2018 MCM/ICM E题 O奖论文：How Will Climate Change Affect Fragility?
-
 本文档整理了《2018年美赛E题O奖论文》的第1部分（第1-2页）内容，包括摘要、目录及引言章节。原文中的识别错误（如 "a ect" 修正为 "affect"，"rst" 修正为 "first" 等）已根据上下文进行修正。
 
 ## Abstract
@@ -97,7 +95,6 @@ $$
 w_E+w_P+w_S+w_C=1.
 $$
 
-
 ### 1. 指标标准化
 
 对各指标采用极差标准化：
@@ -108,13 +105,11 @@ $$
 x'=\frac{x-x_{\min}}{x_{\max}-x_{\min}}
 $$
 
-
 负向指标：
 
 $$
 x'=\frac{x_{\max}-x}{x_{\max}-x_{\min}}
 $$
-
 
 气候指标中，干旱频率、温度距平、降水变率、极端天气损失占比均视为正向脆弱性指标。
 
@@ -129,13 +124,11 @@ $$
 p_{ij}=\frac{x'_{ij}}{\sum_{i=1}^{n}x'_{ij}}
 $$
 
-
 指标信息熵：
 
 $$
 e_j=-k\sum_{i=1}^{n}p_{ij}\ln p_{ij},\qquad k=\frac{1}{\ln n}
 $$
-
 
 权重：
 
@@ -143,14 +136,11 @@ $$
 w_j=\frac{1-e_j}{\sum_{j=1}^{m}(1-e_j)}
 $$
 
-
 代入气候、经济、政治、社会四类指标后，得到一组典型权重：
-
 
 $$
 w_E=0.28,\quad w_P=0.24,\quad w_S=0.20,\quad w_C=0.28
 $$
-
 
 说明在该模型下，气候因素与经济因素同等重要。
 
@@ -158,11 +148,9 @@ $$
 
 建立线性回归模型：
 
-
 $$
 F = \alpha + \beta_1 D + \beta_2 T + \beta_3 R + \beta_4 X + \varepsilon
 $$
-
 
 其中  
 $D$：干旱频率变化率，  
@@ -172,11 +160,9 @@ $X$：极端天气事件经济损失占 GDP 比例。
 
 利用样本国家数据估计得到：
 
-
 $$
 \hat{F}=0.21+0.34D+0.18T+0.27R+0.15X
 $$
-
 
 各系数均通过显著性检验。  
 从标准化系数看，干旱频率和降水变率对脆弱性影响最大。
@@ -197,11 +183,9 @@ $$
 
 对高脆弱国家建立面板模型：
 
-
 $$
 \ln(C_{it}) = \gamma_0 + \gamma_1 \ln(A_{it}) + \gamma_2 F_{it} + \mu_i + \varepsilon_{it}
 $$
-
 
 其中  
 $C_{it}$：冲突事件强度，  
@@ -209,11 +193,9 @@ $A_{it}$：气候适应投资占 GDP 比例。
 
 估计得到：
 
-
 $$
 \hat{\gamma}_1 = -0.46
 $$
-
 
 即气候适应投资每增加 1%，冲突强度平均下降约 0.46%。
 
@@ -229,13 +211,11 @@ $$
 
 模拟至 2050 年，高脆弱国家数量占比分别为：
 
-
 $$
 \text{基准： }21\%,\qquad
 \text{恶化： }26\%,\qquad
 \text{适应： }23\%
 $$
-
 
 因此若不干预，高脆弱国家占比可能从 21% 升至约 26%，增加约 24%。
 
@@ -307,11 +287,9 @@ The previous researches have contributed a lot to the solution of fragility prob
 
 有关阿富汗重建的研究则指出，国家重建应覆盖四个领域：
 
-
 $$
 \text{国家重建}=\{\text{经济、政治、安全、社会}\}.
 $$
-
 
 因此，脆弱性模型不能只考虑气候或经济指标，还应纳入政治治理、安全状况和社会发展等维度。
 
@@ -327,11 +305,9 @@ $$
 
 后续研究可构建多指标综合评价模型。设国家 $i$ 的脆弱性指数为
 
-
 $$
 F_i=\sum_{j=1}^{m}w_j z_{ij},
 $$
-
 
 其中：
 
@@ -340,27 +316,21 @@ $$
 
 指标体系可包括：
 
-
 $$
 \{\text{经济、政治、安全、社会、生理需求、气候压力}\}.
 $$
 
-
 在提出干预方案时，还应加入预算约束：
-
 
 $$
 \sum_{k=1}^{n}c_kx_k\leq B,
 $$
 
-
 其中 $c_k$ 为第 $k$ 项干预措施的成本，$x_k$ 表示是否实施或实施强度，$B$ 为可用预算。模型目标可以是在预算限制下最大限度降低脆弱性：
-
 
 $$
 \min F_i(x),
 $$
-
 
 从而使模型既能评价国家脆弱程度，也能为干预措施的选择提供依据。
 
@@ -652,8 +622,6 @@ Page 4 of 21
 
 # 2018年美赛E题O奖论文：How Will Climate Change Affect Fragility?
 
-本文档整理自《2018年美赛E题O奖论文：How Will Climate Change Affect Fragility?》（习题）第 4 部分，由识别工具读出的内容（第 7–8 页），已修正明显的识别错误并转换为标准 Markdown 格式。
-
 ## 3.1.3 Determination of the Weights for Indicators
 
 The Analytic Hierarchy Process (AHP) is a well-developed method which is used to analyze the weights. The hierarchy structure of the indicators need to be determined. It consists eight superior indicators and 37 inferior indicators.
@@ -944,7 +912,6 @@ $$
 f_{DM}=1-\lambda_{te}
 $$
 
-
 ---
 
 推理或计算过程：
@@ -971,7 +938,6 @@ $$
 $$
 1-\lambda_{te}
 $$
-
 
 选择题说明：  
 选择式（15）是因为它同时考虑了降水、耕地和海平面上升对住所的综合影响，而其他选项只考虑单一因素或未考虑海拔与海平面上升速率的相对关系。
@@ -1082,7 +1048,6 @@ $$
 f_{DM}=1-\lambda_{te}
 $$
 
-
 ---
 
 推理或计算过程：
@@ -1109,7 +1074,6 @@ $$
 $$
 1-\lambda_{te}
 $$
-
 
 选择题说明：  
 选择式（15）是因为它同时考虑了降水、耕地和海平面上升对住所的综合影响，而其他选项只考虑单一因素或未考虑海拔与海平面上升速率的相对关系。
@@ -1244,19 +1208,15 @@ $$
 
 设一年内灾害次数为 $N$，则
 
-
 $$
 P(N=k)=\frac{\mu^k e^{-\mu}}{k!},\qquad k=0,1,2,\ldots
 $$
 
-
 其中 $\mu=E(N)$，可由该地区历史年均灾害次数估计。若历史数据包含 $T$ 年、共发生 $M$ 次灾害，可取
-
 
 $$
 \widehat{\mu}=\frac{M}{T}.
 $$
-
 
 因此，$\mu$ 越大，表示该地区灾害发生越频繁。
 
@@ -1264,36 +1224,28 @@ $$
 
 灾害总体显著性采用均值为 $0.001$ 的指数分布，其密度为
 
-
 $$
 f_{\operatorname{Sig}}(x)=1000e^{-1000x},\qquad x>0.
 $$
 
-
 故
-
 
 $$
 E(\operatorname{Sig})=\frac1{1000}=0.001.
 $$
 
-
 在总体显著性 $\operatorname{Sig}=s$ 已知的条件下，第 $i$ 个脆弱性指标受到的冲击 $\delta_i$ 满足
-
 
 $$
 f_{\delta_i\mid \operatorname{Sig}}(x\mid s)
 =\frac1s e^{-x/s},\qquad x>0,
 $$
 
-
 从而
-
 
 $$
 E(\delta_i\mid \operatorname{Sig}=s)=s.
 $$
-
 
 这里指数分布用于描述“小影响较常见、大影响较少见但可能发生”的随机特征。
 
@@ -1327,19 +1279,15 @@ $$
 
 重复上述过程 $R$ 次，得到脆弱性得分序列
 
-
 $$
 F^{(1)},F^{(2)},\ldots,F^{(R)}.
 $$
 
-
 可报告
-
 
 $$
 \overline F=\frac1R\sum_{r=1}^{R}F^{(r)}
 $$
-
 
 以及标准差或 $95\%$ 模拟区间。由于灾害具有随机性，单次模拟结果不宜作为确定结论。
 
@@ -1347,26 +1295,20 @@ $$
 
 对国家 $c$ 分别计算：
 
-
 $$
 F_c^{(0)}=\text{不考虑气候变化的脆弱性},
 $$
-
-
 
 $$
 \overline F_c^{(1)}
 =\text{考虑气候变化后的平均脆弱性}.
 $$
 
-
 气候变化造成的平均增量为
-
 
 $$
 \Delta F_c=\overline F_c^{(1)}-F_c^{(0)}.
 $$
-
 
 比较时重点考察：
 
@@ -1387,8 +1329,6 @@ The original fragility of Afghanistan and Egypt can be obtained based on our mod
 In order to calculate the fragility indicator, the weights and data of each inferior and superior indicators must be obtained. In subsection 3.1, the weights have been determined using AHP. In this part, some parameters and data will be decided and collected. In order to calculate the fragility indicator after climate change, the parameters in subsection 3.2 should be determined.
 
 # 2018年美赛E题O奖论文：How Will Climate Change Affect Fragility?（习题）
-
-本节整理了2018年美国大学生数学建模竞赛E题获奖论文中关于气候变迁对脆弱性影响的具体数据分析、灵敏度分析及临界点确定的内容。资料基于识别工具读出的原文进行整理，修正了断行与拼写错误，将HTML表格转换为Markdown格式，并保留了图表占位符。
 
 ## 一、数据来源与参数设定
 
@@ -1481,14 +1421,6 @@ In order to calculate the fragility indicator, the weights and data of each infe
 
 我们将世界上的国家根据脆弱性指标分为四类。最脆弱国家的边界即为临界点，而……
 
----
-title: 2018年美赛E题O奖论文：How Will Climate Change Affect Fragility?（习题）第8部分
-kind: 习题
-course: 数学建模
-source: 2018 MCM/ICM Problem E Paper Team #78511
-term: 2018-2018-1
----
-
 # 2018年美赛E题O奖论文：How Will Climate Change Affect Fragility?（习题）第8部分
 
 本部分整理自2018年美国大学生数学建模竞赛（MCM/ICM）E题优秀论文（O奖）的第8部分（原稿第17–20页），主要涉及脆弱性临界点与稳定点的确定，以及针对阿富汗和埃及的干预计划优化模型。
@@ -1545,27 +1477,21 @@ term: 2018-2018-1
 
 例如，若排序后的 FSI 为
 
-
 $$
 F_{(1)}\le F_{(2)}\le\cdots\le F_{(n)},
 $$
 
-
 可计算相邻 FSI 的变化量
-
 
 $$
 \Delta F_j=F_{(j+1)}-F_{(j)},
 $$
 
-
 将 $\Delta F_j$ 显著增大或经验分布曲率发生明显变化的位置作为候选临界点。临界点对应的阈值可写为
-
 
 $$
 F_c=\arg\max_{j}\left|\Delta F_{j+1}-\Delta F_j\right|,
 $$
-
 
 或在分段回归、变点检测等模型下，将使前后段拟合误差最小的位置作为临界点。
 
@@ -1573,20 +1499,16 @@ $$
 
 对所有国家计算其 FSI 与临界点的距离：
 
-
 $$
 d_i=|F_i-F_c|,
 $$
 
-
 取距离最小的国家
-
 
 $$
 i^*=\arg\min_i d_i
 =\arg\min_i |F_i-F_c|.
 $$
-
 
 该国在官方指数排序中处于临界状态附近，因而能够代表临界国家。
 
@@ -1594,63 +1516,49 @@ $$
 
 将国家 $i^*$ 的各项标准化数据代入本文模型，得到其脆弱性指标
 
-
 $$
 V_{i^*}=f(X_{i^*}),
 $$
 
-
 并以该值作为最终的脆弱性临界点：
-
 
 $$
 V_{\mathrm{crit}}=V_{i^*}.
 $$
 
-
 若模型由若干分项指标加权构成，则
-
 
 $$
 V_{i^*}=\sum_{k=1}^{m}w_k z_{k,i^*},
 $$
 
-
 其中 $z_{k,i^*}$ 为第 $k$ 项指标的标准化值，$w_k$ 为对应权重，且通常满足
-
 
 $$
 \sum_{k=1}^{m}w_k=1.
 $$
 
-
 ### 4. 稳定点的确定
 
 稳定点对应“由不稳定向稳定转变”的边界，可在与脆弱性临界点相反的FSI区间内寻找相邻类别变化最明显的位置，得到稳定阈值 $F_s$。随后选择满足
-
 
 $$
 i_s^*=\arg\min_i |F_i-F_s|
 $$
 
-
 的国家，并计算
-
 
 $$
 V_{\mathrm{stable}}=f(X_{i_s^*}).
 $$
 
-
 因此，最终得到两个界限：
-
 
 $$
 V_{\mathrm{stable}}
 \quad\text{与}\quad
 V_{\mathrm{crit}},
 $$
-
 
 二者共同构成脆弱状态的划分区间。
 
@@ -1678,7 +1586,6 @@ $$
 C_2=48.2
 $$
 
-
 ---
 
 ## 推理与计算过程
@@ -1691,11 +1598,9 @@ $$
 
 因此可直接将临界点和稳定点分别取为：
 
-
 $$
 C_1=89.8,\qquad C_2=48.2
 $$
-
 
 ---
 
@@ -1703,17 +1608,13 @@ $$
 
 这样取值的依据是最小绝对误差原则：
 
-
 $$
 |89.8-91.3|=1.5
 $$
 
-
-
 $$
 |48.2-47.4|=0.8
 $$
-
 
 与其他国家数据相比，这两个国家的 FSI 值最接近理论计算得到的临界点与稳定点。
 
@@ -2381,7 +2282,6 @@ $$F_{\text{modified}} = F_{\text{base}} \left(\frac{1}{\lambda} - \frac{1}{e^{\l
 订正：
 请注意，通常气候变化会增加脆弱性。原文前文提到 “economics indicator will be mostly a ected whose average percentage change is 14.6%”。此处具体指标的数值变化方向可能与整体趋势相反，或者该特定指标的定义较为特殊。在实际建模中，应核实指标的具体定义（是Risk还是Resilience）。
 
-
 ## 7 Conclusions
 
 参考解答：**结论：** 埃及因气候变化导致的脆弱性指标变化百分比约为 $-4.91\%$。
@@ -2419,7 +2319,6 @@ $$
    - **阿富汗：** 需要花费 GDP 的 285% 用于干预以避免脆弱，主要资金用于保障食物和水指标。短期内难以摆脱脆弱状态。
    - **埃及：** 仅需花费 GDP 的 1% 即可避免脆弱。
    - **一般建议：** 在应用模型时需考虑国家规模。小国家利用协同效应发展更快，干预成本较低；大国家管理困难，成本较高，应按地质特征分区管理以提高准确性。
-
 
 ## 8 Strengths and Weaknesses
 
@@ -2494,11 +2393,9 @@ B 国在“脆弱性驱动因素”上的综合得分最高，表明其国家脆
 
 将国家脆弱性视为多个指标的综合结果。设国家 $i$ 的脆弱性指数为
 
-
 $$
 S_i=\sum_{j=1}^{n} w_j x_{ij}
 $$
-
 
 其中：
 
@@ -2516,19 +2413,15 @@ $$
 
 对每个指标先做同向化处理，使数值越大表示越脆弱，再做极差标准化：
 
-
 $$
 x_{ij}'=\frac{x_{ij}-\min_j}{\max_j-\min_j}
 $$
 
-
 若该指标为“越大越稳定”，则先取反向：
-
 
 $$
 x_{ij}'=1-\frac{x_{ij}-\min_j}{\max_j-\min_j}
 $$
-
 
 ---
 
@@ -2556,49 +2449,35 @@ $$
 
 ## 3. 计算综合脆弱性指数
 
-
 $$
 S_A=0.35(0.60)+0.30(0.45)+0.35(0.55)
 $$
-
-
 
 $$
 S_A=0.210+0.135+0.1925=0.5375
 $$
 
-
-
 $$
 S_B=0.35(0.85)+0.30(0.70)+0.35(0.80)
 $$
-
-
 
 $$
 S_B=0.2975+0.210+0.280=0.7875
 $$
 
-
-
 $$
 S_C=0.35(0.30)+0.30(0.25)+0.35(0.35)
 $$
-
-
 
 $$
 S_C=0.105+0.075+0.1225=0.3025
 $$
 
-
 因此：
-
 
 $$
 S_B>S_A>S_C
 $$
-
 
 ---
 

@@ -11,8 +11,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 # Eclipse 的 Junit 配置指南
 
-一句话说明来源和整理方式。
-
 ## 一、Eclipse 中 JUnit 的配置
 
 ### 1.1 创建变量 JUNIT 和 JUNIT_SRC

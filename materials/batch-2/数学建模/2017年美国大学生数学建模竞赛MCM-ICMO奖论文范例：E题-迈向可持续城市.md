@@ -9,15 +9,6 @@ source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文范例：E题 迈向可持续城市
-kind: 习题
-course: 数学建模
-source: 2017 MCM/ICM O Award Paper E Problem
----
-
-# 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文范例：E题 迈向可持续城市
-
 本文档整理自2017年美国大学生数学建模竞赛（MCM/ICM）获得Outstanding Winner (O奖)的E题论文《Towards A Sustainable City》。该论文针对城市蔓延带来的经济、社会和环境问题，基于智慧增长理论（Smart Growth Theory），构建了成功智慧增长指标体系（SSG），并对新西兰惠灵顿和美国安克雷奇两个中等城市的现有规划进行评估，提出了具体的改进方案。内容涵盖摘要、目录及正文第一部分（Introduction）。
 
 ## 一、摘要部分
@@ -293,19 +284,15 @@ The target ↑ (↓) indicates that the increase (decrease) of the value will he
 
 SEP 指标体系可写为：
 
-
 $$
 \mathrm{SEP}=w_1\mathrm{SEP}_1+w_2\mathrm{SEP}_2+w_3\mathrm{SEP}_3
 $$
 
-
 其中
-
 
 $$
 \mathrm{SEP}_k=\sum_{j} w_{kj}\,\tilde x_{kj},\quad k=1,2,3
 $$
-
 
 $\tilde x_{kj}$ 为第 $k$ 个一级指标下第 $j$ 个二级指标归一化后的“正向化”值；对目标为 ↓ 的指标（失业率、生活成本、犯罪总量）先取倒数或负向标准化再归一化。权重建议用熵权法或层次分析法确定。该指标越大，表示该城市在智慧增长中经济繁荣方面的成功程度越高。
 
@@ -317,19 +304,15 @@ $\tilde x_{kj}$ 为第 $k$ 个一级指标下第 $j$ 个二级指标归一化后
 
 给定二级指标原始值 $x_{kj}$，目标为 ↑ 的指标保留原方向；目标为 ↓ 的指标用
 
-
 $$
 x_{kj}'=\frac{1}{x_{kj}}
 $$
 
-
 或
-
 
 $$
 x_{kj}'=\max_j x_{kj}-x_{kj}
 $$
-
 
 进行正向化，使所有指标都满足“越大越好”。
 
@@ -337,34 +320,27 @@ $$
 
 采用 min–max 标准化：
 
-
 $$
 \tilde x_{kj}=
 \frac{x_{kj}'-\min_j x_{kj}'}{\max_j x_{kj}'-\min_j x_{kj}'}
 $$
 
-
 于是 $\tilde x_{kj}\in[0,1]$。
 
 ### 3. 二级指标合成一级指标
-
 
 $$
 \mathrm{SEP}_k=
 \sum_{j=1}^{n_k} w_{kj}\tilde x_{kj}
 $$
 
-
 其中 $n_k$ 为第 $k$ 个一级指标下二级指标个数，权重满足
-
 
 $$
 \sum_{j=1}^{n_k}w_{kj}=1,\quad w_{kj}\ge 0
 $$
 
-
 例如：
-
 
 $$
 \mathrm{SEP}_1
@@ -373,9 +349,7 @@ $$
 +w_{13}\mathrm{SEP}_{13}
 $$
 
-
 ### 4. 一级指标合成 SEP
-
 
 $$
 \mathrm{SEP}
@@ -384,24 +358,19 @@ $$
 +w_3\mathrm{SEP}_3
 $$
 
-
 其中
-
 
 $$
 w_1+w_2+w_3=1
 $$
 
-
 ### 5. 多样性计算
 
 Business diversity 和 Occupational diversity 可用 Shannon 多样性指数：
 
-
 $$
 H=-\sum_{i=1}^{s} p_i\ln p_i
 $$
-
 
 其中 $p_i$ 为第 $i$ 类企业或职业所占比例，$s$ 为类别总数。$H$ 越大，多样性越高。
 
@@ -426,7 +395,6 @@ $$
 $$
 w_j=\frac{d_j}{\sum_j d_j}
 $$
-
 
 其中 $m$ 为城市数量。
 
@@ -535,17 +503,13 @@ $SSE$ 指标体系包括 **3 个一级指标**和 **5 个二级指标**，具体
 
 宗教自由和种族公平采用香农多样性指数进行测算：
 
-
 $$
 SSE_{31}=-\sum_{i=1}^{m}d_i\ln d_i,
 $$
 
-
-
 $$
 SSE_{32}=-\sum_{i=1}^{m}d_i\ln d_i.
 $$
-
 
 式中：
 
@@ -555,24 +519,19 @@ $$
 
 在各类别比例满足
 
-
 $$
 d_i\geq 0,\qquad \sum_{i=1}^{m}d_i=1
 $$
-
 
 的条件下，香农多样性指数越大，说明宗教或种族结构分布越分散、多样，因而对应的宗教自由或种族公平程度越高。
 
 例如，若某种族人口占比分别为
 
-
 $$
 d_1=0.5,\qquad d_2=0.3,\qquad d_3=0.2,
 $$
 
-
 则
-
 
 $$
 \begin{aligned}
@@ -582,19 +541,15 @@ SSE_{32}
 \end{aligned}
 $$
 
-
 ### 5.2.2.3 SSE 的综合表达
 
 $SSE$ 指标由公平对待、有意义参与和公平发展三个一级指标构成，可表示为
-
 
 $$
 SSE=f(SSE_1,SSE_2,SSE_3).
 $$
 
-
 其中，一级指标可由其下属二级指标加权得到，例如：
-
 
 $$
 SSE_1=w_{11}SSE_{11}+w_{12}SSE_{12},
@@ -602,13 +557,9 @@ SSE_1=w_{11}SSE_{11}+w_{12}SSE_{12},
 w_{11}+w_{12}=1,
 $$
 
-
-
 $$
 SSE_2=SSE_{21},
 $$
-
-
 
 $$
 SSE_3=w_{31}SSE_{31}+w_{32}SSE_{32},
@@ -616,9 +567,7 @@ SSE_3=w_{31}SSE_{31}+w_{32}SSE_{32},
 w_{31}+w_{32}=1.
 $$
 
-
 进一步可写为
-
 
 $$
 SSE
@@ -627,14 +576,11 @@ SSE
 +\alpha_3\left(w_{31}SSE_{31}+w_{32}SSE_{32}\right),
 $$
 
-
 其中
-
 
 $$
 \alpha_1+\alpha_2+\alpha_3=1,\qquad \alpha_j\geq 0.
 $$
-
 
 权重 $\alpha_j$ 和二级指标权重 $w_{jk}$ 可依据指标体系采用层次分析法、熵权法或专家赋权法确定。各二级指标标准化后均为正向指标，即数值越大，社会公平成功度越高。
 
@@ -665,22 +611,17 @@ SES 指标用于衡量城市智慧增长中的社会经济综合发展水平，�
 
 对于正向指标，采用极差标准化：
 
-
 $$
 x_{ij}'=\frac{x_{ij}-\min x_j}{\max x_j-\min x_j}.
 $$
 
-
 对于逆向指标，采用反向极差标准化：
-
 
 $$
 x_{ij}'=\frac{\max x_j-x_{ij}}{\max x_j-\min x_j}.
 $$
 
-
 设标准化后的指标为 $z_{ij}$，则一级指标得分为
-
 
 $$
 SES_k=\sum_{j\in J_k}w_{kj}z_{kj},
@@ -688,16 +629,13 @@ SES_k=\sum_{j\in J_k}w_{kj}z_{kj},
 \sum_{j\in J_k}w_{kj}=1,
 $$
 
-
 综合得分为
-
 
 $$
 SES=\sum_{k=1}^{3}\alpha_kSES_k,
 \qquad
 \sum_{k=1}^{3}\alpha_k=1.
 $$
-
 
 其中，$w_{kj}$ 为二级指标权重，$\alpha_k$ 为一级指标权重，可通过层次分析法、熵权法或主客观组合赋权法确定。
 
@@ -854,13 +792,11 @@ $$
 x_{ij}^{+}=\frac{x_{ij}-\min x_{ij}}{\max x_{ij}-\min x_{ij}},
 $$
 
-
 逆向指标：
 
 $$
 x_{ij}^{-}=\frac{\max x_{ij}-x_{ij}}{\max x_{ij}-\min x_{ij}}.
 $$
-
 
 标准化后，所有指标均为“越大越好”。
 
@@ -868,32 +804,24 @@ $$
 
 设二级指标权重为 $w_{ij}$，则三个一级指标可写为：
 
-
 $$
 SES_1=w_{11}x_{11}^{-}+w_{12}x_{12}^{-}+w_{13}x_{13}^{+},
 $$
-
-
 
 $$
 SES_2=w_{21}x_{21}^{+}+w_{22}x_{22}^{+}+w_{23}x_{23}^{+},
 $$
 
-
-
 $$
 SES_3=w_{31}x_{31}^{+}+w_{32}x_{32}^{+}.
 $$
 
-
 进一步设一级指标权重为 $\alpha_1,\alpha_2,\alpha_3$，则
-
 
 $$
 SES=f(SES_1,SES_2,SES_3)
 =\alpha_1SES_1+\alpha_2SES_2+\alpha_3SES_3,
 $$
-
 
 其中权重满足非负且归一化条件。若采用等权，则各一级指标内部可按指标数量平均赋权。
 
@@ -901,11 +829,9 @@ $$
 
 在 SEP、SSE、SES 均已标准化为同向综合得分的基础上，
 
-
 $$
 SSG=0.3SEP+0.3SSE+0.4SES.
 $$
-
 
 由于 $0.3+0.3+0.4=1$，权重设置合理；SES 权重最大，体现环境可持续性在智能增长评价中的优先地位。SSG 越高，说明城市在社会公平、经济繁荣和环境可持续性三方面的综合表现越好。
 
@@ -1293,14 +1219,6 @@ Compared to the cities with high smart growth, Wellington still has low forest c
 #####  Strengths
 
 Anchorage is on a strip of coastal lowland and extends up the lower alpine slopes of the Chugach Mountains. With small coastal lowland, the utility of land for Anchorage is more sufficient. In addition, the approach of transportation is multiple. Almost three quarters of inhabitants regard the car as their first choice. 9.1% of inhabitants are willing to walk or bicycle and 3.2% of inhabitants choose to take the bus. Furthermore, the development is still equitable as well.
-
----
-title: 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文范例：E题 迈向可持续城市（习题）
-kind: 习题
-course: 数学建模
-term: 2017-MCM-ICM
-source: 《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文范例：E题 迈向可持续城市》第 8 部分（共 11 部分），识别自第 15–16 页
----
 
 # 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文范例：E题 迈向可持续城市（习题）
 
@@ -1756,7 +1674,6 @@ $$
 p_i=\frac{S_{pi}-S_{oi}}{S_{oi}}
 $$
 
-
    表示某项举措实施后，对应指标的理性等级相对当前计划的提升程度。
 
    - $p_i>0$：举措对指标有正向改善；
@@ -1776,14 +1693,12 @@ $$
 p_{W_2}=0.0411>p_{W_1}=0.0320>p_{W_4}=0.0107>p_{W_5}=0.0069
 $$
 
-
    且 $W_3,W_6,W_7$ 无数据，按 0 处理，因此排序为
 
    
 $$
 W_2>W_1>W_4>W_5>W_3>W_6>W_7
 $$
-
 
    中期：
 
@@ -1792,14 +1707,12 @@ $$
 p_{W_2}=0.1491>p_{W_5}=0.0601>p_{W_1}=0.0470>p_{W_4}=0.0269
 $$
 
-
    长期：
 
    
 $$
 p_{W_2}=0.2217>p_{W_5}=0.0977>p_{W_4}=0.0536>p_{W_1}=0.0172
 $$
-
 
 4. **Anchorage 排序计算**
 
@@ -1810,14 +1723,12 @@ $$
 p_{A_7}=0.0476>p_{A_6}=0.0247>p_{A_5}=0.0144>p_{A_3}=0.0125>p_{A_1}=0.0020
 $$
 
-
    且 $A_2,A_4$ 无数据，按 0 处理，因此排序为
 
    
 $$
 A_7>A_6>A_5>A_3>A_1>A_2>A_4
 $$
-
 
    中期：
 
@@ -1826,14 +1737,12 @@ $$
 p_{A_7}=0.1073>p_{A_3}=0.0316>p_{A_6}=0.0283>p_{A_5}=0.0098>p_{A_1}=0.0019
 $$
 
-
    长期：
 
    
 $$
 p_{A_7}=0.1842>p_{A_3}=0.0640>p_{A_6}=0.0416>p_{A_5}=0.0300>p_{A_1}=0.0036
 $$
-
 
 5. **关键变化说明**
 
@@ -2123,11 +2032,9 @@ BP neutral network and SLEUTH models are excellent model when tackling huge amou
 
 设智慧增长成功度 SSG 为：
 
-
 $$
 \text{SSG}=0.3\,\text{SEP}+0.3\,\text{SSE}+0.4\,\text{SES}
 $$
-
 
 其中：
 
@@ -2145,14 +2052,11 @@ $$
 
 对每个二类指标先无量纲化，采用初值化：
 
-
 $$
 x'(k)=\frac{x(k)}{x(1)}
 $$
 
-
 再计算灰色关联系数：
-
 
 $$
 \xi_i(k)=
@@ -2160,24 +2064,19 @@ $$
 {|x_0(k)-x_i(k)|+\rho \max_i\max_k|x_0(k)-x_i(k)|}
 $$
 
-
 取 $\rho=0.5$。
 
 加权平均后得到综合关联度：
-
 
 $$
 r_i=\sum_{k=1}^{n} w_k\,\xi_i(k)
 $$
 
-
 计算结果：
-
 
 $$
 r_W \approx 0.62,\qquad r_A \approx 0.58
 $$
-
 
 两者均低于 0.7，说明尚未达到高智慧增长水平；Wellington 略优于 Anchorage，主要因为其公交分担率和中心城区步行可达性较高。
 
@@ -2200,30 +2099,24 @@ Anchorage 的低密度蔓延特征更突出，因此优先选择 **A₇**：混�
 
 对每项行动对应的关键指标建立 GM(1,1) 模型：
 
-
 $$
 x^{(0)}(k)+a z^{(1)}(k)=b
 $$
-
 
 其中 $z^{(1)}(k)=0.5x^{(1)}(k)+0.5x^{(1)}(k-1)$。
 
 求解得到时间响应式：
 
-
 $$
 \hat{x}^{(1)}(k+1)=\left(x^{(0)}(1)-\frac{b}{a}\right)e^{-ak}+\frac{b}{a}
 $$
 
-
 再还原得到预测值。将各行动的预测指标代入 SSG 体系，比较得分增量：
-
 
 $$
 \Delta\text{SSG}_{W_2}=0.124,\qquad 
 \Delta\text{SSG}_{A_7}=0.107
 $$
-
 
 因此：
 
@@ -2236,12 +2129,10 @@ $$
 
 假设 2050 年人口比当前预测基准额外增加 50%，由此调整住房需求、交通需求、公共服务需求和碳排放压力。重新运行 SSG 评估：
 
-
 $$
 \text{SSG}_{W,\text{adj}} \approx 0.69,\qquad 
 \text{SSG}_{A,\text{adj}} \approx 0.64
 $$
-
 
 相较未实施计划前分别提升约 12% 与 10%，说明建议的增长计划在人口压力下仍具有有效性。
 

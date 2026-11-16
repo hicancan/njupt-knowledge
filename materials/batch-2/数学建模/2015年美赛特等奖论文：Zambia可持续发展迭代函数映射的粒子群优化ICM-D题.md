@@ -425,11 +425,9 @@ $$
 ### 简明推理
 设经济部分用“收入水平”和“分配公平”合成一个综合财富指标，再与教育、健康等指标结合，形成总体发展或福祉指数。其基本形式可写为
 
-
 $$
 I=f(\text{经济产出},\text{分配公平},\text{教育},\text{健康})
 $$
-
 
 其中，经济产出反映总量，分配公平反映收入在不同人群间的分布状况。若采用百分位分配方式，则模型实际上同时考虑了“整体蛋糕有多大”和“蛋糕分得是否均衡”。
 
@@ -762,11 +760,9 @@ Page 10 of 19
 
 给定
 
-
 $$
 W_{n+1}=(1-8\epsilon)W_n+\epsilon\sum_{i=0}^{\text{neighbors}}W_{n,i}
 $$
-
 
 其中 $8$ 来自二维元胞自动机的 Moore 邻域，即每个元胞有 8 个邻居。  
 其含义是：每轮迭代中，当前元胞保留自身财富的 $(1-8\epsilon)$，同时按比例 $\epsilon$ 把自身财富分配给每个邻居；同时它也从每个邻居获得同样比例的财富。
@@ -777,21 +773,17 @@ $$
 
 #### 2. 人口迭代方程
 
-
 $$
 P_{n+1}=P_n+P_n\left(B_R(W_n)-\frac{1}{LE(W_n)}\right)+\Delta Migration
 $$
 
-
 其中
-
 
 $$
 \Delta Migration
 =\beta P_n\left(1-\frac{W_n}{\sum W_{n,i}}\right)
 -\beta\sum^{\text{neighbors}}\frac{W_n}{\sum W_{n,j}}P_{n,i}
 $$
-
 
 解释：
 
@@ -1041,14 +1033,11 @@ $$
 
 若以累计发展增益和累计生态损失分别近似表示，则可写成
 
-
 $$
 S(t)=D(t)+E(t)+\text{其他可持续性贡献项}.
 $$
 
-
 前期采用 $\alpha=0.5$ 可获得较大的 $D(t)$ 增量；后期改用 $\alpha=1.5$，使优化结果更重视环境因素，从而减缓 $E(t)$ 的下降并促进其恢复。分阶段轨迹可表示为
-
 
 $$
 \alpha(t)=
@@ -1057,7 +1046,6 @@ $$
 1.5, & t>10.
 \end{cases}
 $$
-
 
 这种安排兼顾了社会经济的较快增长与生态环境的长期恢复。
 
@@ -1102,23 +1090,17 @@ On the other hand, a weakness of the model is that it is calibrated on two itera
 
 ## 关键逻辑链条
 
-
 $$
 \text{多因素} \xrightarrow{\text{成本量化}} \text{统一优化框架} \xrightarrow{\text{ICM 资金约束}} \text{最优资源配置}
 $$
-
-
 
 $$
 \text{缺少年度粒度} \Rightarrow \text{只能做粗粒度规划}
 $$
 
-
-
 $$
 \text{无进出口} \Rightarrow \text{总财富增量偏低} \Rightarrow \text{发展指数被低估}
 $$
-
 
 ---
 

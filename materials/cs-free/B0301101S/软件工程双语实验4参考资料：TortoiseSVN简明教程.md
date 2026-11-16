@@ -10,17 +10,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 软件工程（双语）实验4参考资料：TortoiseSVN简明教程（第1部分）
-kind: 实验
-course: 软件工程（双语）
-source: 识别工具读出的《TortoiseSVN简明教程》第1-10页
----
-
-# 软件工程（双语）实验4参考资料：TortoiseSVN简明教程（第1部分）
-
-本资料整理自识别工具输出的《TortoiseSVN简明教程》前10页内容，主要涵盖TortoiseSVN简介、基本概念及安装与基础使用操作。
-
 ## 一、TortoiseSVN 简介
 
 ### 什么是 TortoiseSVN
@@ -54,8 +43,6 @@ TortoiseSVN 是 Subversion 版本控制系统的一个免费开源客户端，�
 ![安装启动界面](软件工程双语实验4参考资料：TortoiseSVN简明教程.assets/图2.jpg)
 
 点击 **Next >**。
-
-
 
 **End-User License Agreement**
 Please read the following license agreement carefully.
@@ -131,8 +118,6 @@ If you simply wish to install and use this software, you need only be aware of t
 
 输入你所作的修改，然后点击 OK，就会开始向远程服务器提交修改。
 
-
-
 提交文件成功！返回信息：“Finished!”表示文件已成功提交。点击“OK”按钮确定更新文件成功。
 
 ## 更新工作副本
@@ -140,8 +125,6 @@ If you simply wish to install and use this software, you need only be aware of t
 更新多个项目在 Subversion 还不是原子操作，所以 TortoiseSVN 会首先找到版本库的 HEAD 修订版本，然后将所有项目更新到特定修订版本，防止出现混合修订版本的工作副本。如果只有一个项目被选中更新，或选中的项目来自不同的版本库，TortoiseSVN 只会更新到 HEAD。
 
 在工作副本里面选定文件夹或文件，右键菜单 TortoiseSVN ---> Update。
-
-
 
 cart.php category.php config_basic.php counter.php detail.php detail_ok.php detail_write.php download.php footer.php func_board.php goods.php goods_brand.php header.php index.php
 
@@ -151,8 +134,6 @@ EditPlus
 
 Wopti 文件加密
 
-
-
 瑞星杀毒
 
 TortoiseSVN
@@ -160,8 +141,6 @@ TortoiseSVN
 添加到压缩文件(A)
 
 添加到“alipay_payto.rar”(T)
-
-
 
 压缩并 E-mail...
 
@@ -208,8 +187,6 @@ egister_form.php
 egister_ok.php
 eply.php
 earch.php
-
-
 
 出现一个对话框，输入正确的用户名和密码即可向版本库提交你想更新文件的信息。
 
@@ -368,10 +345,6 @@ TortoiseSVN
 ![图 22 Revert 对话框](软件工程双语实验4参考资料：TortoiseSVN简明教程.assets/图29.jpg)
 
 ### Revision Graph：版本示意图
-
-
-
-
 
 ![图 25 Revision Graph 示例](软件工程双语实验4参考资料：TortoiseSVN简明教程.assets/图30.jpg)
 

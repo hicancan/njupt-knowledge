@@ -9,17 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：Construct all-electric network（习题）第 1 部分
-kind: 习题
-course: 数学建模
-source: <原件地址或来源路径>
----
-
-# 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：Construct all-electric network（习题）第 1 部分
-
-本文档整理了2018年MCM/ICM O奖论文《Construct all-electric network》的第1部分内容，包括摘要、目录及引言部分。整理方式基于识别工具输出的文本进行格式规范化处理，修正了明显的断行和排版错误，保留了原题背景信息。
-
 ## 一、摘要与问题重述
 
 ### 选择 1
@@ -128,7 +117,6 @@ For question 5, we prepare a one-page handout for the leaders identifying the ke
 1. 发展个人交通向全电动化迁移时应考虑的关键因素。
 2. 针对不同国家设定禁售燃油车的日期。
 
-
 ## 二、关键词
 
 **题目：**
@@ -141,7 +129,6 @@ Key words: site selection model, logistic model, Q-type clustering model, electr
 
 参考解答：
 选址模型、逻辑模型、Q型聚类模型、电动网络。
-
 
 ## 三、目录结构
 
@@ -172,7 +159,6 @@ Key words: site selection model, logistic model, Q-type clustering model, electr
 参考解答：
 论文共包含11个主要部分，从引言、假设、美国充电网络分布、韩国研究、国家分类、新技术影响、灵敏度分析、结论、给领导人的手册，到参考文献和附录。
 
-
 ## 四、引言部分
 
 知识点：[数学建模的基本步骤（问题分析、模型假设、建立、求解、检验、推广）](../../../topics/数学建模/jianmo_buzhou.md)、[Summary Sheet（摘要页）的撰写规范](../../../topics/数学建模/zhaiyao_xiezuo.md)、[问题重述与分析（Problem Restatement and Analysis）](../../../topics/数学建模/wenti_chongshu.md)
@@ -192,7 +178,6 @@ Key words: site selection model, logistic model, Q-type clustering model, electr
 
 参考解答：
 第一章包含背景介绍、问题重述、文献综述和我们的工作四个子节。
-
 
 ## 1 Introduction
 
@@ -253,31 +238,25 @@ When we transform the gasoline and fossil fuel cars to electric vehicles, we nee
 
 全国全面电动化不是简单地把充电桩平均铺到每个县，而是要同时满足：
 
-
 $$
 \text{电动车数量}\times \text{年均行驶里程}
 \leq
 \sum_i \text{充电站}_i\times \text{服务能力}_i
 $$
 
-
 ### 1.2 车辆转换模型
 
 设第 $t$ 年新轻型车中电动车比例为 $p_t$，基准年车辆总数为 $N_0$，年均行驶里程为 $L$，则第 $t$ 年电动车保有量可近似写为
-
 
 $$
 E_t=N_0p_t+(N_t-N_0)
 $$
 
-
 其中 $N_t$ 为当年汽车保有量。更准确时，可将每年售出车辆按车辆年龄逐年淘汰：
-
 
 $$
 E_t=\sum_{k=0}^{t-t_{\min}}s_{t-k}n_{t-k}e^{-\delta(t-k)}
 $$
-
 
 其中：
 
@@ -288,11 +267,9 @@ $$
 
 可用 Logistic 曲线描述技术采用：
 
-
 $$
 p_t=\frac{1}{1+\exp[-k(t-t_0)]}
 $$
-
 
 其中 $k$ 反映推广速度，$t_0$ 为拐点年份。参数应通过历史销量、电池价格、充电桩数量和消费者调查进行估计。
 
@@ -300,50 +277,39 @@ $$
 
 若第 $t$ 年电动车保有量为 $E_t$，平均日行驶里程为 $d$ 千米，日均耗电量为 $e$ 千瓦时，则日充电需求为
 
-
 $$
 D_t=E_tde
 $$
 
-
 加上备用率 $\alpha$，规划需求为
-
 
 $$
 D_t^{\text{plan}}=(1+\alpha)D_t
 $$
 
-
 例如，
-
 
 $$
 D_t^{\text{plan}}=E_tde(1+\alpha)
 $$
 
-
 充电站 $i$ 若拥有 $m_i$ 个充电桩，每个充电桩平均功率为 $P_i$ 千瓦，则其日服务能力为
-
 
 $$
 C_i=24m_iP_i\eta
 $$
 
-
 其中 $\eta$ 为设备综合利用率。规划时应满足
-
 
 $$
 \sum_i C_i\geq D_t^{\text{plan}}
 $$
-
 
 同时保留电网故障、节假日峰值和局部需求不平衡所需的冗余。
 
 ### 1.4 空间分布模型
 
 将全国划分为网格或行政单元 $i$，定义需求权重：
-
 
 $$
 w_i=
@@ -358,7 +324,6 @@ q_j(1-p_j)+p_j
 }
 $$
 
-
 其中：
 
 - $H_i$：单元 $i$ 的人口；
@@ -370,11 +335,9 @@ $$
 
 #### 按车辆比例配置
 
-
 $$
 n_i\geq n_{\min}+\rho_iN_i^{EV}
 $$
-
 
 其中 $n_{\min}$ 为最低基础覆盖数量，$\rho_i$ 为每辆电动车对应充电桩比例。
 
@@ -382,24 +345,19 @@ $$
 
 每个需求点服务半径为 $r$，要求：
 
-
 $$
 \min_{j\in N_i(r)}d_{ij}\leq r
 $$
 
-
 并同时满足累计服务能力约束：
-
 
 $$
 \sum_{j\in N_i(r)}m_jP_j\geq D_i
 $$
 
-
 ### 1.5 选址目标函数
 
 可采用混合整数规划：
-
 
 $$
 \min_x
@@ -412,32 +370,23 @@ $$
 \right]
 $$
 
-
 约束包括：
-
 
 $$
 \sum_i x_i\leq B_t
 $$
 
-
-
 $$
 \sum_{i\in N_j(r)}x_i\geq1,\qquad \forall j
 $$
-
-
 
 $$
 \sum_i m_iP_i\geq\sum_iD_i(1+\alpha)
 $$
 
-
-
 $$
 m_i\leq Mx_i,\qquad g_i\geq g_i^{\min}x_i
 $$
-
 
 其中：
 
@@ -499,7 +448,6 @@ $$
 
 对区域 $i$，第 $t$ 年建议配置：
 
-
 $$
 N_{it}
 =
@@ -513,22 +461,17 @@ N_i^{\min},
 \right)
 $$
 
-
 其中 $N_i^{\min}$ 可按人口或行政单元设置最低覆盖值，例如
-
 
 $$
 N_i^{\min}=\max(1,\lceil H_i/H_{\min}\rceil)
 $$
 
-
 实际应用中，$N_{it}$ 表示充电站数量时应进一步按每个站点的桩数拆分：
-
 
 $$
 N_{it}m_{it}=n_{it}
 $$
-
 
 ### 2.4 示例时间表
 
@@ -543,7 +486,6 @@ $$
 
 每一年采用滚动更新：
 
-
 $$
 N_{i,t+1}
 =
@@ -552,9 +494,7 @@ N_{i,t}
 \Delta N_{i,t}
 $$
 
-
 其中
-
 
 $$
 \Delta N_{i,t}
@@ -564,7 +504,6 @@ $$
 {24P_i\eta}
 \right\rceil_+
 $$
-
 
 $(\cdot)_+$ 表示取正值。
 
@@ -599,26 +538,21 @@ $(\cdot)_+$ 表示取正值。
 
 #### 人口密度
 
-
 $$
 I_d=\frac{\text{人口密度}-\min D}{\max D-\min D}
 $$
-
 
 #### 人口集中度
 
 用前 $10\%$ 人口占总人口的比例表示：
 
-
 $$
 I_c=\frac{\text{前10\%地区人口}}{\text{全国人口}}
 $$
 
-
 #### 地理阻隔程度
 
 可由山地占比、平均道路距离和极端天气频率构成：
-
 
 $$
 I_g=w_1I_{\text{mountain}}+
@@ -626,16 +560,13 @@ w_2I_{\text{road}}+
 w_3I_{\text{weather}}
 $$
 
-
 #### 富裕程度
 
 使用人均可支配收入或家庭收入中位数：
 
-
 $$
 I_w=\frac{\ln Y-\min \ln Y}{\max \ln Y-\min \ln Y}
 $$
-
 
 #### 电气化与基础设施水平
 
@@ -660,7 +591,6 @@ $$
 
 可对国家 $c$ 建立综合距离：
 
-
 $$
 J(c,k)=
 \sum_j v_j
@@ -668,7 +598,6 @@ J(c,k)=
 z_{cj}-z_{kj}
 \right|
 $$
-
 
 其中 $z_{cj}$ 是国家 $c$ 的标准化指标，$z_{kj}$ 是类型 $k$ 的基准值。将 $J(c,k)$ 最小的类型作为推荐类型。
 
@@ -686,11 +615,9 @@ $$
 
 若铺设道路无线充电，充电需求可由“站点半径覆盖”转为“道路里程覆盖”：
 
-
 $$
 \sum_i l_iP_i\geq D_t^{\text{road}}
 $$
-
 
 其中 $l_i$ 为铺设里程，$P_i$ 为单位里程供电能力。无线充电适合封闭或半封闭场景，如公交、港口和物流线路；其优势是减少停车等待，限制是成本、效率损失和道路改造难度。
 
@@ -698,26 +625,21 @@ $$
 
 续航提高后，单次充电电量需求下降：
 
-
 $$
 e=\frac{L}{R}
 $$
 
-
 其中 $L$ 为日行驶里程，$R$ 为续航里程。续航提高可能降低公共快充需求，但不一定降低总充电电量，因为消费者可能因续航提高而增加驾驶里程。因此模型中应同时考虑：
-
 
 $$
 D_t=E_tde
 $$
-
 
 中的 $d$ 可能随续航增加而上升。
 
 ### 4.4 车辆到电网互动
 
 双向充放电可把充电站视为储能资源。若车辆在低谷充电、高峰放电，则年充电成本为
-
 
 $$
 C_t
@@ -729,9 +651,7 @@ c_{\text{peak}}E_{\text{charge,peak}}
 c_{\text{feed-in}}E_{\text{discharge}}
 $$
 
-
 可建立削峰约束：
-
 
 $$
 P_{\text{grid},t}
@@ -743,9 +663,7 @@ P_{\text{charge},t}
 P_{\text{discharge},t}
 $$
 
-
 但需要限制车辆退出后的备用容量，并设置电池衰减成本：
-
 
 $$
 C_{\text{degradation}}
@@ -753,11 +671,9 @@ C_{\text{degradation}}
 c_{\text{deg}}E_{\text{discharge}}
 $$
 
-
 ### 4.5 人工智能与自动驾驶
 
 自动驾驶可能降低驾驶员等待时间，从而提高充电桩有效利用率：
-
 
 $$
 \eta_{\text{new}}
@@ -766,33 +682,27 @@ $$
 \Delta\eta
 $$
 
-
 但若车辆能够自行前往充电站，也可能增加车辆空驶里程。自动驾驶还可能提高车辆利用率和日均里程，使总充电需求上升。因此不能仅把自动驾驶视为“充电站效率提升技术”。
 
 ### 4.6 机器人充电与自动换电
 
 自动换电可把补能时间从
 
-
 $$
 T_{\text{charge}}=\frac{E}{P}
 $$
 
-
 缩短到固定的换电时间，适用于出租车、网约车、公交车和重型货车。其模型变化是把普通充电站替换为换电站，并约束：
-
 
 $$
 Q_t\leq m_tT_{\text{swap}}
 $$
-
 
 其中 $Q_t$ 为换电次数，$m_t$ 为换电站数量。
 
 ### 4.7 储能与微电网
 
 在偏远和灾害频发地区，可配置储能：
-
 
 $$
 E_t^{\text{storage}}
@@ -808,9 +718,7 @@ P_t^{\text{discharge}}
 \right)
 $$
 
-
 储能能够提高供电可靠性，但其成本和衰减周期应计入全寿命成本：
-
 
 $$
 C_{\text{life}}
@@ -821,7 +729,6 @@ C_{\text{initial}}
 \frac{C_t^{\text{operation}}+C_t^{\text{degradation}}}
 {(1+r)^t}
 $$
-
 
 ---
 
@@ -952,7 +859,6 @@ Task one requires us to determine whether Tesla is on track to allow a full swit
 $$
 N_r=\sum_{s\in r}P_s c_s .
 $$
-
 
 2. **充电需求与排队论判定**  
    设区域 $r$ 的充电到达率为 $\lambda_r$，单站服务率为 $\mu$，每站充电桩数为 $m$。用 M/M/c 等排队模型计算平均等待时间 $W_q$，并要求
@@ -2122,7 +2028,6 @@ The model we constructed above aims to minimize the total cost and the average w
 
 可建立如下目标函数：
 
-
 $$
 \min Z
 =
@@ -2131,40 +2036,31 @@ $$
 \lambda\sum_{i,j}t_{ij}y_{ij},
 $$
 
-
 并满足需求分配约束：
-
 
 $$
 \sum_j y_{ij}=d_i,\qquad \forall i,
 $$
 
-
 充电站容量约束：
-
 
 $$
 \sum_i y_{ij}\le K_jx_j,\qquad \forall j,
 $$
 
-
 以及服务距离或时间约束：
-
 
 $$
 t_{ij}\le T_{\max},
 $$
 
-
 其中 $K_j$ 为站点 $j$ 的服务容量，$\lambda$ 表示等待时间成本在总目标中的权重。
 
 利用实际需求、人口分布、道路可达性、候选站点成本及容量等数据进行混合整数规划求解，并对站点位置进行空间叠加分析。结果表明：
 
-
 $$
 N^*\approx 2.7\times 10^5.
 $$
-
 
 最优解优先覆盖人口和交通需求密集的首尔都市圈、釜山都市圈及其周边地区；部分偏远地区受需求密度和可达性限制，充电站数量较少。
 
@@ -2213,22 +2109,18 @@ $$
 
 设原销售增长预测曲线为
 
-
 $$
 \eta(x)\sim A e^{rx}
 $$
-
 
 其中 $r>0$ 为指数增长率。
 
 加入滞后修正后，若滞后时间约为一年，即 $\Delta x=\varepsilon=0.05$，则新曲线近似为
 
-
 $$
 \eta_{\varepsilon}(x)= \eta(x-\varepsilon)\sim A e^{r(x-\varepsilon)}
 = A e^{-r\varepsilon} e^{rx}
 $$
-
 
 所以曲线仍是指数型，只是幅度乘以常数 $e^{-r\varepsilon}$。  
 当 $r$ 较大时，即使滞后一年，也会产生显著幅度下降。
@@ -2239,29 +2131,23 @@ $$
 
 若假设
 
-
 $$
 \varepsilon_x = kx
 $$
 
-
 则对应的滞后时间为
-
 
 $$
 \Delta t_x = kx
 $$
 
-
 这意味着早期年份滞后很小，甚至趋近于 0；而实际数据显示早期滞后并不接近 0，而是一个不可忽略的固定值。
 
 从图 7 也可看出，滞后指数前期下降或变化较缓，后期才近似线性增长。因此合理模型应为
 
-
 $$
 \varepsilon_x \approx \varepsilon_0 + kx
 $$
-
 
 其中 $\varepsilon_0>0$ 是初始滞后。
 
@@ -2271,37 +2157,29 @@ $$
 
 若取线性近似
 
-
 $$
 \varepsilon_x = \varepsilon_0 + kx
 $$
 
-
 当 $x$ 较小时：
-
 
 $$
 \frac{\varepsilon_x}{x}=k+\frac{\varepsilon_0}{x}
 $$
 
-
 不是常数，所以 $\varepsilon_x\propto x$ 不成立。
 
 当 $x$ 较大时：
-
 
 $$
 \frac{\varepsilon_x}{x}=k+\frac{\varepsilon_0}{x}\to k
 $$
 
-
 于是渐近地有
-
 
 $$
 \varepsilon_x \approx kx
 $$
-
 
 这解释了为什么关系式 $\varepsilon_x \propto x$ 要随着年份增长才逐渐建立。
 
@@ -2413,7 +2291,6 @@ $$
 
 从 Logistic 模型的测试结果中，可以筛选出关键因素。因此，影响所提出的充电站计划的关键因素是财富分配和政府投资。
 
-
 ## 二、市场预测与政策分析
 
 参考解答：**结论：**  
@@ -2459,10 +2336,7 @@ Table 2: Timeline of full evolution to electric vehicles
 
 2016 年，特斯拉正式进入韩国市场。此外，韩国购买电动汽车的补贴较少。这表明政策导向对电动化转换具有重要影响。因此，塑造所提出的增长计划时间线的关键因素是政策导向。
 
-
 # 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：Construct all-electric network（习题）
-
-本资料整理自《2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：Construct all-electric network》第 9 部分（共 12 部分），由识别工具读取的第 18–19 页内容。原文为英文，此处保留原文结构并修正明显的格式错误，未做翻译或实质内容增删。
 
 ## 五、建立分类系统
 
@@ -2922,11 +2796,9 @@ Finally, we have analyzed how underdeveloped countries such as Uruguay and Indon
 
 超级充电站占比：
 
-
 $$
 \frac{550}{4200}\approx 13.1\%
 $$
-
 
 覆盖网络已基本全国连通，只有少量乡村未覆盖。
 
@@ -2944,11 +2816,9 @@ $$
 
 超级充电站占比：
 
-
 $$
 \frac{22}{131}\approx 16.8\%
 $$
-
 
 虽然比例不低，但总量远小于美国，人均汽车保有量和电动车覆盖率也明显更低。
 
@@ -2960,11 +2830,9 @@ $$
 
 结论：韩国应 **先在城市加密网络，再向郊区和乡村延伸**，即“城市包围农村”。关键因素为：
 
-
 $$
 \text{投资}+\text{环保意识}
 $$
-
 
 ---
 
@@ -2974,11 +2842,9 @@ $$
 
 此时不适用“优化布局”模型，而应使用“从零建设模型”：
 
-
 $$
 \min \sum_{i} C_i x_i
 $$
-
 
 约束包括：
 
@@ -3005,23 +2871,17 @@ $$
 
 充电站模型可以迁移到快递点布局：
 
-
 $$
 \text{充电站} \leftrightarrow \text{快递点}
 $$
-
-
 
 $$
 \text{电动汽车续航里程} \leftrightarrow \text{快递服务半径}
 $$
 
-
-
 $$
 \text{平均等待充电时间} \leftrightarrow \text{平均配送时间}
 $$
-
 
 三个区域差异仍然成立：
 
@@ -3180,11 +3040,9 @@ $$
 \mathrm{OR}_{\mathrm{WD}}=e^{0.9652}\approx2.625,
 $$
 
-
 $$
 \mathrm{OR}_{\mathrm{PO}}=e^{1.6549}\approx5.232,
 $$
-
 
 $$
 \mathrm{OR}_{\mathrm{GI}}=e^{0.3472}\approx1.415.

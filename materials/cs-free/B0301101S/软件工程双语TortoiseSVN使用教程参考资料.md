@@ -10,16 +10,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 软件工程（双语）TortoiseSVN使用教程（参考资料）第1部分
-kind: 课件
-course: 软件工程（双语）
-term: 
-source: dev.idv.tw (2009-04-24)
----
-
-# 软件工程（双语）TortoiseSVN使用教程（参考资料）第1部分
-
 本资料整理自 dev.idv.tw 于 2009-04-24 发布的 TortoiseSVN 使用简介，主要涵盖 SVN 概念、安装、仓库建立及工作目录配置等基础操作。
 
 ## 一、TortoiseSVN 使用简介
@@ -133,10 +123,6 @@ SVN 会在您的工作目录下，以及其子目录下建立这个 `.svn` 的�
 
 假设您已经编辑好档案，准备把他们放到 SVN 的 repository 中。您需要在 my_prj 目录的 icon 上面，按鼠标右键，并且选择 TortoiseSVN->Add：
 
-
-
-
-
 ![图 1](软件工程双语TortoiseSVN使用教程参考资料.assets/图1.jpg)
 
 接着，TortoiseSVN 会把准备要加入的档案及目录显示给您看。打勾的就是等下要被加入到 Repository 中的。如果您有某些档案或是目录不想在这次加入，您可以让该项目不要被勾选。如此，它就不会被加入到 Repository 去。
@@ -199,29 +185,6 @@ Changes made (double-click on file for diff):
 
 有时我们需要回溯至特定的日期或是版本，这时就可以利用 SVN 的 Update to revision 的功能。在想要更新的档案或目录 icon 上面按下鼠标右键。并且选择 TortoiseSVN->Update to revision。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 在这个 Update 窗口中，您可以选择更新到最新版本(HEAD)。也可以选择更新到某个指定的版本(Revision)。当然，您可能早就记不起来正确的版本号码。可能只隐约的记得大概在什么时间。没关系，按下 Show log 按钮，您就可以回顾历史了。
 
 ![图 11](软件工程双语TortoiseSVN使用教程参考资料.assets/图11.jpg)
@@ -269,14 +232,6 @@ Notice your working copy remains on the previous path. If you want your next cha
 按下 OK 就可以关闭这个窗口了。如果您此时立刻去 working copy 的 branch子目录下面，您将会失望的发现在该目录下并没有刚刚指定的目录存在。这是因为您 workingcopy 的部份还是旧的，您只需要在 branch子目录下面进行 SVN update 就可以看到这个新增的目录了。新增的目录就与原来的目录无关了。您可以任意对他进行编辑，一直到您确认好所有在 branch下面该做的工作都完成后，您可以选择将这个 branch merge回原来的 trunk 目录，或者是保留它在 branch中。
 
 要 merge回 trunk 目录中，方法很简单。以上面的例子来说，我们在 D:\working\my\_prj\trunk 目录空白处，按下鼠标右键，选择 Merge:
-
-
-
-
-
-
-
-
 
 ### 接着可以看到如下的画面：
 

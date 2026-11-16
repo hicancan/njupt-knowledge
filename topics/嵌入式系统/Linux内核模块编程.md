@@ -16,7 +16,6 @@ requires: []
 > [!IMPORTANT]
 > 模块程序运行在**内核空间**，普通应用程序运行在**用户空间**。内核空间拥有访问硬件的全部权限，一旦出错可能导致整个系统崩溃；用户空间出错最多让这个程序挂掉。
 
-
 ## 一个最小模块长什么样
 
 ```c
@@ -54,7 +53,6 @@ MODULE_DESCRIPTION("A minimal LKM example");
 | 能不能调用 `libc` | 能 | ==不能==，只能用内核提供的函数 |
 | 运行空间 | 用户空间 | 内核空间 |
 
-
 ## 怎么编译成 .ko
 
 内核模块的编译和普通程序不同，==必须使用内核构建系统（kbuild）==，不能直接 `gcc hello.c -o hello.ko`。
@@ -86,7 +84,6 @@ make
 > make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf-
 > ```
 
-
 ## 加载、查看与卸载
 
 ```bash
@@ -108,7 +105,6 @@ rmmod hello
 > [!TIP]
 > 记忆口诀：**装载进内核 `insmod`，列出看 `lsmod`，移走用 `rmmod`**。三个命令首字母分别是 **i**nsert、**l**ist、**r**emove。
 
-
 ## 常见坑
 
 > [!WARNING]
@@ -119,7 +115,6 @@ rmmod hello
 
 > [!WARNING]
 > **`rmmod` 时模块必须没有被使用**。如果有其他模块或进程还在引用它，会报 `Module is in use`。另外，如果模块的 `module_exit` 函数没有正确释放申请的资源，卸载后会造成内存泄漏或内核崩溃——更可怕的是内核崩了整机就死了，所以模块开发通常建议**先在虚拟机里测试**。
-
 
 ## 一个算对了的例子
 
@@ -136,7 +131,6 @@ rmmod hello
 ```
 
 > 设备驱动软件 leddrv.ko 位于==内核空间==，加载命令 `insmod leddrv.ko`，卸载命令 `rmmod leddrv`。
-
 
 ## 整体流程
 

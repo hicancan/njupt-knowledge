@@ -103,14 +103,6 @@ We made this assumption based on reality, because the kinds of external effects 
 
 In this section, we first set up a system of Sustainable Development Indicators (SDI). Subsequently, we provide a complete measurement to score a country’s sustainability. Next, we provide a method to forecast sustainability. Finally, the results of country rankings and a 20-year forecast are demonstrated.
 
----
-title: 《数学建模》2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文集（Problem D）第3部分
-kind: 课件
-course: 数学建模
-term: 2015-MCM-ICM
-source: 《数学建模》2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文集（Problem D）
----
-
 # 《数学建模》2015年美国大学生数学建模竞赛（MCM/ICM）特等奖论文集（Problem D）第3部分
 
 本资料为2015年MCM/ICM Problem D特等奖论文的第3部分整理，主要涵盖可持续发展指标（SDI）的构建原则与体系，以及可持续性的测量方法，包括数据标准化、熵权法及发展指数与协调指数的定义。

@@ -94,12 +94,30 @@ def selected(selectors: list[str]) -> list[dict]:
     return rows
 
 
-def formulas(text: str) -> str:
-    """Formulas in the delimiters docstream reads: \\( \\) becomes $ $, \\[ \\] becomes $$ $$ on lines of their own;
-    also puts GitHub Alert tags (> [!IMPORTANT] ...) on their own first blockquote line so docstream parses them."""
+_NESTED_FM = re.compile(r"(?ms)^---\s*\ntitle:\s[^\n]*\n(?:[a-z_]+:\s*[^\n]*\n){1,8}---\s*(?:\n|$)")
+_META_TALK = re.compile(
+    r"(?m)^(?:一句话说明来源和整理方式[：:。].*|一句话说明来源和整理方式[。：:]?\s*"
+    r"|[^\n]*(?:已去除页眉[、，,]?页脚|去除页眉页脚|水印及无关|识别工具读[取出]的|整理自识别工具|按规范格式(?:整理|重组)|修正了明显的(?:断行|识别|格式|乱码)|经校对格式、修正明显乱码后整理)[^\n]*"
+    r"|我将整理如下[：:]\s*"
+    r"|\*\(注：原题选项文字有乱码或错位[^)\n]*\)\*)\n?"
+)
+
+
+def _rewrite_formula_chunk(text: str) -> str:
     text = re.sub(r"(?m)^>\s*(\[\!(?:NOTE|TIP|IMPORTANT|WARNING|CAUTION)\])[ \t]+(\S[^\n]*)", r"> \1\n> \2", text)
     text = re.sub(r"\\\[\s*(.+?)\s*\\\]", lambda m: f"\n$$\n{m.group(1)}\n$$\n", text, flags=re.S)
     return re.sub(r"\\\(\s*(.+?)\s*\\\)", lambda m: f"${m.group(1)}$", text, flags=re.S)
+
+
+def formulas(text: str) -> str:
+    """Clean nested YAML front-matter, LLM boilerplate, and convert \\( \\) / \\[ \\] delimiters outside code fences."""
+    text = _NESTED_FM.sub("", text)
+    text = _META_TALK.sub("", text)
+    parts = re.split(r"(```[\s\S]*?```|`[^`\n]+`)", text)
+    for i in range(0, len(parts), 2):
+        parts[i] = _rewrite_formula_chunk(parts[i])
+    cleaned = "".join(parts)
+    return re.sub(r"\n{3,}", "\n\n", cleaned)
 
 
 def slug(title: str) -> str:

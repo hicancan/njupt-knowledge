@@ -10,15 +10,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 《软件工程（双语）》在Eclipse中使用JUnit4教程（实验参考资料）第1部分
-kind: 实验
-course: 软件工程
-source: 识别工具读出的内容（第1–17页）
----
-
-# 《软件工程（双语）》在Eclipse中使用JUnit4教程（实验参考资料）第1部分
-
 本资料整理自《软件工程（双语）》实验参考资料，主要涵盖JUnit4框架概述、Annotation注解详解以及在Eclipse中进行单元测试的初级、中级和高级操作指南。
 
 ## JUnit4 概述
@@ -116,8 +107,6 @@ public class Calculator {
 ![打开属性窗口](软件工程双语在Eclipse中使用JUnit4教程实验参考资料.assets/图1.jpg)
 
 在弹出的属性窗口中，首先在左边选择“Java Build Path”，然后到右上选择“Libraries”标签，之后在最右边点击“Add Library…”按钮，如下图所示：
-
-
 
 然后在新弹出的对话框中选择 **JUnit** 并点击确定，如上图所示，JUnit 软件包就被包含进我们这个项目了。
 

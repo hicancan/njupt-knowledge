@@ -9,16 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：PIPE: Estimate the Value of Private Information (Team 93036)
-kind: 习题
-course: 数学建模
-term: 2018
-source: 2018 MCM/ICM Summary Sheet & Memorandum
----
-
-# 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：PIPE: Estimate the Value of Private Information (Team 93036)
-
 本文档整理自2018年美国大学生数学建模竞赛（MCM/ICM）获得特等奖（Outstanding Winner, O奖）的Team 93036论文《PIPE: Estimate the Value of Private Information》的第1部分，包含摘要（Summary）和备忘录（Memorandum）中的引言与解决方案结论部分。内容涉及对私人信息（Private Information, PI）价值的估算模型背景、定义及初步解决方案。
 
 ## 一、摘要（Summary）
@@ -54,7 +44,6 @@ source: 2018 MCM/ICM Summary Sheet & Memorandum
 - **Task 5:** 引入风险收益因子，展示代际差异如何改变模型，并将PI与PP（个人财产）和IP（知识产权）进行比较。
 - **Task 6:** 应用多维朋友聚类算法（mCAF）到数据集PIDATA，阐明不同人群子群之间的联系，发现数据与价值之间是对数似然关系而非线性关系。
 - **Task 7:** 模拟大规模数据泄露的影响，并使用模型预测PI损失级联事件的效果，建议机构直接向个人赔偿数据泄露损失。
-
 
 ## 二、备忘录（MEMORANDUM）
 
@@ -106,7 +95,6 @@ B Privacy Act
 2. **增强信任机制：** 建立机制以提升私人信息交易中所有参与方之间的信任。
 3. **整合原则：** 将用户信任和数据保护的原则整合到新服务和平台的开发中。
 4. **国际对话：** 政策制定者和机构应发起国际对话，涵盖政府、国际组织（如WTO）、最终用户隐私权团体和私营部门代表，不仅限于美国和欧盟，还应包括亚太地区及新兴国家的利益相关方。
-
 
 # PIPE: Estimate the Value of Private Information (Team 93036)
 
@@ -698,11 +686,9 @@ As is shown in Alg. 1, our algorithm first sets the initial feature vector as an
 对第 $i$ 个类别，其价值记为 $X_i$。  
 则个人 $I$ 的特征向量为：
 
-
 $$
 X=\begin{bmatrix}X_1&X_2&X_3&X_4&X_5\end{bmatrix}
 $$
-
 
 给定若干属性的价值向量，例如：
 
@@ -720,14 +706,11 @@ $$
 
 算法从零向量出发，对个人满足的所有属性条件，把对应的价值向量相加：
 
-
 $$
 X=\sum_{j} v_j
 $$
 
-
 例如某人同时是百万富翁、有心脏病、持有商店会员卡，则：
-
 
 $$
 X=
@@ -740,30 +723,23 @@ X=
 \begin{bmatrix}0.116\\0.260\\0\\0\\0.136\end{bmatrix}
 $$
 
-
 ---
 
 **价值度量：**
 
 总价值由范数给出：
 
-
 $$
 \|X\|=\sqrt{0.116^2+0.260^2+0+0+0.136^2}
 $$
-
-
 
 $$
 =\sqrt{0.013456+0.0676+0.018496}
 $$
 
-
-
 $$
 =\sqrt{0.099552}\approx 0.3155
 $$
-
 
 ---
 
@@ -1051,13 +1027,6 @@ Table 4: Purchasing power of three types of agencies
 
 The multi-dimensional clustering algorithm for friends (mCAF) is adopted by us to perform multi-dimensional clustering. Multi-dimensional clustering algorithms on social networks are progressively gaining popularity due to the information and insights produced using large-scale social data. [13] describes the user's opinions, comments, and likes in social media have significant relationships with the popularity of that post. Multi-dimensional cluster analysis is a strategy for identifying different Facebook users' fan groups and provides insights to prompt further research analytics [14]. Both network structures and profile information should be taken into consideration while analyzing a user's clusters on social networks [6, 15].
 
----
-title: 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：PIPE: Estimate the Value of Private Information (Team 93036)
-kind: 习题
-course: 数学建模
-source: 2018 MCM/ICM Team 93036 O Award Paper, Pages 16-19
----
-
 # 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：PIPE: Estimate the Value of Private Information (Team 93036)
 
 本节内容整理自2018年MCM/ICM获O奖论文第7部分，主要涉及社交网络聚类指标定义、mCAF算法结构相似度计算及隐私数据价值评估模型。原文为连续论述文本，无传统试题格式，故按知识点章节整理。
@@ -1074,7 +1043,6 @@ mCAF 是一种适用于社交网络的多维聚类算法。它同时利用用户
 
 仅依据好友关系进行聚类，主要反映用户的社交结构；仅依据个人资料进行聚类，则主要反映兴趣与属性特征。两者结合能够更准确地识别用户的“粉丝群”或社交圈：
 
-
 $$
 \text{用户相似度}
 =
@@ -1083,13 +1051,11 @@ $$
 \text{个人资料相似度}.
 $$
 
-
 这种多维信息融合也与社交网络研究的基本结论一致：网络结构和用户资料应同时纳入聚类分析。
 
 ### 2. mCAF 的基本思想
 
 mCAF 的核心是构造用户之间的相似度矩阵，再按照设定的相似度阈值或聚类准则进行分组。其一般过程可表示为：
-
 
 $$
 \text{网络与属性数据}
@@ -1103,9 +1069,7 @@ $$
 \text{聚类并提取社交群体}.
 $$
 
-
 若将用户 $i$ 和用户 $j$ 的属性向量分别记为
-
 
 $$
 \mathbf{x}_i=(x_{i1},x_{i2},\ldots,x_{ip}),
@@ -1113,9 +1077,7 @@ $$
 \mathbf{x}_j=(x_{j1},x_{j2},\ldots,x_{jp}),
 $$
 
-
 则属性相似度常采用余弦相似度：
-
 
 $$
 S_{\mathrm{attr}}(i,j)
@@ -1124,9 +1086,7 @@ S_{\mathrm{attr}}(i,j)
 {\|\mathbf{x}_i\|\|\mathbf{x}_j\|}.
 $$
 
-
 对于关系网络，可根据两位用户的共同联系人或邻居结构计算网络相似度。例如，若采用 Jaccard 指标：
-
 
 $$
 S_{\mathrm{net}}(i,j)
@@ -1135,11 +1095,9 @@ S_{\mathrm{net}}(i,j)
 {|N_i\cup N_j|},
 $$
 
-
 其中 $N_i$ 和 $N_j$ 分别表示用户 $i$ 与用户 $j$ 的邻居集合。
 
 综合相似度可写为
-
 
 $$
 S(i,j)
@@ -1149,7 +1107,6 @@ S(i,j)
 (1-\alpha)S_{\mathrm{attr}}(i,j),
 \qquad 0\leq\alpha\leq1.
 $$
-
 
 权重 $\alpha$ 反映关系结构与个人资料在聚类中的相对重要性。
 
@@ -1165,11 +1122,9 @@ $$
 
 在阈值法中，可设置相似度阈值 $\tau$。当
 
-
 $$
 S(i,j)\geq \tau
 $$
-
 
 时，将用户 $i$ 与用户 $j$ 归入同一群体，或在相似度图中介于二者之间建立连接。
 
@@ -1215,11 +1170,9 @@ $$
 #### 1. 合并共同好友与交互值  
 由公式(12)可知，先把用户 $i$ 和 $j$ 的互友数量 $M_{ij}$ 与交互值 $G_{ij}$ 相加，得到综合交互量：
 
-
 $$
 MG_{ij}=M_{ij}+G_{ij}
 $$
-
 
 这样处理的原因是：  
 社交圈的判断不能只看共同好友，也不能只看直接互动。例如两人虽然共同好友少，但频繁互动，也应视为强关系。
@@ -1227,19 +1180,15 @@ $$
 #### 2. 归一化  
 对所有用户对计算 $MG_{ij}$ 后，取集合  
 
-
 $$
 \mathsf{MG}=\{MG_{xy}\mid x,y\in 1,2,\dots,n\}
 $$
 
-
 再求其中最大值 $\max(MG)$，然后用公式(13)归一化：
-
 
 $$
 S_{ij}=\frac{MG_{ij}}{\max(MG)}
 $$
-
 
 于是所有 $S_{ij}\in[0,1]$，并且最大交互值对应的用户对归一化后为 $1$。
 
@@ -1829,35 +1778,27 @@ Based on the above model, we evaluate the influence of the control level to the 
 
 设三类机构的 PI 边际收益分别为：
 
-
 $$
 MR_{com},\quad MR_{gov},\quad MR_{non}
 $$
 
-
 其中 $MR_{com}$ 表示商业公司从单位 PI 中获得的边际收益。由于商业公司能将 PI 用于精准广告、信用评估、产品定价、算法训练等高货币化场景，其边际收益最高：
-
 
 $$
 MR_{com} > MR_{gov} > MR_{non}
 $$
 
-
 在竞争性数据市场中，机构愿意支付的最高价格为：
-
 
 $$
 P_{agency}^{(i)} = MR_i
 $$
 
-
 因此：
-
 
 $$
 P_{agency}^{(com)} > P_{agency}^{(gov)} > P_{agency}^{(non)}
 $$
-
 
 所以商业公司会给出更高报价。
 
@@ -1867,37 +1808,29 @@ $$
 
 设个人 $j$ 对自身 PI 的控制水平为 $\tau_j$，且：
 
-
 $$
 0 \le \tau_j \le 1
 $$
-
 
 控制水平越高，意味着个人越能限制数据的二次使用、模糊化部分信息或要求更高授权费用。机构获取该个人高质量、可自由使用的 PI 的难度增加，因此必须支付更高的补偿才能获得数据授权。
 
 可以建立线性或单调增的补偿函数：
 
-
 $$
 P_{agency}(\tau_j) = P_0 + \alpha \tau_j
 $$
 
-
 其中：
-
 
 $$
 \alpha > 0
 $$
 
-
 因此：
-
 
 $$
 \frac{dP_{agency}}{d\tau_j} = \alpha > 0
 $$
-
 
 所以 $P_{agency}$ 随 $\tau_j$ 单调递增。
 
@@ -1907,25 +1840,19 @@ $$
 
 如果所有个人的 $\tau_j$ 都相同，则市场上 PI 的均衡价格由总供给与总需求决定：
 
-
 $$
 Q_d(P) = \sum_{i} D_i(P)
 $$
-
-
 
 $$
 Q_s(P,\tau) = \sum_{j} S_j(P,\tau)
 $$
 
-
 当 $\tau$ 上升时，个人提供 PI 的意愿下降，供给曲线左移：
-
 
 $$
 Q_s \downarrow \quad \Rightarrow \quad P^* \uparrow
 $$
-
 
 因此控制程度的提高在总体上推高了 PI 的市场价格。
 
@@ -2191,19 +2118,15 @@ In future work, our goal is to introduce non-linear data value predictors, e.g. 
 
 设个人信息的总价值为
 
-
 $$
 V_i=B_i-R_i,
 $$
 
-
 其中 $B_i$ 表示信息带来的收益，$R_i$ 表示泄露风险造成的损失。若信息价值已经降至非正数，即
-
 
 $$
 B_i-R_i\leq 0,
 $$
-
 
 则继续以市场价格交换该信息会诱使信息主体承担不可接受的风险。因此，政策制定者不应只以市场收益为依据，还应保障个人对自身信息的知情、访问、删除、限制使用和撤回同意等权利。
 
@@ -2211,38 +2134,29 @@ $$
 
 风险—收益比可表示为
 
-
 $$
 \rho_i=\frac{R_i}{B_i}.
 $$
 
-
 老年人健康信息一旦泄露，可能带来就业、歧视、保险、医疗和养老等方面的不利影响，因此其风险通常上升：
-
 
 $$
 R_{\mathrm{old}}>R_{\mathrm{young}},
 $$
 
-
 而年轻群体在部分场景中的信息利用收益可能更高，即
-
 
 $$
 B_{\mathrm{young}}\geq B_{\mathrm{old}}
 $$
 
-
 在某些情形下。因此，
-
 
 $$
 \rho_{\mathrm{old}}>\rho_{\mathrm{young}},
 $$
 
-
 进而
-
 
 $$
 V_{\mathrm{old}}=B_{\mathrm{old}}-R_{\mathrm{old}}
@@ -2252,21 +2166,17 @@ V_{\mathrm{young}}
 B_{\mathrm{young}}-R_{\mathrm{young}}.
 $$
 
-
 这说明同一信息对不同世代应具有不同的风险权重和价格，而不能采用统一估值。
 
 ### 4. mCAF 与网络效应
 
 mCAF 通过多个维度对社交网络中的个体或节点进行聚类。设某群体 $j$ 中个人信息价格为 $p_j$，网络效应系数为 $\lambda_j$，则群体层面的价格贡献可写为
 
-
 $$
 P_j=\lambda_j p_j.
 $$
 
-
 随着共享规模扩大，群体对外部市场和社会系统的影响增强，通常有
-
 
 $$
 \lambda_j\uparrow
@@ -2274,18 +2184,15 @@ $$
 P_j\uparrow.
 $$
 
-
 但如果社区共享行为同时造成了广泛隐私暴露，则社区整体应承担更高的保护责任。其原因在于：社区成员之间的信息泄露不仅损害个体，还会通过群体网络产生外溢风险和连锁损失。
 
 ### 5. 数据泄露对价格的影响
 
 个人信息价格与泄露风险之间可表示为权衡关系：
 
-
 $$
 p_j=f(\lambda_j,r_j),
 $$
-
 
 其中：
 
@@ -2293,7 +2200,6 @@ $$
 - $r_j$ 为数据泄露风险水平。
 
 发生大规模泄露时，个人信息被滥用的可能性上升，社会对相关数据的信任下降，信息提供的预期收益减少，因此风险调整后的价格下降：
-
 
 $$
 r_j\uparrow
@@ -2303,22 +2209,17 @@ r_j\uparrow
 \lambda_jp_j\downarrow,
 $$
 
-
 并最终使均衡价格降低：
-
 
 $$
 p_j^\ast\downarrow.
 $$
 
-
 以 TJX 事件为例，超过 $1.18$ 亿条记录受到影响，直接损失约为
-
 
 $$
 1.18\times 10^8\ \text{美元},
 $$
-
 
 且尚未计入品牌声誉受损等间接成本。这说明大规模数据泄露既会直接造成经济损失，也会通过提高全社会风险水平压低个人信息价格。
 
@@ -2414,14 +2315,12 @@ $$
 \max = \$0.12\quad(\text{订婚一个月或更短})
 $$
 
-
    其次为：
 
    
 $$
 \$0.116\quad(\text{百万富翁})
 $$
-
 
 2. **基础人口统计信息合计**
 
@@ -2433,7 +2332,6 @@ $$
    = 0.007
 $$
 
-
    即 $\$0.007$。
 
 3. **“高价值人群”组合示例**
@@ -2444,7 +2342,6 @@ $$
 $$
 0.116+0.12+0.10=0.336
 $$
-
 
    即 $\$0.336$。
 
@@ -2532,7 +2429,6 @@ $$
 \boxed{\$2.72}.
 $$
 
-
 **计算过程：**
 
 设家庭状况价值为 $F$，健康状况价值为 $H$，总价值为
@@ -2540,7 +2436,6 @@ $$
 $$
 V=F+H.
 $$
-
 
 其中，“是否有孩子”的价值记为 $c$，“是否期待宝宝”的价值记为 $p$，“是否为新手父母”的价值记为 $n$，则
 
@@ -2554,7 +2449,6 @@ $$
 F=0.005+0.115+0.035=0.155.
 $$
 
-
 健康部分中，每种列出的疾病或状况价值均为 $\$0.26$。设实际具有的状况数为 $k$，则
 
 $$
@@ -2567,7 +2461,6 @@ $$
 0\le k\le 10,\qquad 0\le H\le 2.60.
 $$
 
-
 若患有哮喘和糖尿病，则 $k=2$，于是
 
 $$
@@ -2579,7 +2472,6 @@ $$
 $$
 V=0.005+0.115+2\times0.26=0.64.
 $$
-
 
 家庭部分的理论最大值为
 
@@ -2618,14 +2510,6 @@ $$
 <tr><td>是</td><td>$0</td></tr>
 <tr><td>否</td><td>$0</td></tr>
 </table>
-
----
-title: 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：PIPE: Estimate the Value of Private Information (Team 93036)
-kind: 习题
-course: 数学建模
-term: 2018
-source: MCM/ICM 2018 O Award Paper, Team 93036
----
 
 # 2018年美国大学生数学建模竞赛（MCM/ICM）O奖论文：PIPE: Estimate the Value of Private Information (Team 93036)
 
@@ -2960,11 +2844,9 @@ $$ V_{lie} = 0.001 $$
 
 该类产品对应的“Value”最大，为
 
-
 $$
 0.0018
 $$
-
 
 逐项比较：
 

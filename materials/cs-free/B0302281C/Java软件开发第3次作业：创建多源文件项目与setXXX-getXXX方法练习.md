@@ -10,16 +10,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0302
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 《Java软件开发》第3次作业：创建多源文件项目与setXXX/getXXX方法练习
-kind: 实验
-course: Java软件开发
-term: 2020-2021-2
-source: <原件地址或来源路径>
----
-
-# 《Java软件开发》第3次作业：创建多源文件项目与setXXX/getXXX方法练习
-
 本资料为南京邮电大学计算机学院《Java软件开发》课程第3次实验作业，主要涉及Netbeans多源文件项目创建及封装性（setter/getter）的练习。
 
 ## 一、实验内容

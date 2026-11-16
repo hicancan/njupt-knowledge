@@ -5,11 +5,6 @@ requires: [Web开发技术/php-syntax]
 
 # PHP基本数据类型（变量、整数Integer、双精度Double、字符串String、布尔Boolean）
 
----
-title: PHP基本数据类型（变量、整数Integer、双精度Double、字符串String、布尔Boolean）
-requires: []
----
-
 PHP 的变量不需要事先声明类型，解释器根据赋的值自动决定它是什么类型——这叫==弱类型（动态类型）==。要区分类型，靠 `var_dump()` 或 `is_int()/is_float()/is_string()/is_bool()`。
 
 ## 变量

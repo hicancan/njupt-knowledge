@@ -9,8 +9,6 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# 2018年美赛O奖论文：如何实现电动汽车的全面普及（Problem D）
-
 来源：2018 MCM/ICM Problem D O奖论文（Team #82794）。整理自识别文本，保留原文结构与核心内容。
 
 ## Summary Sheet
@@ -99,29 +97,23 @@ As nations seek to develop policies that promote the migration towards electric 
 
 将研究区域划分为若干交通小区，记为 $i\in I$。预测目标年电动车保有量：
 
-
 $$
 N_i^{EV}=N_i^{V}\,s_i,
 $$
-
 
 其中 $N_i^V$ 为汽车保有量，$s_i$ 为电动车渗透率。
 
 若小区 $i$ 的日均行驶里程为 $L_i$，电动车百公里耗电为 $e$，则日充电需求可估计为
 
-
 $$
 D_i=\frac{N_i^{EV}L_i e}{100\eta},
 $$
 
-
 其中 $\eta$ 为充电效率。再按住宅慢充、单位慢充、城市公共充电和高速补能的比例分解：
-
 
 $$
 D_i=D_i^{home}+D_i^{work}+D_i^{public}+D_i^{corridor}.
 $$
-
 
 公共充电需求应重点依据无固定车位车辆比例、长途出行比例和充电行为调查确定，不能简单假定全部电量都由公共站提供。
 
@@ -137,54 +129,40 @@ $$
 
 基本选址模型可写为
 
-
 $$
 \min Z=
 \sum_{j\in J}\sum_{k\in K}c_{jk}x_{jk}
 +\lambda\sum_{i\in I}\sum_{j\in J}D_i^{public}d_{ij}y_{ij},
 $$
 
-
 满足
-
 
 $$
 \sum_{j\in J}y_{ij}=1,\qquad \forall i,
 $$
 
-
-
 $$
 y_{ij}\leq \sum_{k\in K}x_{jk},\qquad \forall i,j,
 $$
 
-
-
 $$
 y_{ij}=0\quad \text{若 }d_{ij}>R,
 $$
-
-
 
 $$
 \sum_{i\in I}D_i^{public}y_{ij}
 \leq \sum_{k\in K}q_{jk}x_{jk},\qquad \forall j,
 $$
 
-
 以及预算、电网容量和土地约束：
-
 
 $$
 \sum_{j,k}c_{jk}x_{jk}\leq B,
 $$
 
-
-
 $$
 P_j\leq \overline P_j.
 $$
-
 
 其中 $R$ 是可接受服务半径，$\lambda$ 用于权衡建设成本与用户便利性。
 
@@ -192,19 +170,15 @@ $$
 
 仅用日总电量配置容量，可能低估高峰排队。可将充电站近似为 $M/M/c$ 排队系统。若到站率为 $\lambda_j$，单充电桩服务率为 $\mu$，充电桩数为 $c_j$，则需满足稳定性条件：
 
-
 $$
 \lambda_j<c_j\mu.
 $$
 
-
 进一步约束高峰平均等待时间：
-
 
 $$
 W_j\leq W_{\max},
 $$
-
 
 并设置容量冗余，以应对节假日、设备故障和随机波动。高速站还应按高峰小时交通流而不是年平均流量校核。
 
@@ -226,14 +200,11 @@ $$
 
 将规划期分为 $t=1,\dots,T$。设 $a_{jkt}$ 表示第 $t$ 期在站点 $j$ 新增等级 $k$ 容量，则累计建设状态为
 
-
 $$
 x_{jkt}=\sum_{\tau=1}^{t}a_{jk\tau}.
 $$
 
-
 每阶段均需求解与静态模型类似的选址—容量问题，但需求、预算和电网容量随时间变化：
-
 
 $$
 D_{it}=D_i(s_t),\qquad
@@ -241,9 +212,7 @@ B_t=B_t^{policy},\qquad
 \overline P_{jt}=\overline P_j(t).
 $$
 
-
 目标函数可取全规划期折现成本与用户成本之和：
-
 
 $$
 \min \sum_{t=1}^{T}\frac{1}{(1+r)^{t-1}}
@@ -253,13 +222,11 @@ C_t^{build}+C_t^{grid}+C_t^{operate}
 \right).
 $$
 
-
 该模型允许先建小规模站，再在需求增长后扩建，避免一次性过度投资。
 
 ### 2. 建设优先级
 
 候选项目的综合优先级可定义为
-
 
 $$
 S_{jt}
@@ -269,7 +236,6 @@ S_{jt}
 -w_4\frac{\text{单位服务成本}_{jt}}{\text{成本基准}}
 -w_5\frac{\text{电网增容难度}_{jt}}{\text{难度基准}}.
 $$
-
 
 实际建设时，在预算约束下优先实施 $S_{jt}$ 较高且属于必要覆盖或连通的项目。权重应通过政策目标和敏感性分析确定，而非任意固定。
 
@@ -413,7 +379,6 @@ $$
 答案：见上表。
 补充：这些符号将在后续章节中进一步定义。
 
-
 ## 二、双层复杂网络模型构建
 
 知识点：[符号说明与术语定义（Nomenclature / Symbols and Definitions）](../../../topics/数学建模/fuhao_shuoming.md)
@@ -486,15 +451,6 @@ $$
 3. $N_{sum}$：传统车辆与电动车的总数。
 4. $\mu((P, t, \tau) | _ {S _ {i}})$：在特定子区域 $S_i$ 的条件概率或比率。
 
-
----
-title: 2018年美赛O奖论文：如何实现电动汽车的全面普及（Problem D）（习题）
-kind: 习题
-course: 数学建模
-term: 2018
-source: 《2018年美赛O奖论文：如何实现电动汽车的全面普及（Problem D）》第 3 部分（共 8 部分），识别工具读取内容（第 8–9 页）
----
-
 # 2018年美赛O奖论文：如何实现电动汽车的全面普及（Problem D）（习题）
 
 本资料整理自2018年美国大学生数学建模竞赛（MCM/ICM）获得Outstanding Winner（O奖）的论文《How to Achieve Full Adoption of Electric Vehicles》中关于目的地充电站和超级充电站数量与位置分布的模型推导部分。
@@ -515,7 +471,6 @@ source: 《2018年美赛O奖论文：如何实现电动汽车的全面普及（P
 - $tt_\tau$ is the set of user group that have charged during the workday $\tau$.
 - $TL(t, \tau)$ is the total number of destination charging stations needed in time $t$ of workday $\tau$.
 - There is no doubt that we should use $DTL = \max \sum TL(t, \tau)$ as the required number of destination charging stations.
-
 
 ## 二、目的地充电站的数量与位置
 
@@ -555,11 +510,9 @@ $$
 
 目的地充电站总数为
 
-
 $$
 \boxed{N_{\mathrm{dest}}=DTL=\max_{t,\tau}\sum_{\tau}TL(t,\tau)}
 $$
-
 
 即取所有时间和工作日组合下充电站总负荷的最大值。
 
@@ -567,21 +520,17 @@ $$
 
 对每个时间 $t$ 和工作日 $\tau$，计算对应时段的目的地充电需求总量：
 
-
 $$
 L(t,\tau)=\sum_{\tau}TL(t,\tau).
 $$
 
-
 随后在所有时间 $t$ 和工作日 $\tau$ 中取最大值：
-
 
 $$
 N_{\mathrm{dest}}
 =\max_{t,\tau}L(t,\tau)
 =\max_{t,\tau}\left[\sum_{\tau}TL(t,\tau)\right].
 $$
-
 
 该结果覆盖了全周期内的峰值需求，因此按该峰值配置目的地充电站数量即可。
 
@@ -599,7 +548,6 @@ $$
 
 where $DTL_{i}$ is the number of charging stations required for the $i$th city, $DTL$ is the number of charging stations required for the whole country, $CD_{i}$ is the traffic density of the $i$th city.
 
-
 #### 2. 城市、郊区与农村之间的分布
 
 我们对数量和位置的研究基于车辆密度，而城市、郊区和农村地区的主要区别也是车辆密度，因此基于车辆密度比例分配目的地充电站的数量是合理的。
@@ -613,39 +561,29 @@ where $DTL_{i}$ is the number of charging stations required for the $i$th city, 
 
 设全国共需目的地充电站总数为 $DTL$，第 $i$ 个城市的车辆密度为 $CD_i$，则全国总车辆密度为
 
-
 $$
 \sum_i CD_i
 $$
 
-
 第 $i$ 个城市分配到的目的地充电站数量为
-
 
 $$
 DTL_i = DTL \cdot \frac{CD_i}{\sum_i CD_i}
 $$
 
-
 若进一步区分城市、郊区、农村，记第 $i$ 个城市中城市、郊区、农村的车辆密度分别为 $CD_{i,u}, CD_{i,s}, CD_{i,r}$，则该城市内各部分分配数量为
-
 
 $$
 DTL_{i,u} = DTL_i \cdot \frac{CD_{i,u}}{CD_{i,u}+CD_{i,s}+CD_{i,r}}
 $$
 
-
-
 $$
 DTL_{i,s} = DTL_i \cdot \frac{CD_{i,s}}{CD_{i,u}+CD_{i,s}+CD_{i,r}}
 $$
 
-
-
 $$
 DTL_{i,r} = DTL_i \cdot \frac{CD_{i,r}}{CD_{i,u}+CD_{i,s}+CD_{i,r}}
 $$
-
 
 ---
 
@@ -665,7 +603,6 @@ $$
 STL = DTL \times a \times rd\tag{5}
 $$
 
-
 #### 2. 超级充电站的位置
 
 这与目的地充电站的位置类似，因此不再重复。
@@ -673,7 +610,6 @@ $$
 #### 3. 城市、郊区与农村之间的分布
 
 这与目的地充电站在城市、郊区和农村之间的分布类似，因此不再重复。
-
 
 ## 三、长途旅行者的超级充电站分布
 
@@ -1237,7 +1173,6 @@ $$
 \bar{P} = \frac{2.016\times10^7}{16} \approx 1.26\times10^6\ \text{kW}
 $$
 
-
 2. **供给侧约束**  
    设每个充电站平均配置 4 个快充桩，单桩平均利用率 $\eta = 0.25$，则单站有效输出功率约为：
    
@@ -1256,7 +1191,6 @@ $$
 $$
 N \approx 0.25 \times 8400 = 2100
 $$
-
 
 3. **满意度阈值校正**  
    设用户能接受的最大平均等待时间 $W_{\max}=10$ 分钟，由排队论 $M/M/c$ 模型（每站 4 个桩）可推出在到达率 $\lambda$ 与服务率 $\mu$ 下，系统稳定且等待时间满足 $W_q \le W_{\max}$ 时所需的站数 $N^*$ 略低于 $N_0$，经迭代得 $N^* \approx 1876$，此时用户满意度处于阈值 $D$，运营商利润达到约束下的最优。
@@ -1439,7 +1373,6 @@ $$
 C_B(v)=\sum_{s\ne v\ne t}\frac{\sigma_{st}(v)}{\sigma_{st}},
 $$
 
-
    式中，$\sigma_{st}$ 为节点 $s$ 到节点 $t$ 的最短路径条数，$\sigma_{st}(v)$ 为其中经过节点 $v$ 的最短路径条数。
 
 2. **城市类型解释**
@@ -1459,7 +1392,6 @@ $$
 \text{模型推荐区域}\approx\text{现有超充站密集区域}.
 $$
 
-
    因而，在研究假设和数据覆盖范围内，模型能够较好地识别适合建设长途旅行超充站的关键节点。
 
 4. **规划方案**
@@ -1477,7 +1409,6 @@ $$
 $$
 P_i=w_1D_i+w_2B_i-w_3S_i,
 $$
-
 
    其中 $D_i$ 为归一化车辆密度，$B_i$ 为归一化介数中心性，$S_i$ 为现有目的地充电站和超充站占比，$w_1,w_2,w_3$ 为权重。按 $P_i$ 从大到小排序，即可确定超充站建设的优先序列。
 
@@ -1502,11 +1433,9 @@ Based on the second Model, we consider three cases: build all city-based charger
 设渗透率 $P(t)$ 的变化由有效需求增长率 $\lambda$ 驱动，而 $\lambda$ 依赖于充电桩覆盖密度与人口分布的匹配程度。  
 由方程（17）及 $E_q(18)$ 的排队模型，可得
 
-
 $$
 \frac{dP}{dt} = \lambda(t)\,(1-P(t)),
 $$
-
 
 其中 $\lambda(t)$ 与城乡充电桩数量之比 $r(t)=C_{\text{city}}/C_{\text{rural}}$ 有关。
 
@@ -1535,8 +1464,6 @@ Based on the above analysis, now we study the key factors.
 1. In Task 2a, we mainly explore the final Tesla network topology. The key factors that shaped the development of our plan is the ratio of the total number of charging stations over the country to that in each city.
 
 # 2018年美赛O奖论文：如何实现电动汽车的全面普及（Problem D）
-
-本部分为习题第7部分，整理自识别工具读出的原文内容，修正了明显的断行、拼写及格式错误。
 
 ## 6.3 Task 3: A weak traffic network classification system
 

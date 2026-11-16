@@ -9,15 +9,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 《计算机图形学（全英文）》OpenGL Assimp库配置实验指南
-kind: 实验
-course: 计算机图形学
-source: <原件地址或来源路径>
----
-
-# 《计算机图形学（全英文）》OpenGL Assimp库配置实验指南
-
 本文档整理了关于在 Windows 和 Mac 环境下配置 Assimp 库的实验步骤。
 
 ## ASSIMP

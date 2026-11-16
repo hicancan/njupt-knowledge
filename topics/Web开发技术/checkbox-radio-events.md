@@ -5,13 +5,6 @@ requires: [Web开发技术/event-handling]
 
 # 复选框（Checkboxes）与单选按钮（Radio Buttons）的事件处理
 
----
-title: 复选框与单选按钮的事件处理
-requires: [HTML表单基础, JavaScript函数]
----
-
-# 复选框与单选按钮的事件处理
-
 在 Web 交互中，用户输入不仅限于文本，还包含状态选择。理解 `checkbox`（复选框）与 `radio`（单选按钮）的行为差异及其事件绑定机制，是掌握 DOM 操作的基础。
 
 ## 核心行为差异

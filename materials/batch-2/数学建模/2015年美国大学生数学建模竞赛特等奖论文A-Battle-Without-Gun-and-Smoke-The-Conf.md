@@ -9,16 +9,6 @@ source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）
-kind: 课件
-course: 数学建模
-term: 2015
-source: Team 34317, MCM 2015 Problem A
----
-
-# 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）
-
 本文档整理自 Team 34317 的 2015 年 MCM A 题特等奖论文第 1-3 页内容。
 
 ## Summary
@@ -149,14 +139,6 @@ To totally understand the problem better and know what we should to deal with Eb
 3. Effective transportation including amount of medicine needed in a place.
 4. Total amount of medicine needed to cure Ebola patients until cases stops increasing.
 
----
-title: 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第 3 部分
-kind: 课件            # 期末试卷 / 答案 / 复习要点 / 习题 / 课件 / 实验
-course: 数学建模      # 学科，即 courses/ 下的文件名
-term: 2015            # 有就写
-source: 2015 MCM Team 34317 Paper, Part 3 (Pages 6-8)
----
-
 # 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第 3 部分
 
 本资料整理自《2015年美国大学生数学建模竞赛特等奖论文》教材第 3 部分（共 13 部分），对应原稿第 6–8 页内容。主要涉及任务分解、行为改变背景、假设以及 SEIIRF 模型的符号定义。
@@ -173,7 +155,6 @@ source: 2015 MCM Team 34317 Paper, Part 3 (Pages 6-8)
 - <sup></sup> 确定生产药品的速度以及根除埃博拉所需的总数量。
 - <sup></sup> 考虑其他对优化根除埃博拉至关重要的因素。
 
-
 ## 二、背景——行为改变是根除埃博拉的关键
 
 ### 背景 1
@@ -188,7 +169,6 @@ source: 2015 MCM Team 34317 Paper, Part 3 (Pages 6-8)
 第 3 页，共 44 页
 
 我们必须意识到，改变意识和人性是非常困难的。如果我们想赢得对抗埃博拉的战役，最有效的办法是找到药物。现在是治愈药物的时候了——世界卫生组织（WHO）宣布他们可以做到。
-
 
 ## 三、假设及其合理性说明
 
@@ -205,7 +185,6 @@ source: 2015 MCM Team 34317 Paper, Part 3 (Pages 6-8)
 自埃博拉爆发以来，不同地区和国家的移民对人口变化的影响可以忽略不计。此外，由于疾病感染，人员流动率可能会降低。
 
 我们将在后续章节中使用这些假设时列出更多详细的假设。
-
 
 ## 四、埃博拉传播的 SEIIRF 模型
 
@@ -236,7 +215,6 @@ source: 2015 MCM Team 34317 Paper, Part 3 (Pages 6-8)
 
 **团队 # 34317**
 第 5 页，共 44 页
-
 
 ## 4.3 Construction of the Model
 
@@ -485,13 +463,6 @@ Where $H _ { 1 }$ and $H _ { 2 }$ mean number of people in hospital who are in f
 $$
 D _ {M J} = \min _ {x _ {i} \in G _ {M}, x _ {j} \in G _ {J}} d _ {i j} = \min \left\{\min _ {x _ {i} \in G _ {K}, x _ {j} \in G _ {J}} d _ {i j}, \min _ {x _ {i} \in G _ {L}, x _ {j} \in G _ {J}} d _ {i j} \right\} = \min \left\{D _ {K J}, D _ {L J} \right\}
 $$
-
----
-title: 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第8部分
-kind: 课件
-course: 数学建模
-source: 《2015年美国大学生数学建模竞赛特等奖论文》教材，第 24–26 页
----
 
 # 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第8部分
 
@@ -745,14 +716,6 @@ $$
 \left\{ \begin{array}{l} \frac {d S}{d t} = - \left[ \beta_ {I} \left(I _ {1} + \beta_ {H} H _ {1}\right) + \beta_ {2} \left(I _ {2} + \beta_ {H} H _ {2}\right) + \beta_ {F} F \right] S - \lambda_ {i} V _ {2} \\ \frac {d H _ {1}}{d t} = h _ {1} I _ {1} - \gamma_ {3} H _ {1} - \lambda_ {i} V _ {1} \lambda_ {h} \\ \frac {d R}{d t} = (1 - \delta_ {1}) \gamma_ {1} I _ {1} + (1 - \delta_ {2}) \gamma_ {2} I _ {2} + (1 - \delta_ {1 H}) \gamma_ {3} H _ {1} + (1 - \delta_ {2 H}) \gamma_ {4} H _ {2} + \lambda_ {i} V _ {2} \end{array} \right.
 $$
 
----
-title: 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第11部分
-kind: 课件
-course: 数学建模
-term: 2015
-source: 《2015年美国大学生数学建模竞赛特等奖论文》教材第37–40页
----
-
 # 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第11部分
 
 本部分为特等奖论文的第11部分（对应教材第37–40页），主要涉及药物用量的积分计算、医院与葬礼传播控制的影响分析，以及未来改进方向，包括配送地点覆盖优化和无边界方案。
@@ -826,13 +789,6 @@ $$
 因此，可以制定一个无边界方案，以迅速摆脱……
 
 *[!WARNING] 原文在此处截断，后续内容缺失。]*
-
----
-title: 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第 12 部分
-kind: 课件
-course: 数学建模
-source: 2015 MCM/ICM Problem A Winner Paper, Team 34317
----
 
 # 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）第 12 部分
 

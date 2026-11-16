@@ -9,8 +9,6 @@ source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文�
 
 原件经识别和整理；“参考解答”是我们补的。
 
-# 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文示例：机场安检流程优化与智能调度
-
 来源为 2017 年 MCM/ICM O 奖论文第 1-4 页识别内容，整理时去除了页眉、页脚、团队编号表格及重复的摘要部分，保留了正文结构。
 
 ## Summary Sheet
@@ -208,16 +206,7 @@ Table 1: The Parameters in the Problems
 
 The distribution of service time in different check points is not identical in real life. In order to simulate the differences among check points, we keep the variance of normal distribution $\sigma_k$ unchanged $(k = 1, 2, 3)$, and uniformly generate $\mu_{k_i}$ of normal distribution between $\mu_k - \sigma_k$ and $\mu_k + \sigma_k$.
 
----
-title: 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文示例：机场安检流程优化与智能调度
-kind: 习题
-course: 运筹学与控制论
-source: <原件地址或来源路径>
----
-
 # 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文示例：机场安检流程优化与智能调度
-
-本部分为《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文示例：机场安检流程优化与智能调度》第3部分（共9部分）由识别工具读出的内容（第7–8页），已整理为Markdown格式。
 
 ## 一、速率稳定性与性能指标
 
@@ -306,37 +295,29 @@ $$
 
 设平均到达率为 $\lambda$，平均服务率为 $\mu$。速率稳定要求
 
-
 $$
 \limsup_{t\to\infty} \frac{1}{t}\sum_{\tau=0}^{t-1}\bigl(a(\tau)-b(\tau)\bigr)\le 0,
 $$
 
-
 即长期平均到达数不超过长期平均服务数：
-
 
 $$
 \mathbb E[a(\tau)] \le \mathbb E[b(\tau)].
 $$
 
-
 令常规乘客比例为 $p$，预检乘客比例为 $1-p$，且题目规定 $p:(1-p)=3:1$，所以 $p=3/4$，$1-p=1/4$。
 
 若单个常规检查点服务率为 $\mu_r$，单个预检检查点服务率为 $\mu_p$，常规检查点数为 $n_r$，预检检查点数为 $n_p$，则稳定性条件为
-
 
 $$
 \lambda \le n_r\mu_r + n_p\mu_p.
 $$
 
-
 按比例配置可令
-
 
 $$
 n_r:n_p=3:1.
 $$
-
 
 表2中 ID check 为 $n_r=3,\ n_p=1$，Screening 为 $n_r=12,\ n_p=4$，均满足 $3:1$ 的比例。因此只要单个柜台服务率足够，使总服务率不低于对应区域的乘客到达率，队列就不会无限增长，达到速率稳定。
 
@@ -355,7 +336,6 @@ p \mathbb {E} \left[ (X _ {1} - \mathbb {E} (X _ {1})) ^ {2} \right] + (1 - p) \
 $$
 
 吞吐量从集体层面衡量安检系统的能力，而等待时间的方差从个人层面衡量公平性。
-
 
 ## 二、模型构建
 
@@ -492,7 +472,6 @@ $$
 如图3所示，两个 $M/G/c$ 队列处于串联阵列中。第一个 $M/G/c$ 排队节点表示ID检查（A区）的队列，有 $N_A$ 个检查点。同样，第二个 $M/G/c$ 队列表示行李和身体筛查（B区）的队列，有 $N_B$ 个检查点。所有检查点对常规乘客和预检乘客均可用，唯一的区别是预检乘客在B区花费的时间可能更短。
 
 ![Figure 3: Tandem M/G/c Queueing Model](2017年美国大学生数学建模竞赛MCM-ICMO奖论文示例：机场安检流程优化与智能调度.assets/图2.jpg)
-
 
 ## 3.2 Queueing Network Model
 
@@ -770,11 +749,9 @@ We will modify the security checking system to achieve a more efficient use of r
 
 若安检点 $j$ 的队列长度为 $L_j$，平均服务时间为 $1/\mu_j$，则可采用近似选择规则：
 
-
 $$
 j^*=\arg\min_j\left(\frac{L_j+1}{\mu_j}\right),
 $$
-
 
 即将下一名旅客分配到预计等待时间最短的安检点。这样可以减少局部队列拥堵，使安检资源得到更均衡、更充分的利用。
 
@@ -802,13 +779,11 @@ $$
 
 原系统中，固定路由导致服务台 A 的利用率过高：
 
-
 $$
 \rho_A = \frac{\lambda p}{\mu_A} \to 1^-,
 \quad
 \rho_B = \frac{\lambda (1-p)}{\mu_B} \ll 1
 $$
-
 
 当 $\rho_A \to 1$ 时，队列 A 长度趋于无穷，系统不稳定。
 
@@ -816,7 +791,6 @@ $$
 
 设两个服务台前的队列长度为 $Q_A(t), Q_B(t)$。  
 新到达的乘客以概率 $r(t)$ 进入队列 A：
-
 
 $$
 r(t) = 
@@ -826,7 +800,6 @@ r(t) =
 \frac{1}{2}, & |Q_A(t)-Q_B(t)| \le \Delta
 \end{cases}
 $$
-
 
 其中 $\Delta$ 为滞后阈值（取 $\Delta=1$ 或 $2$），防止路由震荡。
 
@@ -838,81 +811,63 @@ $$
 
 当两类乘客均可部分灵活路由时，系统稳定条件为：
 
-
 $$
 \lambda p < \mu_A,\quad \lambda(1-p) < \mu_B
 $$
 
-
 为使两服务台利用率均衡：
-
 
 $$
 \frac{\lambda p}{\mu_A} = \frac{\lambda (1-p)}{\mu_B}
 $$
 
-
 解得最优比例：
-
 
 $$
 p^* = \frac{\mu_A}{\mu_A + \mu_B}
 $$
 
-
 若考虑实际中类型 1 乘客到达后必须立即进入 A 且不可转移，则引入修正项，最终：
-
 
 $$
 p^* = \frac{\mu_A(\mu_B+\lambda)}{\mu_B(\mu_A+\lambda)}
 $$
 
-
 ### 4. 吞吐量提升
 
 优化前系统最大吞吐量为：
-
 
 $$
 \Theta_{\text{old}} = \min\left\{\frac{\mu_A}{p}, \frac{\mu_B}{1-p}\right\}
 $$
 
-
 优化后，由于动态路由平衡负载，最大吞吐量达到：
-
 
 $$
 \Theta_{\text{new}} = \mu_A + \mu_B
 $$
 
-
 提升幅度为：
-
 
 $$
 \frac{\Theta_{\text{new}} - \Theta_{\text{old}}}{\Theta_{\text{old}}} 
 = \frac{\mu_A+\mu_B}{\min\{\mu_A/p, \mu_B/(1-p)\}} - 1
 $$
 
-
 ### 5. 方差降低
 
 动态路由使两队列长度趋同，队列长度的稳态方差由原来的：
-
 
 $$
 \operatorname{Var}(Q) \approx \frac{\rho_A}{(1-\rho_A)^2} + \frac{\rho_B}{(1-\rho_B)^2}
 $$
 
-
 降为：
-
 
 $$
 \operatorname{Var}(Q) \approx 2\cdot \frac{\rho}{2(1-\rho)^2} 
 = \frac{\rho}{(1-\rho)^2}
 $$
-
 
 其中 $\rho = \lambda/(\mu_A+\mu_B)$。对比优化前，方差降低了约 $50\%$（当 $\mu_A=\mu_B$ 时）。
 
@@ -946,11 +901,9 @@ The results are illustrated in the Figure 10. The greedy algorithm achieves a mu
 
 设旅客在时刻 $t$ 可选择的同类检查节点集合为 $\mathcal N$，节点 $n$ 的队列积压为 $Q_n(t)$，即该节点等待服务的旅客总数。旅客选择
 
-
 $$
 n^*(t)=\arg\min_{n\in\mathcal N}Q_n(t),
 $$
-
 
 并进入节点 $n^*(t)$ 的队列。若多个节点的积压相同，可任选其一或按固定规则打破平局。普通旅客只能进入普通检查节点，预检旅客只能进入预检检查节点，因此该路由不会改变两类旅客的服务权限。
 
@@ -964,13 +917,11 @@ $$
 
 仿真结果表明：
 
-
 $$
 Q_{\max}<16,\qquad
 \lambda_{\mathrm{out}}=7.148\ \mathrm{PAX/min},\qquad
 \operatorname{Var}(W)=103.427\ \mathrm{min^2}.
 $$
-
 
 其中，较小的最大队长说明瞬时拥堵受到抑制；较高的吞吐量说明单位时间完成检查的旅客更多；等待时间方差则反映不同旅客等待时间的离散程度。结合总通关时间明显缩短，可以判断该系统在队长控制和检查效率方面均优于第 3.2 节的原模型。
 
@@ -1776,11 +1727,9 @@ In this section, we will provide some accommodations that correspond to the prev
 
 **推理**：集体主义文化下旅客更接受为整体效率牺牲部分个人便利，因此可用第 5.3.1 节的调度模型，目标函数可设为
 
-
 $$
 \min\quad \alpha \mathbb{E}[W]+\beta \operatorname{Var}(W)
 $$
-
 
 其中 $W$ 为等待时间，$\alpha,\beta$ 为权重。此类算法能降低平均等待并减少不同队列间差异。
 
@@ -1800,19 +1749,15 @@ $$
 
 **关键计算**：设普通通道家庭服务时间为 $S_f$，专用通道中因简化儿童核验，服务时间降为
 
-
 $$
 S_f'=\lambda S_f,\qquad 0<\lambda<1
 $$
 
-
 代入排队模型后，若服务率 $\mu'=1/\mathbb{E}[S_f']$，则系统利用率
-
 
 $$
 \rho'=\frac{\lambda_f}{\mu'}<\frac{\lambda_f}{\mu}=\rho
 $$
-
 
 其中 $\lambda_f$ 为家庭到达率。利用率下降会带来平均等待时间和方差同时降低，与图 18 结果一致。
 
@@ -1824,11 +1769,9 @@ $$
 
 **推理**：旅客若能获得较准确的等待时间估计，会更合理地选择到达时刻，减少高峰聚集。设旅客估计到达时间为 $t_a$，真实最优到达时间为 $t_a^*$，则数据误差
 
-
 $$
 e=|t_a-t_a^*|
 $$
-
 
 越小，到达分布越平滑，系统拥堵和等待方差越低。
 
@@ -1895,21 +1838,17 @@ We propose the following policies:
 
 机场安检系统可建模为排队系统。若乘客到达率为 $\lambda$，各安检口的服务率之和为 $\mu$，则系统应满足
 
-
 $$
 \rho=\frac{\lambda}{\mu}<1.
 $$
-
 
 当 $\rho$ 接近或超过 $1$ 时，排队长度会迅速增长，并可能造成拥堵、乘客满意度下降及整体吞吐量下降。背压算法可根据实时队列长度调节上游放行速度，使队列长度接近最优值。
 
 例如，当安检口利用率为
 
-
 $$
 \rho=\frac{\lambda}{\mu}>1
 $$
-
 
 时，系统已处于过载状态；此时若继续向后续区域发送乘客，只会扩大拥堵。因此，应通过背压机制限制乘客进入安检区域。
 
@@ -1923,11 +1862,9 @@ $$
 
 若第 $i$ 个安检口的预计等待时间为 $W_i$，则乘客选择该通道的总时间可表示为
 
-
 $$
 T_i=W_i+t_i,
 $$
-
 
 其中 $t_i$ 为前往该通道的时间。准确、及时的队列信息可以使乘客依据 $T_i$ 而不只是物理距离选择通道，提高整体吞吐量。
 
@@ -1965,52 +1902,39 @@ $$
 \lambda_{\mathrm{pre}}=\lambda p.
 $$
 
-
 若单个普通安检口和预检口的服务率分别为 $\mu_{\mathrm{reg}}$ 和 $\mu_{\mathrm{pre}}$，则应近似满足
-
 
 $$
 \lambda(1-p)<n\mu_{\mathrm{reg}},
 $$
 
-
-
 $$
 \lambda p<m\mu_{\mathrm{pre}}.
 $$
-
 
 同时，配置过多安检口会占用有限空间、增加人员和设备成本，因此应选择满足稳定性要求且总成本较低的最小配置。
 
 例如，若普通安检口服务率为 $30$ 人/分钟、预检口服务率为 $50$ 人/分钟，旅客到达率为 $120$ 人/分钟，预检旅客比例为 $40\%$，则
 
-
 $$
 \lambda_{\mathrm{reg}}=120(1-0.4)=72,
 $$
-
-
 
 $$
 \lambda_{\mathrm{pre}}=120\times 0.4=48.
 $$
 
-
 普通安检口至少需要
-
 
 $$
 n>\frac{72}{30}=2.4,
 $$
 
-
 故至少配置 $3$ 个；预检口至少需要
-
 
 $$
 m>\frac{48}{50}=0.96,
 $$
-
 
 故至少配置 $1$ 个。最终数量还应结合空间、成本、旅客构成和高峰波动确定。
 
@@ -2024,11 +1948,9 @@ $$
 
 漂移加惩罚算法通常根据队列偏差调整控制量。设目标队列长度为 $q^\ast$，实际队列长度为 $q_t$，则控制量通常包含：
 
-
 $$
 u_t=u_{\mathrm{base}}+K_p(q^\ast-q_t)+K_i\sum_{k=0}^{t}(q^\ast-q_k).
 $$
-
 
 较小的控制因子 $K_p,K_i$ 可减少控制动作的幅度，降低系统振荡，使调度变化更平稳，符合部分集体主义文化背景下对稳定、有序和组织协调的偏好。
 
@@ -2042,19 +1964,15 @@ $$
 
 若家庭旅客到达率为 $\lambda_f$，临时家庭安检口服务率为 $\mu_f$，设置 $k$ 个临时安检口应满足
 
-
 $$
 \lambda_f<k\mu_f.
 $$
 
-
 例如，若旺季家庭旅客到达率为 $40$ 人/分钟，每个临时安检口服务率为 $15$ 人/分钟，则至少需要
-
 
 $$
 k>\frac{40}{15}\approx2.67,
 $$
-
 
 即至少设置 $3$ 个临时安检口。
 

@@ -305,8 +305,6 @@ As seen in the theoretical application of Bayes’ Theorem, Bayesian Inference i
 
 An interesting facet of Bayesian Inference appears when implementing this method across a large area. When searching an area $A$, the probability of that area containing the plane is reduced by the correct factor and every probability outside of that area is renormalized. However, the same results are achieved when the probability change and renormalization occur for an incremental area $dA$ within the larger area $A$. In fact, an entire region of the distribution can be checked for a success one incremental area element at a time. This is very applicable when the process is implemented through a computer simulation where a distribution is mapped to a grid of discrete probabilities. A two-dimensional application of Bayesian Inference is shown below in Figure 6, where the middle section is “searched.”
 
-
-
 As the probability of finding the plane at any given point will continuously change with each successive search, the optimal location to search for the plane will change over the course of multiple days. Similarly, the probability of finding the plane on any given day will change. For instance, over the course of many days the probability distribution will be much more uniform as the locations of high probability have already been checked. Meanwhile, the locations of initially low probability have been increasing in relative probability due to the renormalization process. Because of this renormalization, a given day’s probability of success is defined as the product of all of the previous day’s probabilities of failure with the given day’s probability of a success. This probability for success on day N, $P(N)$, is described below in Equation 17.
 
 $$
@@ -431,8 +429,6 @@ $$
 
 使用此关系式和前面详述的相同优化过程，展示了五天内的最优螺旋搜索及累积成功率：
 
-
-
 该模型的优势在于其效率。然而，由于其空间效率低于平行扫掠正方形路径，它永远不会表现得优于平行扫掠。
 
 ## 3.6 八边形扇区搜索模型 (Octagonal Sector Search Model)
@@ -442,8 +438,6 @@ $$
 ![图 17：区域内的“扇区搜索”[12]。](figure:...)
 
 虽然轮廓几何不再是正方形，但我们仍然寻求 $z$ 和 $l$ 之间的关系，其中 $l$ 是正八边形的边长：
-
-
 
 在此，路径长度 $z$ 独立于网格大小 $W$ 的选择。在一次完整搜索中，飞机沿周长飞行一次，每条内部路径飞行两次，意味着中心被经过八次。$l$ 和 $z$ 之间的关系基于基本几何推导得出，如下所示：
 
@@ -459,16 +453,6 @@ $$
 在寻找最佳网格中心以进行搜索时，模型寻找最高的 3x3 双重求和概率，这在理论上代表了网格的最优中心。然而，由于某些搜索区域距离跑道较远，可用的搜索范围可能较少，这使得搜索效率降低。为了平衡整个搜索的可用范围与中心网格的最高概率总和，优化这两个量的乘积。这种方法最好也是初级的，因为它天真地假设这两个量的简单乘积确实模拟了搜索路径的实际效率。未来应实施更现实的优化模型。
 
 五天后的概率函数以及随时间推移的累积概率如下图所示：
-
-
-
----
-title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Into the Void: A Probabalistic Approach to the Search for Missing Aircraft（复习要点）
-kind: 复习要点
-course: 数学建模
-term: 2015
-source: 《2015年美国大学生数学建模竞赛（MCM）特等奖论文：Into the Void: A Probabalistic Approach to the Search for Missing Aircraft》第 8 部分（共 11 部分），由识别工具读出的内容（第 23–27 页）
----
 
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Into the Void: A Probabalistic Approach to the Search for Missing Aircraft（复习要点）
 

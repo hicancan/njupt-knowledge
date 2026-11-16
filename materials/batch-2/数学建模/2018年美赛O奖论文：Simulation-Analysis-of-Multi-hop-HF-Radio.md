@@ -51,13 +51,6 @@ Based on the three-dimensional wave model, we simulate the relief of the terrain
 
 In the actual navigation, the receiving point is motional. Thus, it cannot be regarded as a fixed point and to be calculated. So we modify the model to calculate the emission angle, frequency, power and so on as variables. Based on these, we obtain the maximum distance and the time to maintain the same multi-hop path before the SNR attenuates to 10 dB. We also conclude that the absorption loss will increase due to the periodic variation of the ionosphere. So the launch frequency needs to be adjusted at different times.
 
----
-title: Simulation Analysis of Multi-hop HF Radio
-kind: 课件
-course: 美赛O奖论文
-source: 2018年美赛O奖论文：Simulation Analysis of Multi-hop HF Radio（第 4–7 页）
----
-
 # Simulation Analysis of Multi-hop HF Radio
 
 本部分整理自《2018年美赛O奖论文：Simulation Analysis of Multi-hop HF Radio》第 4–7 页，包含目录、引言、假设、符号定义及海面传播模型的前半部分。
@@ -200,7 +193,6 @@ $$
 答案：B。
 参考解答：根据原文，自由空间传输损耗是由无线电波脱离天线后几何因素引起的能量损耗。公式为 $L _ {b f} = 3 2. 4 4 + 2 0 \lg f + 2 0 \lg r$，其中 $f$ 是工作频率（单位 MHz），$r$ 是高频无线电传播的有效路径（单位 km）。
 
-
 ### 选择 2
 
 **题干**：关于电离层反射的最大单跳距离 $D_{max}$，下列说法正确的是？
@@ -212,7 +204,6 @@ $$
 
 答案：B。
 参考解答：原文指出，地球曲率和电离层高度限制了电离层反射的单次最大跳跃距离 $D_{max}$。对于 $F_2$ 反射，最大传播距离 $D_{max}$ 为 4000km。计算涉及最小仰角 $\Delta_{min}$（通常大于 $3^{\circ}$）、地球半径 $R_e$（取 6371km）以及电离层反射虚高 $h$。
-
 
 ## 二、电离层吸收损耗 $L_{a}$
 
@@ -227,7 +218,6 @@ $$
 
 参考解答：
 原文指出，在 HF 无线电传播中，主要由 D 层引起的非偏移吸收损耗较大。虽然 E 层或 F 层存在偏移吸收，但其值极小可忽略。为了简化计算，团队将总的电离层吸收损耗设定为 4dB。
-
 
 ### 计算 1
 
@@ -251,7 +241,6 @@ $$
 - $R$：太阳黑子数
 - $\chi$：两个 100 km 高吸收点的天顶角
 
-
 ## 三、海面反射损耗 $L_{g}$
 
 ### 选择 3
@@ -266,7 +255,6 @@ $$
 答案：B。
 参考解答：原文公式 (10) 明确指出，当能量在水平和垂直偏振上均匀分布时，计算公式为 $L _ {g} = 1 0 \lg \left(\frac {R _ {V} ^ {2} + R _ {H} ^ {2}}{2}\right)$，其中 $R_H$ 和 $R_V$ 分别为水平和垂直偏振波的反射系数。
 
-
 ### 简答 2
 
 **题干**：比较水平偏振波和垂直偏振波在海面反射系数随入射角变化的特性差异。
@@ -278,7 +266,6 @@ $$
 
 参考解答：
 根据原文描述及图示分析，水平偏振波的反射系数随入射角增加单调递减；而垂直偏振波则呈现先快速下降后上升的趋势。对比表明，水平偏振波的反射系数对入射角的变化更加敏感。
-
 
 ### 计算 2
 
@@ -299,7 +286,6 @@ $$
   $$
   \widetilde {\varepsilon} = \varepsilon - \mathrm{j} 6 0 \lambda \sigma
   $$
-
 
 ## 四、湍流海洋波模型算法
 
@@ -335,7 +321,6 @@ $$
 
 参考解答：
 对于湍流海洋，首先通过波函数的导数确定局部切平面，利用斯涅尔定律推导反射路径。由于波浪的凹凸性，需引入系数 $\rho$ 来修正正向反射波的比例。进一步考虑到波浪遮挡导致的阴影效应（如图 7 所示），通过计算阴影面积 $s$ 占波表面积 $S$ 的比例，对 $\rho$ 进行二次修正，得到最终修正系数 $\rho'$。
-
 
 ### 4.3.3 Turbulent ocean reflection coefficient correction
 
@@ -463,7 +448,6 @@ source: 2018 MCM/ICM O Award Paper: Simulation Analysis of Multi-hop HF Radio, P
 
 当地面平坦时，我们取 $L_{g}$ 为 6.53dB，并得出 $n = 4$。与海表面相比，HF 无线电通过地面的传播距离远小于海表面。
 
-
 ## 二、湍流海洋上 HF 无线电传播的船舶运动分析
 
 ### 6.1 使用相同多跳路径的最大时间 ($t_{max}$)
@@ -502,7 +486,6 @@ t_{max} = \frac{r}{\nu}\tag{27}
 $$
 
 其中 $\nu$ 是船舶在海上的移动速度。在上表的情况下，每移动 3000km 必须改变多跳路径。在 100W 和 15MHz 的情况下，当传输距离超过 10000 km 时，必须增加信号功率和频率。
-
 
 ### 6.2 Suggestions on frequency selection of transmitter
 

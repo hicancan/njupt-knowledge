@@ -5,11 +5,6 @@ requires: [Web开发技术/php-syntax]
 
 # PHP的输出语句
 
----
-title: PHP的输出语句
-requires: [Web技术（双语）/PHP语言基础]
----
-
 当你用 PHP 处理完数据后，怎样把结果送回浏览器让用户看到？这就必须依赖输出语句。
 
 ## 它是什么与为什么需要

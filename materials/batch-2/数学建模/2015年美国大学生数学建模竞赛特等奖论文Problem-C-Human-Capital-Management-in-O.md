@@ -9,16 +9,6 @@ source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2015年美国大学生数学建模竞赛特等奖论文（Problem C: Human Capital Management in Organizations）
-kind: 习题
-course: 数学建模
-term: 2015
-source: <原件地址或来源路径>
----
-
-# 2015年美国大学生数学建模竞赛特等奖论文（Problem C: Human Capital Management in Organizations）
-
 本文档整理了2015年MCM/ICM Problem C的特等奖论文摘要及核心内容，由识别工具读取并整理。
 
 ## 一、问题背景与模型构建
@@ -115,17 +105,7 @@ source: <原件地址或来源路径>
 
 参考解答：最后，我们引入了团队科学的概念并关注信息流。我们将信息网络添加到人力资本网络中，形成了多层网络，这使得我们的分析更加全面和合理。
 
-
----
-title: 2015年美国大学生数学建模竞赛特等奖论文（Problem C: Human Capital Management in Organizations）习题
-kind: 习题
-course: 运筹学与管理科学
-source: <原件地址或来源路径>
----
-
 # 2015年美国大学生数学建模竞赛特等奖论文（Problem C: Human Capital Management in Organizations）习题
-
-本部分为2015年MCM/ICM Problem C特等奖论文的第2部分，包含引言、假设及其合理性说明。内容已根据识别结果整理，修正了明显的断行和格式错误，保留了原文的学术表述和逻辑结构。
 
 ## 一、引言
 
@@ -146,7 +126,6 @@ In section 5, we apply the model to solve three Tasks. The first one is to calcu
 In section 6, we analyze the parameters in our paper. There are two kinds of parameter: one is determined by data and another is determined by experiments. We describe how to choose the better parameters.
 
 In section 7, we introduce the concept of team science and focus on the information flow. We add the information network to our human capital network and it comes into being a multi-layers network, which can make our analysis more comprehensive and reasonable.
-
 
 ## 二、假设及其合理性说明
 
@@ -211,14 +190,6 @@ In section 7, we introduce the concept of team science and focus on the informat
 
 答案：无（模型构建中的基本假设）
 参考解答：定义组织效能最大化时的满编率为85%。理由包括：保留高层职位空缺以激励员工，以及避免冗余工作。这是基于实际管理经验的参数设定，用于后续优化目标的评估。
-
-
----
-title: 2015年美国大学生数学建模竞赛特等奖论文（Problem C: Human Capital Management in Organizations）习题
-kind: 习题
-course: 数学建模
-source: <原件地址或来源路径>
----
 
 # 2015年美国大学生数学建模竞赛特等奖论文（Problem C: Human Capital Management in Organizations）
 
@@ -459,7 +430,6 @@ $$
 $$
 t_{ij}=\text{从第 }i\text{ 层调到第 }j\text{ 层时忠诚度的变化系数}.
 $$
-
 
 3. **忠诚度更新规则**  
    若员工在 $t_0$ 时忠诚度为 $\alpha^{(t_0)}$，下一月从层级 $i$ 调至层级 $j$，则
@@ -747,7 +717,6 @@ $$
 t_{ij}=t_{ik}\cdot t_{kj}
 $$
 
-
 - **亲密度更新公式**  
   
 $$
@@ -760,7 +729,6 @@ $$
 $$
 \Delta l=|l_{p_i}-l_{p_j}|
 $$
-
 
 ---
 
@@ -878,7 +846,6 @@ $$
 \beta_{ij}=\beta_{ij}^{(0)}\cdot 
 \frac{\Delta l_{old}+1}{\Delta l_{new}+1}
 $$
-
 
 - 正确项：职级差扩大时分子小于分母，亲密度下降；职级差缩小时分子大于分母，亲密度上升；职级差不变时比例等于 1。
 - 其他项不对：
@@ -1039,12 +1006,10 @@ $$
 
 该产出模型可写为
 
-
 $$
 Y=\sum_{i=1}^{6}\lambda_i S_i n_i
 -\sum_{i=1}^{6}\sigma_i S_i\left|n_i-\widetilde n_i\right|.
 $$
-
 
 其中，$\lambda_i S_i n_i$ 衡量第 $i$ 类岗位在职人数带来的直接产出；$\sigma_i S_i|n_i-\widetilde n_i|$ 衡量该类岗位配置偏离最优水平造成的产出损失。因此：
 
@@ -1058,22 +1023,17 @@ $$
 
 第 $i$ 类岗位有 $S_i$ 个职位，每增加一名在职员工带来的产出为 $\lambda_i S_i$。因此该岗位的直接产出为
 
-
 $$
 Y_i^{\mathrm{direct}}=\lambda_i S_i n_i,
 $$
 
-
 六类岗位的总直接产出为
-
 
 $$
 Y^{\mathrm{direct}}=\sum_{i=1}^{6}\lambda_i S_i n_i.
 $$
 
-
 若某岗位实际在岗人数比最优值多或少，则人数偏离量分别为
-
 
 $$
 n_i-\widetilde n_i,
@@ -1081,23 +1041,18 @@ n_i-\widetilde n_i,
 \widetilde n_i-n_i.
 $$
 
-
 用绝对值统一表示为
-
 
 $$
 |n_i-\widetilde n_i|
 =\max\{n_i-\widetilde n_i,\widetilde n_i-n_i\}.
 $$
 
-
 由于 $S_i$ 随岗位规模增大，定义每名员工的失衡损失系数为 $\sigma_i S_i$，故该岗位的产出损失为
-
 
 $$
 Y_i^{\mathrm{loss}}=\sigma_i S_i|n_i-\widetilde n_i|.
 $$
-
 
 总产出即为直接产出减去全部结构失衡损失。
 
@@ -1105,23 +1060,18 @@ $$
 
 若目标是在岗人数固定为
 
-
 $$
 N=\sum_{i=1}^{6}n_i,
 $$
 
-
 则模型也可写成
-
 
 $$
 Y=\sum_{i=1}^{6}\lambda_i S_i n_i
 -\sum_{i=1}^{6}\sigma_i S_i|n_i-\widetilde n_i|.
 $$
 
-
 在各岗位人员需求上限等约束下，可以利用线性规划求解：
-
 
 $$
 \begin{aligned}
@@ -1134,23 +1084,18 @@ $$
 \end{aligned}
 $$
 
-
 绝对值项也可通过引入辅助变量 $u_i$ 线性化：
-
 
 $$
 u_i\ge n_i-\widetilde n_i,\qquad
 u_i\ge \widetilde n_i-n_i,\qquad u_i\ge0.
 $$
 
-
 于是
-
 
 $$
 |n_i-\widetilde n_i|=\min u_i,
 $$
-
 
 从而可将模型转化为线性规划问题。
 
@@ -1158,30 +1103,23 @@ $$
 
 若每个岗位都按 $85\%$ 的在岗率配置，则
 
-
 $$
 n_i=0.85S_i.
 $$
 
-
 若将这一配置视为各岗位的最优在岗人数，则
-
 
 $$
 \widetilde n_i=0.85S_i,
 $$
 
-
 从而
-
 
 $$
 |n_i-\widetilde n_i|=0.
 $$
 
-
 此时
-
 
 $$
 Y_{\max}
@@ -1189,11 +1127,9 @@ Y_{\max}
 =0.85\sum_{i=1}^{6}\lambda_i S_i^2,
 $$
 
-
 且结构失衡损失为零。
 
 若某岗位偏离 $85\%$ 在岗率，设其实际在岗人数为 $n_i$，则相对于该基准配置的产出变化为
-
 
 $$
 \Delta Y_i
@@ -1202,9 +1138,7 @@ $$
 -\sigma_i S_i|n_i-0.85S_i|.
 $$
 
-
 例如，若 $n_i>0.85S_i$，则
-
 
 $$
 \Delta Y_i
@@ -1215,20 +1149,17 @@ $$
 S_i(\lambda_i-\sigma_i)(n_i-0.85S_i).
 $$
 
-
 若 $\lambda_i>\sigma_i$，超过基准配置仍可能增加总产出；若 $\lambda_i<\sigma_i$，则超过基准配置会降低总产出。这说明 $85\%$ 应结合各岗位的产出系数与失衡损失系数确定，而不能机械地适用于所有岗位。
 
 ### 4. 模型解释
 
 第一项是人力资本网络内部人员增加产生的直接效应；第二项是岗位配置失衡产生的间接效应。该模型具有以下特点：
 
-
 $$
 \frac{\partial Y}{\partial n_i}
 =
 \lambda_i S_i-\sigma_i S_i\operatorname{sgn}(n_i-\widetilde n_i),
 $$
-
 
 其中 $\operatorname{sgn}(0)=0$。
 
@@ -1319,20 +1250,15 @@ $$
 参考解答：**结论**：该模型在“无产出数据”的约束下，以最小化总成本为目标，把成本分解为组织结构偏差成本与人力资本流动成本，并通过遗传算法搜索最优职级配置。  
 **关键结论式**：
 
-
 $$
 \min C=\min\left(C_1+C_2\right)
 $$
 
-
 其中
-
 
 $$
 C_1=\sum_{i=1}^{6}\sigma_i S_i \left|n_i-\tilde n_i\right|
 $$
-
-
 
 $$
 C_2=
@@ -1340,7 +1266,6 @@ C_2=
 \sum_{i=1}^{6}r_i n_i^{\text{new}}+
 \sum_{i=1}^{6}k_i n_i^{\text{old}}
 $$
-
 
 优化变量为各职级的员工数量配置 $n_i$，即通过选择 $n_1,\dots,n_6$ 使总成本最小。
 
@@ -1352,11 +1277,9 @@ $$
 
 组织结构成本 $C_1$ 表示实际人数 $n_i$ 与理想人数 $\tilde n_i$ 偏离带来的损失。偏离越大，管理效率越低，成本越高，因此用绝对值线性加权：
 
-
 $$
 C_1=\sum_{i=1}^{6}\sigma_i S_i |n_i-\tilde n_i|
 $$
-
 
 其中：
 - $\sigma_i$：第 $i$ 级职位结构失衡的单位成本系数；
@@ -1370,14 +1293,11 @@ $$
 
 并且有
 
-
 $$
 n_i=n_i^{\text{new}}+n_i^{\text{old}}
 $$
 
-
 所以 $C_2$ 也可写为
-
 
 $$
 C_2=
@@ -1386,9 +1306,7 @@ C_2=
 \sum_{i=1}^{6} k_i (n_i-n_i^{\text{new}})
 $$
 
-
 即
-
 
 $$
 C_2=
@@ -1396,9 +1314,7 @@ C_2=
 \sum_{i=1}^{6} (r_i-k_i)n_i^{\text{new}}
 $$
 
-
 因此总成本为
-
 
 $$
 C=
@@ -1409,11 +1325,9 @@ C=
 \sum_{i=1}^{6} (r_i-k_i)n_i^{\text{new}}
 $$
 
-
 **2. 优化变量与约束**
 
 由于 $n_i^{\text{new}}\ge 0$，且 $n_i\ge n_i^{\text{new}}$，并受到总人数、部门编制、职位空缺等限制，完整优化问题为：
-
 
 $$
 \begin{aligned}
@@ -1425,7 +1339,6 @@ $$
 \end{aligned}
 $$
 
-
 其中 $l_i,u_i$ 为第 $i$ 级职位人数的下界和上界。
 
 **3. 遗传算法设计**
@@ -1433,11 +1346,9 @@ $$
 - **基因表示**：每个个体用一个整数字符串 $(n_1,n_2,\dots,n_6,n_1^{\text{new}},\dots,n_6^{\text{new}})$ 表示，或者仅用职级人数 $n_i$ 表示，$n_i^{\text{new}}$ 由聘用策略解码得到。
 - **适应度函数**：取总成本的倒数或负数，例如
 
-
 $$
 f=\frac{1}{C+\varepsilon}
 $$
-
 
 以保证成本越低适应度越高。
 
@@ -1806,7 +1717,6 @@ $$
 $$
 n_i \cdot i \cdot T
 $$
-
 
 3. **总体间接成本**  
    所有级别总间接成本为：

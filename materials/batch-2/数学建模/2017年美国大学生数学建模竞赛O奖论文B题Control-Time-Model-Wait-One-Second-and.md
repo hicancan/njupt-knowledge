@@ -136,8 +136,6 @@ In this section, we first introduce and analyze the existing model, and then two
 
 # 2017年美国大学生数学建模竞赛O奖论文（B题）Control Time Model: Wait One Second and Start Your Journey
 
-本文档整理自《2017年美国大学生数学建模竞赛O奖论文（B题）Control Time Model: Wait One Second and Start Your Journey》第3部分（共9部分），由识别工具读取的第6–7页内容。
-
 ## 一、现有模型分析
 
 ### 现有模型的分类与评估
@@ -222,8 +220,6 @@ t _ { 0 } = 1 \text{s} > t _ { r e s } = 0 . 8 \text{s} \quad (\text{Lee et al, 
 $$
 
 # 2017年美国大学生数学建模竞赛O奖论文（B题）Control Time Model: Wait One Second and Start Your Journey
-
-本资料整理自《2017年美国大学生数学建模竞赛O奖论文（B题）Control Time Model: Wait One Second and Start Your Journey》教材第4部分至第5部分（识别工具读出的第8–10页内容），主要涉及通行效率计算、广场尺寸优化、等待区域模型（WAM）及吞吐量分析。
 
 ## 四、模型分析与优化
 

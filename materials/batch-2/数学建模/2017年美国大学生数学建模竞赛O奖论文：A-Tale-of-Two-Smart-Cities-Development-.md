@@ -10,16 +10,6 @@ source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities (Part 1)
-kind: 课件
-course: 数学建模
-term: 2017-O
-source: MCM/ICM 2017 Official O Award Paper
----
-
-# A Tale of Two Smart Cities: Development of a Smart Growth Index
-
 本文基于 2017 年美国大学生数学建模竞赛（MCM）O 奖论文整理。内容涵盖摘要、引言及智能增长原则，旨在构建一个基于可持续性原则的城市智能增长指数（Smart Growth Index, SGI）。
 
 ## 摘要
@@ -74,8 +64,6 @@ source: MCM/ICM 2017 Official O Award Paper
 本模型的目标是设计一个易于使用的指数，能够根据智能增长的创立原则和易于获取的数据对城市的智能增长进行评分。对于本报告，分析了来自不同大陆的两个城市：美国加利福尼亚州萨克拉门托市和英国苏格兰爱丁堡市。该模型旨在作为发达城市之间的比较工具。模型的结果应是定量测量；然而，其主要目的应作为定性指南，以识别社区可以在哪些方面改进可持续性。因此，该模型将作为衡量政策变化和其他政府实施效果的指标。这一目标将通过校准所创建的模型到两个试图以智能方式增长的中大城市来实现。
 
 # 2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities: Development of a Smart Growth Index
-
-教材第2部分（共9部分），由识别工具读出的第3–4页内容整理。
 
 ## 2.0 Methodology
 
@@ -300,12 +288,9 @@ Sacramento scored well in the SGI for a US city, however obvious shortfalls can 
 
 将新的智慧增长倡议应用于两个城市后，估算了新的模型输入（见表 4.1）。每个输入变化的简要理由已包含在内。
 
-
 *表 4.1：新智慧增长计划下的模型输入估算及理由说明*
 
 # A Tale of Two Smart Cities: Development of a Smart Growth Index
-
-整理自《2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities: Development of a Smart Growth Index》第 7 部分（共 9 部分），识别工具读出的内容（第 13–15 页）。
 
 ## 一、模型输入与结果分析
 
@@ -331,7 +316,6 @@ Sacramento scored well in the SGI for a US city, however obvious shortfalls can 
 | Public Transportation Use | 4.0% | 14.0% | 27.2% | 37.2% | Increase by 10% for both cities due to focus on public transportation outreach and improvements. Sacramento cannot expect similar levels of usage due to cultural differences |
 | Walking Population | 3.2% | 18.2% | 16.2% | 31.2% | Increased by 15% for both cities due to mix land use options allowing for convenience for walking |
 
-
 根据上述新输入，模型结果显示两个城市的分数均有显著增加（图 4.1）。萨克拉门托的新总分为 55.5，爱丁堡为 66.5，满分均为 100 分。
 
 ## 二、倡议排名
@@ -346,7 +330,6 @@ Sacramento scored well in the SGI for a US city, however obvious shortfalls can 
 4. **Smart Land Use**: 由于空间有限，难以获得更多公园用地。人口密度容易受到过度拥挤的影响，可以通过适当的发展来缓解。
 5. **Smart Development**: 在未来增长计划中受影响最小。专注于可再生能源组合，并通过智慧城市发展减少贫困。
 
-
 ### 选择 2 爱丁堡的倡议排名
 
 1. **Smart Land Use**: 土地利用具有最大的变化潜力，但由于可用于公园的土地空间减少，实现起来可能很困难。得分严重依赖城市密度。
@@ -354,7 +337,6 @@ Sacramento scored well in the SGI for a US city, however obvious shortfalls can 
 3. **Smart Transportation**: 公共交通运输系统完善，通过延长运营时间和增加城市路线来提高使用率。混合用途土地开发将增加步行社区。
 4. **Smart Community**: 无法将城市预算提高到一定阈值以上。犯罪率与人口相关且具有不确定性。
 5. **Smart Development**: 增长潜力最小。改善可再生能源组合。
-
 
 ### 选择 3 两城对比分析
 
@@ -366,10 +348,7 @@ Sacramento scored well in the SGI for a US city, however obvious shortfalls can 
 
 最后，这些倡议排名不应该是静态的。随着城市的发展，新的需求出现并占据优先地位。因此，社区必须不断沟通并保持灵活。
 
-
 # 2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities: Development of a Smart Growth Index
-
-本节整理自《2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities: Development of a Smart Growth Index》第 8 部分（共 9 部分），由识别工具读出的内容（第 16–17 页）。原文为英文，此处保留原文结构并修正明显的排版错误。
 
 ## 一、模型讨论与展望
 

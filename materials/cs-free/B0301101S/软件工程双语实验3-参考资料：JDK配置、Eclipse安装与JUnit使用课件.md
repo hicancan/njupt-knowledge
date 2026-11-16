@@ -29,8 +29,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 ![图 1](软件工程双语实验3-参考资料：JDK配置、Eclipse安装与JUnit使用课件.assets/图1.jpg)
 
-
-
 安装到：
 
 C:\Program Files\Java\jre6
@@ -74,8 +72,6 @@ Java 安装 - 目标文件夹：
 ![图 4](软件工程双语实验3-参考资料：JDK配置、Eclipse安装与JUnit使用课件.assets/图3.jpg)
 
 #### 下面是我配置好的
-
-
 
 编辑系统变量：
 

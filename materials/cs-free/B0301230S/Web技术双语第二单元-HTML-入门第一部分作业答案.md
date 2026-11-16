@@ -10,18 +10,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: Web技术（双语）第二单元 HTML 入门（第一部分）作业答案
-kind: 答案
-course: Web技术（双语）
-term: 2018-2019-2
-source: 识别工具读取的《Web技术（双语）》第二单元 HTML 入门（第一部分）作业答案（第 1–4 页）
----
-
-# Web技术（双语）第二单元 HTML 入门（第一部分）作业答案
-
-本资料由识别工具读取的作业答案内容整理而成，包含专业词汇翻译、HTML元素分析、代码编写及复习问答。
-
 ## 一、专业词汇翻译
 
 ### 选择 1
@@ -53,7 +41,6 @@ source: 识别工具读取的《Web技术（双语）》第二单元 HTML 入门
 - subscript：下标
 - superscript：上标
 
-
 ## 二、HTML元素与内容分析
 
 知识点：[基本文本标记（段落、换行、标题、块引用、水平线、字符实体、上下标）](../../../topics/Web开发技术/text-markup.md)、[HTML文档结构（head、body、meta元素）](../../../topics/Web开发技术/html-doc-structure.md)、[XHTML基本语法规则与大小写敏感性](../../../topics/Web开发技术/xhtml-syntax.md)
@@ -73,7 +60,6 @@ source: 识别工具读取的《Web技术（双语）》第二单元 HTML 入门
 
 答案：待补充（需依据原图代码）
 
-
 ## 三、HTML代码编写
 
 知识点：[HTML文档结构（head、body、meta元素）](../../../topics/Web开发技术/html-doc-structure.md)、[基本文本标记（段落、换行、标题、块引用、水平线、字符实体、上下标）](../../../topics/Web开发技术/text-markup.md)、[图像（img）与超文本链接（a标签、文档内部目标）](../../../topics/Web开发技术/images-links.md)
@@ -85,7 +71,6 @@ source: 识别工具读取的《Web技术（双语）》第二单元 HTML 入门
 ![图 3](Web技术（双语）.assets/figure_6a756fa0dc95af8f340de994e9fd3e53695e7143fc7c561f31f5f391ed6f283d.jpg)
 
 答案：待补充（需依据原图视觉内容编写HTML代码）
-
 
 ## 四、复习问答
 

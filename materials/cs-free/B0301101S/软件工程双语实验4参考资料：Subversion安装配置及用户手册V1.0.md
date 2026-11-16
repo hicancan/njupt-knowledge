@@ -66,8 +66,6 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 
 3）选中“同意”，点击“next”按钮，进入下一步
 
-
-
 4）点击“next”按钮，进入下一步
 
 ![TortoiseSVN 安装选项界面](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图9.jpg)
@@ -243,8 +241,6 @@ Developer=developer1,developer2
 ```
 
 如上设置，表示所有 developer 组的成员对于“版本库 A”下边的所有文件都有读写的权限。
-
-
 
 1. Subversion 不支持微软格式的 UTF-8 文件，不支持 unicode，仅支持标准 UTF-8，就是头部有一个 FF FE 的文件。
 2. 用微软自带的“记事本”编辑出来的任何 unicode 格式文件，Subversion 均不认识。
@@ -482,8 +478,6 @@ TortoiseSVN 是最常用的 Subversion 客户端软件，它有效地集成在�
 
 ![已添加成功的提示窗口](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图27.jpg)
 
-
-
 ### 1）下图为对应的 TortoiseSVN 的图标概念
 
 ![TortoiseSVN 图标概念（1）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图28.jpg)
@@ -491,10 +485,6 @@ TortoiseSVN 是最常用的 Subversion 客户端软件，它有效地集成在�
 ![TortoiseSVN 图标概念（2）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图29.jpg)
 
 ![TortoiseSVN 图标概念（3）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图30.jpg)
-
-
-
-
 
 ![TortoiseSVN 图标概念（6）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图31.jpg)
 
@@ -517,8 +507,6 @@ TortoiseSVN 是最常用的 Subversion 客户端软件，它有效地集成在�
 ![TortoiseSVN 图标概念（15）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图40.jpg)
 
 ![TortoiseSVN 图标概念（16）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图41.jpg)
-
-
 
 ![TortoiseSVN 图标概念（18）](软件工程双语实验4参考资料：Subversion安装配置及用户手册V1.0.assets/图42.jpg)
 

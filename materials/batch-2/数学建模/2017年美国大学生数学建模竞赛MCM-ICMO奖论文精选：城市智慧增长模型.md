@@ -9,15 +9,6 @@ source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型（习题）第 1 部分
-kind: 习题
-course: 数学建模
-source: 《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选》
----
-
-# 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型（习题）第 1 部分
-
 本资料整理自《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选》，提取了参赛队伍编号为 67171 的 O 奖论文的摘要、目录及开头部分，用于展示城市智慧增长模型的构建思路与论文结构。
 
 ## 一、摘要部分
@@ -31,7 +22,6 @@ We developed a three dimensional baseline cube model to measure the success of s
 In order to develop a smart growth plan, we need to optimize the angle and length of a city vector. Therefore, we integrate angle and length into an Smart Growth Index(SGI) with an added parameter $\mu$ illustrating how policymakers weigh importance between these two elements. Based on our assumptions, our task is to find an optimal allocation of total budget. Our total budget comprises seven components: transport service, social service, environmental service, education service, health service, development service and other service. So we updated the baseline cube model to modified cube model to evaluate the effects of these components on EPI, SJI and EDI with parameters. We estimated these parameters using data of this city collected in past few years, with which we are able to find an optimal allocation of budget given a total budget. What's more, we can rank the individual initiatives as the most potential to the least potential by sorting the components of the optimal budget. By incorporating known numerical values about budget and EPI, SJI, EDI in Wellington and Edinburgh into our model, we shed light on the most influential factors in budget and developed a smart growth plan to significantly improve states of these two cities. Based on our plan, we made a 30-year forecast for them. Also, with an additional 50% population increase, we adjusted our growth plan. Utilizing sensitivity analysis and F test, our model is testified to be reliable.
 
 答案：无（此为论文摘要原文，非试题问答）。
-
 
 ## 二、目录部分
 
@@ -82,7 +72,6 @@ In order to develop a smart growth plan, we need to optimize the angle and lengt
 - IX. References.... 21
 
 答案：无。
-
 
 ## I. Introduction
 
@@ -488,8 +477,6 @@ $$
 
 # 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型
 
-本节内容整理自《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型》习题第 5 部分（共 9 部分），识别工具读出的内容为第 10–11 页。主要包含对 EDI、SJI、EPI 指标的评价标准，以及基于预算限制的改进立方体模型及其求解方法。
-
 ## 一、评价指标与结果分析
 
 ### 选择 1
@@ -688,16 +675,7 @@ $$
 **知识点：**
 最小二乘法
 
----
-title: 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型（习题）
-kind: 习题
-course: 数学建模
-source: 《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型》第 6 部分（共 9 部分），识别工具读出内容（第 12–13 页）
----
-
 # 2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型（习题）
-
-本资料整理自《2017年美国大学生数学建模竞赛（MCM/ICM）O奖论文精选：城市智慧增长模型》第 6 部分，基于识别工具读出的原始文本进行格式化整理。内容涉及预算分配优化模型推导、未来状态预测及爱丁堡与惠灵顿的案例研究。
 
 ## 一、模型推导与算法设计
 

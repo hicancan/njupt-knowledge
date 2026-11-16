@@ -9,15 +9,6 @@ source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛�
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out
-kind: 习题
-course: 数学建模
-source: 2015 MCM Problem B
----
-
-# 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out
-
 本文整理了2015年MCM特等奖论文《Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out》的第1部分（共14部分，此处为第1-5页内容），包括摘要、目录及引言部分。原文针对马航MH370失踪事件，探讨如何优化海上飞机失事后的搜索策略。
 
 ## 一、摘要与背景
@@ -49,7 +40,6 @@ source: 2015 MCM Problem B
    - **非理想精度模拟**：引入贝叶斯搜索理论（Bayesian Search Theory），处理探测概率的不确定性。最终推荐方案采用贝叶斯定理，平均搜索时间为4.7小时，且95%的坠机事故可在一天内定位。
 4. **灵活性验证**：证明解决方案可轻松复用于不同数量的搜救飞机或不同大小的失事飞机。
 
-
 ## 二、目录结构分析
 
 知识点：[非技术性文稿撰写（如致世界医学会的信函、新闻发布会声明）](../../../topics/数学建模/fei_jishu_wengao.md)、[平行搜索与条纹飞行路径（Descending/Spiral Stripe Flight Path）](../../../topics/数学建模/pingxing_sousuo.md)、[后验概率更新与搜索路径规划](../../../topics/数学建模/houyan_gailv.md)
@@ -73,7 +63,6 @@ source: 2015 MCM Problem B
 8. **Conclusion (结论)**：建议、优缺点分析。
 9. **Press Conference Document (新闻发布会文件)**：面向公众的简化说明。
 10. **References (参考文献)**。
-
 
 ## 三、引言详细内容
 
@@ -110,7 +99,6 @@ source: 2015 MCM Problem B
 11. 增加模型复杂性，考虑非理想传感器精度对搜索时间的影响，并在每次扫描后重新分配概率。
 12. 使用不同输入模拟正常模型，检验最佳解决方案在搜索不同种类失事飞机时的有效性和灵活性。
 13. 基于模拟结果分析数据，为在开阔水域寻找失事飞机提出有用的程序建议。
-
 
 ## 2 Research
 
@@ -201,14 +189,11 @@ MH370 案例说明：搜索区域应由**最后已知信息、飞机续航能力
 
 设飞机失去联系时的位置为 $P_0$，失去联系后的最大剩余飞行时间为 $T$，平均地速为 $v$。忽略风向等因素时，飞机最远可飞行距离为
 
-
 $$
 R=vT.
 $$
 
-
 其中，$T$ 可由机上剩余燃油量 $F$ 和平均燃油消耗率 $q$ 估算：
-
 
 $$
 T=\frac{F}{q},
@@ -216,14 +201,11 @@ T=\frac{F}{q},
 R=\frac{vF}{q}.
 $$
 
-
 因此，若没有其他信息，飞机可能位于以 $P_0$ 为圆心、$R$ 为半径的圆形区域内：
-
 
 $$
 \Omega_0=\left\{(x,y):(x-x_0)^2+(y-y_0)^2\le R^2\right\}.
 $$
-
 
 实际计算时，还应考虑风向、飞行高度、速度变化及飞机可能改变航向等因素，所以 $R$ 只是理论搜索半径的近似值。
 
@@ -233,11 +215,9 @@ $$
 
 因此，搜索区域可表示为
 
-
 $$
 \Omega=\Omega_0\cap \Omega_s,
 $$
-
 
 其中 $\Omega_s$ 表示由卫星信号、航迹分析等信息确定的可能区域。若有多种独立信息，还可继续加入相应约束，从而进一步缩小 $\Omega$。
 
@@ -245,11 +225,9 @@ $$
 
 根据 MH370 搜索区域的形状，可将其简化为长为 $L$、宽为 $W$ 的矩形：
 
-
 $$
 \Omega=\{(x,y):0\le x\le L,\ -W/2\le y\le W/2\}.
 $$
-
 
 其中：
 
@@ -260,18 +238,15 @@ $$
 
 矩形面积为
 
-
 $$
 A=LW.
 $$
-
 
 这一近似便于划分搜索单元、安排搜索路线和计算搜索覆盖率。
 
 ## 4. 建立位置概率分布
 
 飞机落入各位置的可能性并不相同。通常，飞机沿预计航线飞行的可能性较大，偏离航线越远，可能性越小。因此可设横向位置服从截断正态分布：
-
 
 $$
 f(y)=
@@ -281,14 +256,11 @@ f(y)=
 \qquad -\frac W2\le y\le \frac W2.
 $$
 
-
 若暂时没有证据表明飞机更可能处于航线的某一纵向区段，可令 $x$ 在 $[0,L]$ 上均匀分布，则联合概率密度为
-
 
 $$
 p(x,y)=\frac{f(y)}{L}.
 $$
-
 
 这样，中间航线附近属于高概率区域，矩形两侧属于低概率区域。搜索时应先覆盖高概率区域，再逐步向两侧扩展。
 
@@ -296,11 +268,9 @@ $$
 
 MH370 案例提供的关键建模思想是：
 
-
 $$
 \boxed{\text{最大航程确定外边界，附加信号缩小范围，概率分布确定搜索优先级。}}
 $$
-
 
 矩形只是对真实不规则搜索区域的简化；概率模型则避免把整个矩形视为等可能区域，从而为后续搜索路径规划和资源配置提供依据。
 
@@ -374,11 +344,9 @@ Boeing 777-200（大型宽体客机）与 Gulfstream G450（大型公务机）�
 
 给出主观先验：
 
-
 $$
 P(A)=0.35,\quad P(B)=0.50,\quad P(C)=0.15
 $$
-
 
 理由：跨大西洋阶段突然爆炸概率低于可控坠海，而成功长时间滑翔再入海概率最小。
 
@@ -396,11 +364,9 @@ $$
 因此“消失点”通常不是最后目视位置，而是最后一次成功通信位置。  
 若存在多段握手时延，则可建立圆环定位：
 
-
 $$
 d_i = c(t_i - t_0)
 $$
-
 
 其中 $d_i$ 为第 $i$ 次信号对应的传播距离。
 
@@ -418,19 +384,15 @@ $$
 
 则累计发现概率为：
 
-
 $$
 P(t)=\sum_i p_i q_i(t)
 $$
 
-
 若单元搜索服从指数检测模型：
-
 
 $$
 q_i(t)=1-\exp\left(-\frac{W_i}{A_i}t\right)
 $$
-
 
 其中：
 
@@ -447,29 +409,23 @@ $$
 
 在深度 $h$ 处，横向覆盖宽度可近似为：
 
-
 $$
 W_{\text{sonar}} = k h
 $$
-
 
 其中 $k$ 为与频率、波束和信噪比有关的系数。
 
 若海底平坦，单侧覆盖宽度为：
 
-
 $$
 L = h\tan\theta
 $$
 
-
 $\theta$ 为有效波束半角。两侧覆盖宽度为：
-
 
 $$
 W = 2L = 2h\tan\theta
 $$
-
 
 海底地形越粗糙，传感器有效宽度越小。
 
@@ -494,11 +450,9 @@ Boeing 777 和 Gulfstream 跨大西洋航段可能坠入水深大于 $3000\ \tex
 侧扫声呐覆盖能力不够大时，发现概率主要受水深和声呐离底高度限制。  
 若声呐拖体维持在距海底 $H$ 高度，有效覆盖宽度近似为：
 
-
 $$
 W = 2H\tan\theta
 $$
-
 
 在深海搜索中，单次扫过的面积有限，因此应优先搜索先验概率高、水深较小且海底较平坦的区域。
 
@@ -586,7 +540,6 @@ $$
     *   被劫持飞机的搜索区域可能极其广阔，因为必须假设飞机仍处于完全操作状态。
     *   如果通讯中断且劫机者控制了飞机，将无法创建可靠的搜索区域。
 
-
 ## 二、海洋空域通信机制
 
 参考解答：**结论：** 模型不纳入由空中交通管制错误和劫机造成的坠机，是因为前者不属于模型设定的飞行阶段，后者会使目标运动状态和通信条件高度不确定，无法构造可靠的搜索区域。
@@ -644,7 +597,6 @@ $$
     *   根据美国联邦航空管理局 (FAA) 的海洋紧急程序规定，通讯中断达到或超过 **30 分钟** 即构成升级的紧急状态。
     *   本模型遵循 FAA 指南：若半小时后未收到信号，则推断飞机在此期间开始坠毁并丧失了通讯能力。
 
-
 ## 三、海洋搜索理论历史与核心概念
 
 参考解答：1. **通信方式**：
@@ -680,7 +632,6 @@ $$
     *   最佳的搜索技术显然应从总概率最高的地方开始，然后继续搜索概率逐渐降低的区域。
     *   我们的模型需要涵盖不同的飞机 containment 概率分布，以发现最准确的分布模型。
     *   $P(D)$ 取决于我们选择的传感器类型。
-
 
 ## 四、搜索飞机与传感器特性
 
@@ -744,7 +695,6 @@ $$ P = P(C) \times P(D) $$
 2.  **传感器策略**：
     *   通常流程：一旦雷达搜索发现疑似残骸，更集中的红外扫描将覆盖周围区域，以探测下沉飞机的余热特征。
     *   **模型假设**：为了简化第一个模型，我们专注于雷达搜索，并假设它是一个理想传感器，具有 **100% 的有效检测概率** 且 **无测距不确定性**。
-
 
 ## 3 Foundation of Analysis
 
@@ -847,7 +797,6 @@ Search Variables：
 $$
 S_{area} = 2 (\kappa \alpha) (v\tau) + \pi (\kappa \alpha)^2
 $$
-
 
 **选择题说明**
 
@@ -1249,17 +1198,7 @@ $$
 *   波音 777 的搜索区域被简化为一个长 520 英里、宽 200 英里的矩形。
     *   我们将此区域设置在坐标系中，其中飞行路径为 x 轴 ($y=0$)，点 A 为原点 $(0, 0)$。
 
----
-title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
-kind: 习题
-course: 数学建模
-term: 2015
-source: 《2015年美国大学生数学建模竞赛（MCM）特等奖论文》第 6 部分（共 14 部分），第 21–25 页
----
-
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
-
-本部分为2015年MCM特等奖论文的第6部分，主要涉及搜索策略的模型假设、正态分布模型的描述、完成搜索的定义、统计分析方法以及完全随机飞行路径方案的评估。内容已整理自识别工具读出的文本，修正了明显的断行和格式错误。
 
 ## 一、模型假设与定义
 
@@ -1382,7 +1321,6 @@ $$
 A_0=520\times200=104000\ \text{mile}^2.
 $$
 
-
 设飞行路径为 $x$ 轴，即 $y=0$。将残骸位置的标准化坐标记为
 
 $$
@@ -1430,7 +1368,6 @@ $$
 $$
 \boxed{T\approx\frac{A_{\mathrm{cov}}}{400w}}.
 $$
-
 
 若雷达在飞机左右各 $10$ mile 内均有效，则
 
@@ -1547,7 +1484,6 @@ $$
 
 ### 6. 可直接用于后续模型的核心公式
 
-
 $$
 \boxed{
 \begin{aligned}
@@ -1563,7 +1499,6 @@ $$
 &\text{优先搜索单位覆盖时间发现概率 }p_i/\tau_i\text{ 最大的区域}.
 \end{aligned}}
 $$
-
 
 其中，若采用左右各 $10$ mile 的雷达解释，则 $w=20$ mile，完整覆盖搜索区的理想时间为 $13$ 小时。
 
@@ -1849,11 +1784,9 @@ This solution is crucial, because it establishes a baseline with which to compar
 
 本段最重要的信息是 **95% 置信区间**：在 100 次模拟中，平均搜索时间的 95% 置信区间为
 
-
 $$
 [33.2,\ 52.2]\ \text{小时}.
 $$
-
 
 平均搜索时间为 $42.7$ 小时，而中位数仅为 $24.4$ 小时，二者差异明显，说明搜索时间分布具有显著的**右偏（正偏）**特征。直方图中少数特别长的搜索时间拉高了整体均值。
 
@@ -1863,54 +1796,42 @@ $$
 
 设 100 次模拟的搜索时间为 $T_1,T_2,\ldots,T_{100}$，样本均值和样本标准差分别为
 
-
 $$
 \bar T=\frac1{100}\sum_{i=1}^{100}T_i=42.7,
 \qquad
 S=\sqrt{\frac1{99}\sum_{i=1}^{100}(T_i-\bar T)^2}.
 $$
 
-
 由于样本量 $n=100$ 较大，可用正态近似构造均值的 95% 置信区间：
-
 
 $$
 \bar T\pm z_{0.975}\frac{S}{\sqrt n}
 =42.7\pm1.96\frac{S}{10}.
 $$
 
-
 由区间 $[33.2,52.2]$ 可知，其半径约为
-
 
 $$
 \frac{52.2-33.2}{2}=9.5,
 $$
 
-
 从而反推出样本标准差约为
-
 
 $$
 S\approx\frac{9.5\times10}{1.96}\approx48.5\ \text{小时}.
 $$
 
-
 标准差大于均值，且均值明显大于中位数：
-
 
 $$
 \bar T=42.7>24.4=\text{中位数},
 $$
 
-
 进一步说明数据离散程度大，并存在少数很大的搜索时间。因此，报告结果时不应只关注平均时间，还应同时考察中位数、置信区间以及长时间搜索的尾部情况。后续模型可与此基准比较，理想情况下应满足
-
 
 $$
 \bar T_{\text{改进}}<42.7\ \text{小时},
 $$
-
 
 同时缩短置信区间并减弱分布的右偏程度。
 
@@ -2608,14 +2529,6 @@ $$
 
 Based on the results from this and the previous 5 solutions, we can conclude that the spiral striped solution offers the lowest search times of those tested.
 
----
-title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out
-kind: 习题
-course: 数学建模
-term: 
-source: 《Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out》第 10 部分（共 14 部分），第 41–44 页
----
-
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out
 
 本节内容源自特等奖论文第 10 部分，主要探讨在发现存在不确定性（即探测概率非 100%）的情况下，如何利用贝叶斯搜索理论调整飞机位置的概率分布及搜索路径。
@@ -2864,8 +2777,6 @@ $$
 
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
 
-本资料由识别工具从第45–52页提取并整理，修正了明显的断行与排版错误，保留了原文数据与结论。
-
 ## 五、贝叶斯搜索策略模拟结果
 
 参考解答：由于你未给出《数学建模》第 5.1.5 节“工作原理”对应的具体题目内容，无法给出针对性的结论、推理与计算过程或选择题分析。
@@ -2916,11 +2827,9 @@ $$ y = 0, 20, -20, 40, -40, 60, -60, 0, 20, -20, 40, -40, 80, -80, 60, -60, 0, 2
 
 所以找到比例：
 
-
 $$
 \frac{475}{500}=0.95
 $$
-
 
 即成功率为 95%。
 
@@ -2930,11 +2839,9 @@ $$
 
 题中已给出：
 
-
 $$
 \text{Median}=4.05,\qquad \text{Mean}=6.21463
 $$
-
 
 均值明显大于中位数，说明搜索时间分布右偏，即大部分搜索较快完成，但少数情况下需要很长时间。
 
@@ -2944,14 +2851,11 @@ $$
 
 标准差：
 
-
 $$
 s=5.37383
 $$
 
-
 样本量 $n=475$，因此均值的标准误为：
-
 
 $$
 SE=\frac{s}{\sqrt n}
@@ -2959,7 +2863,6 @@ SE=\frac{s}{\sqrt n}
 \approx \frac{5.37383}{21.7945}
 \approx 0.246568
 $$
-
 
 与表中数值一致。
 
@@ -2969,39 +2872,29 @@ $$
 
 使用正态近似：
 
-
 $$
 \bar x \pm 1.96SE
 $$
 
-
 代入：
-
 
 $$
 6.21463 \pm 1.96(0.246568)
 $$
 
-
-
 $$
 1.96(0.246568)\approx 0.483273
 $$
 
-
 所以：
-
 
 $$
 [6.21463-0.483273,\;6.21463+0.483273]
 $$
 
-
-
 $$
 \approx [5.73136,\;6.69790]
 $$
-
 
 与表中给出的 $[5.57215,6.70777]$ 略有差异，可能因为使用了 $t$ 分布而非正态分布，或者对未找到飞机的截尾处理方式不同。
 
@@ -3379,13 +3272,6 @@ $$
 
 在没有探测不确定性的情况下，该模型缺乏其他模型的真实感，但它仍然是雷达效率达到100%的理想解决方案。逻辑上，添加的搜索飞机越多，时间就会减少得越多。
 
----
-title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
-kind: 习题
-course: 数学建模
-source: <原件地址或来源路径>
----
-
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
 
 整理自《Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out》第 7-8 部分（结果与结论），包含正态分布模型、发现不确定性模型的模拟结果分析及最终推荐。
@@ -3518,13 +3404,6 @@ Page 54 of 61
 
 参考解答：原文指出：“As we established in the Introduction, the measure of success for our solutions is first, whether they find the lost plane, and second, if they can reasonably expect to rescue plane crash survivors before they die of exposure... In a scenario where passengers are adrift without rafts in normal clothes (low insulation) and life vests in the \~20℃ Atlantic Ocean, they will have about 18 hours before hypothermia begins to kill them... Although all the Striped and Sinusoidal Normal Distribution Solutions’ means are very likely to be below 8 hours, easily fast enough to save the passengers, we do not believe they are realistic enough to recommend... For the more realistic, complex Discovery Uncertainty Model, both the Bayesian and Spiral Striped Solutions have high skew so we compare them by their medians, which are equal at 4.05 hours each... To arrive at our final recommendation, we examine the percentage of planes found for these solutions—a critically important factor considering that the search is all in vain if the plane remains lost. The Bayesian Solution finds 95% of Boeing 777s within 24 hours, while the Spiral Striped Solution finds only 80%... We recommend the most accurate model and its most successful solution: the Normal Distribution with Discovery Uncertainty (Section 5.2) paired with the Bayesian Search flight path (5.2.1).”
 
----
-title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
-kind: 习题
-course: 数学建模
-source: 2015 MCM/ICM Problem E, Team #38720, Page 57-59
----
-
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out（习题）
 
 本部分整理自《Hidden in Plane Sight: Finding Lost Airplanes Before Time Runs Out》第 13 部分（共 14 部分），涵盖模型优缺点分析、假设局限、新闻发布会声明及参考文献。
@@ -3562,7 +3441,6 @@ source: 2015 MCM/ICM Problem E, Team #38720, Page 57-59
 
 答案：无（原文为陈述性段落，非标准问答形式）
 
-
 ## 二、新闻发布会声明
 
 知识点：[模型优缺点分析（Strengths and Weaknesses）](../../../topics/数学建模/youque_dian.md)、[一般假设及其合理性说明（Assumptions and Justifications）](../../../topics/数学建模/jiaben_shezhi.md)、[贝叶斯定理在搜索中的应用（Bayes' Theorem）](../../../topics/数学建模/beiyesi_dingli.md)
@@ -3597,7 +3475,6 @@ Page 58 of 61
 
 答案：无（原文为模拟文档）
 
-
 ## 三、参考文献
 
 知识点：[非技术性文稿撰写（如致世界医学会的信函、新闻发布会声明）](../../../topics/数学建模/fei_jishu_wengao.md)、[平行搜索与条纹飞行路径（Descending/Spiral Stripe Flight Path）](../../../topics/数学建模/pingxing_sousuo.md)、[后验概率更新与搜索路径规划](../../../topics/数学建模/houyan_gailv.md)
@@ -3622,7 +3499,6 @@ Page 58 of 61
 10. McCartney, Scott. "Building a Better Air-Traffic-Control System." The Wall Street Journal. The Wall Street Journal, 22 Oct. 2009. Web. 06 Feb. 2015. <http://www.wsj.com/articles/SB10001424052748703816204574487173981612780>.
 
 答案：无
-
 
 ## 参考文献
 

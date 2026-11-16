@@ -9,15 +9,6 @@ source: batch-2:大学英语/英语.docx
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: 《大学英语》Unit 1—Unit 2 词汇与短语练习
-kind: 习题
-course: 大学英语
-source: 识别工具读取内容（第 1–4 页）
----
-
-# 《大学英语》Unit 1—Unit 2 词汇与短语练习
-
 本资料为《大学英语》第一至二单元的词汇填空与短语匹配练习题，包含“Words in use”和“Expressions in use”两部分。
 
 ## Unit 1
@@ -120,7 +111,6 @@ source: 识别工具读取内容（第 1–4 页）
 10. A few years later, Franklin got married, started his own printing shop, and was looked upon as a successful young businessman.
 
 答案：look upon as
-
 
 ## Unit 2
 
@@ -737,13 +727,6 @@ It is very important for students to understand and take in new information. Bes
 
 The Internet has made English learning much easier. English learners used to be
 
----
-title: 《大学英语》Unit 1—Unit 2 词汇与短语练习（第 3 部分）
-kind: 习题
-course: 大学英语
-source: 识别工具读出内容（第 8–10 页）
----
-
 # 《大学英语》Unit 1—Unit 2 词汇与短语练习（第 3 部分）
 
 本资料为《大学英语》习题部分的整理，包含 Unit 1、Unit 2、Unit 3 和 Unit 5 的完形填空/选词填空练习。原文中已给出部分答案或提示，此处予以保留并规范化排版。
@@ -791,7 +774,6 @@ In this case, the Internet evidently makes it easier to learn vocabulary. You ca
 9) efficiently
 10) distress
 
-
 ## Unit 2
 
 参考解答：**结论：选 A。**
@@ -823,7 +805,6 @@ Today, humanistic knowledge continues to promote the ideal foundation for explor
 8) appreciation
 9) affected
 10) speculate
-
 
 ## Unit 3
 
@@ -861,7 +842,6 @@ I personally want to stay in school as long as I can to reinforce my academic wo
 8) acceptable
 9) reinforce
 10) shifting
-
 
 ## Unit 5
 
@@ -1130,8 +1110,6 @@ The Silk Road is a traffic route in the ancient times connecting China and Euras
 Filial piety is the basic code of ethics in ancient Chinese society. Chinese people consider filial piety as the essence of a person's integrity, family harmony, and the nation's well-being. With filial piety being the core of Confucian ethics, it has been the moral standard for the Chinese society to maintain the family relationship for thousands of years. It's undoubtedly a traditional Chinese virtue. The culture of filial piety is a complex concept, rich in content and wide in range. It includes not only cultural ideas but also institutional etiquettes. Generally speaking, it refers to the obligation of children to their parents required by the society, including respect, care, support for the elderly and so forth. Filial piety is fundamental to the ancient "Oriental civilization".
 
 # 《大学英语》Unit 1—Unit 2 词汇与短语练习（第 6 部分）
-
-本资料整理自识别工具读取的《大学英语》习题第 19–24 页内容，已修正明显的排版错乱、断行及选项重复错误，并按题目逻辑重组。
 
 ## Unit 2
 
@@ -1500,17 +1478,7 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 答案：B
 参考解答：纽约时装产业确实经历了巨大的衰退，失去大量工作岗位是事实，这构成了发起复兴运动（Made in NY）的背景。
 
----
-title: 《大学英语》Unit 1—Unit 2 词汇与短语练习（第 7 部分）
-kind: 习题
-course: 大学英语
-term: 
-source: 识别工具读出内容（第 25–30 页）
----
-
 # 《大学英语》Unit 1—Unit 2 词汇与短语练习（第 7 部分）
-
-本资料整理自《大学英语》Unit 1—Unit 2 词汇与短语练习的第 7 部分，涵盖 Unit 5、Unit 6 的 Exercise A、C、E、G 部分的听力或阅读选择题。已去除页码、页眉等无关信息，修正了明显的格式错误（如选项错位、重复标签）。
 
 ## Unit 5
 
@@ -1530,7 +1498,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：根据后续题目内容（涉及子弹头列车、翠鸟），本文主题 likely 与仿生学（Biomimicry）或受自然启发的技术有关。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于早期列车通过隧道时存在的问题。
@@ -1542,7 +1509,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：通常此类文章会提到噪音或空气动力学问题。
-
 
 #### 选择 3
 
@@ -1556,7 +1522,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：翠鸟以几乎无声地潜入水中捕鱼著称。
 
-
 #### 选择 4
 
 题干未显示完整，根据选项推断为关于设计特征或优势的形容词比较。
@@ -1568,7 +1533,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：结合仿生学背景，"Streamlined"（流线型）通常是关键特征。
-
 
 ### Exercise C
 
@@ -1584,7 +1548,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：“Laikago”是宇树科技（Unitree Robotics）推出的四足机器人。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于该机器人具备的能力或动作。
@@ -1597,7 +1560,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：四足机器人通常具备行走、爬坡等能力，游泳较少见。
 
-
 #### 选择 3
 
 题干未显示完整，根据选项推断为比较两种机器人（如 Laikago 和 Spotmini）的区别。
@@ -1609,7 +1571,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：不同型号的机器人在机械结构或控制系统上通常存在差异。
-
 
 #### 选择 4
 
@@ -1639,7 +1600,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：结合下文视力丧失和仿生眼，可能涉及一位名为 Mr. Flynn 的患者及其植入物。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于某种视力疾病或状况的特征。
@@ -1651,7 +1611,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：需根据原文判断具体疾病的普遍性和治疗现状。
-
 
 #### 选择 3
 
@@ -1681,7 +1640,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：需根据原文确定具体设备名称。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于该设备研发或发布的时间地点。
@@ -1694,7 +1652,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：注意区分年份和具体日期，以及国家。
 
-
 #### 选择 3
 
 题干未显示完整，根据选项推断为关于该设备的主要用途。
@@ -1706,7 +1663,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：需根据原文描述的应用场景选择最准确的概括。
-
 
 ## Unit 6
 
@@ -1726,7 +1682,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：结合下文“打破贫困循环”，演讲者可能是一位成功摆脱贫困并致力于帮助他人的律师。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于作者写作目的。
@@ -1739,7 +1694,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：通常励志类书籍旨在激励读者。
 
-
 #### 选择 3
 
 题干未显示完整，根据选项推断为关于某个数量统计（如受益人数、捐款数等）。
@@ -1751,7 +1705,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：需根据原文中的数字进行定位。
-
 
 ### Exercise C
 
@@ -1767,7 +1720,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：结合上下文“贫困”、“父亲工作”，可能聚焦于其艰难的生活环境。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于 Jessie 承担照顾责任的原因。
@@ -1779,7 +1731,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：通常因父母忙碌或经济压力导致孩子过早承担家务。
-
 
 #### 选择 3
 
@@ -1809,7 +1760,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：结合下文提到的印度、加纳、洪都拉斯的具体数据，可能聚焦于特定项目的成效。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于某个组织性质的描述。
@@ -1821,7 +1771,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：Innovations for Poverty Action (IPA) 是一个非营利研究组织。
-
 
 #### 选择 3
 
@@ -1851,7 +1800,6 @@ source: 识别工具读出内容（第 25–30 页）
 答案：无原件提供答案。
 参考解答：结合下文“30周年”，可能涉及回顾过去成就或展望未来目标。
 
-
 #### 选择 2
 
 题干未显示完整，根据选项推断为关于希望工程宗旨或目标的提问。
@@ -1863,7 +1811,6 @@ source: 识别工具读出内容（第 25–30 页）
 
 答案：无原件提供答案。
 参考解答：希望工程的核心是资助贫困地区失学儿童重返校园，即“教育”。
-
 
 #### 选择 3
 

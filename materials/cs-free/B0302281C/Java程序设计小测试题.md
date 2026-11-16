@@ -10,18 +10,6 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0302
 
 原件经识别和整理；“参考解答”是我们补的。
 
----
-title: Java程序设计小测试题（习题）
-kind: 习题
-course: Java程序设计
-term: 
-source: 识别工具读取内容（第 1–2 页）
----
-
-# Java程序设计小测试题
-
-本资料由识别工具读取的《Java程序设计》小测试题整理而成，修正了明显的断行、乱码及格式错误。
-
 ## 一、选择题（每题均有 1 个或 1 个以上正确答案）
 
 ### 选择 1

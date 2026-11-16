@@ -40,7 +40,6 @@ $$
 \boxed{J_D=8.85\times10^{-11}\ \mathrm{A/m^2}}
 $$
 
-
 位移电流密度的大小为
 
 $$
@@ -48,13 +47,11 @@ J_D=\frac{\partial D}{\partial t}
 =\varepsilon_0\frac{\partial E}{\partial t}.
 $$
 
-
 在该题中电场随时间均匀变化，故
 
 $$
 \frac{\partial E}{\partial t}=\frac{\Delta E}{\Delta t}=\frac{dE}{dt}.
 $$
-
 
 代入
 
@@ -72,13 +69,11 @@ J_D
 =8.85\times10^{-11}\ \mathrm{A/m^2}.
 $$
 
-
 因此应填：
 
 $$
 \boxed{8.85\times10^{-11}\ \mathrm{A/m^2}}.
 $$
-
 
 知识点：[电通量的概念与静电场的高斯定理](../../../topics/大学物理/电通量与高斯定理.md)、[法拉第电磁感应定律与楞次定律](../../../topics/大学物理/法拉第电磁感应定律.md)
 
