@@ -256,18 +256,30 @@ If more formality is required, the same use case is rewritten using a structured
 
 10. 系统显示一个由摄像机编号确定的查看窗口。
 
-仅
-考
-虑
-了
-主
-场景
-，
-未
-考
-虑
-异常
-场
+仅
+
+考
+
+虑
+
+了
+
+主
+
+场景
+
+，
+
+未
+
+考
+
+虑
+
+异常
+
+场
+
 景
 
 11. 系统在查看窗口内以每秒一帧的速度显示视频输出。

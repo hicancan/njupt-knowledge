@@ -20,7 +20,7 @@ source: cs-free:【B0301101S】软件工程（双语）/实验/软件工程（�
 2. 执行下载回来的 TortoiseSVN 安装程序，就会进行 TortoiseSVN 的安装。正确安装后，应该进行一次的重开机，以确保 TortoiseSVN 的正确无误。
 3. 安装成功后，在档案管理员内按下鼠标右键，应该可以看到如右图所示：
 
-![TortoiseSVN右键菜单示意](<资料名>.assets/TortoiseSVN右键菜单.png)
+![TortoiseSVN右键菜单示意（原件第1页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第1页.webp)
 
 大部分的 TortoiseSVN 的操作都是透过档案管理员及鼠标右键就可以完成了。如果您之前使用过 TortoiseCVS，应该会对这种操作方式感到十分亲切。
 
@@ -55,15 +55,15 @@ SVN 的存放档案方式是采用差异备份的方式。也就是说，他只�
 
 Repository 的地方是 E 槽。您需要先建立一个空的目录。以下面的例子而言，我们在 E 槽下面建立了一个名为 `svn_repo` 的目录。SVN 并没有限定 Repository 目录名称。您可以建立任何您自己喜欢的名称。但是，强烈建议勿使用非英文的档名(如中文或日文)。
 
-![E盘创建仓库目录示意](<资料名>.assets/E盘创建仓库目录.png)
+![E盘创建仓库目录示意（原件第2页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第2页.webp)
 
 透过您的档案管理员，在 `E:\svn_repo` 的 Icon 上面，按下鼠标右键后，选择 `TortoiseSVN -> Create repository here`。
 
-![右键选择创建仓库](<资料名>.assets/右键选择创建仓库.png)
+![右键选择创建仓库（原件第2页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第2页.webp)
 
 接着，您会看到如下的一个窗口，这个窗口主要是问您，您希望使用的 Repository 数据库格式是 FSFS 还是 BDB。基本上，请选择 FSFS 就可以了。按下 OK 按钮后，您将可以看到下一个画面。
 
-![选择数据库格式](<资料名>.assets/选择数据库格式.png)
+![选择数据库格式（原件第3页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第3页.webp)
 
 这就表示您的 SVN repository 已经成功的建立了。接下来就是要把您的档案备份进来。日后，只要需要使用这个 repository，我们就可以使用 `file:///E:/SVN_REPO` 表示它。SVN 就是透过这种 URL 的方式到如何与 Repository 取得联系。各种 URL 的格式如下：
 
@@ -80,13 +80,13 @@ Repository 的地方是 E 槽。您需要先建立一个空的目录。以下面
 
 所谓的 Working 目录其实就是您平常用来存放工作档案的地方。通常我们会等到自己的工作做的一个段落的时候再进行备份。所以我们平常都是在 Working 目录下面工作，等到适当时机在 commit 到 repository 中。举例来说，我们想在 D 盘下面建立一个名为 working 的目录。首先先把这个目录建立出来。
 
-![建立Working目录](<资料名>.assets/建立Working目录.png)
+![建立Working目录（原件第3页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第3页.webp)
 
 此时，这个目录应该为空的。
 
 在档案管理员中按下右键后(您可以在 working 目录的 icon 上按，也可进入 working 目录后，在空白的地方按)，选择 SVN checkout。
 
-![右键选择Checkout](<资料名>.assets/右键选择Checkout.png)
+![右键选择Checkout（原件第3页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第3页.webp)
 
 接着您可以看到如下的画面：
 
@@ -95,17 +95,17 @@ URL of repository: file:///E:/SVN REPO/
 Checkout directory: D:\working
 ```
 
-![Checkout对话框](<资料名>.assets/Checkout对话框.png)
+![Checkout对话框（原件第5页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第5页.webp)
 
 首先我们要填入的是 repository 的位置，对于 SVN 来说，repository 的位置都是 URL。由于我们前面已经在 E 槽建立一个 repository，因此，我们现在要在 URL of repository 这一栏填入 `file:///E:/svn_repo/`。
 
 接着，稍微看一下 Checkout directory，这个字段应该要指向您的 working 目录。确认后，按下 OK 按钮，您应该可以看到如下的讯息窗口。
 
-![Checkout成功提示](<资料名>.assets/Checkout成功提示.png)
+![Checkout成功提示（原件第5页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第5页.webp)
 
 这样就表示动作完成。按下 OK 按钮后，再到您刚刚建立的目录下。您将会看到 working 目录下面多了一个名为 `.svn` 的目录(这个目录是隐藏的，如果您的档案管理员没有设定可以看到隐藏目录，您将无法看到它)。
 
-![显示.svn目录](<资料名>.assets/显示svn目录.png)
+![显示.svn目录（原件第5页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第5页.webp)
 
 SVN 会在您的工作目录下，以及其子目录下建立这个 `.svn` 的子目录。您不应该进去这个目录，尤其不应该更动这个目录下面的任何内容。否则会很可能会造成 SVN 无法正常运作。
 
@@ -117,7 +117,7 @@ SVN 会在您的工作目录下，以及其子目录下建立这个 `.svn` 的�
 
 假设您前面的动作都无误。现在您开始开发一个新的程序。假设您开发的程序将放在前面建立的 working 目录下面的 `my_prj` 子目录。如下所示：
 
-![新建项目目录结构](<资料名>.assets/新建项目目录结构.png)
+![新建项目目录结构（原件第5页）](软件工程双语TortoiseSVN使用教程参考资料.assets/原件第5页.webp)
 
 ## 将档案加入 Repository
 

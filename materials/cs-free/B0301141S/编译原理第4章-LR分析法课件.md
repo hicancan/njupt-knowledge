@@ -494,7 +494,7 @@ LR（1）分析表的构造
 
 原文：
 
-![文法G[S’]LR(1)分析表（p131表4.18）](figure:fa603e584c86dd087cdd8176241a80abb32fccc452943c8c707ceb06e238fa40-0/e3aad49c03a6b18c1ca34b1d24c0b26bddc0eef4add12c67655011b86cc71809.jpg)
+![文法G[S’]LR(1)分析表（p131表4.18）](编译原理第4章-LR分析法课件.assets/原件图1.jpg)
 
 <table><tr><td rowspan="2">状态</td><td colspan="3">ACTION</td><td colspan="5">GOTO</td></tr><tr><td>a</td><td>b</td><td>#</td><td>S</td><td>A</td><td>B</td><td>C</td><td>D</td></tr><tr><td>0</td><td> $S_3$ </td><td></td><td></td><td>1</td><td></td><td></td><td>2</td><td></td></tr><tr><td>1</td><td></td><td></td><td>acc</td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>2</td><td></td><td> $S_4$ </td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>3</td><td></td><td> $r_6$ </td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>4</td><td> $S_8$ </td><td></td><td></td><td></td><td></td><td>5</td><td>6</td><td>7</td></tr><tr><td>5</td><td> $S_{11}$ </td><td></td><td></td><td></td><td>10</td><td></td><td></td><td></td></tr><tr><td>6</td><td> $r_4$ </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>7</td><td></td><td> $S_9$ </td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>8</td><td> $r_6$ </td><td> $r_7$ </td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>9</td><td> $r_5$ </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>10</td><td> $S_{13}$ </td><td></td><td> $r_1$ </td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>11</td><td></td><td> $S_{12}$ </td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>12</td><td> $r_3$ </td><td></td><td> $r_3$ </td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>13</td><td></td><td> $S_{14}$ </td><td></td><td></td><td></td><td></td><td></td><td></td></tr><tr><td>14</td><td> $r_2$ </td><td></td><td> $r_2$ </td><td></td><td></td><td></td><td></td><td></td></tr></table>
 
@@ -544,7 +544,7 @@ LALR分析法与SLR相类似，但功能比SLR（1）强，比LR（1）弱，LAL
 
 原文：
 
-![文法G[S’]LR(1)项目集和GO函数](figure:fa603e584c86dd087cdd8176241a80abb32fccc452943c8c707ceb06e238fa40-0/d78e77453ee27baaad523b9c964ab3eadae683b5cdd13dfed836ef31b15f9050.jpg)
+![文法G[S’]LR(1)项目集和GO函数](编译原理第4章-LR分析法课件.assets/原件图2.jpg)
 
 ### 文法G[S’]LR(1)分析表
 

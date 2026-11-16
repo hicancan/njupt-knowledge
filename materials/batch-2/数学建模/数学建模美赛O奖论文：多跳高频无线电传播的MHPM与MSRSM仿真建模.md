@@ -1,13 +1,13 @@
 ---
 title: 《数学建模》美赛O奖论文：多跳高频无线电传播的MHPM与MSRSM仿真建模
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文/A77845-MHPM and MSRSM Simulation and Modeling of Multi-hop HF Radio Propagation.PDF
 ---
 
 # 《数学建模》美赛O奖论文：多跳高频无线电传播的MHPM与MSRSM仿真建模
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 本资料整理自2018年美赛O奖论文《MHPM and MSRSM: Simulation and Modeling of Multi-hop HF Radio Propagation》的前四页内容，包含摘要、目录及引言部分。
 
@@ -72,7 +72,7 @@ source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文
 
 我们在模型中使用的天波依赖于电离层传播，电离层是地面以上80至1000公里高空的大气层，由太阳辐射电离 [6]。由于在电离层和地球表面的多次反射，其传播距离可以非常远，通常超过9600公里 [2]。缺点是它受气候影响，传输信号非常不稳定。短波频段是天波传播的最佳选择。图1展示了这种传播模式。
 
-![Figure 1: Schematic diagram of Skywave reflection[3]](figure:4acd8431082cb4af32400d96e9153b07eb092651a0bdca6422d7f90e929d9e33-0/675c20da85a38553f8cad1fb5570882c56e2fbb3de8c0d647685c66f1a582568.jpg)
+![Figure 1: Schematic diagram of Skywave reflection[3]](数学建模美赛O奖论文：多跳高频无线电传播的MHPM与MSRSM仿真建模.assets/原件图1.jpg)
 
 ### 1.2 问题重述（Problem Restatement）
 

@@ -18,6 +18,7 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import subprocess
 import sys
 import urllib.parse
 from pathlib import Path
@@ -43,8 +44,6 @@ def shard(rel: str) -> int:
 
 def media_url(rel: str) -> str:
     return f"{MEDIA[shard(rel)]}/{urllib.parse.quote(rel)}"
-LINK = re.compile(r"\[([^\]]+)\]\(([^)\s]+\.md)(#[^)]*)?\)")
-HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 
 
 def front(text: str, path: Path) -> tuple[dict, str]:
@@ -72,87 +71,109 @@ def topic_id(path: Path) -> str:
 
 
 def target(source: Path, href: str) -> Path:
-    return (source.parent / href).resolve()
+    return (source.parent / urllib.parse.unquote(href.split("#", 1)[0])).resolve()
 
 
-def slug(title: str) -> str:
-    """A question's anchor: its heading with spaces as hyphens, which every reader computes the same way."""
-    return re.sub(r"\s+", "-", title.strip())
-
-
-IMAGE = re.compile(r"!\[([^\]]*)\]\(([^)\s]+)\)")
-
-
-def published(path: Path, body: str) -> str:
+def published(path: Path, body: str, hrefs: list[str]) -> str:
     """A document as readers get it: no front matter, every link and image as a path from the knowledge's root."""
-    def rooted(href: str) -> str:
-        return target(path, href).relative_to(ROOT).as_posix()
-    body = IMAGE.sub(lambda m: f"![{m.group(1)}]({media_url(rooted(m.group(2)))})", body)
-    return LINK.sub(lambda m: f"[{m.group(1)}]({rooted(m.group(2))}{m.group(3) or ''})", body)
+    for href in dict.fromkeys(hrefs):
+        if href.startswith(("https:", "http:", "mailto:", "#")):
+            continue
+        dest = target(path, href)
+        rel = dest.relative_to(ROOT).as_posix()
+        fragment = "#" + href.split("#", 1)[1] if "#" in href else ""
+        rooted = (urllib.parse.quote(rel) if dest.suffix == ".md" else media_url(rel)) + fragment
+        # The kernel supplies complete URLs, including parentheses and escaped spaces.
+        body = re.sub(r"(\]\(\s*<?)" + re.escape(href) + r"(>?(?=[\s)]))", lambda m: m.group(1) + rooted + m.group(2), body)
+    return body
 
 
 def main() -> None:
+    documents = {}
+    for folder in ("courses", "topics", "materials"):
+        for path in sorted((ROOT / folder).rglob("*.md")):
+            meta, body = front(path.read_text(encoding="utf-8"), path)
+            documents[path] = {"meta": meta, "body": body}
+    parsed = subprocess.run(["node", str(ROOT / "tools" / "documents.mjs")], input=json.dumps([
+        {"path": path.relative_to(ROOT).as_posix(), "body": document["body"]} for path, document in documents.items()
+    ], ensure_ascii=False), encoding="utf-8", stdout=subprocess.PIPE, check=True)
+    for document in json.loads(parsed.stdout):
+        documents[ROOT / document["path"]]["events"] = document["events"]
     topics, courses, materials = {}, [], []
     for path in sorted((ROOT / "topics").rglob("*.md")):
-        meta, body = front(path.read_text(encoding="utf-8"), path)
+        meta = documents[path]["meta"]
         tid = topic_id(path)
         topics[tid] = {"id": tid, "title": meta["title"], "requires": meta.get("requires", []), "path": path,
-                       "taught_by": [], "tested_by": [], "leads_to": []}
+                       "taught_by": [], "references": [], "leads_to": []}
     for tid, t in topics.items():
         for need in t["requires"]:
             if need not in topics:
                 raise SystemExit(f"topics/{tid}.md requires {need}, which is no topic")
             topics[need]["leads_to"].append(tid)
 
-    def linked_topics(path: Path, text: str) -> list[str]:
+    def linked_topics(path: Path, hrefs: list[str]) -> list[str]:
         found = []
-        for _, href, _ in LINK.findall(text):
+        for href in hrefs:
+            if href.startswith(("https:", "http:", "mailto:", "#")):
+                continue
             dest = target(path, href)
-            if ROOT / "topics" in dest.parents:
+            if ROOT not in dest.parents:
+                raise SystemExit(f"{path.relative_to(ROOT)} links outside the knowledge: {href}")
+            if dest.suffix == ".md" and ROOT / "topics" in dest.parents:
                 tid = dest.relative_to(ROOT / "topics").with_suffix("").as_posix()
                 if tid not in topics:
                     raise SystemExit(f"{path.relative_to(ROOT)} links {href}, which is no topic")
                 found.append(tid)
-            elif not dest.exists():
+            elif not dest.is_file():
                 raise SystemExit(f"{path.relative_to(ROOT)} links {href}, which does not exist")
-        return found
+        return list(dict.fromkeys(found))
+
+    # Validate all authored links before replacing the published output.
+    invalid = []
+    for path, document in documents.items():
+        try:
+            linked_topics(path, [href for event in document["events"] for href in event["links"]])
+        except SystemExit as error:
+            invalid.append(str(error))
+    if invalid:
+        raise SystemExit("\n".join(invalid))
 
     for path in sorted((ROOT / "courses").glob("*.md")):
-        meta, body = front(path.read_text(encoding="utf-8"), path)
+        meta = documents[path]["meta"]
         if not meta.get("codes"):
             raise SystemExit(f"{path.name}: names no course code taught now")
         chapters = []
-        for block in re.split(r"^## ", body, flags=re.M)[1:]:
-            title, _, rest = block.partition("\n")
-            ids = linked_topics(path, rest)
-            chapters.append({"title": title.strip(), "topics": ids})
-            for tid in ids:
-                topics[tid]["taught_by"].append(path.stem)
+        for event in documents[path]["events"]:
+            if event["type"] == "heading" and event["level"] == 2:
+                chapters.append({"title": event["title"], "topics": []})
+            if chapters:
+                for tid in linked_topics(path, event["links"]):
+                    if tid not in chapters[-1]["topics"]:
+                        chapters[-1]["topics"].append(tid)
+                    if path.stem not in topics[tid]["taught_by"]:
+                        topics[tid]["taught_by"].append(path.stem)
         courses.append({"id": path.stem, "name": meta["name"], "codes": meta["codes"], "former": meta.get("former", []),
                         "chapters": chapters, "path": path.relative_to(ROOT).as_posix()})
 
     for path in sorted((ROOT / "materials").rglob("*.md")):
-        meta, body = front(path.read_text(encoding="utf-8"), path)
+        meta = documents[path]["meta"]
         rel = path.relative_to(ROOT).as_posix()
-        questions, heading = [], None
-        for line in body.splitlines():
-            m = HEADING.match(line)
-            if m:
-                heading = m.group(2)
-            elif line.startswith("知识点："):
-                if heading is None:
-                    raise SystemExit(f"{rel}: a 知识点 line before any heading")
-                ids = linked_topics(path, line)
-                if not ids:
-                    raise SystemExit(f"{rel}: 知识点 under {heading} links no topic")
-                questions.append({"heading": heading, "anchor": slug(heading), "topics": ids})
-                for tid in ids:
-                    topics[tid]["tested_by"].append({"material": rel, "heading": heading, "anchor": slug(heading)})
-        linked_topics(path, body)
+        sections = set()
+        heading = {"title": meta["title"], "anchor": ""}
+        for event in documents[path]["events"]:
+            if event["type"] == "heading":
+                heading = event
+            ids = linked_topics(path, event["links"])
+            if ids:
+                sections.add(heading["anchor"])
+                for tid in dict.fromkeys(ids):
+                    ref = {"material": rel, "heading": heading["title"], "anchor": heading["anchor"]}
+                    if ref not in topics[tid]["references"]:
+                        topics[tid]["references"].append(ref)
         if not (ROOT / "courses" / f"{meta['course']}.md").exists():
             raise SystemExit(f"{rel}: course {meta['course']} has no courses/{meta['course']}.md")
         materials.append({"path": rel, "title": meta["title"], "kind": meta["kind"], "course": meta["course"],
-                          "term": meta.get("term"), "source": meta["source"], "questions": len(questions)})
+                          "term": meta.get("term"), "source": meta["source"], "sections": len(sections)})
 
     for out in (OUT, MEDIA_OUT):
         if out.exists():
@@ -166,8 +187,9 @@ def main() -> None:
             if source.suffix == ".md":
                 dest = OUT / rel
                 dest.parent.mkdir(parents=True, exist_ok=True)
-                _, body = front(source.read_text(encoding="utf-8"), source)
-                dest.write_text(published(source, body).lstrip("\n"), encoding="utf-8")
+                document = documents[source]
+                hrefs = [href for event in document["events"] for href in event["links"]]
+                dest.write_text(published(source, document["body"], hrefs).lstrip("\n"), encoding="utf-8")
             else:
                 n = shard(rel)
                 pictures[n] += 1
@@ -189,8 +211,8 @@ def main() -> None:
         "media": MEDIA,
     }
     (OUT / "knowledge.json").write_text(json.dumps(index, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    cited = sum(len(t["tested_by"]) for t in topics.values())
-    print(f"{len(courses)} courses, {len(topics)} topics, {len(materials)} materials, {cited} question links; pictures {pictures}")
+    cited = sum(len(t["references"]) for t in topics.values())
+    print(f"{len(courses)} courses, {len(topics)} topics, {len(materials)} materials, {cited} material references; pictures {pictures}")
 
 
 if __name__ == "__main__":

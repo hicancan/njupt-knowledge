@@ -1,13 +1,13 @@
 ---
 title: 2015年MCM/ICM特等奖论文：基于多重网络的人力资本动态模型（Problem C）
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛特等奖原版论文集/33572.pdf
 ---
 
 # 2015年MCM/ICM特等奖论文：基于多重网络的人力资本动态模型（Problem C）
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 ## 2015 Mathematical Contest in Modeling (MCM) Summary Sheet
 

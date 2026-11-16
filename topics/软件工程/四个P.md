@@ -5,8 +5,6 @@ requires: []
 
 # 项目管理的四个P（People, Product, Process, Project）
 
-好的，我们直接开始正文。理解项目管理的四个P，是理解整个软件项目管理骨架的第一步。
-
 ---
 
 ## 为什么项目总是失控？

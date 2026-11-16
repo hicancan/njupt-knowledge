@@ -1,13 +1,13 @@
 ---
 title: 2017年美国大学生数学建模竞赛O奖论文（ICM Problem F）：Society Planning: Model, Simulation And Visualization
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文（全部）.zip/2017年美国大学生数学建模竞赛O奖论文（全部）/2017年美国大学生数学建模竞赛O奖论文（全部）/F/64486.pdf
 ---
 
 # 2017年美国大学生数学建模竞赛O奖论文（ICM Problem F）：Society Planning: Model, Simulation And Visualization
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 ## Summary
 
@@ -655,7 +655,7 @@ In the nonlinear programming formulation above, $G_{p}$ is global outcome obtain
 
 事实上，随着新移民被添加到数据库中，以及代表与数据库中原有的火星居民建立的新联系的新内部链路的增加，人际网络不断扩展。网络的拓扑性质由我们假设定义的动力学和增长过程决定。图 22 显示了在第 10 年进化期间 ID 号为 1 到 24 的个体的连接情况。
 
-![Figure 22: 24-people linkage graph](../assets/figure-c6c385375a775401407e8990cb302669c8f7c5c56bd40e8a4c62ff3e3aa393f0-0/c41846fe263bfe95c17ffe756bdf00c5c324722726daa53e2dc2a605ad7f4570.jpg)
+![Figure 22: 24-people linkage graph](2017年美国大学生数学建模竞赛O奖论文ICM-Problem-F：Society-Planning-Model,-Si.assets/图7.jpg)
 
 **Network Dynamics** 我们假设具有相同职业和教育水平的居民和移民建立即时关系。如果一个人同时与另一个人的母亲和父亲相连，也应添加边。
 

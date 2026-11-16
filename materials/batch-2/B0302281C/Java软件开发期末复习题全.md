@@ -1344,42 +1344,6 @@ Java 语言中，构造方法是可以继承的。
 
 ## 一、选择题
 
-参考解答：### 选择题
-
-1.  **B**：B 正确描述了该知识点的核心定义或语法规范；A、C、D 均存在概念混淆或语法错误。
-2.  **B**：B 符合 Java 语言标准或运行机制；A、C、D 与 JDK 文档或实际运行结果不符。
-3.  **D**：D 准确对应题目考查的 API 行为或特性；A、B、C 属于常见误解或过时用法。
-4.  **A**：A 是唯一满足题设约束条件的选项；B、C、D 在逻辑或类型上存在矛盾。
-5.  **C**：C 正确反映了面向对象设计原则或集合框架特性；A、B、D 违背了封装、继承或多态的基本规则。
-6.  **A**：A 为该类或接口的标准实现方式；B、C、D 缺少必要修饰符或参数不匹配。
-7.  **C**：C 正确处理了异常、泛型或并发场景；A、B、D 会导致编译错误或运行时异常。
-8.  **B**：B 符合 JVM 内存模型或垃圾回收机制；A、C、D 对底层原理理解有误。
-9.  **A**：A 是解决该问题的推荐模式或最佳实践；B、C、D 效率低下或存在安全隐患。
-10. **D**：D 完整覆盖了题目要求的功能点；A、B、C 功能缺失或边界条件处理不当。
-
-### 判断题
-
-1.  **对**：陈述符合 Java 语言规范及官方文档定义。
-2.  **错**：忽略了引用传递与值传递的区别，或混淆了基本类型与包装类行为。
-3.  **错**：未考虑空指针、数组越界等边界情况，或违反访问控制规则。
-4.  **对**：准确描述了类加载、初始化顺序或生命周期管理机制。
-5.  **对**：符合接口抽象、多态实现或设计模式的正确应用。
-6.  **错**：将同步与异步、阻塞与非阻塞概念混淆，或误用线程安全组件。
-7.  **对**：正确阐述了序列化、反射或注解处理的必要条件与限制。
-8.  **对**：符合 Stream API、Lambda 表达式或函数式接口的语义约定。
-9.  **对**：准确说明了泛型擦除、类型推断或通配符的使用规则。
-10. **错**：误认为 final 可修饰构造器，或混淆了 static 与实例成员的访问权限。
-11. **对**：正确描述了 equals() 与 hashCode() 的契约关系及其在哈希容器中的作用。
-12. **错**：忽视了自动装箱/拆箱的性能开销或 NullPointerException 风险。
-13. **对**：符合 try-with-resources 语句的资源自动关闭机制。
-14. **错**：误以为抽象类必须包含抽象方法，或混淆了抽象类与接口的继承规则。
-15. **对**：准确说明了 String 不可变性及其在字符串池中的存储机制。
-16. **错**：将 checked exception 与 unchecked exception 的处理要求颠倒。
-17. **对**：符合 volatile 关键字保证可见性与禁止指令重排序的语义。
-18. **错**：误认为子类构造器可不调用 super()，或忽略隐式调用条件。
-19. **对**：正确描述了 Comparable 与 Comparator 接口的使用场景区别。
-20. **对**：符合 Java 模块系统（JPMS）中 exports/requires 的依赖声明规则。
-
 知识点：[Java标识符命名规则与保留关键字](../../../topics/Java开发/标识符与关键字.md)、[基本数据类型（整型、浮点型、字符型、布尔型）及Unicode编码](../../../topics/Java开发/基本数据类型.md)、[成员变量与局部变量的作用范围、默认值及final终止变量](../../../topics/Java开发/变量的作用域与初始化.md)
 
 ### 选择 4-1
@@ -1591,42 +1555,6 @@ HTML 中多数标记是成对出现的，也有不成对出现的标记。
 ## 第五章
 
 ## 一、选择题
-
-参考解答：### 选择题
-
-1.  **B**：B 正确描述了该知识点的核心定义或语法规范；A、C、D 均存在概念混淆或语法错误。
-2.  **B**：B 符合 Java 语言标准或运行机制；A、C、D 与 JDK 文档或实际运行结果不符。
-3.  **D**：D 准确对应题目考查的 API 行为或特性；A、B、C 属于常见误解或过时用法。
-4.  **A**：A 是唯一满足题设约束条件的选项；B、C、D 在逻辑或类型上存在矛盾。
-5.  **C**：C 正确反映了面向对象设计原则或集合框架特性；A、B、D 违背了封装、继承或多态的基本规则。
-6.  **A**：A 为该类或接口的标准实现方式；B、C、D 缺少必要修饰符或参数不匹配。
-7.  **C**：C 正确处理了异常、泛型或并发场景；A、B、D 会导致编译错误或运行时异常。
-8.  **B**：B 符合 JVM 内存模型或垃圾回收机制；A、C、D 对底层原理理解有误。
-9.  **A**：A 是解决该问题的推荐模式或最佳实践；B、C、D 效率低下或存在安全隐患。
-10. **D**：D 完整覆盖了题目要求的功能点；A、B、C 功能缺失或边界条件处理不当。
-
-### 判断题
-
-1.  **对**：陈述符合 Java 语言规范及官方文档定义。
-2.  **错**：忽略了引用传递与值传递的区别，或混淆了基本类型与包装类行为。
-3.  **错**：未考虑空指针、数组越界等边界情况，或违反访问控制规则。
-4.  **对**：准确描述了类加载、初始化顺序或生命周期管理机制。
-5.  **对**：符合接口抽象、多态实现或设计模式的正确应用。
-6.  **错**：将同步与异步、阻塞与非阻塞概念混淆，或误用线程安全组件。
-7.  **对**：正确阐述了序列化、反射或注解处理的必要条件与限制。
-8.  **对**：符合 Stream API、Lambda 表达式或函数式接口的语义约定。
-9.  **对**：准确说明了泛型擦除、类型推断或通配符的使用规则。
-10. **错**：误认为 final 可修饰构造器，或混淆了 static 与实例成员的访问权限。
-11. **对**：正确描述了 equals() 与 hashCode() 的契约关系及其在哈希容器中的作用。
-12. **错**：忽视了自动装箱/拆箱的性能开销或 NullPointerException 风险。
-13. **对**：符合 try-with-resources 语句的资源自动关闭机制。
-14. **错**：误以为抽象类必须包含抽象方法，或混淆了抽象类与接口的继承规则。
-15. **对**：准确说明了 String 不可变性及其在字符串池中的存储机制。
-16. **错**：将 checked exception 与 unchecked exception 的处理要求颠倒。
-17. **对**：符合 volatile 关键字保证可见性与禁止指令重排序的语义。
-18. **错**：误认为子类构造器可不调用 super()，或忽略隐式调用条件。
-19. **对**：正确描述了 Comparable 与 Comparator 接口的使用场景区别。
-20. **对**：符合 Java 模块系统（JPMS）中 exports/requires 的依赖声明规则。
 
 知识点：[Java标识符命名规则与保留关键字](../../../topics/Java开发/标识符与关键字.md)、[基本数据类型（整型、浮点型、字符型、布尔型）及Unicode编码](../../../topics/Java开发/基本数据类型.md)、[成员变量与局部变量的作用范围、默认值及final终止变量](../../../topics/Java开发/变量的作用域与初始化.md)
 
@@ -1978,39 +1906,6 @@ MenuComponent 类是菜单组件的父类。
 | --- | --- |
 | 前一张 | 最末张 |
 
-参考解答：## 分析 5-1
-
-### 1. 图 5-5 所示程序
-
-**结论：** 程序运行时会出现 `ArithmeticException: / by zero`，即执行整数除法时发生除数为 0 的异常。
-
-**原因：** Java 中整数除法要求除数不能为 0。若表达式如 `1 / 0`，则直接抛出异常；注意，这与浮点数运算 `1.0 / 0.0` 的结果 `Infinity` 不同。
-
----
-
-### 2. 图 5-6 所示程序
-
-**结论：** 程序输出 `true`。
-
-**原因：** `instanceof` 用于判断一个对象是否属于指定类型或其子类。如果图中的对象是相应类或其子类的实例，表达式结果为 `true`，否则为 `false`。
-
----
-
-### 3. 图 5-7 所示程序
-
-**结论：** 程序先输出提示信息，随后读取用户输入的字符或字符串，并依据输入结果输出对应内容。
-
-**原因：** `Scanner` 类可用于从键盘读取数据。程序通过 `next()`、`nextLine()` 或 `nextInt()` 等方法取得输入，再进行相应处理。
-
-**常见输入处理规则：**
-
-- `next()`：读取一个以空白分隔的单词；
-- `nextLine()`：读取一整行文本；
-- `nextInt()`：读取一个整数。如果输入的不是合法整数，会抛出 `InputMismatchException`；
-- `nextDouble()`：读取一个双精度浮点数。
-
-因此，要准确写出图 5-7 的最终输出，还需要结合原程序代码以及实际输入内容；仅根据截图中的“第一张、下一张、前一张、最末张”无法唯一确定完整输出。
-
 知识点：[方法的声明、调用、按值/按引用参数传递及方法的重载(Overloading)](../../../topics/Java开发/方法的定义与重载.md)、[基本数据类型（整型、浮点型、字符型、布尔型）及Unicode编码](../../../topics/Java开发/基本数据类型.md)
 
 ### 5-4 Exer5_4.java
@@ -2021,25 +1916,6 @@ MenuComponent 类是菜单组件的父类。
 
 ## 第五章 图形用户界面与事件处理
 
-参考解答：## 5-4 Exer5_4.java
-
-**结论**：该程序是一个简单的加法计算器界面，包含两个文本框用于输入数字、一个“相加”按钮和一个用于显示结果的标签。点击按钮后，将两个文本框中的内容解析为整数并相加，结果显示在标签上；若输入不是合法整数，则捕获 `NumberFormatException` 并提示“请输入整数”。
-
-**关键代码逻辑**：
-
-```java
-int a = Integer.parseInt(tf1.getText());
-int b = Integer.parseInt(tf2.getText());
-int sum = a + b;
-lab.setText("两数之和为：" + sum);
-```
-
-- 使用 `Integer.parseInt()` 将文本框字符串转为 `int`；
-- 若转换失败抛出 `NumberFormatException`，被 `catch` 捕获；
-- 捕获后执行 `lab.setText("请输入整数")`。
-
-**界面布局**：采用 `FlowLayout`（或默认布局），依次添加文本框、按钮和标签。事件处理通过实现 `ActionListener` 接口，在 `actionPerformed` 方法中完成相加与异常处理。
-
 知识点：[System.out.printf格式化输出与Scanner类输入](../../../topics/Java开发/输入输出基础.md)、[if-else、switch、while、do-while、for语句及break/continue/return分支控制](../../../topics/Java开发/流程控制语句.md)、[方法的声明、调用、按值/按引用参数传递及方法的重载(Overloading)](../../../topics/Java开发/方法的定义与重载.md)
 
 ### 编程题 5-2
@@ -2049,162 +1925,6 @@ lab.setText("两数之和为：" + sum);
 2. 设计一个简单的计算器。包括数字按钮0~9，以及加、减、乘、除、清零、等于运算按钮和一个现实计算结果的文本区。
 
 请读者参照本书本章 5.2 程序举例中的例 5.1的程序内容进行编写。
-
-参考解答：**结论：** 下面给出完整的 Java Application 示例。程序采用 `GridLayout` 布局，包含数字按钮 `0~9`、运算符按钮 `+ - * /`、清零按钮 `C`、等号按钮 `=` 和显示结果的文本区，可实现连续四则运算。
-
-```java
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-
-public class Calculator extends JFrame implements ActionListener {
-    private JTextField display;   // 显示计算结果
-    private double firstNumber = 0; // 保存第一个操作数
-    private String operator = "";   // 保存当前运算符
-    private boolean startNewNumber = true; // 是否开始输入新数字
-
-    public Calculator() {
-        super("简单计算器");
-
-        // 文本区：显示输入数字和计算结果
-        display = new JTextField("0");
-        display.setEditable(false);
-        display.setHorizontalAlignment(JTextField.RIGHT);
-        display.setFont(new Font("宋体", Font.PLAIN, 24));
-        add(display, BorderLayout.NORTH);
-
-        // 按钮面板，使用 GridLayout 布局
-        JPanel buttonPanel = new JPanel(new GridLayout(4, 4, 5, 5));
-        String[] buttonNames = {
-            "7", "8", "9", "/",
-            "4", "5", "6", "*",
-            "1", "2", "3", "-",
-            "0", "C", "=", "+"
-        };
-
-        for (String name : buttonNames) {
-            JButton button = new JButton(name);
-            button.setFont(new Font("宋体", Font.PLAIN, 20));
-            button.addActionListener(this);
-            buttonPanel.add(button);
-        }
-
-        add(buttonPanel, BorderLayout.CENTER);
-
-        setSize(300, 350);
-        setLocationRelativeTo(null); // 窗口居中
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setVisible(true);
-    }
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        String command = e.getActionCommand();
-
-        // 处理数字按钮
-        if (command.matches("[0-9]")) {
-            if (startNewNumber || display.getText().equals("0")) {
-                display.setText(command);
-                startNewNumber = false;
-            } else {
-                display.setText(display.getText() + command);
-            }
-            return;
-        }
-
-        // 清零
-        if (command.equals("C")) {
-            display.setText("0");
-            firstNumber = 0;
-            operator = "";
-            startNewNumber = true;
-            return;
-        }
-
-        // 处理运算符
-        if (command.equals("+") || command.equals("-")
-                || command.equals("*") || command.equals("/")) {
-            try {
-                if (!operator.isEmpty() && !startNewNumber) {
-                    calculate(); // 支持连续运算，如 2+3*4
-                } else {
-                    firstNumber = Double.parseDouble(display.getText());
-                }
-                operator = command;
-                startNewNumber = true;
-            } catch (NumberFormatException ex) {
-                display.setText("输入错误");
-                startNewNumber = true;
-            }
-            return;
-        }
-
-        // 处理等号
-        if (command.equals("=")) {
-            try {
-                if (!operator.isEmpty()) {
-                    calculate();
-                    operator = "";
-                }
-                startNewNumber = true;
-            } catch (NumberFormatException ex) {
-                display.setText("输入错误");
-                startNewNumber = true;
-            }
-        }
-    }
-
-    // 根据保存的运算符完成计算
-    private void calculate() {
-        double secondNumber = Double.parseDouble(display.getText());
-        double result = 0;
-
-        switch (operator) {
-            case "+":
-                result = firstNumber + secondNumber;
-                break;
-            case "-":
-                result = firstNumber - secondNumber;
-                break;
-            case "*":
-                result = firstNumber * secondNumber;
-                break;
-            case "/":
-                if (secondNumber == 0) {
-                    display.setText("除数不能为0");
-                    firstNumber = 0;
-                    operator = "";
-                    startNewNumber = true;
-                    return;
-                }
-                result = firstNumber / secondNumber;
-                break;
-        }
-
-        // 整数结果不显示小数部分
-        if (result == (long) result) {
-            display.setText(String.valueOf((long) result));
-        } else {
-            display.setText(String.valueOf(result));
-        }
-
-        firstNumber = result;
-    }
-
-    public static void main(String[] args) {
-        // 在事件分派线程中创建和显示图形界面
-        SwingUtilities.invokeLater(() -> new Calculator());
-    }
-}
-```
-
-**简要说明：**
-
-1. 使用 `BorderLayout` 安排整个窗口：文本区放在北部，按钮面板放在中部；按钮面板本身采用 `GridLayout(4, 4, 5, 5)`。
-2. 单击数字按钮时，将数字追加到文本区；单击运算符时，保存第一个操作数和运算符。
-3. 单击 `=` 时，读取第二个操作数，并调用 `calculate()` 完成运算。
-4. `C` 按钮用于清除显示内容、操作数和运算符；程序还处理了除数为 `0` 的情况。
-5. 该计算器按输入顺序进行连续运算，**不处理运算符优先级**，例如 `2+3*4=` 会依次计算为 $(2+3)\times4=20$。
 
 知识点：[Java平台、JVM定义及编译解释执行原理](../../../topics/Java开发/Java平台与JVM.md)、[第一个Java程序（源文件创建、javac编译、类定义、main方法）](../../../topics/Java开发/HelloWorld程序结构.md)、[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)
 
@@ -2227,85 +1947,6 @@ public class Calculator extends JFrame implements ActionListener {
 | **文件** | **编辑** | **插入** |
 | | | |
 
-参考解答：**结论**
-
-使用 Java Swing 库中的 `JFrame`、`JMenuBar`、`JMenu` 和 `JMenuItem` 类构建图形界面。核心逻辑是实例化一个菜单栏，创建三个菜单（如“文件”、“编辑”、“插入”），并为每个菜单添加两个菜单项，其中指定一个菜单项通过 `add(JMenuItem)` 方法嵌套子菜单或子项。
-
-**推理与实现过程**
-
-1.  **组件选择**：
-    *   主窗口：`JFrame`。
-    *   菜单容器：`JMenuBar`。
-    *   一级菜单：`JMenu`（对应题目中的3个菜单）。
-    *   二级菜单项：`JMenuItem`（对应题目中的普通菜单项）。
-    *   三级子项：由于题目描述“其中一个菜单项又具有2个菜单子项”，在 Swing 中通常通过将 `JMenuItem` 或另一个 `JMenu` 添加到父 `JMenu` 中实现层级结构。若严格指“菜单项”下挂子项，通常使用 `JMenu` 作为父级以支持展开，或者使用 `JMenuItem` 配合弹出菜单，但标准做法是将该节点定义为 `JMenu` 以便容纳子项。
-
-2.  **结构构建步骤**：
-    *   创建 `JFrame` 并设置基本属性（标题、大小、关闭行为）。
-    *   创建 `JMenuBar` 对象。
-    *   创建三个 `JMenu` 对象，例如 `menuFile`, `menuEdit`, `menuInsert`。
-    *   为每个 `JMenu` 添加两个组件：
-        *   对于普通菜单项，直接 `add(new JMenuItem("..."))`。
-        *   对于含有子项的菜单项，创建一个 `JMenu`（作为父项）或 `JMenuItem`，然后向其 `add` 两个子 `JMenuItem`。根据常见 GUI 规范，通常将“具有子项”的节点本身也设计为 `JMenu` 类型以支持鼠标悬停展开。
-    *   将三个 `JMenu` 添加到 `JMenuBar`。
-    *   将 `JMenuBar` 设置到 `JFrame`。
-
-3.  **关键代码逻辑**：
-
-```java
-import javax.swing.*;
-
-public class MenuExample extends JFrame {
-    public MenuExample() {
-        setTitle("练习菜单");
-        setSize(400, 300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-        // 1. 创建菜单条
-        JMenuBar menuBar = new JMenuBar();
-
-        // 2. 创建3个菜单
-        JMenu menuFile = new JMenu("文件");
-        JMenu menuEdit = new JMenu("编辑");
-        JMenu menuInsert = new JMenu("插入");
-
-        // 3. 为每个菜单添加2个菜单项
-        
-        // 文件菜单：假设第二个项有子项
-        menuFile.add(new JMenuItem("新建"));
-        JMenu subMenuOpen = new JMenu("打开"); // 这个菜单项具有子项
-        subMenuOpen.add(new JMenuItem("打开文本"));
-        subMenuOpen.add(new JMenuItem("打开图片"));
-        menuFile.add(subMenuOpen);
-
-        // 编辑菜单：普通项
-        menuEdit.add(new JMenuItem("剪切"));
-        menuEdit.add(new JMenuItem("复制"));
-
-        // 插入菜单：普通项
-        menuInsert.add(new JMenuItem("日期"));
-        menuInsert.add(new JMenuItem("时间"));
-
-        // 4. 将菜单加入菜单条
-        menuBar.add(menuFile);
-        menuBar.add(menuEdit);
-        menuBar.add(menuInsert);
-
-        // 5. 设置菜单条到窗口
-        setJMenuBar(menuBar);
-        
-        setVisible(true);
-    }
-
-    public static void main(String[] args) {
-        new MenuExample();
-    }
-}
-```
-
-**注意事项**
-*   题目要求“其中一个菜单项又具有2个菜单子项”。在 Swing 中，如果一个节点需要包含子节点并能展开，该节点通常应声明为 `JMenu` 而非 `JMenuItem`，因为 `JMenuItem` 默认不支持直接容纳子组件进行展开显示（除非使用复杂的弹出菜单机制，但这不符合基础教学题意）。因此，代码中将那个特殊的“菜单项”实现为 `JMenu` 是最标准的做法。
-
 知识点：[Java SE、Java EE、Java ME的区别与应用领域](../../../topics/Java开发/Java版本体系.md)、[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[方法的声明、调用、按值/按引用参数传递及方法的重载(Overloading)](../../../topics/Java开发/方法的定义与重载.md)
 
 ### 编程题 5-4
@@ -2313,31 +1954,6 @@ public class MenuExample extends JFrame {
 编写一个可以弹出对话框的程序。
 
 请读者参考本书本章5.2程序举例中的例 5.4的程序内容进行编程。
-
-参考解答：**结论**
-
-可以借助 Java Swing 中的 `JOptionPane` 弹出标准对话框，代码简单，效果与本章例 5.4 类似。
-
-```java
-import javax.swing.JOptionPane;
-
-public class DialogDemo {
-    public static void main(String[] args) {
-        JOptionPane.showMessageDialog(
-            null,
-            "欢迎学习 Java 对话框编程！",
-            "提示",
-            JOptionPane.INFORMATION_MESSAGE
-        );
-    }
-}
-```
-
-**说明**
-
-- `JOptionPane.showMessageDialog(...)` 用于弹出**消息对话框**，适合显示提示信息。  
-- 参数依次为：父组件（`null` 表示屏幕居中）、显示内容、标题、图标类型。  
-- 若需获取用户输入，可使用 `showInputDialog(...)`；若需确认操作，可使用 `showConfirmDialog(...)`。
 
 知识点：[System.out.printf格式化输出与Scanner类输入](../../../topics/Java开发/输入输出基础.md)
 
@@ -2374,30 +1990,6 @@ public class DialogDemo {
 - D. InputEvent 类
 
 答案：B。
-参考解答：`java.util.EventObject` 是所有事件状态对象的根类。`AWTEvent` 是 `EventObject` 的子类，用于AWT事件。
-
-#### 选择 4
-
-在 AWT组件层次关系图中，属于容器组件的子类的是（）
-- A. List
-- B. TextArea
-- C. Frame
-- D. Choice
-
-答案：C。
-参考解答：Frame 是 Window 的子类，Window 是 Container 的子类。List, TextArea, Choice 都是 Component 的直接子类，但不是 Container（尽管某些特定版本或实现可能有细微差别，但在标准AWT分类中，Frame/Panel/Window是主要容器）。
-
-#### 选择 5
-
-下列的容器中，没有边框和标题并可以作最顶层容器的是
-- A. Window
-- B. Frame
-- C. Panel
-- D. 无
-
-答案：A。
-参考解答：Window 是最顶层容器，无边框和标题（相比Frame）。Panel 不是顶层容器。
-
 知识点：[接口(Interface)用于定义协议或行为的作用](../../../topics/Java开发/接口的基础概念.md)、[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)
 
 ### 测试题：判断题
@@ -2434,41 +2026,6 @@ Window 类和 Frame 类的默认布局管理器都是 FlowLayout。
 ### 测试题：分析程序的输出结果
 
 *(注：原题此处涉及具体代码截图或代码块，因OCR识别缺失具体代码，仅保留题型标记)*
-
-参考解答：由于题目未提供具体代码，我无法直接给出该代码的输出结果与推理过程。  
-但可以说明 **Java 代码分析的通用结论模式与解题思路**，你可以把代码发给我，我会按此框架作答。
-
----
-
-### 结论格式（示例）
-
-> 输出结果为：`ABC 10`  
-> （若为多行输出，按行列出；若涉及编译错误或运行异常，写明错误类型与位置）
-
----
-
-### 推理/计算过程要点
-
-1. **分析类与对象初始化顺序**  
-   - 静态成员/块（按书写顺序）→ 实例成员/块 → 构造器  
-   - 继承场景下：父类静态 → 子类静态 → 父类实例 → 父类构造 → 子类实例 → 子类构造
-
-2. **方法调用与多态**  
-   - 编译看左边，运行看右边（实例方法）  
-   - 静态方法、字段、私有方法无多态，按引用类型决定
-
-3. **运算与类型转换**  
-   - 整数/浮点数混合运算的自动提升规则  
-   - `+` 遇到字符串时的连接规则  
-   - 赋值时的隐式/显式类型转换与截断
-
-4. **异常执行流程**  
-   - `try-catch-finally` 的完整路径  
-   - `finally` 中的 `return` 会覆盖之前的返回值（需特别注意）
-
----
-
-请将原题中的代码提供给我，我会据此给出精确结论与步骤。
 
 知识点：[if-else、switch、while、do-while、for语句及break/continue/return分支控制](../../../topics/Java开发/流程控制语句.md)、[基本数据类型（整型、浮点型、字符型、布尔型）及Unicode编码](../../../topics/Java开发/基本数据类型.md)
 
@@ -2532,52 +2089,6 @@ Window 类和 Frame 类的默认布局管理器都是 FlowLayout。
 - D. 出现异常不是简单结束程序，而是执行某种处理异常的代码，设法恢复程序的执行
 
 答案：B。
-参考解答：异常并不一定是不可恢复的，通过 try-catch 捕获后可以继续执行。
-
-#### 选择 2
-
-下列关于异常处理的描述中，错误的是（）
-- A. 程序运行时异常由java虚拟机自行进行处理
-- B. 使用 try-catch-finally 语句捕获异常
-- C. 使用 throw语句抛出异常
-- D. 捕获到的异常只能用当前方法中处理，不能用其他方法中处理
-
-答案：D。
-补充：捕获到的异常可以在当前方法处理，也可以重新抛出（throw）给调用者处理。
-
-#### 选择 3
-
-下列关于 try-catch-finally 语句的描述中，错误的是（）
-- A. try 语句后面的程序段将给出处理异常的语句
-- B. catch() 方法跟在try 语句后面，它可以是一个或多个
-- C. catch()方法有一个参数，该参数是某种异常类的对象
-- D. finally语句后面的程序段总是被执行的，该语句起到提供同一接口的作用
-
-答案：A。
-订正：try 块中包含可能抛出异常的代码，而不是处理异常的语句。处理异常的代码在 catch 块中。
-
-#### 选择 4
-
-下列关于抛出异常的描述中，错误的是（）
-- A. 捕捉到发生的异常可在当前方法中处理，可以抛到调用该方法的方法中处理
-- B. 在说明要抛出异常的方法时应加关键字 throws <异常列表>
-- C. <异常列表>中可以有多个用逗号分隔的异常
-- D. 使用异常处理不会使用下述抛出异常语句：throw <异常名>；其中,<异常名>是异常类的类名
-
-答案：D。
-订正：抛出异常时使用 `throw new ExceptionName()`，而 `throws` 用于声明方法可能抛出的异常类型。选项D混淆了 throw 和 throws 或语法格式。
-
-#### 选择 5
-
-下列关于用户创建自己的异常的描述中，错误的是（）
-- A. 创建自己的异常应先创建一个异常类
-- B. 为实现抛出异常，须在可能抛出异常的方法中书写 throw 语句
-- C. 使用异常的方法是使用 try-catch-finally 语句格式
-- D. 使用异常处理不会是整个系统更加安全和稳定
-
-答案：D。
-订正：使用异常处理会使整个系统更加安全和稳定。
-
 知识点：[System.out.printf格式化输出与Scanner类输入](../../../topics/Java开发/输入输出基础.md)、[Java标识符命名规则与保留关键字](../../../topics/Java开发/标识符与关键字.md)
 
 ### 判断题
@@ -2628,41 +2139,6 @@ Window 类和 Frame 类的默认布局管理器都是 FlowLayout。
 - D. sleep()
 
 答案：D。
-参考解答：sleep() 只是让线程休眠，不涉及锁的释放或等待机制，不属于同步控制原语。
-
-#### 选择 2
-
-当对线程进行调度使其暂停时，暂停的时间单位是
-- A. 毫秒
-- B. 秒
-- C. 分钟
-- D. 小时
-
-答案：A。
-补充：Thread.sleep() 和 wait(long) 的时间单位通常为毫秒。
-
-#### 选择 3
-
-主线程属于
-- A. 守护线程
-- B. 用户线程
-- C. Thread 线程
-- D. Runnable 线程
-
-答案：B。
-参考解答：主线程是用户创建的线程，除非显式设置为守护线程，否则默认为用户线程。JVM 会在所有用户线程结束后退出。
-
-#### 选择 4
-
-为了使线程处于暂停状态，可引用 方法。
-- A. wait()
-- B. sleep()
-- C. join()
-- D. notify()
-
-答案：B。
-补充：wait() 需要在 synchronized 块中调用且会释放锁；sleep() 不释放锁但暂停执行；join() 是等待另一个线程结束。题目泛指“暂停”，sleep 是最直接的暂停执行方法。若强调协作式暂停，可能是 wait。但在基础题中，sleep 常被视作暂停。*注：原题答案可能为 B 或 A，视上下文而定，通常 sleep 为非阻塞性暂停（相对CPU而言），wait 为阻塞性。此处依常规理解选 B。*
-
 知识点：[System.out.printf格式化输出与Scanner类输入](../../../topics/Java开发/输入输出基础.md)、[Java标识符命名规则与保留关键字](../../../topics/Java开发/标识符与关键字.md)
 
 ### 判断题

@@ -5,8 +5,6 @@ requires: [Web开发技术/mysql-system, Web开发技术/php-overview]
 
 # 使用PHP连接MySQL数据库（Connecting to MySQL）
 
-好的，我们开始。请注意，以下内容将聚焦于如何使用 PHP 连接 MySQL 数据库，并融合你提供的课件知识点，确保讲解符合南邮《Web技术（双语）》课程的要求。
-
 ---
 
 ## 连接前的核心概念回顾

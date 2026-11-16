@@ -169,8 +169,6 @@ source: batch-2:C++/南京邮电大学C++复习资料.pdf
 
 答案：C
 
-参考解答：C 选项表述有误。应该是“基类对象的地址可以赋给指向派生类的指针”是错误的（除非强制转换且安全），而“派生类对象的地址可以赋给指向基类的指针”是正确的（赋值兼容原则）。题目问“不正确”，C 选项原文可能是指反向操作或者表述不清，但在标准赋值兼容中，基类指针可以指向派生类对象。若 C 意指“派生类指针获得基类对象地址”，这是不安全且错误的。结合常见考题逻辑，通常考察的是赋值兼容方向。此处根据常规知识点，基类指针可指向派生类，反之不行。故 C 描述的操作（派生类指针获基类地址）是不正确的/危险的。
-
 知识点：[赋值兼容规则（派生类对象赋给基类对象/指针/引用）](../../../topics/面向对象C++/赋值兼容规则.md)、[基类与派生类、单一继承与多重继承](../../../topics/面向对象C++/继承与派生概念.md)
 
 ### 选择 7
@@ -183,8 +181,6 @@ source: batch-2:C++/南京邮电大学C++复习资料.pdf
 - D. 若虚基类由非虚基类派生而来，则仍然先调用基类构造函数
 
 答案：D
-
-参考解答：构造函数的调用顺序通常是：1. 虚基类构造函数；2. 非虚基类构造函数；3. 对象成员构造函数；4. 派生类自身构造函数。D 选项中，如果虚基类本身是由非虚基类派生的，那么在构建最底层派生类时，会优先调用最顶层的虚基类构造函数。此题主要考察虚基类的特殊性。通常 D 选项这种绝对化的“仍然”往往是有陷阱的，或者在其他语境下错误。但在标准单一继承链中，基类总是先于派生类。若涉及多重继承和虚基类，顺序有特殊规定。此处推测 D 为错误项，因为虚基类的初始化优先级高于普通基类，且只初始化一次。
 
 知识点：[派生类对象的构造与析构及基类构造函数的参数传递](../../../topics/面向对象C++/派生类构造与析构.md)、[虚基类的定义及构造与析构函数的调用顺序](../../../topics/面向对象C++/虚基类.md)、[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)
 
@@ -212,13 +208,6 @@ source: batch-2:C++/南京邮电大学C++复习资料.pdf
 
 答案：A
 
-参考解答：C 继承自 A，且包含成员 B 和 A。
-1. 首先调用直接基类 A 的构造函数（继承部分）。
-2. 然后调用成员对象的构造函数，按成员在类中声明的顺序。这里声明顺序是 `B b;` 然后 `A a;`。所以先调 B，再调 A。
-3. 最后调用 C 自身的构造函数。
-顺序：A(基类) -> B(成员) -> A(成员) -> C(自身)。
-注意：有些教材或编译器实现可能将基类构造放在所有成员构造之前。标准规定：基类构造函数先于成员变量构造函数执行。所以是 A(基类) -> B(成员) -> A(成员) -> C。
-
 知识点：[派生类对象的构造与析构及基类构造函数的参数传递](../../../topics/面向对象C++/派生类构造与析构.md)、[类的组合（对象成员）及构造与析构顺序](../../../topics/面向对象C++/类的组合.md)、[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)
 
 ### 选择 10
@@ -245,13 +234,6 @@ source: batch-2:C++/南京邮电大学C++复习资料.pdf
 
 答案：A
 
-参考解答：`name` 是指向常量字符数组的指针。
-A: `name[3]` 试图修改字符串常量中的内容，这是未定义行为，通常会导致崩溃，属于错误操作。
-B: 修改指针指向，合法。
-C: 重新分配内存并修改指针，合法（虽然原内存泄漏，但语法正确）。
-D: 读取内容，合法。
-题目问“错误的是”，A 是语义上的严重错误（修改常量）。
-
 知识点：[使用const定义常量（与宏定义的区别）](../../../topics/面向对象C++/const常量.md)、[新增的强制类型转换方式（static_cast等）](../../../topics/面向对象C++/强制类型转换.md)
 
 ### 选择 12
@@ -265,12 +247,6 @@ D: 读取内容，合法。
 
 答案：B
 
-参考解答：
-函数原型 `void f(int a[10], int &x)` 等价于 `void f(int *a, int &x)`。
-第一个参数需要数组首地址或指针。`py` 是 `int*`，符合。`py[10]` 是 `int`，不符合。`*py` 是 `int`，不符合。
-第二个参数需要 `int&`。`n` 是 `int` 变量，绑定到引用，符合。`&n` 是 `int*`，不符合。
-所以 `f(py, n)` 正确。
-
 知识点：[引用的概念及使用（含引用作形参、返回值及与指针区别）](../../../topics/面向对象C++/引用.md)、[C++语言与C语言的关系](../../../topics/面向对象C++/cpp与c关系.md)
 
 ### 选择 13
@@ -283,26 +259,6 @@ D: 读取内容，合法。
 - D. `int view(int X, int y);` 和 `int view(int X);`
 
 答案：B
-
-参考解答：
-函数重载要求函数名相同，参数列表不同（类型、个数、顺序）。
-A: 参数类型不同 (int vs float)，合法。
-B: `disp(int X)` 和 `disp(int Y) const`。参数类型相同（都是int），仅靠 `const` 修饰符（针对 this 指针）不足以构成重载，这会导致重定义错误。
-C: 参数类型相同，但变量名不同不影响重载判定？不对，C 选项两个函数参数类型完全一样 (`char*, int`)，只是形参名不同。这也是非法的重载。
-等等，让我们仔细看 C。`void disp(char *str, int Y)` 和 `int disp(char *s, int X)`。参数类型序列都是 `(char*, int)`。这也无法重载。
-再看 B。`int disp(int X)` 是非 const 成员函数，`char disp(int Y) const` 是 const 成员函数。在 C++ 中，成员函数可以通过 `const` 后缀进行重载。所以 B 是合法的。
-再看 C。参数类型完全一致，无法重载。
-再看 D。参数个数不同，合法。
-题目问“不正确的”。
-A: 合法。
-B: 合法（const 重载）。
-C: 非法（参数类型签名相同）。
-D: 合法。
-所以答案应该是 C。
-*注：原题选项可能有误或我理解偏差。通常考试中，形参名不同不算重载，参数类型相同算重复定义。C 明显参数类型相同。B 是经典的 const 重载例子。*
-修正：检查 B 选项，`disp(int X)` 和 `disp(int Y) const`。这是合法的。
-检查 C 选项，`disp(char *, int)` 和 `disp(char *, int)`。这是非法的。
-所以选 C。
 
 知识点：[函数重载](../../../topics/面向对象C++/函数重载.md)、[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)、[使用const定义常量（与宏定义的区别）](../../../topics/面向对象C++/const常量.md)
 
@@ -343,8 +299,6 @@ D: 合法。
 
 答案：D
 
-参考解答：类可以有多个构造函数（重载），只要参数列表不同。
-
 知识点：[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)
 
 ### 选择 17
@@ -358,12 +312,6 @@ D: 合法。
 
 答案：B
 
-参考解答：
-A: 基类友元可以访问基类 protected 成员。
-B: 派生类的**对象**不能直接访问基类的 protected 成员，只能通过派生类的成员函数或友元间接访问。对象本身不具备访问权限。
-C: 基类成员函数当然可以。
-D: 公有派生类的成员函数可以访问基类的 protected 成员。
-
 知识点：[继承性](../../../topics/面向对象C++/继承性.md)
 
 ### 选择 18
@@ -376,17 +324,6 @@ D: 公有派生类的成员函数可以访问基类的 protected 成员。
 - D. 公有派生类对象地址不能赋给基类指针变量
 
 答案：C
-
-参考解答：
-赋值兼容原则：
-1. 派生类对象可以赋值给基类对象（切片）。
-2. 派生类对象可以初始化基类引用。
-3. 派生类对象地址可以赋给基类指针。
-反之则不行（除非强制转换，但存在风险）。
-A: 错，可以赋。
-B: 错，基类对象不能直接赋给派生类引用。
-C: 对，基类对象不能直接赋给派生类对象（因为派生类有更多数据，基类没有）。
-D: 错，可以赋。
 
 知识点：[基类与派生类、单一继承与多重继承](../../../topics/面向对象C++/继承与派生概念.md)、[赋值兼容规则（派生类对象赋给基类对象/指针/引用）](../../../topics/面向对象C++/赋值兼容规则.md)
 
@@ -425,16 +362,6 @@ D: 错，可以赋。
 
 *(注：由于原题缺失具体代码，此处无法给出确切答案。通常此类题目考察 ifstream/ofstream 的使用，如逐字读取、整型读取或特定分隔符处理。)*
 
-参考解答：需结合具体代码分析。假设代码为简单读取示例：
-若代码为：
-```cpp
-ifstream fin("abc.txt");
-char c;
-fin >> c; // 跳过空白? 或直接读?
-// ...
-```
-由于缺乏代码，本题无法作答。建议复习 文件操作。
-
 知识点：[文件的输入/输出（包含fstream头文件，使用流运算符对文本文件操作）](../../../topics/面向对象C++/文件io.md)
 
 ### 读程 2
@@ -442,8 +369,6 @@ fin >> c; // 跳过空白? 或直接读?
 题干：以下程序运行后，第一行输出结果是 （14），第二行输出结果是（15）。
 
 *(注：同样缺失具体代码。)*
-
-参考解答：需结合具体代码分析。
 
 知识点：[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)、[析构函数](../../../topics/面向对象C++/析构函数.md)、[深拷贝与浅拷贝](../../../topics/面向对象C++/深拷贝与浅拷贝.md)
 
@@ -464,13 +389,6 @@ fin >> c; // 跳过空白? 或直接读?
 
 *(注：题目描述不完整，且未提供代码框架。通常考察虚函数表、多态调用或文件流对象的多态使用。)*
 
-参考解答：需补全代码。常见考点：
-1. 基类指针指向派生类对象。
-2. 调用虚函数。
-3. 文件流的 open/read/write。
-
-## 五、编程题
-
 知识点：[多态性](../../../topics/面向对象C++/多态性.md)、[虚函数的定义以实现动态多态性及虚函数的限制](../../../topics/面向对象C++/虚函数.md)、[文件的输入/输出（包含fstream头文件，使用流运算符对文本文件操作）](../../../topics/面向对象C++/文件io.md)
 
 ### 编程 1
@@ -490,77 +408,6 @@ fin >> c; // 跳过空白? 或直接读?
 
 在 main() 函数中，要求定义一个图书卡类的对象，在借阅和归还后分别显示图书证的信息，请完成完整的程序。
 
-参考解答：
-```cpp
-#include <iostream>
-#include <cstring>
-using namespace std;
-
-class BookCard {
-private:
-    char *stuName;
-    int id;
-    int number;
-
-public:
-    // 构造函数
-    BookCard(const char *name, int studentId) {
-        stuName = new char[strlen(name) + 1];
-        strcpy(stuName, name);
-        id = studentId;
-        number = 0;
-    }
-
-    // 析构函数
-    ~BookCard() {
-        delete[] stuName;
-    }
-
-    // 显示信息
-    void display() const {
-        cout << "Student Name: " << stuName << endl;
-        cout << "ID: " << id << endl;
-        cout << "Books Borrowed: " << number << endl;
-    }
-
-    // 借书
-    void borrow() {
-        if (number < 10) {
-            number++;
-        } else {
-            cout << "Limit reached!" << endl;
-        }
-    }
-
-    // 还书
-    void restore() {
-        if (number > 0) {
-            number--;
-        }
-    }
-};
-
-int main() {
-    BookCard card("Alice", 1001);
-    
-    cout << "Initial status:" << endl;
-    card.display();
-
-    card.borrow();
-    card.borrow();
-    
-    cout << "After borrowing 2 books:" << endl;
-    card.display();
-
-    card.restore();
-    
-    cout << "After returning 1 book:" << endl;
-    card.display();
-
-    return 0;
-}
-```
-
 知识点：[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)、[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)、[用new申请和delete释放动态内存空间](../../../topics/面向对象C++/动态内存分配.md)
 
 ### 编程 2
@@ -568,61 +415,6 @@ int main() {
 题干：定义学生类 Student，该类包括私有数据成员 `char *name`，`int age`，分别表示学生的姓名和年龄。在该类中定义公有构造函数（动态分配内存初始化学生的姓名和年龄）、析构函数（释放内存）和输出函数 `print`（显示学生的姓名和年龄）。
 
 再定义一个 Student 类的公有派生类 Postgrad（研究生类），其中增加私有数据成员 `int credit` 表示研究生的学分。在这个类中定义公有构造函数（初始化研究生的姓名、年龄、学分）和输出函数 `print`（显示研究生的姓名、年龄、学分）。
-
-参考解答：
-```cpp
-#include <iostream>
-#include <cstring>
-using namespace std;
-
-class Student {
-protected:
-    char *name;
-    int age;
-
-public:
-    Student(const char *n, int a) {
-        name = new char[strlen(n) + 1];
-        strcpy(name, n);
-        age = a;
-    }
-
-    virtual ~Student() {
-        delete[] name;
-    }
-
-    virtual void print() const {
-        cout << "Name: " << name << ", Age: " << age << endl;
-    }
-};
-
-class Postgrad : public Student {
-private:
-    int credit;
-
-public:
-    Postgrad(const char *n, int a, int c) : Student(n, a) {
-        credit = c;
-    }
-
-    void print() const override {
-        Student::print();
-        cout << "Credit: " << credit << endl;
-    }
-};
-
-int main() {
-    Student s("Bob", 20);
-    Postgrad p("Charlie", 25, 30);
-
-    s.print();
-    p.print();
-
-    return 0;
-}
-```
-
-## 六、编程题
 
 知识点：[基类与派生类、单一继承与多重继承](../../../topics/面向对象C++/继承与派生概念.md)、[虚函数的定义以实现动态多态性及虚函数的限制](../../../topics/面向对象C++/虚函数.md)、[用new申请和delete释放动态内存空间](../../../topics/面向对象C++/动态内存分配.md)
 
@@ -634,110 +426,11 @@ int main() {
 （3）输出流运算符 `<<` 以友元函数形式重载；
 （4）输入流运算符 `>>` 以友元函数形式重载。
 
-参考解答：
-```cpp
-#include <iostream>
-using namespace std;
-
-class Point {
-private:
-    double x, y;
-
-public:
-    // 构造函数
-    Point(double xVal = 0, double yVal = 0) : x(xVal), y(yVal) {}
-
-    // 前置 ++ 重载 (成员函数)
-    Point& operator++() {
-        x++;
-        y++;
-        return *this;
-    }
-
-    // 友元声明
-    friend ostream& operator<<(ostream& os, const Point& p);
-    friend istream& operator>>(istream& is, Point& p);
-};
-
-// 输出流重载
-ostream& operator<<(ostream& os, const Point& p) {
-    os << "(" << p.x << ", " << p.y << ")";
-    return os;
-}
-
-// 输入流重载
-istream& operator>>(istream& is, Point& p) {
-    is >> p.x >> p.y;
-    return is;
-}
-
-int main() {
-    Point p1(1.0, 2.0);
-    cout << "Original: " << p1 << endl;
-    
-    ++p1;
-    cout << "After ++: " << p1 << endl;
-
-    Point p2;
-    cout << "Enter coordinates: ";
-    cin >> p2;
-    cout << "Inputted: " << p2 << endl;
-
-    return 0;
-}
-```
-
 知识点：[运算符重载的定义规则与定义形式](../../../topics/面向对象C++/运算符重载规则.md)、[用成员函数重载运算符](../../../topics/面向对象C++/成员函数重载运算符.md)、[用友元函数重载运算符及与成员函数形式的区别](../../../topics/面向对象C++/友元函数重载运算符.md)
 
 ### 编程 4
 
 题干：定义复数类 Complex，有两个 double 类型的数据成员 real 和 imag 分别表示实部和虚部。请根据下列 main() 函数的代码完成类的定义及相应运算符的重载，写出完整的程序代码。具体要求：
 *(注：题目未列出具体要求，但通常包括 +, -, *, /, <<, >> 等重载)*
-
-参考解答：
-```cpp
-#include <iostream>
-using namespace std;
-
-class Complex {
-private:
-    double real, imag;
-
-public:
-    Complex(double r = 0, double i = 0) : real(r), imag(i) {}
-
-    // 加法
-    Complex operator+(const Complex& other) const {
-        return Complex(real + other.real, imag + other.imag);
-    }
-
-    // 减法
-    Complex operator-(const Complex& other) const {
-        return Complex(real - other.real, imag - other.imag);
-    }
-
-    // 友元输出
-    friend ostream& operator<<(ostream& os, const Complex& c) {
-        if (c.imag >= 0)
-            os << c.real << " + " << c.imag << "i";
-        else
-            os << c.real << " - " << abs(c.imag) << "i";
-        return os;
-    }
-    
-    // 友元输入
-    friend istream& operator>>(istream& is, Complex& c) {
-        is >> c.real >> c.imag;
-        return is;
-    }
-};
-
-int main() {
-    Complex c1(1, 2), c2(3, -4);
-    Complex c3 = c1 + c2;
-    cout << c3 << endl;
-    return 0;
-}
-```
 
 知识点：[运算符重载的定义规则与定义形式](../../../topics/面向对象C++/运算符重载规则.md)、[用成员函数重载运算符](../../../topics/面向对象C++/成员函数重载运算符.md)、[用友元函数重载运算符及与成员函数形式的区别](../../../topics/面向对象C++/友元函数重载运算符.md)

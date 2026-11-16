@@ -91,7 +91,7 @@ Username1 = password1
 
 #### 创建新的资源库位置 (Create a new repository location)
 
-![图 1](<资料名>.assets/图1.png) 创建新的资源库位置界面
+![图 1（原件第4页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第4页.webp) 创建新的资源库位置界面
 
 #### 使用已有资源库位置 (Use existing repository location)
 
@@ -99,7 +99,7 @@ Username1 = password1
 
 示例 URL：`svn://localhost/repository`
 
-![图 2](<资料名>.assets/图2.png) 使用已有资源库位置界面
+![图 2（原件第4页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第4页.webp) 使用已有资源库位置界面
 
 **注：** 上图的 URL 中，`localhost` 和 `repository` 都是变量，需根据实现情况来决定。`Localhost` 需换成 SVN 服务器的实际 IP；`repository` 是在 SVN 服务器上创建的版本仓库名，即本文开始部分“`svnadmin create d:\svn\Repositories\repository`”命令所指定的目录。
 
@@ -112,7 +112,7 @@ Username1 = password1
 
 URL : `svn://localhost/repository/mini`
 
-![图 3](<资料名>.assets/图3.png) 指定模块名界面
+![图 3（原件第5页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第5页.webp) 指定模块名界面
 
 如上图，一步一步走完。这时候会建立本地项目与 SVN 服务器的关联。但本地文件却并不会马上上传到 SVN 服务器，需再执行一次提交即可将本地名为 `mini` 的项目放到 SVN 服务器中，建立起对该项目的版本控制。提交时会被要求输入用户名和密码，按照 SVN 服务器上 `passwd` 文件中配置的授权账号录入即可。
 
@@ -120,7 +120,7 @@ URL : `svn://localhost/repository/mini`
 
 ### 3. 从 SVN 服务器上检出项目工程
 
-![图 4](<资料名>.assets/图4.png) 检出项目主界面
+![图 4（原件第6页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第6页.webp) 检出项目主界面
 
 #### 创建新的资源库位置 / 使用现有的资源库位置
 
@@ -132,7 +132,7 @@ URL : `svn://localhost/repository/mini`
 - `svn://192.168.1.167`
 - `svn://localhost/repository`
 
-![图 5](<资料名>.assets/图5.png) 选择资源库位置界面
+![图 5（原件第7页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第7页.webp) 选择资源库位置界面
 
 选中 `svn://localhost/repository`，点击 Next。
 
@@ -144,7 +144,7 @@ URL : `svn://localhost/repository/mini`
 - SVN
     - mini
 
-![图 6](<资料名>.assets/图6.png) 选择检出文件夹界面
+![图 6（原件第9页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第9页.webp) 选择检出文件夹界面
 
 #### 选择检出方式
 
@@ -159,6 +159,6 @@ Revision: `Check out HEAD revision`
 Depth: `Fully recursive`
 其他选项：`Ignore externals`, `Allow unversioned obstructions`
 
-![图 7](<资料名>.assets/图7.png) 检出配置界面
+![图 7（原件第9页）](软件工程双语实验4：SVN独立服务器及Eclipse客户端配置指南.assets/原件第9页.webp) 检出配置界面
 
 完成上面的系列步骤后，一个工程即从 SVN 服务器上被检出到开发者本地。

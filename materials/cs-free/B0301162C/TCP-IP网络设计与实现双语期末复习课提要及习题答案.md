@@ -505,8 +505,6 @@ Internet 地址可以按 8 位字节、16 位字或单个 32 位地址来访问�
 
 答案：B。
 
-参考解答：在 RFC 950 引入子网划分之前，IP 地址的分类（A、B、C 类）严格遵循字节边界，因此 `in_addr` 被设计为结构体以便通过宏直接访问特定的字节段。随着子网技术和 CIDR 的出现，这种基于字节的划分不再适用。
-
 知识点：[IP 地址分类（A/B/C/D/E 类）与子网掩码](../../../topics/TCP-IP网络/ip地址分类.md)、[子网划分与 CIDR 无类别域间路由](../../../topics/TCP-IP网络/子网划分与cidr.md)
 
 ### 选择 4
@@ -587,8 +585,6 @@ Net/3 将相关协议分组到一个域（domain）中，并使用协议族常�
 - D. `ip_init()`
 
 答案：B。
-
-参考解答：原文明确指出 `pffindproto(PF_INET, 27, SOCK_RAW)` 返回指向 `inetsw[6]` 的指针（对应 RAW IP）。
 
 知识点：[pffindproto 和 pffindtype 函数的功能、调用示例及返回值说明](../../../topics/TCP-IP网络/pffindproto与pffindtype.md)、[protosw 结构的分配、初始化及 inetsw 数组中的多个条目](../../../topics/TCP-IP网络/protosw结构.md)
 

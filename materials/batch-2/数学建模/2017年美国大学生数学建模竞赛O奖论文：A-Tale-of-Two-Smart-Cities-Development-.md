@@ -1,6 +1,6 @@
 ---
 title: 2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities: Development of a Smart Growth Index
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 term: 2016-2017-2
 source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文（全部）.zip/2017年美国大学生数学建模竞赛O奖论文（全部）/2017年美国大学生数学建模竞赛O奖论文（全部）/E/61502.pdf
@@ -8,7 +8,7 @@ source: batch-2:数学建模/2017年美国大学生数学建模竞赛O奖论文�
 
 # 2017年美国大学生数学建模竞赛O奖论文：A Tale of Two Smart Cities: Development of a Smart Growth Index
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 本文基于 2017 年美国大学生数学建模竞赛（MCM）O 奖论文整理。内容涵盖摘要、引言及智能增长原则，旨在构建一个基于可持续性原则的城市智能增长指数（Smart Growth Index, SGI）。
 

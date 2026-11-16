@@ -1,13 +1,13 @@
 ---
 title: 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Into the Void: A Probabalistic Approach to the Search for Missing Aircraft
-kind: 复习要点
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛特等奖原版论文集/32879.pdf
 ---
 
 # 2015年美国大学生数学建模竞赛（MCM）特等奖论文：Into the Void: A Probabalistic Approach to the Search for Missing Aircraft
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 ![2015 Mathematical Contest in Modeling (MCM) Summary Sheet](2015年美国大学生数学建模竞赛MCM特等奖论文：Into-the-Void-A-Probabalistic-Appro.assets/图1.jpg)
 
@@ -209,7 +209,7 @@ $$
 
 图 3 显示了示例飞机波音 747-400 在 $( x , y )$ 空间中的初始概率分布。在原点处有一个尖峰，对应于突发坠毁情况的概率；而在飞机的初始方向上，概率逐渐增加，直到达到最大滑翔范围，此时概率降至零。
 
-![图 3](<资料名>.assets/图3.png) 图 3：波音 747-400 在 $(x, y)$ 空间中的初始概率分布示意图
+![图 3（原件第7页）](2015年美国大学生数学建模竞赛MCM特等奖论文：Into-the-Void-A-Probabalistic-Appro.assets/原件第7页.webp) 图 3：波音 747-400 在 $(x, y)$ 空间中的初始概率分布示意图
 
 ## 三、贝叶斯定理的应用
 
@@ -407,7 +407,7 @@ This distribution resembles that of the five day square search, but it leaves le
 
 该搜索模型采用扩大的方形螺旋路径。下图描述了“螺旋扫掠”形状的搜索路径：
 
-![图 13：“螺旋扫掠”通过搜索正方形 [12]。](figure:65ce80a47c559e682f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006ac81f2919dceacf006......)
+![图 13：“螺旋扫掠”通过搜索正方形 [12]。](2015年美国大学生数学建模竞赛MCM特等奖论文：Into-the-Void-A-Probabalistic-Appro.assets/原件图1.jpg)
 
 *注：原文图片链接为占位符，实际整理中应保留原图文件名。此处简化为描述性文字。*
 
@@ -435,7 +435,7 @@ $$
 
 最后介绍的搜索模型是八边形“扇区搜索”，可以在下图中直观看到：
 
-![图 17：区域内的“扇区搜索”[12]。](figure:...)
+![图 17：区域内的“扇区搜索”[12]。](2015年美国大学生数学建模竞赛MCM特等奖论文：Into-the-Void-A-Probabalistic-Appro.assets/原件图2.jpg)
 
 虽然轮廓几何不再是正方形，但我们仍然寻求 $z$ 和 $l$ 之间的关系，其中 $l$ 是正八边形的边长：
 
@@ -522,9 +522,9 @@ $$
 **问题：** 当搜索飞机数量从一架增加到五架时，搜索结果有何变化？
 
 **正文/说明：**
-为了确定搜索飞机数量对结果的影响，模型使用每天五架飞机而不是每天一架运行。实际上，这与用一架飞机搜索五倍天数没有区别。因此，五架飞机的结果与一架飞机的结果相同是合理的：矩形搜索最好，紧随其后的是两种正方形路径。如图 22 所示（注：原文提及 Figure 22，此处保留引用占位符）。
+为了确定搜索飞机数量对结果的影响，模型使用每天五架飞机而不是每天一架运行。实际上，这与用一架飞机搜索五倍天数没有区别。因此，五架飞机的结果与一架飞机的结果相同是合理的：矩形搜索最好，紧随其后的是两种正方形路径。如图 22 所示。
 
-![图 22](<资料名>.assets/figure22.png)
+![图 22（原件第25页）](2015年美国大学生数学建模竞赛MCM特等奖论文：Into-the-Void-A-Probabalistic-Appro.assets/原件第25页.webp)
 
 **知识点：** 概率分布
 

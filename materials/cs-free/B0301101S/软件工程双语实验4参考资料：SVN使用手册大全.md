@@ -360,7 +360,7 @@ TortoiseSVN Add... Finished!
 
 鼠标选中主线目录右键选择“TortoiseSVN”的“Branch/tag…”项，系统弹出有关标签路径的信息，如下图所示：
 
-![建立标签对话框](<资料名>.assets/建立标签对话框.png)
+![建立标签对话框（原件第20页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第20页.webp)
 
 在 To URL 栏中输入标签目录，如 `http:///test/空中充值项目/标签/V1.0.0.0`（输入的 V1.0.0.0 可自动生成，无需事先建立 V1.0.0.0 文件夹），点击“OK”按钮建立 V1.0.0.0 版本标签。
 
@@ -376,7 +376,7 @@ TortoiseSVN Add... Finished!
 
 鼠标选中主线文件夹右键选择“TortoiseSVN”的“Merge…”项，系统弹出有关分支合并的信息，如下图所示：
 
-![分支合并对话框](<资料名>.assets/分支合并对话框.png)
+![分支合并对话框（原件第20页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第20页.webp)
 
 在 From 框中选择 URL (如 `http:///test/空中充值项目/分支`) 点击 show log 选择起始版本。
 
@@ -394,7 +394,7 @@ TortoiseSVN Add... Finished!
 
 选中要查看的文件，右键选择“TortoiseSVN”的“Revision graph”项，系统弹出有关版本分支的结构图，如下图所示：
 
-![版本分支结构图](<资料名>.assets/版本分支结构图.png)
+![版本分支结构图（原件第20页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第20页.webp)
 
 ## 2.7. 清除用户名等信息
 
@@ -416,11 +416,11 @@ TortoiseSVN Add... Finished!
 
 依日期统计后如下图所示：
 
-![依日期统计结果](<资料名>.assets/依日期统计结果.png)
+![依日期统计结果（原件第24页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第24页.webp)
 
 依作者统计后如下图所示：
 
-![依作者统计结果](<资料名>.assets/依作者统计结果.png)
+![依作者统计结果（原件第24页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第24页.webp)
 
 ## 2.9. SVN 数据同步
 
@@ -466,13 +466,13 @@ TortoiseSVN Add... Finished!
 
 在 Name 栏中输入 svn，在 URL 栏中输入访问地址 `http://subclipse.tigris.org/update_1.0.x`，点击“OK”按钮，系统将 svn 添加到“Sites to include in search”栏中，选中 svn 点击“Finish”按钮，搜索后系统弹出如下信息框：
 
-![搜索结果列表](<资料名>.assets/搜索结果列表.png)
+![搜索结果列表（原件第26页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第26页.webp)
 
 ![Subclipse 特性详情](<资料名>.assets/Subclipse 特性详情.png)
 
 ![Subclipse 选中及进度](<资料名>.assets/Subclipse 选中及进度.png)
 
-![安装确认界面](<资料名>.assets/安装确认界面.png)
+![安装确认界面（原件第26页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第26页.webp)
 
 选择“Install All”按钮进行安装，系统弹出安装信息框，如下图所示：
 
@@ -480,7 +480,7 @@ TortoiseSVN Add... Finished!
 
 安装完成后，系统弹出如下信息框：
 
-![重启提示](<资料名>.assets/重启提示.png)
+![重启提示（原件第28页）](软件工程双语实验4参考资料：SVN使用手册大全.assets/原件第28页.webp)
 
 点击“Yes”按钮重启 MyEclipse 使安装生效。
 

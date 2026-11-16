@@ -68,7 +68,7 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 请根据下图写出对应的HTML代码。
 
-![图 3](Web技术（双语）.assets/figure_6a756fa0dc95af8f340de994e9fd3e53695e7143fc7c561f31f5f391ed6f283d.jpg)
+![图 3（原件第2页）](Web技术双语第二单元-HTML-入门第一部分作业答案.assets/原件第2页.webp)
 
 答案：待补充（需依据原图视觉内容编写HTML代码）
 

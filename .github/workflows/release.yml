@@ -26,11 +26,12 @@ jobs:
       - uses: actions/checkout@v6
         with:
           fetch-depth: 2
-      - run: python3 tools/build.py
       - uses: actions/setup-node@v6
-        if: github.event_name != 'pull_request'
         with:
           node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: python3 tools/build.py
       - name: Deploy the pictures a change touched
         if: github.event_name != 'pull_request'
         env:
@@ -39,7 +40,7 @@ jobs:
         run: |
           # A host is redeployed when a picture it keeps changed; the shard of each path is the build's own rule.
           if [ "$ALL" = "true" ]; then shards="k1 k2 k3"; else
-            shards=$(git diff --name-only HEAD~1 HEAD -- '*.webp' '*.jpg' '*.jpeg' '*.png' '*.gif' \
+            shards=$(git -c core.quotepath=false diff --name-only HEAD~1 HEAD -- '*.webp' '*.jpg' '*.jpeg' '*.png' '*.gif' \
               | python3 -c 'import sys; sys.path.insert(0, "tools"); from build import shard; print(" ".join(sorted({f"k{shard(l.strip()) + 1}" for l in sys.stdin if l.strip()})))')
           fi
           echo "media hosts to deploy: ${shards:-none}"

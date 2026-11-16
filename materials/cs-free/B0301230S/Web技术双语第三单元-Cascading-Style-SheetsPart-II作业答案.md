@@ -51,35 +51,17 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 题干：(Review Questions 3.15) Why is it better to use em than pt for font sizes?
 
-参考解答：使用 `em` 单位比 `pt` 单位更好，因为 `em` 是相对单位，它基于当前元素的字体大小进行计算。这使得网页在不同设备、浏览器设置或用户自定义字体大小的情况下具有更好的可访问性和适应性。而 `pt`（磅）是绝对单位，固定不变，无法随用户偏好或屏幕尺寸自动调整，可能导致在小屏幕或高DPI设备上文字过小或过大，影响阅读体验。
-
 知识点：[CSS属性：字体属性（Font Properties）](../../../topics/Web开发技术/css-properties-font.md)、[CSS简介与作用](../../../topics/Web开发技术/css-intro.md)
 
 ### 简答 2
 
 题干：(Review Questions 3.21) If you want text to flow around the right side of an image, which value, right or left, must be assigned to the float property of the image?
 
-参考解答：必须将值 `right` 分配给图像的 `float` 属性。当图像向左浮动（`float: left`）时，文本会环绕在图像的右侧；反之，若要让文本环绕在图像的右侧，图像本身应向右浮动（`float: right`），这样文本流会从左侧开始并包裹住图像的右边。（注：题目问的是“text to flow around the right side of an image”，即文本在图像右侧流动，这意味着图像应在左侧占据空间，因此图像应 `float: left`。但根据常见表述歧义，若意指图像位于文本流的右侧且文本在其左侧环绕，则图像需 `float: right`。通常“flow around the right side”指文本出现在图像的右边，这要求图像左浮。此处按标准布局逻辑修正：若希望文本出现在图像的右侧，图像应设置为 `float: left`。若题目意思是图像靠右排列，文本在左边环绕，则是 `float: right`。鉴于题目明确说“text to flow around the right side of an image”，即文本在图像右边，故图像应 `float: left`。）
-
-*更正理解*：如果文本要流经图像的**右侧**（即文本块在图像的右边），那么图像应该位于左侧，因此图像的 `float` 属性应为 `left`。
-
-答案：left
-
 知识点：[CSS属性：边距（Margins）与背景图像（Background images）](../../../topics/Web开发技术/css-properties-margin-bg.md)
 
 ### 简答 3
 
 题干：(Review Questions 3.33) Which has higher precedence, an id selector or a universal selector (*)?
-
-参考解答：ID 选择器（id selector）具有更高的优先级。在 CSS 特异性（Specificity）计算中，ID 选择器的权重远高于通用选择器（universal selector）。ID 选择器权重为 (0, 1, 0, 0)，而通用选择器权重为 (0, 0, 0, 0)。因此，当两者冲突时，ID 选择器的样式规则将覆盖通用选择器的规则。
-
-答案：id selector
-
-## 三、编程练习
-
-参考解答：使用 `vertical-align: middle` 可实现行内元素（如图片与文本）的垂直居中对齐。
-
-`vertical-align` 仅对行内级元素（inline / inline-block）或表格单元格生效，其 `middle` 值将元素的垂直中点与父元素基线加上 x-height 一半的位置对齐。示例中为 `<img>` 和 `<span>` 同时设置该属性，使二者中线对齐；容器设为 `inline-block` 以形成独立的行内格式化上下文，避免外部基线干扰。若未给两者都设置相同对齐值，则默认 `baseline` 对齐会导致图片底部与文本基线对齐而非居中。
 
 知识点：[CSS属性：文本对齐（Alignment of text）](../../../topics/Web开发技术/css-properties-text.md)、[图像（img）与超文本链接（a标签、文档内部目标）](../../../topics/Web开发技术/images-links.md)、[div和span标签在CSS中的应用](../../../topics/Web开发技术/css-div-span.md)
 
@@ -138,29 +120,6 @@ CSS 代码：
 }
 ```
 
-参考解答：**结论：** 使用 CSS `float: left` 将小文本框浮动到左侧，主文本自然环绕；通过 `font-size` 和 `font-style` 控制嵌入文本的字体大小与斜体。
-
-**关键实现步骤：**
-
-1. **HTML 结构**：侧边栏 `.sidebar` 必须放在主内容 `.main-content` **之前**，这样浮动元素才能被后续文档流中的内容环绕。
-2. **CSS 浮动与环绕**：
-   ```css
-   .sidebar {
-       float: left;        /* 核心：向左浮动，使主文本环绕 */
-       width: 20%;         /* 设定固定宽度形成"小盒子" */
-       margin-right: 10px; /* 与主文本保持间距 */
-       font-size: 0.8em;   /* 较小字体 */
-       font-style: italic; /* 斜体 */
-   }
-   ```
-3. **清除浮动影响（可选）**：
-   ```css
-   .main-content {
-       overflow: auto; /* 触发 BFC，防止容器高度塌陷 */
-   }
-   ```
-4. **半页文本**：在 `.main-content` 中放置足够多的 `<p>` 段落以满足长度要求。
-
 知识点：[元素定位（绝对定位、相对定位、静态定位）与堆叠元素](../../../topics/Web开发技术/css-positioning.md)、[CSS属性：字体属性（Font Properties）](../../../topics/Web开发技术/css-properties-font.md)、[HTML文档结构（head、body、meta元素）](../../../topics/Web开发技术/html-doc-structure.md)
 
 ### 计算 2
@@ -214,62 +173,6 @@ CSS 代码：
 }
 ```
 
-参考解答：结论：可通过定义三个 CSS 类 `.p1`、`.p2`、`.p3`，分别设置要求的边距、缩进、背景色和文字颜色，再按顺序将它们应用到六个段落，即可完成并测试该页面。
-
-HTML 代码：
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Paragraph Styles Exercise</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <p class="p1">California is known for its diverse landscape, ranging from beaches to mountains.</p>
-    <p class="p2">California has one of the world's largest economies, driven by technology and entertainment.</p>
-    <p class="p3">Its climate varies from Mediterranean conditions on the coast to arid conditions inland.</p>
-    <p class="p1">Los Angeles is a major cultural center and is famous for Hollywood.</p>
-    <p class="p2">San Francisco is known for its steep hills and the Golden Gate Bridge.</p>
-    <p class="p3">Agriculture is especially important in California's Central Valley.</p>
-</body>
-</html>
-```
-
-`style.css` 代码：
-
-```css
-.p1 {
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: pink;
-    color: blue;
-}
-
-.p2 {
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: black;
-    color: yellow;
-}
-
-.p3 {
-    text-indent: 1cm;
-    background-color: green;
-    color: white;
-}
-```
-
-简要说明：
-
-- `.p1`、`.p2`、`.p3` 是**类选择器**，通过 `class` 属性应用到对应的 `<p>` 元素。
-- `margin-left` 和 `margin-right` 分别设置段落的左、右外边距。
-- `background-color` 设置背景色，`color` 设置前景色，即文字颜色。
-- `text-indent: 1cm` 只缩进段落的第一行。
-- 第 1、4 段使用 `p1`，第 2、5 段使用 `p2`，第 3、6 段使用 `p3`，符合指定顺序。
-- 测试时，将 HTML 文件与 `style.css` 放在同一目录，用浏览器打开 HTML 文件，检查六段的边距、缩进和颜色是否正确。
-
 知识点：[选择器形式（简单选择器、类选择器Class、通用选择器Generic、id选择器、上下文选择器Contextual、伪类Pseudo class、通配符Universal）](../../../topics/Web开发技术/css-selectors.md)、[CSS属性：边距（Margins）与背景图像（Background images）](../../../topics/Web开发技术/css-properties-margin-bg.md)
 
 ### 简答 3
@@ -307,9 +210,5 @@ CSS 代码：
     font-size: 16px;
 }
 ```
-
-参考解答：使用 `vertical-align: middle` 可实现行内元素（如图片与文本）的垂直居中对齐。
-
-`vertical-align` 仅对行内级元素（inline / inline-block）或表格单元格生效，其 `middle` 值将元素的垂直中点与父元素基线加上 x-height 一半的位置对齐。示例中为 `<img>` 和 `<span>` 同时设置该属性，使二者中线对齐；容器设为 `inline-block` 以形成独立的行内格式化上下文，避免外部基线干扰。若未给两者都设置相同对齐值，则默认 `baseline` 对齐会导致图片底部与文本基线对齐而非居中。
 
 知识点：[CSS属性：文本对齐（Alignment of text）](../../../topics/Web开发技术/css-properties-text.md)、[图像（img）与超文本链接（a标签、文档内部目标）](../../../topics/Web开发技术/images-links.md)、[div和span标签在CSS中的应用](../../../topics/Web开发技术/css-div-span.md)

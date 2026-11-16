@@ -1488,7 +1488,7 @@ An Introduction to Database System
 
 <常量>
 
-[ANY|ALL](SELECT语句)
+`[ANY|ALL](SELECT语句)`
 
 (2)
 

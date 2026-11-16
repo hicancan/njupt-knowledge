@@ -112,11 +112,6 @@ public class EditMenuDemo extends JFrame implements ActionListener {
    
    若题目要求手动操作 Clipboard，则涉及 `Toolkit.getDefaultToolkit().getSystemClipboard()` 等复杂逻辑。鉴于这是基础填空，通常考察组件自带方法。
    
-   参考解答：
-   1. `text1.copy();`
-   2. `text1.cut();`
-   3. `text1.paste();`
-
 知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[消息(Message)的组成及其在对象通信中的作用](../../../topics/Java开发/消息传递机制.md)、[if-else、switch、while、do-while、for语句及break/continue/return分支控制](../../../topics/Java开发/流程控制语句.md)
 
 ### 填空 3
@@ -480,30 +475,6 @@ public class Box {
 }
 ```
 
-参考解答：**结论**
-
-上述代码完整且正确地实现了 `Box` 类的设计要求，符合 Java 面向对象封装原则。程序运行后将输出：
-```text
-Box Volume: 100.0
-```
-
-**推理与实现分析**
-
-1.  **封装性实现**：
-    *   成员变量 `length`, `width`, `height` 均声明为 `private`，确保了数据的安全性，外部无法直接访问或修改。
-    *   提供了公共的 Getter (`getLength` 等) 和 Setter (`setLength` 等) 方法，作为访问和修改私有成员的唯一通道，符合 JavaBean 规范。
-
-2.  **构造方法**：
-    *   `public Box(double length, double width, double height)` 使用 `this` 关键字区分参数与成员变量，正确初始化对象状态。
-
-3.  **业务逻辑计算**：
-    *   `getVolume()` 方法执行体积公式 $V = l \times w \times h$，即 `return length * width * height;`，逻辑正确。
-
-4.  **主流程验证**：
-    *   `main` 方法中实例化对象 `new Box(10, 5, 2)`。
-    *   调用 `box.getVolume()` 计算：$10 \times 5 \times 2 = 100.0$。
-    *   `System.out.println` 输出结果，完成题目要求的测试流程。
-
 知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[第一个Java程序（源文件创建、javac编译、类定义、main方法）](../../../topics/Java开发/HelloWorld程序结构.md)
 
 ### 编程 2
@@ -585,42 +556,6 @@ public class Main {
 }
 ```
 
-参考解答：# 结论
-
-上述代码正确实现了题目要求。运行后输出圆柱体积约为 $58.9049$。
-
-# 推理与关键计算
-
-**继承结构**：`Cylinder extends Circle`，子类通过 `super(radius)` 调用父类构造方法初始化继承来的 `radius`，自身再初始化 `height`。
-
-**方法重写**：`Cylinder` 中 `@Override` 标注的 `getArea()` 重写了父类方法，计算圆柱表面积：
-
-$$S_{表} = 2 \times S_{底} + S_{侧} = 2\pi r^2 + 2\pi r h$$
-
-**体积计算**：`getVolume()` 复用父类的 `getArea()`（即底面积 $\pi r^2$）乘以高：
-
-$$V = \pi r^2 h = \pi \times 2.5^2 \times 3 = 18.75\pi \approx 58.9049$$
-
-**输出**：
-
-```
-Cylinder Volume: 58.90486225480862
-```
-
-# 代码要点说明
-
-| 要求 | 实现方式 |
-|------|----------|
-| 私有成员变量 | `private double radius` / `private double height` |
-| 构造方法初始化 | `super(radius)` + `this.height = height` |
-| getter/setter | 公有方法 `getRadius()`/`setRadius()`/`getHeight()`/`setHeight()` |
-| 圆面积 | `Math.PI * radius * radius` |
-| 重写表面积 | `@Override` + `super.getArea()` 复用底面积 |
-| 体积 | `super.getArea() * height` |
-| 实例化 | `new Cylinder(2.5, 3)`，半径 2.5、高 3 |
-
-**`super` 的作用**：在 `getArea()` 和 `getVolume()` 中通过 `super.getArea()` 调用父类版本求底面积，避免重复编写 $\pi r^2$ 的逻辑，体现代码复用。
-
 知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[类之间的继承、聚合、合成、依赖关系及开闭原则(OCP)](../../../topics/Java开发/类之间的关系.md)、[方法的声明、调用、按值/按引用参数传递及方法的重载(Overloading)](../../../topics/Java开发/方法的定义与重载.md)
 
 ### 编程 3
@@ -693,98 +628,6 @@ class StudentTest {
 }
 ```
 
-参考解答：**结论：** Student 类封装 5 个私有域、带计数功能的构造函数、getter/setter 与 toString，测试类创建实例并输出验证。
-
-**关键设计：**
-
-1. **封装**：域声明为 `private`，通过 `public` 的 getter/setter 访问，隐藏内部细节。
-2. **计数**：`count` 声明为 `static int`，属于类而非对象；每调用一次构造函数执行 `count++`，通过 `static` 方法 `getCount()` 读取：
-
-$$
-\text{count}_{\text{final}} = \sum_{i=1}^{n} 1 = n
-$$
-
-即生成几个对象，计数就等于几。示例中创建 $2$ 个实例，输出 `Total Students: 2`。
-
-3. **toString**：重写 `Object.toString()`，用 `@Override` 标注，返回包含全部域的字符串，方便 `System.out.println(s)` 直接打印。
-
-**完整代码：**
-
-```java
-public class Student {
-    private String id;        // 学号
-    private String classNo;   // 班号
-    private String name;      // 姓名
-    private String gender;    // 性别
-    private int age;          // 年龄
-    private static int count = 0; // 静态计数器
-
-    public Student(String id, String classNo, String name, String gender, int age) {
-        this.id = id;
-        this.classNo = classNo;
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-        count++;
-    }
-
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
-
-    public String getClassNo() { return classNo; }
-    public void setClassNo(String classNo) { this.classNo = classNo; }
-
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
-
-    public String getGender() { return gender; }
-    public void setGender(String gender) { this.gender = gender; }
-
-    public int getAge() { return age; }
-    public void setAge(int age) { this.age = age; }
-
-    public static int getCount() { return count; }
-
-    @Override
-    public String toString() {
-        return "Student{id='" + id + "', classNo='" + classNo + "', name='" + name +
-               "', gender='" + gender + "', age=" + age + "}";
-    }
-}
-```
-
-```java
-public class StudentTest {
-    public static void main(String[] args) {
-        Student s1 = new Student("001", "CS101", "Alice", "Female", 20);
-        Student s2 = new Student("002", "CS101", "Bob", "Male", 21);
-
-        System.out.println(s1);
-        System.out.println(s2);
-
-        // 修改属性后验证 setter
-        s1.setAge(21);
-        System.out.println("After update: " + s1);
-
-        System.out.println("Total Students: " + Student.getCount());
-    }
-}
-```
-
-**运行输出：**
-
-```
-Student{id='001', classNo='CS101', name='Alice', gender='Female', age=20}
-Student{id='002', classNo='CS101', name='Bob', gender='Male', age=21}
-After update: Student{id='001', classNo='CS101', name='Alice', gender='Female', age=21}
-Total Students: 2
-```
-
-**要点说明：**
-- `count` 必须是 `static`，否则每个对象各有一个计数器，无法统计总数；
-- getter/setter 是 `public`，域是 `private`，实现数据封装；
-- `println(s1)` 自动调用 `s1.toString()`，无需显式书写。
-
 知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[成员变量与局部变量的作用范围、默认值及final终止变量](../../../topics/Java开发/变量的作用域与初始化.md)、[方法的声明、调用、按值/按引用参数传递及方法的重载(Overloading)](../../../topics/Java开发/方法的定义与重载.md)
 
 ### 编程 4
@@ -845,58 +688,5 @@ public class Employee {
     }
 }
 ```
-
-参考解答：结论：上面给出的 `Employee` 程序基本符合题意，但建议把 `gender` 封装为私有成员并提供 getter/setter；`empCount` 用 `private static` 保存总数，构造方法中自增。
-
-```java
-public class Employee {
-    private String name;
-    private char gender;
-    private static int empCount = 0;
-
-    // 构造方法：初始化成员变量并统计员工总数
-    public Employee(String name, char gender) {
-        this.name = name;
-        this.gender = gender;
-        empCount++;
-    }
-
-    // name 的 getter 和 setter
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-
-    public static int getEmpCount() {
-        return empCount;
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{name='" + name + "', gender='" + gender + "'}";
-    }
-
-    public static void main(String[] args) {
-        Employee emp1 = new Employee("Jack", 'M');
-        System.out.println(emp1.toString());
-    }
-}
-```
-
-关键点：
-- 成员变量用 `private` 体现封装，通过 `getXxx()/setXxx()` 访问。
-- `empCount` 是静态变量，属于类，所有对象共享；每创建一个对象，在构造方法中执行 `empCount++`。
-- `toString()` 返回员工信息字符串，`System.out.println(emp1)` 也会自动调用 `toString()`。
 
 知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[成员变量与局部变量的作用范围、默认值及final终止变量](../../../topics/Java开发/变量的作用域与初始化.md)、[第一个Java程序（源文件创建、javac编译、类定义、main方法）](../../../topics/Java开发/HelloWorld程序结构.md)

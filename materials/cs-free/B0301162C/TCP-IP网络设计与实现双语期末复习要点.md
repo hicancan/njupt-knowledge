@@ -277,25 +277,11 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0301
 
 题干：What does the IP Input do in the 4.4BSD-Lite distribution? (IP 输入在 4.4BSD-Lite 发行版中做什么？)
 
-参考解答：
-IP 输入是异步的，由软件中断调度运行。当接口层从系统的一个接口接收到 IP 数据报时，会设置该软中断。当 IP 输入例程执行时，它会循环处理其输入队列上的每个 IP 数据报，直到整个队列处理完毕才返回。
-
-IP 输入例程处理它接收到的每个 IP 数据报。具体步骤包括：
-1. 验证 IP 头部校验和。
-2. 处理任何 IP 选项。
-3. 验证数据报是否交付给了正确的主机（通过比较数据报的目标 IP 地址与主机的 IP 地址）。
-4. 如果系统配置为路由器且数据报发往其他 IP 地址，则转发该数据报。
-
-如果 IP 数据报已到达最终目的地，IP 头部的协议字段指定调用哪个协议的输入例程：ICMP、IGMP、TCP 或 UDP。在示例中，调用 UDP 输入例程来处理 UDP 数据报。
-
 知识点：[IP 输入（ip_input）在 4.4BSD-Lite 发行版中的处理流程](../../../topics/TCP-IP网络/ip输入处理.md)、[IP 头部长度、字段解析与校验和错误处理](../../../topics/TCP-IP网络/ip头部格式.md)、[路由器转发逻辑与 ip_forward 中的字节序转换](../../../topics/TCP-IP网络/ip转发逻辑.md)
 
 ### 选择 19
 
 题干：What does the UDP input do in the 4.4BSD-Lite distribution? (UDP 输入在 4.4BSD-Lite 发行版中做什么？)
-
-参考解答：
-UDP 输入例程验证 UDP 头部中的字段（长度和可选校验和），然后确定是否有进程应该接收该数据报。
 
 知识点：[阻塞在 recvfrom 调用中的进程存放在套接字结构的何处以便被通知](../../../topics/TCP-IP网络/socket阻塞通知机制.md)
 
@@ -313,13 +299,6 @@ UDP 输入例程验证 UDP 头部中的字段（长度和可选校验和），�
 
 题干：What does the example process input do? (示例进程输入做了什么？)
 
-参考解答：
-我们的进程一直在内核中睡眠，在其对 `recvfrom` 的调用中被阻塞，现在进程唤醒。UDP 层附加到套接字接收队列上的 26 字节数据（接收到的数据报）由内核从 mbuf 复制到我们程序的缓冲区中。
-
-注意，我们的程序将 `recvfrom` 的第 5 和第 6 个参数设置为空指针，告诉系统调用我们不关心接收发送者的 IP 地址和 UDP 端口号。这导致 `recvfrom` 系统调用跳过链中的第一个 mbuf（图 1.11），仅返回第二个 mbuf 中的 26 字节数据。内核的 `recvfrom` 代码随后释放图 1.11 中的两个 mbuf 并将它们返回到其空闲 mbuf 池中。
-
-程序通过调用 `recvfrom` 读取服务器发送回的数据包。我们的程序用空字节覆盖回车符，并调用 `printf` 输出结果。
-
 知识点：[mbuf 的用途及基本结构（m_data、m_len 等）](../../../topics/TCP-IP网络/mbuf用途与结构.md)、[阻塞在 recvfrom 调用中的进程存放在套接字结构的何处以便被通知](../../../topics/TCP-IP网络/socket阻塞通知机制.md)、[UDP 输入（udp_input）在 4.4BSD-Lite 发行版中的处理流程](../../../topics/TCP-IP网络/udp输入处理.md)
 
 ### 填空 22
@@ -333,11 +312,6 @@ UDP 输入例程验证 UDP 头部中的字段（长度和可选校验和），�
 ### 简答 23
 
 题干：Where should a process, if blocked in its call to recvfrom, be stored in a socket structure, so as to be notified? (如果一个进程在调用 recvfrom 时被阻塞，它应该存储在套接字结构的哪里以便被通知？)
-
-参考解答：
-*(注：原文仅给出问题，未直接给出答案文本，通常存储在该套接字的等待队列或阻塞列表中，具体取决于实现细节，此处保留原题供复习)*
-
-## 三、Mbufs 内存缓冲机制
 
 知识点：[阻塞在 recvfrom 调用中的进程存放在套接字结构的何处以便被通知](../../../topics/TCP-IP网络/socket阻塞通知机制.md)
 
@@ -791,7 +765,7 @@ Net/3 不实现用于探测到目的地的路径并发现所有中间网络支�
 
 ICMP 错误仅针对 IP 数据报的**初始片段**发送。由于初始片段的偏移值始终为 0，因此该字节的顺序并不重要。
 
-知识点：[Net/3 构造 ICMP 差错报文时不转换 IP 偏移量和长度字段字节序的原因分析](../../../topics/TCP-IP网络/icmp字节序细节.md)、[IP 头部长度、字段解析与校验和错误处理](../../../topics/TCP-IP网络/ip头部格式.md)、[IP 分片的触发条件与 MTU 限制](../../../topics/TCP-IP网络/分片触发条件.md)
+知识点：[ICMP 差错报文引用 IP 首部时的字节序](../../../topics/TCP-IP网络/icmp字节序细节.md)、[IP 头部长度、字段解析与校验和错误处理](../../../topics/TCP-IP网络/ip头部格式.md)、[IP 分片的触发条件与 MTU 限制](../../../topics/TCP-IP网络/分片触发条件.md)
 
 ### 节 4：在图 11.30 中，如果数据包的 `ip_off` 最高位被设置，会发生什么？
 

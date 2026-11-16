@@ -80,7 +80,7 @@ former: [B0301162C]
 - [ICMP 报文类型（差错报告与查询报文）概览](../topics/TCP-IP网络/icmp报文类型.md)
 - [icmp_input 函数处理流程及过时 Information Request 传递给 rip_input 的原因](../topics/TCP-IP网络/icmp_input处理.md)
 - [IP 差错与 ICMP 差错报文汇总（不可达、超时、参数问题等）](../topics/TCP-IP网络/icmp差错报文汇总.md)
-- [Net/3 构造 ICMP 差错报文时不转换 IP 偏移量和长度字段字节序的原因分析](../topics/TCP-IP网络/icmp字节序细节.md)
+- [ICMP 差错报文引用 IP 首部时的字节序](../topics/TCP-IP网络/icmp字节序细节.md)
 - [为什么在特定代码路径中丢弃 ip_output 的返回值](../topics/TCP-IP网络/ip_output返回值丢弃.md)
 
 ## Chapter 22 Network Input and Output

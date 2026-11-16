@@ -86,16 +86,6 @@ JavaScript 代码：
 </html>
 ```
 
-参考解答：**结论**
-
-以上代码即为满足题目所有要求的完整参考实现。
-
-**推理与关键说明**
-
-1. **五个按钮**：使用 5 个 `<input type="radio">`，`name` 属性统一设为 `"color"` 以保证互斥单选，标签文本分别为 red、blue、green、yellow、orange。
-2. **事件处理函数**：在 `<script>` 中定义命名函数 `showColor(color)`，内部通过 `alert()` 弹出包含所选颜色的提示信息。
-3. **onclick 绑定与传参**：每个 radio 元素的 `onclick` 属性被赋值为函数调用表达式（如 `onclick="showColor('red')"`），将对应颜色字符串作为参数直接传入，符合“函数名赋给 onclick 属性”且“颜色作为参数发送”的要求。
-
 知识点：[复选框（Checkboxes）与单选按钮（Radio Buttons）的事件处理](../../../topics/Web开发技术/checkbox-radio-events.md)、[事件与事件处理（Events、Attributes、Tags、注册处理程序Registering a Handler及方法比较）](../../../topics/Web开发技术/event-handling.md)、[屏幕输出与键盘输入（alert、confirm、prompt方法）](../../../topics/Web开发技术/js-io.md)
 
 ### 代码 2
@@ -144,46 +134,5 @@ JavaScript 代码：
     </form>
 </body>
 </html>
-
-参考解答：**结论**  
-该代码能实现“点击复选框累加水果价格、提交时弹出含 5% 税的总价并阻止表单实际提交”的基本功能，但在“重复点击同一复选框”时会出现重复计价的逻辑缺陷。
-
----
-
-**推理过程**
-
-1. **累加逻辑**  
-   `updateTotal(cost)` 每次点击都执行 `totalCost += cost`。  
-   - 首次勾选苹果：`totalCost = 0.59`  
-   - 再次点击同一苹果复选框（无论取消勾选还是再次勾选）：`totalCost` 再次增加 `0.59`，导致重复计价。
-
-2. **提交计算**  
-   `calculateAndSubmit()` 中：
-   
-$$
-\text{tax} = 0.05 \times \text{totalCost}
-$$
-
-   
-$$
-\text{finalTotal} = \text{totalCost} + \text{tax}
-$$
-
-   弹出金额用 `toFixed(2)` 保留两位小数，符合美元显示格式。
-
-3. **阻止提交**  
-   提交按钮的 `onclick` 返回 `false`，因此表单不会真正向 `action="#"` 提交，页面不会跳转或刷新。
-
-4. **代码缺陷**  
-   复选框的 `onclick` 只做加法，未判断 `checked` 状态，因此：
-   - 取消勾选不会减少总价  
-   - 反复点击同一复选框会无限累加  
-   - 若用户先勾选再取消，总价仍然包含已取消水果的费用
-
----
-
-**选择题说明（若本题有选项）**  
-该实现的核心错误在于：**没有根据复选框当前状态更新总价，而是盲目累加**。  
-因此，正确做法应是每次点击时重新计算所有被选中水果的总和，或在 `updateTotal` 中检查 `this.checked`，若为 `false` 则减去对应价格。
 
 知识点：[复选框（Checkboxes）与单选按钮（Radio Buttons）的事件处理](../../../topics/Web开发技术/checkbox-radio-events.md)、[屏幕输出与键盘输入（alert、confirm、prompt方法）](../../../topics/Web开发技术/js-io.md)、[表单输入验证（Validating Form Input，如密码输入Password Input）](../../../topics/Web开发技术/form-validation.md)

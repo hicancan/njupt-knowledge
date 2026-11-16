@@ -103,47 +103,4 @@ run:
 **截止时间：**
 第 6 次作业提交的截止时间是 2021 年 4 月 19 日，请同学们在截止日期前完成作业提交，谢谢。
 
-参考解答：**结论**  
-本题需符合“开闭原则”扩展第5次作业，核心是新增 `MagicHouseVIP` 接口（声明获取个人信息与增高能力），创建 `XiaoFang`、`XiaoZhang` 类实现该接口，并在魔法机器中增加识别 VIP 的分支，最后在 `MagicHouse` 主流程末尾追加续集故事。
-
-**关键设计**  
-1. **接口定义**  
-   ```java
-   public interface MagicHouseVIP {
-       String getName();
-       int getAge();
-       String getGender();
-       int getHeight();
-       void increaseHeight(int amount);
-   }
-   ```
-
-2. **新类 `XiaoFang` 与 `XiaoZhang`**  
-   - 均实现 `MagicHouseVIP`，在构造方法中设置各自的姓名、年龄、性别与初始身高（130 / 145）。  
-   - `increaseHeight(int amount)` 将身高增加指定值，并打印相应信息。
-
-3. **魔法机器扩展**  
-   - 原 `MagicMachine` 类中增加重载方法（或通过 `instanceof` 判断）：  
-     ```java
-     public void useMachine(MagicHouseVIP vip) {
-         System.out.println("***************");
-         System.out.println("魔法机器:尊贵的VIP,感谢您体验魔法机器");
-         System.out.println("魔法机器:机器识别出您是:" + vip.getGender());
-         int add = vip.getGender().equals("女") ? 30 : 40;
-         System.out.println("魔法机器:机器将使您增高:" + add + "厘米");
-         vip.increaseHeight(add);
-         System.out.println("现在," + vip.getName() + "的身高是:" + vip.getHeight() + "厘米");
-         System.out.println("***************");
-     }
-     ```
-
-4. **主流程整合**  
-   - 在 `MagicHouse` 的 `main` 中先讲述小明故事（第5次作业部分，**不修改原有小明类和机器调用**），然后输出分隔符与标题。  
-   - 输出老板招募会员对话、《小芳：这不是霸王条款吗？》《小张：为了圆梦，忍忍吧！》等文字。  
-   - 创建 `XiaoFang`、`XiaoZhang` 对象，显示进入魔法屋前身高。  
-   - 分别调用 `useMachine(vip)` 完成增高，并最终展示新身高。
-
-**选择题说明**  
-题目为编程题，未设选择题；若配套理论题，一般会考察“开闭原则”“接口用途”等。正确选项通常对应“对扩展开放，对修改封闭”，其他选项错在描述为修改原类、不使用接口等。
-
 知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[接口(Interface)用于定义协议或行为的作用](../../../topics/Java开发/接口的基础概念.md)、[UML主要模型（用例图、类图、时序图、状态图）](../../../topics/Java开发/UML模型图.md)

@@ -57,15 +57,6 @@ source: batch-2:大学英语/英语.docx
 
 答案：beneficial
 
-参考解答：由于你只提供了单词列表，没有给出具体的题目（如选词填空的句子、选择题选项或翻译要求），我无法直接写出答案。
-
-请补充完整题目内容，例如：
-- 选词填空的句子（含空格）
-- 选择题的选项
-- 或其他具体要求
-
-收到后我会按“先结论、后简明解析”的格式给出参考解答。
-
 知识点：[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[词汇与结构单项选择题练习(1)（选择1-20：词义辨析与语法结构）](../../../topics/大学英语/词汇结构单选1.md)
 
 ### Expressions in use
@@ -113,28 +104,6 @@ source: batch-2:大学英语/英语.docx
 答案：look upon as
 
 ## Unit 2
-
-参考解答：**结论**
-
-1. take stock of  
-2. put off  
-3. at odds with  
-4. on track  
-5. take in  
-6. consult with  
-7. refer to  
-8. do one's utmost  
-
-**简明的推理或计算过程**
-
-1. **take stock of**：表示“评估、盘点”，常用于对现状进行反思和总结。  
-2. **put off**：意为“推迟”，指将某事延后处理。  
-3. **at odds with**：表示“与……不一致/有分歧”，用于描述意见或立场的冲突。  
-4. **on track**：意为“在正轨上”，表示进展符合预期。  
-5. **take in**：可表示“吸收、理解”，常用于信息或知识的学习。  
-6. **consult with**：意为“咨询、商量”，强调与他人讨论以获取意见。  
-7. **refer to**：表示“参考、查阅”，用于指引信息来源。  
-8. **do one's utmost**：意为“竭尽全力”，强调尽最大努力完成任务。
 
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)
 
@@ -185,15 +154,6 @@ source: batch-2:大学英语/英语.docx
 10. Not until recently have we realized that the increasing world population may lead to a potential gloomy prospect for humanity: starvation.
 
 答案：prospect
-
-参考解答：由于你只提供了单词列表，没有给出具体的题目（如选词填空的句子、选择题选项或翻译要求），我无法直接写出答案。
-
-请补充完整题目内容，例如：
-- 选词填空的句子（含空格）
-- 选择题的选项
-- 或其他具体要求
-
-收到后我会按“先结论、后简明解析”的格式给出参考解答。
 
 知识点：[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[词汇与结构单项选择题练习(1)（选择1-20：词义辨析与语法结构）](../../../topics/大学英语/词汇结构单选1.md)
 
@@ -266,38 +226,11 @@ source: batch-2:大学英语/英语.docx
 10. ...villages **in succession**...
 答案：in succession
 
-参考解答：**结论**
-
-1. take stock of  
-2. put off  
-3. at odds with  
-4. on track  
-5. take in  
-6. consult with  
-7. refer to  
-8. do one's utmost  
-
-**简明的推理或计算过程**
-
-1. **take stock of**：表示“评估、盘点”，常用于对现状进行反思和总结。  
-2. **put off**：意为“推迟”，指将某事延后处理。  
-3. **at odds with**：表示“与……不一致/有分歧”，用于描述意见或立场的冲突。  
-4. **on track**：意为“在正轨上”，表示进展符合预期。  
-5. **take in**：可表示“吸收、理解”，常用于信息或知识的学习。  
-6. **consult with**：意为“咨询、商量”，强调与他人讨论以获取意见。  
-7. **refer to**：表示“参考、查阅”，用于指引信息来源。  
-8. **do one's utmost**：意为“竭尽全力”，强调尽最大努力完成任务。
-
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)
 
 ### 填空 4
 
 It is sensible for every family to make earthquake emergency plans and know how to leave the area during the chaos following an earthquake.
-
-参考解答：**答案：** `decision`
-
-**解析：**  
-`make the decision to do sth.` 是固定搭配，表示“决定做某事”。句中需要名词作 `made` 的宾语，故用动词 `decide` 的名词形式 `decision`。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -305,24 +238,11 @@ It is sensible for every family to make earthquake emergency plans and know how 
 
 Economists are interested in all the factors that can help to predict the extent to which a price change will affect supply and demand in the market.
 
-参考解答：**结论：** 应填 **efforts**。
-
-**推理过程：**
-
-1. **固定搭配**：`make efforts`（做出努力）是常见动词短语，与前面的 `do their utmost`（尽最大努力）语义呼应。
-2. **上下文线索**：前文提到 children "do their utmost"（尽最大努力），因此父母所做的应是"类似的努力"，即 `similar efforts`。
-3. **语法要求**：`making similar ___` 中，`similar` 为形容词，后需接名词；且此处表示泛指的多次/多方面努力，用复数形式 `efforts`。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)
 
 ### 填空 6
 
 Starting Monday, all foods labeled "organic" must be up to the strict national standards that the government decided to put into effect now.
-
-参考解答：**答案：dynamic**
-
-**解析：**  
-“dynamic”意为“充满活力的、发展迅速的”，在句中修饰“period”，表示凯莉进入了职业生涯中最具活力、最富变化的阶段。该词符合上下文对她事业发展的描述，其他选项若不能体现“充满活力”或“快速发展”的含义，则不合适。
 
 知识点：[Unit 2 Text A 课文主旨与长难句分析](../../../topics/大学英语/U2-TextA课文理解.md)
 
@@ -330,33 +250,17 @@ Starting Monday, all foods labeled "organic" must be up to the strict national s
 
 There is more to a woman than her looks, so I resent the fact that after a woman grows old and loses her looks people stop paying attention to her.
 
-参考解答：**on track**
-
-句中 "stay on track" 为固定搭配，意为“按计划进行、进展顺利”，与前文 "growth levels can be maintained"（增长水平可维持）构成合理因果关系；其他介词如 *in track*、*at track* 均不符合英语惯用表达。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Words in use（核心词汇辨析与应用）](../../../topics/大学英语/U2-Words-in-use.md)
 
 ### 填空 8
 
 Apart from technological development, the 20th century witnessed an enormous worldwide political, economic and cultural transformation.
 
-参考解答：**evaluate**
-
-原文中 “examine and judge information carefully” 对应 banked cloze 选项中意为“评估、评判”的动词 **evaluate**。该词在学术语境下常与 information/critically 搭配，表示对信息进行审慎分析后作出判断；其他选项如 *accept*（仅强调接收，不含判断义）、*ignore*（语义相反）、*collect*（仅指收集，未体现分析判断）均不符合上下文对批判性思维的要求。
-
 知识点：[Unit 1 Banked cloze（十五选十选词填空）](../../../topics/大学英语/U1-Banked-cloze.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
 ### 填空 9
 
 Unlike the practice in China, if you're at a hotel restaurant in the United States, expect a 15-20 percent service charge or add the equivalent amount yourself.
-
-参考解答：**结论**  
-答案为 **manipulating**。
-
-**推理过程**  
-- 词义匹配：句子表达“这位政客虽已退休，但仍幕后操控事件”，需要表示“操控、操纵”之意的动词。  
-- 搭配分析：“is ________ events”缺现在分词，与“behind the scenes”呼应，提示秘密操纵的动作。  
-- 干扰项排除：若考虑其他动词（如 managing、controlling 等），**manipulating** 更符合“暗中施加不正当影响”的贬义色彩，且是唯一能准确传达“幕后操纵政治事件”这一常见搭配（manipulate events）的词。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)
 
@@ -368,20 +272,11 @@ The change in smoking habits parallels a change in the incidence of lung cancer.
 
 resort to prior to make allowances for back off wonder at give way to saddle with base upon base on
 
-参考解答：**结论**：tackle
-
-**推理过程**：
-1.  **语境分析**：句意为“该组织一直与地方当局以及区域政府和官员合作，以______气候变化问题。”
-2.  **搭配判断**：空格处需填入一个动词原形（不定式符号 `to` 之后），且该动词需能与宾语 `the problem` 搭配，表示“处理”、“解决”或“应对”之意。
-3.  **词义辨析**：在英语中，`tackle the problem` 是固定且常见的搭配，意为“着手处理/解决难题”。其他常见近义词如 `solve` 通常直接接问题，但 `tackle` 更强调应对困难局面的行动过程，符合语境中多方合作的背景；`deal with` 虽意近但为短语动词，若填空仅为一词则不适用；`address` 也可用，但 `tackle` 在涉及具体棘手问题（如气候变化）时更为有力且常见于此类考题。
-
 知识点：[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
 ### 填空 1
 
 As the result of her divorce, she was obviously saddled with the double burden of playing the role of both mother and father.
-
-参考解答：**for the simple reason that**
 
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
@@ -389,24 +284,11 @@ As the result of her divorce, she was obviously saddled with the double burden o
 
 Do not be intimidated by people who think they are smarter than you, and don't back off when facing competition; inner confidence is important.
 
-参考解答：**had made**
-
-理由：“a few hours ago” 指过去的具体时刻，而说话时的参照点是“警察到来”这一过去时间；他的声明发生在警察到来**之前**，因此要用**过去完成时**。  
-故填：**had made**。
-
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)
 
 ### 填空 3
 
 As our sweet childhood gives way to adolescence's temptation of love, we begin to learn, as adults, that most pleasures do not last forever.
-
-参考解答：**结论：** 填空处应填 **statistics**。
-
-**推理过程：**
-
-- 句意为“为了说服女儿推迟婚事，父亲引用了……来证明异族通婚夫妇的离婚率高于同族通婚夫妇”。
-- 空格位于动词 `quoted`（引用）之后，需要填入一个表示“数据/统计资料”的名词作宾语。
-- `quote statistics`（引用统计数据）是英语中的固定搭配；且后文紧跟 `showing...`（现在分词作后置定语），说明所引用的内容能够“显示”某种趋势或结果，只有 **statistics**（统计数据）在语义和语法上完全契合。
 
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)
 
@@ -414,24 +296,11 @@ As our sweet childhood gives way to adolescence's temptation of love, we begin t
 
 In the economic recession, employers resorted to the reduction of costs, most particularly in wages, in order to survive in the competitive world markets.
 
-参考解答：**答案：** `decision`
-
-**解析：**  
-`make the decision to do sth.` 是固定搭配，表示“决定做某事”。句中需要名词作 `made` 的宾语，故用动词 `decide` 的名词形式 `decision`。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
 ### 填空 5
 
 People from abroad can take part in the intensified language program because schools have to make allowances for students whose English is not their first language.
-
-参考解答：**结论：** 应填 **efforts**。
-
-**推理过程：**
-
-1. **固定搭配**：`make efforts`（做出努力）是常见动词短语，与前面的 `do their utmost`（尽最大努力）语义呼应。
-2. **上下文线索**：前文提到 children "do their utmost"（尽最大努力），因此父母所做的应是"类似的努力"，即 `similar efforts`。
-3. **语法要求**：`making similar ___` 中，`similar` 为形容词，后需接名词；且此处表示泛指的多次/多方面努力，用复数形式 `efforts`。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)
 
@@ -439,20 +308,11 @@ People from abroad can take part in the intensified language program because sch
 
 Talking about negotiations, once an agreement is made, the Chinese sometimes wonder at the slow pace in which Westerners implement the decision.
 
-参考解答：**答案：dynamic**
-
-**解析：**  
-“dynamic”意为“充满活力的、发展迅速的”，在句中修饰“period”，表示凯莉进入了职业生涯中最具活力、最富变化的阶段。该词符合上下文对她事业发展的描述，其他选项若不能体现“充满活力”或“快速发展”的含义，则不合适。
-
 知识点：[Unit 2 Text A 课文主旨与长难句分析](../../../topics/大学英语/U2-TextA课文理解.md)
 
 ### 填空 7
 
 Earthquakes occur without warning; however, it is claimed that some animals can feel earthquakes prior to occurrences because of their highly sensitive organs.
-
-参考解答：**on track**
-
-句中 "stay on track" 为固定搭配，意为“按计划进行、进展顺利”，与前文 "growth levels can be maintained"（增长水平可维持）构成合理因果关系；其他介词如 *in track*、*at track* 均不符合英语惯用表达。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Words in use（核心词汇辨析与应用）](../../../topics/大学英语/U2-Words-in-use.md)
 
@@ -462,24 +322,11 @@ An allowance can be based on your child's age, your own financial resources, the
 
 ## unit5
 
-参考解答：**evaluate**
-
-原文中 “examine and judge information carefully” 对应 banked cloze 选项中意为“评估、评判”的动词 **evaluate**。该词在学术语境下常与 information/critically 搭配，表示对信息进行审慎分析后作出判断；其他选项如 *accept*（仅强调接收，不含判断义）、*ignore*（语义相反）、*collect*（仅指收集，未体现分析判断）均不符合上下文对批判性思维的要求。
-
 知识点：[Unit 1 Banked cloze（十五选十选词填空）](../../../topics/大学英语/U1-Banked-cloze.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
 ### Words in use
 
 Manipulate contradict paradox perspective defy suspend tackle retain derive explicit
-
-参考解答：由于你只提供了单词列表，没有给出具体的题目（如选词填空的句子、选择题选项或翻译要求），我无法直接写出答案。
-
-请补充完整题目内容，例如：
-- 选词填空的句子（含空格）
-- 选择题的选项
-- 或其他具体要求
-
-收到后我会按“先结论、后简明解析”的格式给出参考解答。
 
 知识点：[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[词汇与结构单项选择题练习(1)（选择1-20：词义辨析与语法结构）](../../../topics/大学英语/词汇结构单选1.md)
 
@@ -487,18 +334,11 @@ Manipulate contradict paradox perspective defy suspend tackle retain derive expl
 
 The "discipline" message asks people to save, while the "enjoy yourself" message asks people to spend; therefore, they contradict each other.
 
-参考解答：**for the simple reason that**
-
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
 ### 填空 2
 
 It is a(n) paradox that in some odd way world peace appears to depend on our spending millions of pounds on weapons that can kill us all.
-
-参考解答：**had made**
-
-理由：“a few hours ago” 指过去的具体时刻，而说话时的参照点是“警察到来”这一过去时间；他的声明发生在警察到来**之前**，因此要用**过去完成时**。  
-故填：**had made**。
 
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)
 
@@ -506,24 +346,11 @@ It is a(n) paradox that in some odd way world peace appears to depend on our spe
 
 It is far more effective for parents to allow for the child's perspective and let him make his own choice rather than make a decision for him.
 
-参考解答：**结论：** 填空处应填 **statistics**。
-
-**推理过程：**
-
-- 句意为“为了说服女儿推迟婚事，父亲引用了……来证明异族通婚夫妇的离婚率高于同族通婚夫妇”。
-- 空格位于动词 `quoted`（引用）之后，需要填入一个表示“数据/统计资料”的名词作宾语。
-- `quote statistics`（引用统计数据）是英语中的固定搭配；且后文紧跟 `showing...`（现在分词作后置定语），说明所引用的内容能够“显示”某种趋势或结果，只有 **statistics**（统计数据）在语义和语法上完全契合。
-
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)
 
 ### 填空 4
 
 When you are writing any directions for people, you've got to be direct and explicit to make everything rightly understood.
-
-参考解答：**答案：** `decision`
-
-**解析：**  
-`make the decision to do sth.` 是固定搭配，表示“决定做某事”。句中需要名词作 `made` 的宾语，故用动词 `decide` 的名词形式 `decision`。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -531,24 +358,11 @@ When you are writing any directions for people, you've got to be direct and expl
 
 The new teaching program was suspended last semester because the teachers in the department protested its demand for more intense work.
 
-参考解答：**结论：** 应填 **efforts**。
-
-**推理过程：**
-
-1. **固定搭配**：`make efforts`（做出努力）是常见动词短语，与前面的 `do their utmost`（尽最大努力）语义呼应。
-2. **上下文线索**：前文提到 children "do their utmost"（尽最大努力），因此父母所做的应是"类似的努力"，即 `similar efforts`。
-3. **语法要求**：`making similar ___` 中，`similar` 为形容词，后需接名词；且此处表示泛指的多次/多方面努力，用复数形式 `efforts`。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)
 
 ### 填空 6
 
 He is a very considerate and generous person, and he is also one of those who can often derive pleasure from helping others.
-
-参考解答：**答案：dynamic**
-
-**解析：**  
-“dynamic”意为“充满活力的、发展迅速的”，在句中修饰“period”，表示凯莉进入了职业生涯中最具活力、最富变化的阶段。该词符合上下文对她事业发展的描述，其他选项若不能体现“充满活力”或“快速发展”的含义，则不合适。
 
 知识点：[Unit 2 Text A 课文主旨与长难句分析](../../../topics/大学英语/U2-TextA课文理解.md)
 
@@ -556,19 +370,11 @@ He is a very considerate and generous person, and he is also one of those who ca
 
 Many children are addicted to computers, so they often defy their parents and play the computer games for hours every day.
 
-参考解答：**on track**
-
-句中 "stay on track" 为固定搭配，意为“按计划进行、进展顺利”，与前文 "growth levels can be maintained"（增长水平可维持）构成合理因果关系；其他介词如 *in track*、*at track* 均不符合英语惯用表达。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Words in use（核心词汇辨析与应用）](../../../topics/大学英语/U2-Words-in-use.md)
 
 ### 填空 8
 
 My roommate is always very optimistic, and that's why he still retains his good humor after all the setbacks.
-
-参考解答：**evaluate**
-
-原文中 “examine and judge information carefully” 对应 banked cloze 选项中意为“评估、评判”的动词 **evaluate**。该词在学术语境下常与 information/critically 搭配，表示对信息进行审慎分析后作出判断；其他选项如 *accept*（仅强调接收，不含判断义）、*ignore*（语义相反）、*collect*（仅指收集，未体现分析判断）均不符合上下文对批判性思维的要求。
 
 知识点：[Unit 1 Banked cloze（十五选十选词填空）](../../../topics/大学英语/U1-Banked-cloze.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
@@ -576,26 +382,11 @@ My roommate is always very optimistic, and that's why he still retains his good 
 
 There is a widely held suspicion that the politician, though retired, still has great power and is manipulating events behind the scenes.
 
-参考解答：**结论**  
-答案为 **manipulating**。
-
-**推理过程**  
-- 词义匹配：句子表达“这位政客虽已退休，但仍幕后操控事件”，需要表示“操控、操纵”之意的动词。  
-- 搭配分析：“is ________ events”缺现在分词，与“behind the scenes”呼应，提示秘密操纵的动作。  
-- 干扰项排除：若考虑其他动词（如 managing、controlling 等），**manipulating** 更符合“暗中施加不正当影响”的贬义色彩，且是唯一能准确传达“幕后操纵政治事件”这一常见搭配（manipulate events）的词。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)
 
 ### 填空 10
 
 The organization has been working with local authorities as well as regional government and officials to tackle the problem of climate change.
-
-参考解答：**结论**：tackle
-
-**推理过程**：
-1.  **语境分析**：句意为“该组织一直与地方当局以及区域政府和官员合作，以______气候变化问题。”
-2.  **搭配判断**：空格处需填入一个动词原形（不定式符号 `to` 之后），且该动词需能与宾语 `the problem` 搭配，表示“处理”、“解决”或“应对”之意。
-3.  **词义辨析**：在英语中，`tackle the problem` 是固定且常见的搭配，意为“着手处理/解决难题”。其他常见近义词如 `solve` 通常直接接问题，但 `tackle` 更强调应对困难局面的行动过程，符合语境中多方合作的背景；`deal with` 虽意近但为短语动词，若填空仅为一词则不适用；`address` 也可用，但 `tackle` 在涉及具体棘手问题（如气候变化）时更为有力且常见于此类考题。
 
 知识点：[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -603,35 +394,11 @@ The organization has been working with local authorities as well as regional gov
 
 take stock of put off at odds with on track take in consult with refer to do one's utmost
 
-参考解答：**结论**
-
-1. take stock of  
-2. put off  
-3. at odds with  
-4. on track  
-5. take in  
-6. consult with  
-7. refer to  
-8. do one's utmost  
-
-**简明的推理或计算过程**
-
-1. **take stock of**：表示“评估、盘点”，常用于对现状进行反思和总结。  
-2. **put off**：意为“推迟”，指将某事延后处理。  
-3. **at odds with**：表示“与……不一致/有分歧”，用于描述意见或立场的冲突。  
-4. **on track**：意为“在正轨上”，表示进展符合预期。  
-5. **take in**：可表示“吸收、理解”，常用于信息或知识的学习。  
-6. **consult with**：意为“咨询、商量”，强调与他人讨论以获取意见。  
-7. **refer to**：表示“参考、查阅”，用于指引信息来源。  
-8. **do one's utmost**：意为“竭尽全力”，强调尽最大努力完成任务。
-
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)
 
 ### 填空 1
 
 People who work in offices are referred to as "white-collar workers" for the simple reason that they traditionally wear a white shirt with a collar and a tie to go to work.
-
-参考解答：**for the simple reason that**
 
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
@@ -639,24 +406,11 @@ People who work in offices are referred to as "white-collar workers" for the sim
 
 When the police arrived, he had already destroyed the evidence that was at odds with his earlier statement made a few hours ago.
 
-参考解答：**had made**
-
-理由：“a few hours ago” 指过去的具体时刻，而说话时的参照点是“警察到来”这一过去时间；他的声明发生在警察到来**之前**，因此要用**过去完成时**。  
-故填：**had made**。
-
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)
 
 ### 填空 3
 
 In order to persuade his daughter to put off the marriage, the father quoted statistics showing mixed-race couples had higher divorce rates than same-race couples.
-
-参考解答：**结论：** 填空处应填 **statistics**。
-
-**推理过程：**
-
-- 句意为“为了说服女儿推迟婚事，父亲引用了……来证明异族通婚夫妇的离婚率高于同族通婚夫妇”。
-- 空格位于动词 `quoted`（引用）之后，需要填入一个表示“数据/统计资料”的名词作宾语。
-- `quote statistics`（引用统计数据）是英语中的固定搭配；且后文紧跟 `showing...`（现在分词作后置定语），说明所引用的内容能够“显示”某种趋势或结果，只有 **statistics**（统计数据）在语义和语法上完全契合。
 
 知识点：[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)
 
@@ -664,24 +418,11 @@ In order to persuade his daughter to put off the marriage, the father quoted sta
 
 The mother made the decision to give cough medicine and Aspirin to her sick child without consulting with the child's doctor.
 
-参考解答：**答案：** `decision`
-
-**解析：**  
-`make the decision to do sth.` 是固定搭配，表示“决定做某事”。句中需要名词作 `made` 的宾语，故用动词 `decide` 的名词形式 `decision`。
-
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
 ### 填空 5
 
 Both professional experts and school teachers say that children tend to do their utmost when they see their parents making similar efforts.
-
-参考解答：**结论：** 应填 **efforts**。
-
-**推理过程：**
-
-1. **固定搭配**：`make efforts`（做出努力）是常见动词短语，与前面的 `do their utmost`（尽最大努力）语义呼应。
-2. **上下文线索**：前文提到 children "do their utmost"（尽最大努力），因此父母所做的应是"类似的努力"，即 `similar efforts`。
-3. **语法要求**：`making similar ___` 中，`similar` 为形容词，后需接名词；且此处表示泛指的多次/多方面努力，用复数形式 `efforts`。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)
 
@@ -689,20 +430,11 @@ Both professional experts and school teachers say that children tend to do their
 
 As she entered the most dynamic period of her career, Kylie took stock of her success and tried to analyze the strong impact of her college education.
 
-参考解答：**答案：dynamic**
-
-**解析：**  
-“dynamic”意为“充满活力的、发展迅速的”，在句中修饰“period”，表示凯莉进入了职业生涯中最具活力、最富变化的阶段。该词符合上下文对她事业发展的描述，其他选项若不能体现“充满活力”或“快速发展”的含义，则不合适。
-
 知识点：[Unit 2 Text A 课文主旨与长难句分析](../../../topics/大学英语/U2-TextA课文理解.md)
 
 ### 填空 7
 
 The chief executive George Grey is confident that current growth levels can be maintained since all the group's development projects stay on track.
-
-参考解答：**on track**
-
-句中 "stay on track" 为固定搭配，意为“按计划进行、进展顺利”，与前文 "growth levels can be maintained"（增长水平可维持）构成合理因果关系；其他介词如 *in track*、*at track* 均不符合英语惯用表达。
 
 知识点：[Unit 2 词汇与短语填空综合练习（填空4-10）](../../../topics/大学英语/U2-填空练习.md)、[Unit 2 Words in use（核心词汇辨析与应用）](../../../topics/大学英语/U2-Words-in-use.md)
 
@@ -711,10 +443,6 @@ The chief executive George Grey is confident that current growth levels can be m
 It is very important for students to understand and take in new information. Besides, they should examine and judge information carefully and then make the right decisions.
 
 ## Banked cloze
-
-参考解答：**evaluate**
-
-原文中 “examine and judge information carefully” 对应 banked cloze 选项中意为“评估、评判”的动词 **evaluate**。该词在学术语境下常与 information/critically 搭配，表示对信息进行审慎分析后作出判断；其他选项如 *accept*（仅强调接收，不含判断义）、*ignore*（语义相反）、*collect*（仅指收集，未体现分析判断）均不符合上下文对批判性思维的要求。
 
 知识点：[Unit 1 Banked cloze（十五选十选词填空）](../../../topics/大学英语/U1-Banked-cloze.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
@@ -732,25 +460,6 @@ The Internet has made English learning much easier. English learners used to be
 本资料为《大学英语》习题部分的整理，包含 Unit 1、Unit 2、Unit 3 和 Unit 5 的完形填空/选词填空练习。原文中已给出部分答案或提示，此处予以保留并规范化排版。
 
 ## Unit 1
-
-参考解答：The Internet has made English learning much easier. English learners used to be
-
-**A. absorbed**  
-**B. abundant**  
-**C. superficial**  
-**D. tedious**
-
-**答案：A. absorbed**
-
-**解析：**  
-句意是：“互联网使英语学习变得容易多了。过去，英语学习者常常全神贯注于英语学习。”
-
-- **absorbed**：全神贯注的；专心于……的，常搭配 **be absorbed in sth.**
-- **abundant**：丰富的，充裕的，不能表示“全神贯注的”
-- **superficial**：肤浅的，表面上的，与“全神贯注”语义不符
-- **tedious**：乏味的、单调的，修饰学习过程或任务，不能表示学习者的专注状态
-
-因此应选 **A**。
 
 知识点：[Unit 1 Banked cloze（十五选十选词填空）](../../../topics/大学英语/U1-Banked-cloze.md)、[Unit 1 Words in use（核心词汇选词填空）](../../../topics/大学英语/U1-Words-in-use.md)、[Unit 1 Expressions in use（重点短语与固定搭配）](../../../topics/大学英语/U1-Expressions-in-use.md)
 
@@ -775,12 +484,6 @@ In this case, the Internet evidently makes it easier to learn vocabulary. You ca
 10) distress
 
 ## Unit 2
-
-参考解答：**结论：选 A。**
-
-A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确、语义通顺，完整描述了一位精力充沛、干劲十足的 64 岁女士。
-
-由于题目未提供 B、C、D 选项内容，无法逐一排除；但就 A 本身而言，其结构（不定冠词 + 复合形容词 + 名词 + 定语从句）符合英语表达规范，为正确选项。
 
 知识点：[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)、[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
@@ -807,15 +510,6 @@ Today, humanistic knowledge continues to promote the ideal foundation for explor
 10) speculate
 
 ## Unit 3
-
-参考解答：**结论：C**
-
-C 选项正确。原文语境是官员通过亲身体验贫困地区生活，从而更深入了解致贫因素（poverty-causing factors），并借此评估扶贫措施（anti-poverty measures）的成效，两方面信息均准确对应。
-
-其余选项排除理由：
-- **A**：仅提到"理解生活条件、采取更有效措施"，缺少"评估扶贫成效"这一关键内容，信息不完整。
-- **B**："给予经济援助"在原文中未提及，属于过度推断。
-- **D**："交朋友"是字面理解，偏离原文深层含义，且原文重点不在个人友谊。
 
 知识点：[词汇与语法单项选择题练习(2)（选择21-40：时态语态与非谓语动词）](../../../topics/大学英语/词汇语法单选2.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -844,16 +538,6 @@ I personally want to stay in school as long as I can to reinforce my academic wo
 10) shifting
 
 ## Unit 5
-
-参考解答：**答案：D**
-
-**解析：**  
-材料指出，虽然经过多年扶贫努力，许多贫困人口已经实现脱贫，但要想彻底摆脱贫困，仍需继续努力。因此，正确选项应表达“已取得进展，但仍需继续努力”。
-
-- **A 错**：过于绝对，“很快摆脱贫困”与原文“仍需努力”不符。  
-- **B 错**：与原文态度相反，文中并未体现失望或悲观。  
-- **C 错**：文中未提及满足现状或不在乎未来。  
-- **D 对**：准确概括了“虽有进展，但仍需继续努力脱贫”的含义。
 
 知识点：[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
@@ -911,18 +595,6 @@ As an important part of the American culture value system, "individualism" is ad
 
 ## Exercise A
 
-参考解答：**Unit 1 翻译**
-
-人们普遍认为英语是一种世界语言，经常被许多不以英语为第一语言的国家使用。与其他语言一样，英语也发生了巨大的变化。英语的历史可以分为三个主要阶段：古英语、中古英语和现代英语。英语起源于公元 5 世纪，当时三个日耳曼部落入侵英国，他们对英语语言的形成起了很大的作用。在中世纪和现代社会初期，英语的影响遍及不列颠群岛。从 17 世纪初，它的影响力开始在世界各地显现。欧洲几百年的探险和殖民过程导致了英语的重大变化。今天，由于美国电影、电视、音乐、贸易和技术——包括互联网——的大受欢迎，美国英语的影响力尤其显著。
-
-中国书法是一门独特的艺术，是世界上独一无二的艺术瑰宝。中国书法艺术的形成、发展与汉文字的产生与演进存在着密不可分的关系。汉字在漫长的演变发展过程中，一方面起着交流思想、继承文化的重要作用，另一方面它本身又形成了一种独特的艺术。书法能够通过作品把书法家个人的生活感受、学识、修养、个性等折射出来，所以，通常有“字如其人”的说法。中国书法不仅是中华民族的文化瑰宝，而且在世界文化艺术宝库中独放异彩。
-
-**Unit 2 翻译**
-
-慕课（大规模开放在线课程）是一种旨在通过网络实现无限参与和开放访问的在线课程。慕课是远程教育的最新发展，现已在高等教育领域迅速形成一股潮流。这类课程旨在将大学的影响力从居住在城镇的数千名付费学生扩展到全球数百万学生。除了传统的课程资料外，慕课还提供互动式用户论坛，以支持学生与教授之间的互动。慕课能促进参与者之间的交流，他们为课程带来多样的观点、知识和技能；激励人们“尝试”那些他们原本不会去学习甚至不会尝试教育本身的科目；提供多种接触课程材料的方式，鼓励多模式学习，以满足不同学习风格学习者的需求；并促进面对面课程中教学方法的改进和技术的更好运用。
-
-近年来，随着互联网技术的发展，我国的数字化教育资源建设取得了巨大的成就。许多高校建立了自己的数字化学习平台，数字化教学在教育中发挥着越来越大的作用。与传统教学方式相比，数字化教学方式有很大的优势。一方面，数字化教学使教学资源得以全球共享；另一方面，它拓展了学习者的学习时间和空间，人们可以随时随地通过互联网进入数字化的虚拟学校学习。这使得人类从接受一次性教育走向终身学习成为可能。
-
 知识点：[Unit 1 课后翻译（汉译英段落翻译技巧与参考答案）](../../../topics/大学英语/U1-课后翻译.md)、[Unit 1 文化与翻译（中国文化术语的英文表达）](../../../topics/大学英语/U1-文化翻译.md)、[Unit 2 课后翻译（汉译英参考答案与采分点）](../../../topics/大学英语/U2-课后翻译.md)
 
 ### 选择 1
@@ -932,12 +604,6 @@ B: He is a schoolboy who is fighting against numerous health problems.
 C: He is a schoolboy who has an unusual memory.
 D: He is a schoolboy who is a Harry Potter fan.
 
-参考解答：**结论：选 A。**
-
-A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确、语义通顺，完整描述了一位精力充沛、干劲十足的 64 岁女士。
-
-由于题目未提供 B、C、D 选项内容，无法逐一排除；但就 A 本身而言，其结构（不定冠词 + 复合形容词 + 名词 + 定语从句）符合英语表达规范，为正确选项。
-
 知识点：[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)、[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### 选择 2
@@ -946,15 +612,6 @@ A: It will help Ben remember the beautiful world as he gets older.
 B: It will cheer Ben up and let him forget about his problem.
 C: It will help Ben describe and interact with things as he gets older.
 D: It will slow down Ben's vision loss.
-
-参考解答：**结论：C**
-
-C 选项正确。原文语境是官员通过亲身体验贫困地区生活，从而更深入了解致贫因素（poverty-causing factors），并借此评估扶贫措施（anti-poverty measures）的成效，两方面信息均准确对应。
-
-其余选项排除理由：
-- **A**：仅提到"理解生活条件、采取更有效措施"，缺少"评估扶贫成效"这一关键内容，信息不完整。
-- **B**："给予经济援助"在原文中未提及，属于过度推断。
-- **D**："交朋友"是字面理解，偏离原文深层含义，且原文重点不在个人友谊。
 
 知识点：[词汇与语法单项选择题练习(2)（选择21-40：时态语态与非谓语动词）](../../../topics/大学英语/词汇语法单选2.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -967,16 +624,6 @@ D: Ben's family received financial help from donors.
 
 ## Exercise C
 
-参考解答：**答案：D**
-
-**解析：**  
-材料指出，虽然经过多年扶贫努力，许多贫困人口已经实现脱贫，但要想彻底摆脱贫困，仍需继续努力。因此，正确选项应表达“已取得进展，但仍需继续努力”。
-
-- **A 错**：过于绝对，“很快摆脱贫困”与原文“仍需努力”不符。  
-- **B 错**：与原文态度相反，文中并未体现失望或悲观。  
-- **C 错**：文中未提及满足现状或不在乎未来。  
-- **D 对**：准确概括了“虽有进展，但仍需继续努力脱贫”的含义。
-
 知识点：[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
 ### 选择 1
@@ -986,12 +633,6 @@ B: The speaker made a bucket list and her biggest dream was to travel around the
 C: The speaker made a bucket list and had mixed feelings when achieving her dreams.
 D: The speaker made a bucket list and felt happy to realize most of her dreams.
 
-参考解答：**结论：选 A。**
-
-A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确、语义通顺，完整描述了一位精力充沛、干劲十足的 64 岁女士。
-
-由于题目未提供 B、C、D 选项内容，无法逐一排除；但就 A 本身而言，其结构（不定冠词 + 复合形容词 + 名词 + 定语从句）符合英语表达规范，为正确选项。
-
 知识点：[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)、[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### 选择 2
@@ -1000,15 +641,6 @@ A: It will force you to think about life in terms of impending death.
 B: It will force you to take a close look at your life.
 C: It will force you to achieve your dreams as early as possible.
 D: It will force you to think about death at an early age.
-
-参考解答：**结论：C**
-
-C 选项正确。原文语境是官员通过亲身体验贫困地区生活，从而更深入了解致贫因素（poverty-causing factors），并借此评估扶贫措施（anti-poverty measures）的成效，两方面信息均准确对应。
-
-其余选项排除理由：
-- **A**：仅提到"理解生活条件、采取更有效措施"，缺少"评估扶贫成效"这一关键内容，信息不完整。
-- **B**："给予经济援助"在原文中未提及，属于过度推断。
-- **D**："交朋友"是字面理解，偏离原文深层含义，且原文重点不在个人友谊。
 
 知识点：[词汇与语法单项选择题练习(2)（选择21-40：时态语态与非谓语动词）](../../../topics/大学英语/词汇语法单选2.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -1021,16 +653,6 @@ D: 6.
 
 ## Exercise E
 
-参考解答：**答案：D**
-
-**解析：**  
-材料指出，虽然经过多年扶贫努力，许多贫困人口已经实现脱贫，但要想彻底摆脱贫困，仍需继续努力。因此，正确选项应表达“已取得进展，但仍需继续努力”。
-
-- **A 错**：过于绝对，“很快摆脱贫困”与原文“仍需努力”不符。  
-- **B 错**：与原文态度相反，文中并未体现失望或悲观。  
-- **C 错**：文中未提及满足现状或不在乎未来。  
-- **D 对**：准确概括了“虽有进展，但仍需继续努力脱贫”的含义。
-
 知识点：[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
 ### 选择 1
@@ -1040,12 +662,6 @@ B: President Xi visited Shanxi Province, where he discussed with local authoriti
 C: President Xi visited Shanxi Province, where he held a meeting in Songjiagou.
 D: President Xi visited Shanxi Province, where he met villagers from Songjiagou.
 
-参考解答：**结论：选 A。**
-
-A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确、语义通顺，完整描述了一位精力充沛、干劲十足的 64 岁女士。
-
-由于题目未提供 B、C、D 选项内容，无法逐一排除；但就 A 本身而言，其结构（不定冠词 + 复合形容词 + 名词 + 定语从句）符合英语表达规范，为正确选项。
-
 知识点：[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)、[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### 选择 2
@@ -1054,15 +670,6 @@ A: He was able to understand their poor living conditions and take more effectiv
 B: He was able to learn more about poverty-stricken areas and give them financial help.
 C: He was able to know more about poverty-causing factors and evaluate the effectiveness of anti-poverty measures.
 D: He was able to make friends with them and encourage them to shake off poverty as soon as possible.
-
-参考解答：**结论：C**
-
-C 选项正确。原文语境是官员通过亲身体验贫困地区生活，从而更深入了解致贫因素（poverty-causing factors），并借此评估扶贫措施（anti-poverty measures）的成效，两方面信息均准确对应。
-
-其余选项排除理由：
-- **A**：仅提到"理解生活条件、采取更有效措施"，缺少"评估扶贫成效"这一关键内容，信息不完整。
-- **B**："给予经济援助"在原文中未提及，属于过度推断。
-- **D**："交朋友"是字面理解，偏离原文深层含义，且原文重点不在个人友谊。
 
 知识点：[词汇与语法单项选择题练习(2)（选择21-40：时态语态与非谓语动词）](../../../topics/大学英语/词汇语法单选2.md)、[Unit 2 Expressions in use（重点短语与句型操练）](../../../topics/大学英语/U2-Expressions-in-use.md)
 
@@ -1074,16 +681,6 @@ C: They are satisfied with what they have and don't care about what will happen 
 D: They need to continue their efforts to work their way out of poverty even though much progress has already been made.
 
 ## Exercise G
-
-参考解答：**答案：D**
-
-**解析：**  
-材料指出，虽然经过多年扶贫努力，许多贫困人口已经实现脱贫，但要想彻底摆脱贫困，仍需继续努力。因此，正确选项应表达“已取得进展，但仍需继续努力”。
-
-- **A 错**：过于绝对，“很快摆脱贫困”与原文“仍需努力”不符。  
-- **B 错**：与原文态度相反，文中并未体现失望或悲观。  
-- **C 错**：文中未提及满足现状或不在乎未来。  
-- **D 对**：准确概括了“虽有进展，但仍需继续努力脱贫”的含义。
 
 知识点：[Text A: Confucianism 课文主旨与段落结构](../../../topics/大学英语/U1-TextA课文理解.md)、[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
@@ -1113,12 +710,6 @@ Filial piety is the basic code of ethics in ancient Chinese society. Chinese peo
 
 ## Unit 2
 
-参考解答：**结论：选 A。**
-
-A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确、语义通顺，完整描述了一位精力充沛、干劲十足的 64 岁女士。
-
-由于题目未提供 B、C、D 选项内容，无法逐一排除；但就 A 本身而言，其结构（不定冠词 + 复合形容词 + 名词 + 定语从句）符合英语表达规范，为正确选项。
-
 知识点：[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)、[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### Exercise D
@@ -1131,30 +722,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: Walking instead of driving.
 
 答案：D
-参考解答：根据上下文语境（通常此类文章讨论环保或生活方式），选项 D 最符合“减少碳排放/改变出行方式”的主题。若原题有特定文章背景，请结合原文确认。
-
-#### 选择 2
-题干：What is the main purpose of the text?
-- A: We need to care for our Mother Earth.
-- B: We should make sure younger generations will be able to enjoy what the earth can provide for them.
-- C: We must shoulder the social responsibility.
-- D: We have nothing else to do.
-
-答案：B
-参考解答：选项 B 具体阐述了代际公平和可持续发展的核心观点，通常比 A、C 更具体且符合阅读理解题的最佳选项特征。
-
-#### 选择 3
-题干：Which statement best describes the impact mentioned in the text?
-- A: It will affect people living in developed countries.
-- B: It will change people's attitudes towards their lives.
-- C: It has an impact on the future of humankind.
-- D: It will affect people living in very poor countries.
-
-答案：C
-参考解答：通常涉及全球性议题（如气候、资源）的文章，其影响往往被描述为对全人类未来（future of humankind）的影响。
-
----
-
 知识点：[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)
 
 ### Exercise F
@@ -1167,31 +734,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: The Caribbean is the only region affected by climate change.
 
 答案：A
-参考解答：选项 B 过于绝对（most seriously），选项 D 明显错误（only）。选项 C 提及军队丢失与气候主题不符。选项 A 描述了具体的灾害现象，符合常规新闻或说明文事实。
-
-#### 选择 2
-题干：Why is there a funding gap for the climate science panel?
-- A: Because the climate science panel needs more investment than expected.
-- B: Because there is a funding gap caused by the US withdrawal.
-- C: Because the US president doesn't want to spend more on the climate research.
-- D: Because they are very rich European countries.
-
-答案：B
-参考解答：此题考察细节理解，通常涉及国际政治背景（如美国退出巴黎协定等导致资金缺口），选项 B 表述最为准确。
-
-#### 选择 3
-题干：What are the characteristics of the countries discussed in this context?
-- A: Carbon emission intensity.
-- B: Fossil fuels.
-- C: Forest coverage.
-- D: Nuclear energy.
-
-*(注：原题选项均为名词短语，题干可能缺失或识别有误，推测题干应为询问主要关注点或指标)*
-答案：A (推测)
-参考解答：根据后续 Exercise I 的内容（碳强度、化石燃料等），此处可能是在询问衡量气候变化的关键指标。若原题是选择题，需结合完整文章判断。
-
----
-
 知识点：[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)
 
 ### Exercise I
@@ -1205,32 +747,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 
 *(注：原题选项 A-D 均为句子，题干缺失。根据 Exercise I 的标题"Carbon emission intensity"，推测题目询问的是中国在应对气候变化方面的成就或指标)*
 答案：A
-参考解答：通常此类文章会强调中国有效削减二氧化碳排放的成就。
-
-#### 选择 2
-题干：How is the person described in the text characterized?
-- A: Open-minded.
-- B: Active and cooperative.
-- C: Cautious.
-- D: Satisfied.
-
-答案：B
-参考解答：在涉及国际合作或环保行动的语境中，"Active and cooperative"（积极合作）通常是正面评价的标准答案。
-
-#### 选择 3
-题干：What was the result of the specific action taken?
-- A: To make better use of the natural resources on earth.
-- B: To make better use of the fossil fuels.
-- C: To make better use of coffee.
-- D: To make better use of resources that would have gone to waste.
-
-答案：D
-参考解答：结合下文 Exercise E 关于咖啡废料提取燃料的内容，选项 D 最符合“变废为宝”的主题。
-
----
-
-## Unit 3
-
 知识点：[Unit 3 Text A 课文内容与篇章逻辑](../../../topics/大学英语/U3-TextA课文理解.md)
 
 ### Exercise A
@@ -1243,64 +759,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: Knowledge is the only important factor that contributes to a new scientific discovery.
 
 答案：B
-参考解答：选项 A 太绝对（always），选项 D 否认了运气的作用（only），选项 C 将运气视为必要条件（essential）可能不准确。选项 B 强调了“运气与知识结合”的辩证关系，符合科学史实。
-
-#### 选择 2
-题干：What is the author's view on serendipity (chance discovery)?
-- A: All of the important scientific discoveries are the result of serendipity.
-- B: Serendipity is of no use because science is all about intelligence and hard work.
-- C: Serendipity can directly generate great scientific inventions.
-- D: Science doesn't rely on serendipity but progress in science cannot do without it.
-
-答案：D
-参考解答：选项 A、B、C 均存在逻辑漏洞或过于极端。选项 D 既承认了科学不单纯依赖运气，又指出了进步离不开偶然的发现，观点最为客观全面。
-
-#### 选择 3
-题干：Under what condition does serendipity become meaningful?
-- A: Only with scientific knowledge and skill can serendipity be meaningful.
-- B: Even with scientific knowledge, serendipity can still go unnoticed and unacted upon.
-- C: Luck can help science to progress.
-- D: Luck is instrumental in science.
-
-答案：A
-参考解答：这是关于“偶然发现”的核心论点：没有知识储备，偶然发生的事件也无法被识别为科学发现。选项 A 准确表达了这一条件。
-
----
-
-### Exercise C
-
-#### 选择 1
-题干：What is the focus of the recent scientific breakthrough mentioned?
-- A: New types of smartphones.
-- B: Current development in electric circuits.
-- C: Innovative ways to generate power.
-- D: New ways to make lithium batteries.
-
-答案：C
-参考解答：结合下文提到的细菌、纳米棒、声音等，这些都属于新型发电方式（generate power），而非单纯的电池制造或手机类型。
-
-#### 选择 2
-题干：What did the researchers use to generate power?
-- A: They used bacteria.
-- B: They used electric circuits.
-- C: They used nanorods.
-- D: They used everyday sounds.
-
-答案：D
-参考解答：虽然细菌、纳米棒也是相关技术，但根据常见教材案例（如利用噪音发电），选项 D 往往是该篇阅读材料的具体切入点。若原文提到多种方法，需以“主要创新点”为准。
-
-#### 选择 3
-题干：What is the source material used in the experiment?
-- A: Cotton.
-- B: Noise.
-- C: Urine.
-- D: Music.
-
-答案：B
-参考解答：对应上一题的“日常声音”，Noise（噪音）是最常见的非传统能源来源之一。
-
----
-
 知识点：[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)、[Unit 4 词汇与语法综合练习](../../../topics/大学英语/U4-综合练习.md)
 
 ### Exercise E
@@ -1313,30 +771,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: An innovative way to create biofuel.
 
 答案：D
-参考解答：选项 B 和 D 相似，但 D 更概括（biofuel），涵盖了从植物/蔬菜中提取燃料的广泛概念，通常是文章主旨。
-
-#### 选择 2
-题干：How is the fuel produced?
-- A: By blending diesel with oil from vegetables and plants.
-- B: By blending diesel with oil extracted from coffee waste.
-- C: By blending gas with oil extracted from coffee grounds.
-- D: By blending gas with oil extracted from animal manure.
-
-答案：B
-参考解答：结合前文提到的咖啡废料（coffee waste/grounds），选项 B 明确指出了利用咖啡废料提取油并混合柴油的技术路径，符合“变废为宝”的逻辑。
-
-#### 选择 3
-题干：What is the ultimate goal of this technology?
-- A: To make better use of the natural resources on earth.
-- B: To make better use of the fossil fuels.
-- C: To make better use of coffee.
-- D: To make better use of resources that would have gone to waste.
-
-答案：D
-参考解答：再次呼应 Exercise I 的选择 3，强调对废弃资源的再利用，这是该技术最大的环保价值。
-
----
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### Exercise G
@@ -1349,32 +783,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: A new system to assist pilots' flight.
 
 答案：C
-参考解答：根据后文关于飞行员血液流动、飞机加速的描述，可以推断该技术专门用于航空安全（keep pilots safe）。
-
-#### 选择 2
-题干：What problem does the pilot face in the scenario?
-- A: The plane is flying too fast.
-- B: The plane is accelerating too quickly.
-- C: The pilot's blood flows too slowly.
-- D: The pilot is accidentally injured.
-
-答案：C
-参考解答：这通常指高加速度导致的“黑视”或血液淤积问题，即飞行员血液流向腿部导致大脑缺氧，选项 C 描述了生理机制上的根本原因。
-
-#### 选择 3
-题干：What will the device do to help the pilot?
-- A: It will provide oxygen.
-- B: It will take control of the plane.
-- C: It will guide the plane to safety.
-- D: It will send a message to the plane's mission computer.
-
-答案：A
-参考解答：针对血液流动慢导致的大脑缺氧，最直接有效的辅助措施是提供氧气（或加压供氧），防止晕厥。
-
----
-
-## Unit 4
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)、[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)
 
 ### Exercise A
@@ -1387,64 +795,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: The difficulty in selling full-price fashion brands.
 
 答案：B
-参考解答：选项 B 涵盖了“销毁库存的原因”和“环境成本”两个核心点，比 A、C、D 更全面地概括了快时尚行业处理过剩库存的问题。
-
-#### 选择 2
-题干：Why do companies destroy unsold goods?
-- A: To sell its stock in full price.
-- B: To recycle the stock in the future.
-- C: To prevent the items from being resold at lower prices.
-- D: To prepare for the selling of new products.
-
-答案：C
-参考解答：奢侈品牌或高端时尚品牌销毁库存的主要动机通常是保护品牌形象，防止低价倾销（resold at lower prices）损害品牌价值。
-
-#### 选择 3
-题干：What is the hidden cost of destroying goods?
-- A: More resources are required to get rid of the goods besides the cost of producing them.
-- B: Extra fees are charged to get rid of the items besides the cost of producing them.
-- C: Much more time is needed to destroy the goods than to produce them.
-- D: More energy is required to get rid of the items than to produce them.
-
-答案：A
-参考解答：除了生产成本，销毁过程本身还需要消耗额外的资源（运输、填埋、焚烧等），这是对环境影响的深层描述。
-
----
-
-### Exercise C
-
-#### 选择 1
-题干：What is the business model of the company introduced?
-- A: A new company of designer clothes called Dora's Dream.
-- B: A new company that allows customers to borrow designer clothes.
-- C: A new sharing economy all over the world.
-- D: A new solution to increasing your income.
-
-答案：B
-参考解答：结合“共享经济”和“设计师服装”的背景，借穿（borrow）是解决昂贵服饰需求的一种典型商业模式。
-
-#### 选择 2
-题干：In which industry is this trend most prominent?
-- A: Fashion.
-- B: Transport.
-- C: Restaurants.
-- D: Hotels.
-
-答案：A
-参考解答：题目背景显然是关于服装租赁/共享，属于时尚（Fashion）行业。
-
-#### 选择 3
-题干：Why are investors interested in this model?
-- A: Because the company is worth a lot of money.
-- B: Because the investors are interested in investing in fashion industry.
-- C: Because the investors are required to do so to protect the environment.
-- D: Because investors believe this new form of consumerism will become popular.
-
-答案：D
-参考解答：投资者看好一个商业模式的根本原因是相信其市场潜力和流行趋势（new form of consumerism will become popular）。
-
----
-
 知识点：[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)、[Unit 4 词汇与语法综合练习](../../../topics/大学英语/U4-综合练习.md)
 
 ### Exercise E
@@ -1457,31 +807,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D: The benefits of producing garments locally.
 
 答案：C
-参考解答：通常此类文章会介绍活动的启动及其背后的动因（reasons），选项 C 涵盖了这两个方面。
-
-#### 选择 2
-题干：What is the main objective of the campaign?
-- A: To warn people in New York that the city is losing the position as the fashion capital in the world.
-- B: To increase employment in the fashion industry.
-- C: To attract people around the world to buy fashion products made in NY.
-- D: To raise awareness of the social, environmental and economic benefits of producing fashion goods in NY.
-
-答案：D
-参考解答：现代城市营销活动通常强调综合效益（社会、环境、经济），选项 D 最为全面且符合官方宣传口径。
-
-#### 选择 3
-题干：What is the historical context of New York's fashion industry?
-- A: It reached its peak in 1960.
-- B: It has lost 95% of its workforce since 1950.
-- C: It is the major industry in New York City now.
-
-答案：B
-参考解答：纽约时装产业确实经历了巨大的衰退，失去大量工作岗位是事实，这构成了发起复兴运动（Made in NY）的背景。
-
-# 《大学英语》Unit 1—Unit 2 词汇与短语练习（第 7 部分）
-
-## Unit 5
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### Exercise A
@@ -1496,94 +821,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D. The kingfishers.
 
 答案：无原件提供答案。
-参考解答：根据后续题目内容（涉及子弹头列车、翠鸟），本文主题 likely 与仿生学（Biomimicry）或受自然启发的技术有关。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于早期列车通过隧道时存在的问题。
-
-- A. They were too slow when going through the tunnel.
-- B. They were too noisy when going through the tunnel.
-- C. They were a waste of energy.
-- D. They were too dangerous.
-
-答案：无原件提供答案。
-参考解答：通常此类文章会提到噪音或空气动力学问题。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于翠鸟（kingfisher）捕食方式的特点。
-
-- A. It dives from the air into the water very quickly.
-- B. It dives from the air into the water very quietly.
-- C. It jumps out of the water without a splash.
-- D. It flies into the air with ease and speed.
-
-答案：无原件提供答案。
-参考解答：翠鸟以几乎无声地潜入水中捕鱼著称。
-
-#### 选择 4
-
-题干未显示完整，根据选项推断为关于设计特征或优势的形容词比较。
-
-- A. Lighter.
-- B. Faster.
-- C. Quieter.
-- D. Streamlined.
-
-答案：无原件提供答案。
-参考解答：结合仿生学背景，"Streamlined"（流线型）通常是关键特征。
-
-### Exercise C
-
-#### 选择 1
-
-题干未显示完整，根据选项推断为关于“Laikago”或相关机器人的来源或定义。
-
-- A. A graduate of Shanghai University.
-- B. A high-tech company called Unitree Robotics.
-- C. A four-legged robot dog called “Laikago”.
-- D. A four-legged robot dog called “Spotmini ”.
-
-答案：无原件提供答案。
-参考解答：“Laikago”是宇树科技（Unitree Robotics）推出的四足机器人。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于该机器人具备的能力或动作。
-
-- A. Walking forward and backward.
-- B. Walking sideways.
-- C. Climbing over rough terrain.
-- D. Swimming across a river.
-
-答案：无原件提供答案。
-参考解答：四足机器人通常具备行走、爬坡等能力，游泳较少见。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为比较两种机器人（如 Laikago 和 Spotmini）的区别。
-
-- A. They have the same appearance.
-- B. They have similar abilities.
-- C. They have different mechanical structures.
-- D. They have different control systems.
-
-答案：无原件提供答案。
-参考解答：不同型号的机器人在机械结构或控制系统上通常存在差异。
-
-#### 选择 4
-
-题干未显示完整，根据选项推断为关于该机器人应用场景的描述。
-
-- A. It can be used in security and protection.
-- B. It can be used in rescue work.
-- C. It can be used as an intelligent companion.
-- D. It can be used in logistics.
-
-答案：无原件提供答案。
-参考解答：四足机器人常用于安防、救援等领域。
-
 知识点：[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)、[Unit 4 词汇与语法综合练习](../../../topics/大学英语/U4-综合练习.md)
 
 ### Exercise E
@@ -1598,32 +835,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D. A patient with vision loss.
 
 答案：无原件提供答案。
-参考解答：结合下文视力丧失和仿生眼，可能涉及一位名为 Mr. Flynn 的患者及其植入物。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于某种视力疾病或状况的特征。
-
-- A. There is no cure for it so far.
-- B. It is the cause of all visual problems.
-- C. It occurs to people of all ages.
-- D. It affects people in industrialized countries only.
-
-答案：无原件提供答案。
-参考解答：需根据原文判断具体疾病的普遍性和治疗现状。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于仿生眼植入物的发明者或功能。
-
-- A. It was invented by a British company.
-- B. It was invented by an American company.
-- C. It can restore a patient’s full sight.
-- D. It helped Mr. Flynn to navigate the ships.
-
-答案：无原件提供答案。
-参考解答：目前仿生技术通常不能完全恢复“全视力”，更多是改善感知。
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### Exercise G
@@ -1638,34 +849,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D. A flexible multifunctional scanner.
 
 答案：无原件提供答案。
-参考解答：需根据原文确定具体设备名称。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于该设备研发或发布的时间地点。
-
-- A. In 2016 in Britain.
-- B. In 2016 in China.
-- C. On Nov. 21 in Britain.
-- D. On Nov. 21 in China.
-
-答案：无原件提供答案。
-参考解答：注意区分年份和具体日期，以及国家。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于该设备的主要用途。
-
-- A. Scanning on surfaces of ships.
-- B. Detecting on surfaces of oil tanks.
-- C. Monitoring.
-- D. Visual navigation.
-
-答案：无原件提供答案。
-参考解答：需根据原文描述的应用场景选择最准确的概括。
-
-## Unit 6
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)、[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)
 
 ### Exercise A
@@ -1680,70 +863,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D. The speaker’s book sold well as he had expected.
 
 答案：无原件提供答案。
-参考解答：结合下文“打破贫困循环”，演讲者可能是一位成功摆脱贫困并致力于帮助他人的律师。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于作者写作目的。
-
-- A. He wanted to inspire poor children to break the cycle of poverty.
-- B. He wanted to tell the readers how to sell a law firm for millions of dollars.
-- C. He wanted to share his secret of success with readers.
-- D. He knew his book would be popular with potential readers.
-
-答案：无原件提供答案。
-参考解答：通常励志类书籍旨在激励读者。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于某个数量统计（如受益人数、捐款数等）。
-
-- A. 500.
-- B. 15,000.
-- C. 5,000.
-- D. Unknown.
-
-答案：无原件提供答案。
-参考解答：需根据原文中的数字进行定位。
-
-### Exercise C
-
-#### 选择 1
-
-题干未显示完整，根据选项推断为关于 Jessie 生活状况或家庭背景的提问。
-
-- A. Jessie’s family diet.
-- B. Jessie’s father’s health conditions.
-- C. Jessie’s poor and hard life.
-- D. Jessie’s dreams.
-
-答案：无原件提供答案。
-参考解答：结合上下文“贫困”、“父亲工作”，可能聚焦于其艰难的生活环境。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于 Jessie 承担照顾责任的原因。
-
-- A. Because her father doesn’t know how to take care of children.
-- B. Because her father has to work long hours every day.
-- C. Because she wants to be a caretaker.
-- D. Because her mother doesn’t want to take care of them.
-
-答案：无原件提供答案。
-参考解答：通常因父母忙碌或经济压力导致孩子过早承担家务。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于 Jessie 的目标或未来规划。
-
-- A. Staying poor.
-- B. Breaking the cycle of poverty.
-- C. Realizing her dreams.
-- D. Unknown.
-
-答案：无原件提供答案。
-参考解答：在反贫困主题的文章中，“打破贫困循环”是常见核心思想。
-
 知识点：[Unit 4 Text A 课文阅读与细节理解](../../../topics/大学英语/U4-TextA课文理解.md)、[Unit 4 词汇与语法综合练习](../../../topics/大学英语/U4-综合练习.md)
 
 ### Exercise E
@@ -1758,32 +877,6 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D. How the Ultra Poor Graduation program worked and its returns.
 
 答案：无原件提供答案。
-参考解答：结合下文提到的印度、加纳、洪都拉斯的具体数据，可能聚焦于特定项目的成效。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于某个组织性质的描述。
-
-- A. A non-profit program.
-- B. A non-profit charity group.
-- C. A non-profit research organization.
-- D. A non-profit foundation.
-
-答案：无原件提供答案。
-参考解答：Innovations for Poverty Action (IPA) 是一个非营利研究组织。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于扶贫项目长期回报率的陈述。
-
-- A. There was a 133% return in long-term benefits in India.
-- B. A $1 investment in the program had led to $1.33 worth of benefits in the long run in Ghana.
-- C. There was a 433% return in long-term benefits in Ghana.
-- D. A $1 investment in the program had led to $4.33 worth of benefits in the long run in Honduras.
-
-答案：无原件提供答案。
-参考解答：需注意不同国家对应的具体回报率数据，避免混淆。
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)
 
 ### Exercise G
@@ -1798,30 +891,4 @@ A 选项 “A 64-year-old lady who's full of energy and drive.” 语法正确�
 - D. The 30th anniversary of Project Hope and its goal in the next 30 years.
 
 答案：无原件提供答案。
-参考解答：结合下文“30周年”，可能涉及回顾过去成就或展望未来目标。
-
-#### 选择 2
-
-题干未显示完整，根据选项推断为关于希望工程宗旨或目标的提问。
-
-- A. To help children from impoverished rural areas to have a better life.
-- B. To help children from poor rural areas to get a good education.
-- C. To help poor families in rural areas to have a better life.
-- D. To help the development of education in rural areas.
-
-答案：无原件提供答案。
-参考解答：希望工程的核心是资助贫困地区失学儿童重返校园，即“教育”。
-
-#### 选择 3
-
-题干未显示完整，根据选项推断为关于希望工程具体措施或手段的提问。
-
-- A. Improving school facilities.
-- B. Providing teacher training.
-- C. Presenting opportunities to study in big cities.
-- D. Give financial assistance.
-
-答案：无原件提供答案。
-参考解答：希望工程主要通过捐资助学（financial assistance）来实现目标。
-
 知识点：[Unit 5 Exercise A/C/E/G 综合练习](../../../topics/大学英语/U5-综合练习.md)、[Unit 5 翻译练习（Exercise D/F/I 文化与翻译）](../../../topics/大学英语/U5-翻译练习.md)

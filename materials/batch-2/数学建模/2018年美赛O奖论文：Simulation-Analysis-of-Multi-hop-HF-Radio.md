@@ -1,13 +1,13 @@
 ---
 title: 2018年美赛O奖论文：Simulation Analysis of Multi-hop HF Radio
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文/A86103-Simulation Analysis of Multi-hop HF Radio.PDF
 ---
 
 # 2018年美赛O奖论文：Simulation Analysis of Multi-hop HF Radio
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 ## 2018 MCM/ICM Summary Sheet
 

@@ -1,13 +1,13 @@
 ---
 title: 《数学建模》2018年美赛O奖论文：A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2018年美赛O奖论文.zip/2018年美赛O奖论文/F88508-A Smart Privacy Commodity a Quantitative Model of Dynamic Pricing Strategy.PDF
 ---
 
 # 《数学建模》2018年美赛O奖论文：A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 本文档整理自2018年美国大学生数学建模竞赛（ICM）获得特等奖（Outstanding Winner, O奖）的论文《A Smart Privacy Commodity: a Quantitative Model of Dynamic Pricing Strategy》的第一部分，即摘要页（Summary Sheet）。内容涵盖了模型构建思路、核心方法、结果分析及创新点。
 

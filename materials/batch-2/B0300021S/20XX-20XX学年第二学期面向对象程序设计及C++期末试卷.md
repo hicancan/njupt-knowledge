@@ -186,18 +186,6 @@ void Y::fy ( ) { c=a*b; }
 
 答案：封装、继承、多态。（顺序可互换）
 
-参考解答：**结论**
-
-```cpp
-date(int y = 2004, int m = 1, int d = 1);
-date(const date& other);
-```
-
-**推理过程**
-
-1.  **带默认参数的构造函数**：题目要求默认值为 2004 年 1 月 1 日，因此三个形参 `y`、`m`、`d` 的默认值分别设为 `2004`、`1`、`1`；C++ 规定默认参数必须从右向左连续提供，此处三个参数均给默认值，满足无参调用 `date()` 时自动使用 2004-1-1。
-2.  **复制构造函数**：C++ 中复制构造函数的固定签名为接受一个同类型 `const` 引用参数，即 `const date&`，用于以已有对象初始化新对象；若省略 `const` 则无法绑定临时对象或右值，不符合标准语义。
-
 知识点：[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)、[拷贝构造函数及其自动调用的3种情况](../../../topics/面向对象C++/拷贝构造函数.md)、[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)
 
 ### 填空 2
@@ -205,55 +193,6 @@ date(const date& other);
 在函数说明前加关键字“inline”，则该函数被声明为 **(4)** 函数，其引入的目的是为了消除函数调用时的开销，以提高运行速度。
 
 答案：内联
-
-参考解答：## 填空 2
-
-**结论**：`std::vector<T> add(const std::vector<T>& a, const std::vector<T>& b)`
-
-```cpp
-template<typename T>
-std::vector<T> add(const std::vector<T>& a, const std::vector<T>& b) {
-    std::vector<T> result(a.size());
-    for (size_t i = 0; i < a.size(); ++i)
-        result[i] = a[i] + b[i];
-    return result;
-}
-```
-
-**简析**：函数模板需接受两个同类型 `vector` 的常引用参数（避免拷贝且不修改原向量），返回值为新 `vector`。参数表和返回值类型均需补全，循环逐元素相加即可。
-
-## 五、编程题 1
-
-**结论**：
-
-```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-template<typename T>
-vector<T> add(const vector<T>& a, const vector<T>& b) {
-    vector<T> result(a.size());
-    for (size_t i = 0; i < a.size(); ++i)
-        result[i] = a[i] + b[i];
-    return result;
-}
-
-int main() {
-    vector<double> v1 = {1.5, 2.5, 3.5};
-    vector<double> v2 = {0.5, 0.5, 1.0};
-    vector<double> v3 = add(v1, v2);
-    for (auto x : v3) cout << x << " ";
-    // 输出：2 3 4.5
-    return 0;
-}
-```
-
-**关键步骤**：
-- 模板参数 `T` 需支持 `operator+`
-- 结果向量的长度取参数中任一向量长度（默认二者等长）
-- 用 `const` 引用传参，避免多余拷贝
-- 返回的 `vector<T>` 按值返回，利用移动语义或返回值优化（NRVO）避免额外开销
 
 知识点：[函数模板的定义与模板函数的使用](../../../topics/面向对象C++/函数模板.md)、[泛型程序设计与C++ STL简介：顺序容器vector的操作（插入、删除、capacity、size、at、front、back、赋值）](../../../topics/面向对象C++/stl容器vector.md)
 
@@ -302,10 +241,6 @@ int main() {
 
 *(注：原件此处仅有标题，无具体代码内容，无法作答)*
 
-参考解答：很抱歉，根据你提供的内容，题目中的程序代码缺失，仅有一行 `#include <iostream.h>` 且注明“图片缺失，无法还原完整代码”，因此无法判断程序的逻辑结构、类定义、继承关系、虚函数使用情况等关键信息，也就无法确定输出结果。
-
-如果能把完整的代码部分补上，我可以立刻给出结论、推理过程以及本题选项分析。
-
 知识点：[C++用I/O流（cin/cout）实现输入/输出](../../../topics/面向对象C++/io流输入输出.md)
 
 ### 阅读 2
@@ -313,10 +248,6 @@ int main() {
 以下程序的执行结果是
 
 *(注：原件此处仅有标题，无具体代码内容，无法作答)*
-
-参考解答：**结论：** 无法作答。
-
-**说明：** 题目未提供具体的 C++ 程序代码，缺少求解所必需的信息，因此无法给出执行结果。请补充完整代码后重新提问。
 
 知识点：[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)、[定义对象及圆点访问形式与指针访问形式](../../../topics/面向对象C++/对象的定义与访问.md)、[C++用I/O流（cin/cout）实现输入/输出](../../../topics/面向对象C++/io流输入输出.md)
 
@@ -328,10 +259,6 @@ int main() {
 
 ## 四、程序填空题（共16 分，每题 8分）
 
-参考解答：**结论：无法作答。**
-
-原题仅给出“阅读 3”的标题，缺少具体代码，无法判断程序执行结果。请补充完整代码后再进行分析。
-
 知识点：[C++语言与C语言的关系](../../../topics/面向对象C++/cpp与c关系.md)、[C++用I/O流（cin/cout）实现输入/输出](../../../topics/面向对象C++/io流输入输出.md)、[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)
 
 ### 填空 1
@@ -339,18 +266,6 @@ int main() {
 定义类 date 的带默认值（为 2004 年 1 月 1日）的函数与复制构造函数。
 
 *(注：原件此处仅有题干描述，未给出待填空的代码框架)*
-
-参考解答：**结论**
-
-```cpp
-date(int y = 2004, int m = 1, int d = 1);
-date(const date& other);
-```
-
-**推理过程**
-
-1.  **带默认参数的构造函数**：题目要求默认值为 2004 年 1 月 1 日，因此三个形参 `y`、`m`、`d` 的默认值分别设为 `2004`、`1`、`1`；C++ 规定默认参数必须从右向左连续提供，此处三个参数均给默认值，满足无参调用 `date()` 时自动使用 2004-1-1。
-2.  **复制构造函数**：C++ 中复制构造函数的固定签名为接受一个同类型 `const` 引用参数，即 `const date&`，用于以已有对象初始化新对象；若省略 `const` 则无法绑定临时对象或右值，不符合标准语义。
 
 知识点：[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)、[拷贝构造函数及其自动调用的3种情况](../../../topics/面向对象C++/拷贝构造函数.md)、[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)
 
@@ -362,55 +277,6 @@ date(const date& other);
 
 ## 五、编程题 1（12 分）
 
-参考解答：## 填空 2
-
-**结论**：`std::vector<T> add(const std::vector<T>& a, const std::vector<T>& b)`
-
-```cpp
-template<typename T>
-std::vector<T> add(const std::vector<T>& a, const std::vector<T>& b) {
-    std::vector<T> result(a.size());
-    for (size_t i = 0; i < a.size(); ++i)
-        result[i] = a[i] + b[i];
-    return result;
-}
-```
-
-**简析**：函数模板需接受两个同类型 `vector` 的常引用参数（避免拷贝且不修改原向量），返回值为新 `vector`。参数表和返回值类型均需补全，循环逐元素相加即可。
-
-## 五、编程题 1
-
-**结论**：
-
-```cpp
-#include <iostream>
-#include <vector>
-using namespace std;
-
-template<typename T>
-vector<T> add(const vector<T>& a, const vector<T>& b) {
-    vector<T> result(a.size());
-    for (size_t i = 0; i < a.size(); ++i)
-        result[i] = a[i] + b[i];
-    return result;
-}
-
-int main() {
-    vector<double> v1 = {1.5, 2.5, 3.5};
-    vector<double> v2 = {0.5, 0.5, 1.0};
-    vector<double> v3 = add(v1, v2);
-    for (auto x : v3) cout << x << " ";
-    // 输出：2 3 4.5
-    return 0;
-}
-```
-
-**关键步骤**：
-- 模板参数 `T` 需支持 `operator+`
-- 结果向量的长度取参数中任一向量长度（默认二者等长）
-- 用 `const` 引用传参，避免多余拷贝
-- 返回的 `vector<T>` 按值返回，利用移动语义或返回值优化（NRVO）避免额外开销
-
 知识点：[函数模板的定义与模板函数的使用](../../../topics/面向对象C++/函数模板.md)、[泛型程序设计与C++ STL简介：顺序容器vector的操作（插入、删除、capacity、size、at、front、back、赋值）](../../../topics/面向对象C++/stl容器vector.md)
 
 ### 编程 1
@@ -420,61 +286,6 @@ int main() {
 *(注：此为开放性编程题，无固定答案格式，需编写完整类定义)*
 
 ## 六、编程题 2（12 分）
-
-参考解答：### 结论
-
-```cpp
-#include <iostream>
-#include <cmath>
-using namespace std;
-
-class Circle {
-private:
-    double radius;
-    double circumference;
-    double area;
-
-    void calculate() {
-        circumference = 2 * M_PI * radius;
-        area = M_PI * radius * radius;
-    }
-
-public:
-    // 构造函数，半径缺省值为0，周长和面积在构造函数中生成
-    Circle(double r = 0) : radius(r) {
-        calculate();
-    }
-
-    // 拷贝构造函数
-    Circle(const Circle& other) 
-        : radius(other.radius), 
-          circumference(other.circumference), 
-          area(other.area) {}
-
-    // 输入半径并重新计算周长、面积
-    void inputRadius() {
-        cout << "请输入半径: ";
-        cin >> radius;
-        calculate();
-    }
-
-    // 输出半径、周长和面积
-    void display() const {
-        cout << "半径: " << radius << endl;
-        cout << "周长: " << circumference << endl;
-        cout << "面积: " << area << endl;
-    }
-};
-```
-
-### 推理与关键设计说明
-
-1. **属性存储**：`circumference` 和 `area` 作为成员变量而非实时计算，满足题目“在构造函数中生成”的要求，避免每次访问都重复运算。
-2. **构造函数**：使用默认参数 `double r = 0` 实现缺省值；通过初始化列表设置 `radius` 后调用私有方法 `calculate()` 统一计算周长 $C=2\pi r$ 和面积 $S=\pi r^2$，保证构造时三个属性一致。
-3. **拷贝构造函数**：显式定义以逐成员复制三个属性，确保深拷贝语义正确（虽然本类无指针成员，编译器生成的默认拷贝构造也可用，但题目明确要求定义）。
-4. **输入操作**：`inputRadius()` 在读入新半径后立即调用 `calculate()` 更新周长和面积，维持数据一致性。
-5. **封装性**：`calculate()` 设为 `private`，防止外部绕过输入接口直接修改派生量；`display()` 标记 `const` 保证只读安全。
-6. **常量使用**：采用 `M_PI`（`<cmath>` 提供）而非硬编码 3.14，提高精度与可移植性；若编译环境不支持 `M_PI`，可自行定义 `const double PI = acos(-1.0);`。
 
 知识点：[类的定义（成员数据、成员函数、访问属性public/private/protected）](../../../topics/面向对象C++/类的定义.md)、[构造函数（含默认构造函数、带默认参数值的构造函数）](../../../topics/面向对象C++/构造函数.md)、[拷贝构造函数及其自动调用的3种情况](../../../topics/面向对象C++/拷贝构造函数.md)
 
@@ -493,104 +304,5 @@ protected:
 ```
 
 *(注：需基于上述基类编写派生类及主函数测试代码)*
-
-参考解答：## 结论
-
-可通过继承 `Areaclass` 建立两个派生类：
-
-- `Box`：返回方形面积 $S=height\times width$。
-- `Isosceles`：返回等腰三角形面积 $S=\dfrac{height\times width}{2}$，其中 `height` 表示底边长，`width` 表示腰长。
-
-```cpp
-#include <iostream>
-#include <iomanip>
-using namespace std;
-
-class Areaclass
-{
-public:
-    Areaclass(double x = 0, double y = 0)
-        : height(x), width(y) {}
-
-protected:
-    double height, width;
-};
-
-// 方形类
-class Box : public Areaclass
-{
-public:
-    Box(double side = 0, double otherSide = 0)
-        : Areaclass(side, otherSide) {}
-
-    double Area() const
-    {
-        return height * width;
-    }
-};
-
-// 等腰三角形类
-class Isosceles : public Areaclass
-{
-public:
-    Isosceles(double base = 0, double waist = 0)
-        : Areaclass(base, waist) {}
-
-    double Area() const
-    {
-        return height * width / 2.0;
-    }
-};
-
-int main()
-{
-    Box square(4, 4);
-    Isosceles triangle(6, 5);
-
-    cout << fixed << setprecision(2);
-    cout << "方形面积：" << square.Area() << endl;
-    cout << "等腰三角形面积：" << triangle.Area() << endl;
-
-    // 检验计算结果
-    if (square.Area() == 16.0)
-        cout << "方形面积计算正确" << endl;
-    else
-        cout << "方形面积计算错误" << endl;
-
-    if (triangle.Area() == 15.0)
-        cout << "等腰三角形面积计算正确" << endl;
-    else
-        cout << "等腰三角形面积计算错误" << endl;
-
-    return 0;
-}
-```
-
-## 计算过程
-
-### 1. 方形面积
-
-边长为 $4$：
-
-$$
-S_{\text{方形}}=4\times 4=16
-$$
-
-### 2. 等腰三角形面积
-
-底边长为 $6$，腰长为 $5$。由于腰长即为三角形的高：
-
-$$
-S_{\text{三角形}}=\frac{1}{2}\times 6\times 5=15
-$$
-
-程序输出：
-
-```text
-方形面积：16.00
-等腰三角形面积：15.00
-方形面积计算正确
-等腰三角形面积计算正确
-```
 
 知识点：[虚函数的定义以实现动态多态性及虚函数的限制](../../../topics/面向对象C++/虚函数.md)、[基类与派生类、单一继承与多重继承](../../../topics/面向对象C++/继承与派生概念.md)

@@ -1,13 +1,13 @@
 ---
 title: 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）
-kind: 教材
+kind: 竞赛论文
 course: 数学建模
 source: batch-2:数学建模/2015美赛特等奖原版论文集.zip/2015美赛特等奖原版论文集/34317.pdf
 ---
 
 # 2015年美国大学生数学建模竞赛特等奖论文《A Battle Without Gun and Smoke: The Confrontation with Ebola》（Team 34317，A题）
 
-原件经识别和整理；“参考解答”是我们补的。
+原件为竞赛论文。补充：文中的阅读练习及“参考解答”为整理时增加，原件图文保留出处。
 
 本文档整理自 Team 34317 的 2015 年 MCM A 题特等奖论文第 1-3 页内容。
 
@@ -750,11 +750,11 @@ $$
 
 如果我们要控制医院内埃博拉的传播，那么将有更少的健康人被感染。我们将医院视为具有强大感染能力的“巨大”患者。我们必须采取措施降低其感染能力。下图展示了如果我们分别降低50%和90%的感染能力，几内亚的总病例数将呈现何种趋势。
 
-![图 1](A%20Battle%20Without%20Gun%20and%20Smoke:%20The%20Confrontation%20with%20Ebola.assets/图1.png) 医院感染控制对几内亚总病例数的影响示意图
+![图 1（原件第38页）](2015年美国大学生数学建模竞赛特等奖论文A-Battle-Without-Gun-and-Smoke-The-Conf.assets/原件第38页.webp) 医院感染控制对几内亚总病例数的影响示意图
 
 接着，如果我们控制葬礼上埃博拉的传播，会发生什么？有一幅图会告诉我们答案。
 
-![图 2](A%20Battle%20Without%20Gun%20and%20Smoke:%20The%20Confrontation%20with%20Ebola.assets/图2.png) 葬礼感染控制对疫情影响的示意图
+![图 2（原件第39页）](2015年美国大学生数学建模竞赛特等奖论文A-Battle-Without-Gun-and-Smoke-The-Conf.assets/原件第39页.webp) 葬礼感染控制对疫情影响的示意图
 
 ## Ⅹ 未来改进
 
@@ -809,17 +809,17 @@ $$
 
 从图中可以看出，患者总病例数随 $\beta_1$ 的变化很小。这证明了 $\beta_1$ 的轻微波动可以忽略不计，我们在上述模型中得出的结论是可靠的。
 
-![图 1](<资料名>.assets/fig_sensitivity_beta1.png) *图 1：总病例数随 $\beta_1$ 变化的敏感性分析图*
+![图 1（原件第41页）](2015年美国大学生数学建模竞赛特等奖论文A-Battle-Without-Gun-and-Smoke-The-Conf.assets/原件第41页.webp) *图 1：总病例数随 $\beta_1$ 变化的敏感性分析图*
 
 如图所示，在不同 $\gamma_1$ 生成的结果中，总病例数保持相对稳定。因此，我们使用的总病例数是足够精确的。
 
-![图 2](<资料名>.assets/fig_sensitivity_gamma1.png) *图 2：总病例数随 $\gamma_1$ 变化的敏感性分析图*
+![图 2（原件第42页）](2015年美国大学生数学建模竞赛特等奖论文A-Battle-Without-Gun-and-Smoke-The-Conf.assets/原件第42页.webp) *图 2：总病例数随 $\gamma_1$ 变化的敏感性分析图*
 
 ### 11.2 药物生产速度模型的敏感性分析
 
 我们改变了药物生产的初始速度 $b_1$，患者总病例数如下所示：
 
-![图 3](<资料名>.assets/fig_sensitivity_b1.png) *图 3：患者总病例数随药物生产初始速度 $b_1$ 变化的曲线*
+![图 3（原件第42页）](2015年美国大学生数学建模竞赛特等奖论文A-Battle-Without-Gun-and-Smoke-The-Conf.assets/原件第42页.webp) *图 3：患者总病例数随药物生产初始速度 $b_1$ 变化的曲线*
 
 从上图我们可以发现，如果速度 $b_1$ 相对较小，与较大的 $b_1$ 相比，$b_1$ 的变化影响更大。此外，我们发现随着初始速度的增加，病例数也增加，这一趋势是符合预期的。总之，结果是稳定的。
 
