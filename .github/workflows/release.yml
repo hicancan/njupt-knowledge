@@ -1,22 +1,57 @@
 name: Release
 
-# Every change to main is checked and, when the knowledge itself changed, published as a release that readers pin.
+# Every change to main is checked and published: the pictures a change touched go to their EdgeOne Makers projects
+# (k1–k3.hicancan.top, static, free of functions), then the text goes out as a release that readers pin.
 on:
   push:
     branches: [main]
   pull_request:
+  workflow_dispatch:
+    inputs:
+      all_media:
+        description: Deploy every media host, not only those the last change touched
+        type: boolean
+        default: false
 
 permissions:
   contents: write
+
+concurrency:
+  group: release
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 2
       - run: python3 tools/build.py
+      - uses: actions/setup-node@v6
+        if: github.event_name != 'pull_request'
+        with:
+          node-version: 24
+      - name: Deploy the pictures a change touched
+        if: github.event_name != 'pull_request'
+        env:
+          EDGEONE_API_TOKEN: ${{ secrets.EDGEONE_API_TOKEN }}
+          ALL: ${{ inputs.all_media }}
+        run: |
+          # A host is redeployed when a picture it keeps changed; the shard of each path is the build's own rule.
+          if [ "$ALL" = "true" ]; then shards="k1 k2 k3"; else
+            shards=$(git diff --name-only HEAD~1 HEAD -- '*.webp' '*.jpg' '*.jpeg' '*.png' '*.gif' \
+              | python3 -c 'import sys; sys.path.insert(0, "tools"); from build import shard; print(" ".join(sorted({f"k{shard(l.strip()) + 1}" for l in sys.stdin if l.strip()})))')
+          fi
+          echo "media hosts to deploy: ${shards:-none}"
+          for k in $shards; do
+            for try in 1 2 3; do
+              npx -y edgeone@1.6.44 makers deploy "build-media/$k" -n "njupt-knowledge-$k" -t "$EDGEONE_API_TOKEN" --skip-ai-gateway-sync --json | tee deploy.log && grep -q '"status":"success"' deploy.log && break
+              [ "$try" = 3 ] && { echo "media host $k did not deploy"; exit 1; }
+              sleep $((try * 60))
+            done
+          done
       - name: Publish
-        if: github.event_name == 'push'
+        if: github.event_name != 'pull_request'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
