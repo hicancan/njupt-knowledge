@@ -143,8 +143,8 @@ Table 2: A summary of SGI Expression
 
 | Expression | Term | Description | Meaning |
 | :--- | :--- | :--- | :--- |
-| $SGI = \frac{\cos\langle\overrightarrow{CG},\overrightarrow{SG}\rangle + \mu|\overrightarrow{CG}|}{1+\mu\sqrt{3}}$ | $\cos\langle\overrightarrow{CG},\overrightarrow{SG}\rangle$ | The angle between CG vector and SG vector | The direction of city growth |
-| | $|\overrightarrow{CG}|$ | The length of CG vector | The rate of city growth |
+| $SGI = \frac{\cos\langle\overrightarrow{CG},\overrightarrow{SG}\rangle + \mu\|\overrightarrow{CG}\|}{1+\mu\sqrt{3}}$ | $\cos\langle\overrightarrow{CG},\overrightarrow{SG}\rangle$ | The angle between CG vector and SG vector | The direction of city growth |
+| | $\|\overrightarrow{CG}\|$ | The length of CG vector | The rate of city growth |
 | | $\mu$ | Weight of CG length | Importance of growth rate to growth direction |
 | | $\frac{1}{1+\mu\sqrt{3}}$ | normalization | Normalize the SGI to a range of 0~1 |
 
@@ -652,7 +652,7 @@ After achieving the current plan and optimal plan of Edinburgh and Wellington, w
 
 Table 10. ranking and comparison of components for Edinburgh and Wellington
 
-| Ranking | Edinburgh Components | Change $|\Delta|$ (%) | Wellington Components | Change $|\Delta|$ (%) |
+| Ranking | Edinburgh Components | Change $\|\Delta\|$ (%) | Wellington Components | Change $\|\Delta\|$ (%) |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | education service(B4) | 10.0377 | environmental service(B3) | 11.5832 |
 | 2 | Other(B7) | 7.1471 | social service(B2) | 8.1880 |
