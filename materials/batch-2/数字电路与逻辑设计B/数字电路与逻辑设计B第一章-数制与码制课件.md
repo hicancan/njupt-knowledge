@@ -981,7 +981,7 @@ SUPERCOURSE, CHINA
 2)减法运算
 
 $$
-\begin{array}{r l} \text {例1: (0110) } _ {8 4 2 1 \mathrm{BCD}} - (0 0 0 1) _ {8 4 2 1 \mathrm{BCD}} = (\ref {e q : 1}) _ {8 4 2 1 \mathrm{BCD}} \\ & \quad \begin{array}{c} 0 1 1 0 \\ - 0 0 0 1 \\ \hline 0 1 0 1 \end{array} \end{array}
+\begin{array}{r l} \text {例1: (0110) } _ {8 4 2 1 \mathrm{BCD}} - (0 0 0 1) _ {8 4 2 1 \mathrm{BCD}} = (1) _ {8 4 2 1 \mathrm{BCD}} \\ & \quad \begin{array}{c} 0 1 1 0 \\ - 0 0 0 1 \\ \hline 0 1 0 1 \end{array} \end{array}
 $$
 
 所以

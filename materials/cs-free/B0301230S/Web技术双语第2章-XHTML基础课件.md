@@ -519,9 +519,9 @@ Programming the World Wide Web
 
 • Hypertext is the essence of the Web!
 
-• A link is specified with the href(hypertext reference) attribute of $\mathrm { \textless { a } \mathrm { > } }$ (the anchor tag).
+• A link is specified with the href(hypertext reference) attribute of `<a>` (the anchor tag).
 
-• The content of $\mathrm { \textless { a } \mathrm { ‰} }$ is the visual link in the document.
+• The content of `<a>` is the visual link in the document.
 
 • If the target is a document in the same directory, the target is the document’s file name.
 
