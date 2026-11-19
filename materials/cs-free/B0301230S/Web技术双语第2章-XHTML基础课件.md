@@ -171,7 +171,9 @@ Programming the World Wide Web
 
 For example,
 
+```html
 <a href=“www.njupt.edu.cn”>南邮主页</a>
+```
 
 Note: attribute values must be double quoted!
 
