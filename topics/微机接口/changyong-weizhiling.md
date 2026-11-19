@@ -21,7 +21,7 @@ requires: [微机接口/yuju-leixing]
 - **DD (Define Double Word)**：定义双字（4 Bytes）。
 - **DUP**：重复操作符，如 `DB 4 DUP(?)` 表示预留 4 个未初始化字节。
 
-### 2. 等值与计数：EQU, $
+### 2. 等值与计数：EQU, `$`
 - **EQU**：符号等价，如 `CNT EQU 10`，编译时替换，不占内存。
 - **$**：当前地址计数器。`$ - Label` 常用于计算缓冲区长度。
 

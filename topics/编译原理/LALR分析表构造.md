@@ -44,9 +44,9 @@ flowchart TD
 
 | 状态 | 项目 | Lookahead | 说明 |
 | :--- | :--- | :--- | :--- |
-| $I_6$ | $A \to x \cdot$ <br> $B \to x \cdot$ | $\{a\}$ <br> $\{b\}$ | LR(1)下无冲突 |
-| $I_9$ | $A \to x \cdot$ <br> $B \to x \cdot$ | $\{b\}$ <br> $\{a\}$ | LR(1)下无冲突 |
-| $I_{69}$ | $A \to x \cdot$ <br> $B \to x \cdot$ | $\{a,b\}$ <br> $\{a,b\}$ | ==归约-归约冲突== |
+| $I_6$ | $A \to x \cdot$，$B \to x \cdot$ | $\{a\}$，$\{b\}$ | LR(1)下无冲突 |
+| $I_9$ | $A \to x \cdot$，$B \to x \cdot$ | $\{b\}$，$\{a\}$ | LR(1)下无冲突 |
+| $I_{69}$ | $A \to x \cdot$，$B \to x \cdot$ | $\{a,b\}$，$\{a,b\}$ | ==归约-归约冲突== |
 
 在 $I_6$ 中，输入 $a$ 只归约 $A$，输入 $b$ 只归约 $B$；$I_9$ 同理。故 G4 是 LR(1) 文法。但合并为 $I_{69}$ 后，面对输入 $a$（或 $b$），既可归约 $A \to x$ 也可归约 $B \to x$，产生冲突，因此 ==G4 不是 LALR(1) 文法==。
 

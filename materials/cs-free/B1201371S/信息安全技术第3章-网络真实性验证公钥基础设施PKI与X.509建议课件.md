@@ -201,7 +201,7 @@ X.509建议证书的格式\*
 
 • 按照X.509建议的定义，认证权威中心CA可以签名一组信息组成的某个用户的证书。该组信息包括用户名A和公钥 $\mathrm { P K _ { A } }$ ，以及包括该用户的唯一标识符UA等。
 
-C $\mathrm { \Delta A [ A ] ~ = ~ V K _ { C A } \{ V } $ , SN, AI, CA, UCA, A, UA, $\mathrm { P K _ { A } }$ $\mathrm { T I M E } _ { \mathrm { A } } \}$
+C $\mathrm { \Delta A [ A ] ~ = ~ V K _ { C A } \{ V }$ , SN, AI, CA, UCA, A, UA, $\mathrm { P K _ { A } }$ $\mathrm { T I M E } _ { \mathrm { A } } \}$
 
 • V: 版本号，SN: 证书序号，AI: 数字签名算法，
 

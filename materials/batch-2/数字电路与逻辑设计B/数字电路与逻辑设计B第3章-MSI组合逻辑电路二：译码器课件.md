@@ -132,7 +132,7 @@ RBI<sub>：</sub> 串行灭零输入端
 
 由真值表可以看出 <sub>，</sub> 为了增强器件的功能<sub>，</sub> 在 74LS48 中还设置了一些辅助端<sub>。</sub> 这些辅助端的功能如下<sub>：</sub>
 
-（1 ） 试灯输入端 $L T$ <sub>：</sub> 低 电平有效<sub>。</sub> 当 $\mathbf { \mathcal { L } } \mathbf { \mathcal { N } } { \boldsymbol { \sharp } } \mathbf { \mathcal { \mathbf { \ell } } } $ 时<sub>，</sub> 数码管的七段应全亮<sub>，</sub> 与输入的译码信号无关<sub>。</sub> 本输入端用于测试数码管的好坏<sub>。</sub>
+（1 ） 试灯输入端 $L T$ <sub>：</sub> 低 电平有效<sub>。</sub> 当 $\mathbf { \mathcal { L } } \mathbf { \mathcal { N } } { \boldsymbol { \sharp } } \mathbf { \mathcal { \mathbf { \ell } } }$ 时<sub>，</sub> 数码管的七段应全亮<sub>，</sub> 与输入的译码信号无关<sub>。</sub> 本输入端用于测试数码管的好坏<sub>。</sub>
 
 （2 ） 动态灭零输入端 RBI <sub>：</sub> 低 电平有效<sub>。</sub> 当 $L T = 1$ $R B I =$ 0 且译码输入全为 0 时<sub>，</sub> 该位输出不显示<sub>，</sub> 即 0 字被熄灭<sub>；</sub> 当译码输入不全为 0 时<sub>，</sub> 该位正常显示<sub>。</sub> 本输入端用于消隐无效的 0 <sub>。</sub> 如数据0034 50 可显示为 34 5 <sub>。</sub>
 

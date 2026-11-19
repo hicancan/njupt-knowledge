@@ -74,7 +74,7 @@ $$
 \end{aligned}
 $$
 
-这里搜索符 $( $ 来自 $S$ 后面的终结符 $($。因此第 $0$ 行应填：
+这里搜索符 $($ 来自 $S$ 后面的终结符 $($。因此第 $0$ 行应填：
 $$
 ACTION[0,\#]=r_{S\to\varepsilon},\qquad
 ACTION[0,(]=r_{S\to\varepsilon},

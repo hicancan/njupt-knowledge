@@ -188,7 +188,7 @@ Based on the above analysis to the potential indicators of economical prosperity
 | | | Amenities | $\text{SEP}_{32}$ | ↑ |
 | | | Total crime | $\text{SEP}_{33}$ | ↓ |
 
-The target ↑ (↓) indicates that the increase (decrease) of the value will help promote the extent to success of economical prosperity in smart growth. In all, the metric of SEP can be finally expressed by a function of $\mathrm { S E P _ { 1 } }$ , $\mathrm { S E P _ { 2 } }$ and ${ \mathrm { S E P } } _ { 3 }$ as $ \mathrm { S E P } = f ( \mathrm { S E P _ { 1 } } , \mathrm { S E P _ { 2 } } , \mathrm { S E P _ { 3 } } ) $. The diversity can be calculated by Shannon diversity index.
+The target ↑ (↓) indicates that the increase (decrease) of the value will help promote the extent to success of economical prosperity in smart growth. In all, the metric of SEP can be finally expressed by a function of $\mathrm { S E P _ { 1 } }$ , $\mathrm { S E P _ { 2 } }$ and ${ \mathrm { S E P } } _ { 3 }$ as $\mathrm { S E P } = f ( \mathrm { S E P _ { 1 } } , \mathrm { S E P _ { 2 } } , \mathrm { S E P _ { 3 } } )$. The diversity can be calculated by Shannon diversity index.
 
 知识点：[影响因素评估指标体系构建（温度、湿度、经济、教育等）](../../../topics/数学建模/yingxiang_zhibiao.md)、[层次分析法 AHP（Analytic Hierarchy Process）用于综合评价](../../../topics/数学建模/ahp_fangfa.md)、[TOPSIS 模型构建步骤（逼近理想解排序法）](../../../topics/数学建模/topsis_moxing.md)
 

@@ -66,8 +66,8 @@ classDiagram
 
 ```mermaid
 classDiagram
-    Car ◊-- Engine : 聚合
-    Mouth --◆ Head : 组合
+    Car o-- Engine : 聚合
+    Mouth --* Head : 组合
     class Car {
     }
     class Engine {
