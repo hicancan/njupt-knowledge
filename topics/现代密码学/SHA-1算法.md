@@ -29,7 +29,7 @@ flowchart TD
 SHA-1 维护 5 个 32 比特寄存器 $A,B,C,D,E$，初值 ==IV==（十六进制）：
 
 $$
-A{=}0\text{x}67452301,\; B{=}0\text{x}\text{EFCDAB89},\; C{=}0\text{x}98BADCFE},\; D{=}0\text{x}10325476,\; E{=}0\text{x}C3D2E1F0
+A{=}0\text{x}67452301,\; B{=}0\text{x}\text{EFCDAB89},\; C{=}0\text{x}98BADCFE,\; D{=}0\text{x}10325476,\; E{=}0\text{x}C3D2E1F0
 $$
 
 ==Kt 常数== 随回合切换，只有 4 个不同值：
