@@ -3,6 +3,6 @@
   "private": true,
   "type": "module",
   "dependencies": {
-    "docstream": "https://github.com/hicancan/docstream/releases/download/v0.11.0/docstream-0.11.0.tgz"
+    "docstream": "https://github.com/hicancan/docstream/releases/download/v0.13.0/docstream-0.13.0.tgz"
   }
 }
