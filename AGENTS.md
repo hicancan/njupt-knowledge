@@ -24,3 +24,19 @@
   Question", or "Metacognition" into rigid section headings or boilerplate templates.
 - Course codes and names come from the teaching system; a subject's `codes` must be courses taught now,
   older codes go in `former`.
+- Exploit the full native rendering arsenal of `docstream` (`hicancan/docstream`) and co-evolve it when needed:
+  every document is parsed and rendered natively across Web, Android, and Windows by `docstream`, so explanations
+  should actively use its rich visual and typographic primitives rather than plain text walls:
+  - **11 native Mermaid diagram engines (`docstream-diagram`)**: `flowchart` (with nested `subgraph` boxes, `<br>`,
+    `<b>`), `stateDiagram-v2` (composite states, transitions, protocols, sequential logic), `sequenceDiagram`
+    (`note`, `loop`, `alt`, `opt`, `par`), `xychart-beta` (axes, bars, and curves for signal responses, asymptotic
+    trends, probability/Monte Carlo curves), `quadrantChart` (2×2 orthogonal concept comparisons), `mindmap`,
+    `classDiagram`, `erDiagram` (compartments, multiplicities, UML/crow's-foot markers), `timeline`, `gantt`, `pie`.
+    Every Mermaid block must return a valid layout from `docstream.diagram(source)`.
+  - **Rich block & inline semantics (`docstream-core`)**: GitHub alerts (`> [!NOTE]`, `> [!TIP]`, `> [!IMPORTANT]`,
+    `> [!WARNING]`, `> [!CAUTION]`) for misconception vaccines, boundary traps, and metacognitive triggers; Typora
+    `==highlight==` for key problem-solving cues, `^sup^`, `~sub^`, `<kbd>`; Markdown tables and HTML `<table>` with
+    `rowspan`/`colspan` (whose cell contents are parsed as full Markdown and TeX) for multi-dimensional comparisons.
+  - **Native TeX math (`docstream-math`)**: every formula must pass `docstream.unknown(tex)` with zero unknown TeX
+    commands. If a subject needs a general TeX macro, diagram capability, or layout primitive that `docstream` lacks,
+    evolve `hicancan/docstream` cleanly rather than degrading the explanation.
