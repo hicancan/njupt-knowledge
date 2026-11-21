@@ -22,7 +22,7 @@ $$
 ### 同一个分式，两道不同的检查
 
 <table>
-<thead><tr><th>由题面确定的响应</th><th>收敛域</th><th>单位圆是否在域内</th><th>零状态输入输出</th></tr></thead>
+<thead><tr><th rowspan="2">由题面确定的响应</th><th colspan="3">固定同一个 $H(z)=1/(1-2z^{-1})$，分别核三个问题</th></tr><tr><th>收敛域</th><th>单位圆是否在域内</th><th>零状态输入输出</th></tr></thead>
 <tbody>
 <tr><th>右边、因果</th><td>$|z|\gt 2$</td><td>否：域要求模大于 $2$</td><td>绝对和发散，不稳定</td></tr>
 <tr><th>左边、非因果</th><td>$|z|\lt 2$</td><td>是：模 $1$ 小于 $2$</td><td>绝对和为 $1$，稳定</td></tr>
