@@ -1,66 +1,129 @@
 ---
-title: 《Java程序设计》第5次作业：魔法屋的故事
+title: 《Java程序设计》第5次作业：魔法屋的对象与状态
 kind: 习题
 course: Java软件开发
 term: 2020-2021-2
 source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0302281C%E3%80%91JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Course%20Materials%20%5B2020-2021-2%5D/01%20Lectures%20Assignment/JAVA%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC5%E6%AC%A1%E4%BD%9C%E4%B8%9A.pdf
 ---
 
-# 《Java程序设计》第5次作业：魔法屋的故事
+# 《Java程序设计》第5次作业：魔法屋的对象与状态
 
-原件经识别和整理；“参考解答”是我们补的。
+本题让两段练习在同一个项目中衔接：一开始需要屋子、面包和人，第二段再加入机器。原件第 3 页的输出图示采用两片面包，所以身高从 140 先到 141、再到 142，使用机器后为 192 厘米。题目要求呈现各阶段，不要求照抄截图或旧提交模板。下文用四个源文件给出自编实现。
 
-本资料为南京邮电大学计算机学院《Java程序设计》课程2021年春季学期的第5次课后编程练习，旨在通过面向对象编程描述“魔法屋”的故事场景。
+## 哪个对象真正拥有会变化的数值
 
-## 一、编程练习（共 2 题）
+**参考解答**：身高属于人，不属于屋子，也不应在每段故事里各存一份。面包和机器只负责把各自的作用施加给==传入的同一个人==，屋子排出先后顺序并读回身高。先规定职责，再写调用，避免输出按预期变化却没人真正更新对象。
 
-### 选择 1
+| 类 | 保存什么 | 负责什么 |
+| --- | --- | --- |
+| `Person` | 当前身高 | 读取身高、应用正增量 |
+| `Bread` | 这一片是否吃过 | 第一次使人增加 1 厘米，同一片不重复生效 |
+| `MagicMachine` | 本题不需要记录人的副本 | 一次使人增加 50 厘米 |
+| `MagicHouse` | 不复制人的身高 | 组织两段练习并输出观察结果 |
 
-**题目背景与要求：**
+一片只能吃一次是本示例对“同一片面包”的建模选择；需要两片时创建两个面包实例，而不是对同一实例调用两次。[对象与类](../../../topics/Java开发/对象与类的概念.md)区分实例数和类数，[消息传递](../../../topics/Java开发/消息传递机制.md)描述一次方法调用怎样更新对象。
 
-小明是一个矮个子，身高只有 140 厘米，他一直渴望能长高。有一天他在街上看到一座房子，墙上贴着大幅广告，上面写道：“魔法屋，让你增高不再是梦想！！！” 小明赶忙走了进去。
+## 四个源文件
 
-**练习 1 具体要求：**
-小明在屋子里发现好多面包，这种面包只要吃下去一片就可以长高 1 厘米。尝试写程序描述上述故事。要求在程序中创建 3 种对象：魔法屋，面包以及小明。
+将下面四段分别保存到与公开类同名的源文件中，放在同一目录。
 
-知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[消息(Message)的组成及其在对象通信中的作用](../../../topics/Java开发/消息传递机制.md)
+```java
+public class Person {
+    private int height;
 
-### 选择 2
+    public Person(int height) {
+        if (height <= 0) {
+            throw new IllegalArgumentException("height must be positive");
+        }
+        this.height = height;
+    }
 
-**题目背景与要求：**
+    public int getHeight() {
+        return height;
+    }
 
-光靠吃面包个子长得太慢了！小明在这座房子的地下室里又发现了一台古怪的机器，上面有个小门，门上的牌子写道：“警告：每次 50 厘米，不可反悔！”，于是他钻进了这台魔法机器。。。几分钟后他惊奇地发现自己已经变成了一个高个子，身高超过了 190 厘米！
+    void growBy(int cm) {
+        if (cm <= 0) {
+            throw new IllegalArgumentException("growth must be positive");
+        }
+        height = Math.addExact(height, cm);
+    }
+}
+```
 
-**练习 2 具体要求：**
-尝试写程序描述上述故事。要求在程序中创建新的一种对象：魔法机器。
+```java
+public class Bread {
+    private boolean eaten;
 
-## 二、提示与建议
+    public boolean eatBy(Person person) {
+        if (eaten) {
+            return false;
+        }
+        person.growBy(1);
+        eaten = true;
+        return true;
+    }
+}
+```
 
-1. **用程序讲述故事的方法**：根据故事的描述，创建相应对象并使用对象，并在故事的不同阶段，同步在文本命令行窗口输出相应的信息。
-2. **设计建议**：建议在编写程序前先按照课堂上讲解的面向对象程序设计的方法设计好各个类以及类之间的关系。
-3. **项目结构**：练习 1 和练习 2 的程序放入同一个项目中。四个对象对应的类可以分别放在四个源代码文件中，其中需要定义一个主类。
+```java
+public class MagicMachine {
+    public void grow(Person person) {
+        person.growBy(50);
+    }
+}
+```
 
-## 三、提交规范
+```java
+public class MagicHouse {
+    private void show(String stage, Person person) {
+        System.out.println(stage + ": " + person.getHeight() + " cm");
+    }
 
-知识点：[对象(Object)和类(Class)的概念、实例变量与方法](../../../topics/Java开发/对象与类的概念.md)、[类之间的继承、聚合、合成、依赖关系及开闭原则(OCP)](../../../topics/Java开发/类之间的关系.md)、[方法的声明、调用、按值/按引用参数传递及方法的重载(Overloading)](../../../topics/Java开发/方法的定义与重载.md)
+    void run(Person person) {
+        show("before", person);
+        for (int i = 0; i < 2; i++) {
+            Bread piece = new Bread();
+            piece.eatBy(person);
+            show("after bread " + (i + 1), person);
+        }
+        MagicMachine machine = new MagicMachine();
+        machine.grow(person);
+        show("after machine", person);
+    }
 
-### 输出示例
+    public static void main(String[] args) {
+        new MagicHouse().run(new Person(140));
+    }
+}
+```
 
-![第 5 次作业提交方法](Java程序设计第5次作业：魔法屋的故事.assets/图1.jpg)
-*图注：展示了在 NetBeans 中完成作业后，需包含源代码编辑窗口和结果输出窗口的截图样式。*
+第一段用屋子、人和两个面包实例，仍然只有三种类；机器对象在第二段才创建。以 `MagicHouse` 为[程序入口](../../../topics/Java开发/HelloWorld程序结构.md)，用 JDK 编译四个文件并运行，输出如下：
 
-知识点：[第一个Java程序（源文件创建、javac编译、类定义、main方法）](../../../topics/Java开发/HelloWorld程序结构.md)、[System.out.printf格式化输出与Scanner类输入](../../../topics/Java开发/输入输出基础.md)
+```text
+before: 140 cm
+after bread 1: 141 cm
+after bread 2: 142 cm
+after machine: 192 cm
+```
 
-### 提交步骤
+```mermaid
+sequenceDiagram
+  participant H as 魔法屋
+  participant P as 人
+  participant B as 面包
+  participant M as 机器
+  loop 两片分别创建
+    H->>B: 让这片给人增加身高
+    B->>P: 增加 1 厘米
+    H->>P: 读回面包后的身高
+  end
+  H->>M: 让机器作用于同一个人
+  M->>P: 增加 50 厘米
+  H->>P: 读回最终身高
+```
 
-1. 在 NetBeans 里完成了作业 5 的程序后，将你的屏幕截图文件（在这个截图中需要包含源代码编辑窗口和结果输出窗口）(JPG 文件或 PNG 文件)上传到对应大班 QQ 群的“第 5 次作业提交”文件夹中即可。
-2. **截图文件的命名方法**：`学号_姓名_第 5 次作业.JPG`
-   - 例如：学号为 B19030101 的同学，姓名为“我是学霸”，则截图文件命名为：`B19030101_我是学霸_第 5 次作业.JPG`
+> [!TIP]
+> ==打印值与写入对象状态不是同一件事==。把一片面包交给另一个人测试：第一个人的身高应不变；重复使用已经吃掉的同一片，则两人都不应再长高。这个检查能区分“类的实例各自存状态”与“全班对象共享一份全局变量”。
 
-知识点：[第一个Java程序（源文件创建、javac编译、类定义、main方法）](../../../topics/Java开发/HelloWorld程序结构.md)、[System.out.printf格式化输出与Scanner类输入](../../../topics/Java开发/输入输出基础.md)、[if-else、switch、while、do-while、for语句及break/continue/return分支控制](../../../topics/Java开发/流程控制语句.md)
-
-### 截止时间
-
-第 5 次作业提交的截止时间是 2021 年 4 月 5 日。请同学们在截止日期前完成作业提交。
-
-知识点：[Java平台、JVM定义及编译解释执行原理](../../../topics/Java开发/Java平台与JVM.md)
+这里没有用继承表达“人在屋子里”或“机器作用于人”；它们是独立对象之间的使用关系，可对照[类之间的关系](../../../topics/Java开发/类之间的关系.md)。若把增长部分写在屋子里而让面包、机器只剩名字，虽然也能打印正确的 192，却没有练到把行为分配给对象。
