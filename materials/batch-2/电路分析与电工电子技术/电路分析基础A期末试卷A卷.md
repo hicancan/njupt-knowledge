@@ -810,9 +810,7 @@ $$
 
 $$
 Z=\begin{bmatrix}
-R-j\dfrac{1}{\omega C} & -j\dfrac{1}{\omega C}\
-$$
-2mm]
+R-j\dfrac{1}{\omega C} & -j\dfrac{1}{\omega C}\\
 -j\dfrac{1}{\omega C} & j\left(\omega L-\dfrac{1}{\omega C}\right)
 \end{bmatrix}
 $$
