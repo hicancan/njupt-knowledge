@@ -7,7 +7,7 @@ requires: [计算机图形学/Assimp库]
 
 ## 场景树是什么
 
-使用 Assimp 导入 3D 模型时，程序得到的不只是网格顶点，还包括一个描述模型组织方式的 **Scene Graph（场景图）**。场景树以 `aiScene` 为根节点，下面保存多个 `aiNode`；每个节点既可以继续连接子节点，也可以关联网格 `aiMesh`、材质 `aiMaterial`、纹理或骨骼动画等信息。
+使用 Assimp 导入 3D 模型时，程序得到的不只是网格顶点，还包括一个描述模型组织方式的 **Scene Graph（场景图）**。`aiScene` 保存整场景的数据；节点树从它的 `mRootNode` 开始。每个 `aiNode` 可有子节点，并通过下标引用场景的网格；材质由网格引用。
 
 可以把场景树理解为：模型由哪些部件组成、部件之间如何变换、每个部件使用什么网格与材质。
 
@@ -16,9 +16,11 @@ flowchart TD
     S["aiScene"] --> R["aiNode 根节点"]
     R --> A["aiNode 躯干"]
     R --> B["aiNode 车轮"]
-    A --> M["aiMesh"]
-    A --> T["aiMaterial"]
-    B --> M2["aiMesh"]
+    S --> M["aiMesh 表"]
+    S --> T["aiMaterial 表"]
+    A -->|网格下标| M
+    B -->|网格下标| M
+    M -->|材质下标| T
 ```
 
 ## 为什么需要场景树
@@ -31,25 +33,14 @@ $$
 M_{\text{world}}=M_{\text{parent}}M_{\text{local}}
 $$
 
-其中 $M_{\text{local}}$ 包含节点的平移、旋转和缩放。最终，顶点还可能受到关联 `aiMesh` 的 `mTransform` 影响。
+其中 $M_{\text{local}}$ 包含节点的平移、旋转和缩放。它对应 `aiNode::mTransformation`，不是 `aiMesh` 的字段。以列向量作用于顶点为例，同一网格若被不同节点引用，每次绘制使用对应节点的累计矩阵。
 
 ## 导入与遍历流程
 
 Assimp 的基本使用方式是创建导入器、读取文件、取得场景，再递归访问节点：
 
 ```cpp
-Assimp::Importer importer;
-const aiScene* scene =
-    importer.ReadFile(path, aiProcess_Triangulate |
-                         aiProcess_JoinIdenticalVertices |
-                         aiProcess_GenSmoothNormals);
-
-if (!scene || scene->mErrorCode != AI_SUCCESS) {
-    // 输出 importer.GetErrorString()
-    return false;
-}
-
-void ProcessNode(const aiNode* node,
+void ProcessNode(const aiScene* scene, const aiNode* node,
                  const aiMatrix4x4& parent) {
     aiMatrix4x4 world = parent * node->mTransformation;
 
@@ -60,12 +51,30 @@ void ProcessNode(const aiNode* node,
     }
 
     for (unsigned i = 0; i < node->mNumChildren; ++i) {
-        ProcessNode(node->mChildren[i], world);
+        ProcessNode(scene, node->mChildren[i], world);
     }
+}
+
+bool ImportModel(const std::string& path) {
+    Assimp::Importer importer;
+    const aiScene* scene =
+        importer.ReadFile(path, aiProcess_Triangulate |
+                               aiProcess_JoinIdenticalVertices |
+                               aiProcess_GenSmoothNormals);
+    if (!scene) {
+        // 读取 importer.GetErrorString() 获取导入失败原因
+        return false;
+    }
+    if ((scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE) || !scene->mRootNode) {
+        // 此示例需要一棵可遍历的完整场景树
+        return false;
+    }
+    ProcessNode(scene, scene->mRootNode, aiMatrix4x4{});
+    return true;
 }
 ```
 
-调用 `ProcessNode(scene->mRootNode, identity)` 即可从根节点开始遍历。实际项目还应检查 `scene`、`mRootNode` 和网格数据是否有效。
+根节点从单位矩阵开始遍历。导入器销毁后场景指针失效，需在退出 `ImportModel` 前复制所需数据或创建 GPU 资源。
 
 ```mermaid
 flowchart TD
@@ -101,20 +110,20 @@ flowchart TD
 > [!WARNING]
 > - 文件路径要使用 `std::string`；部分版本不直接接受 `const char*`。
 > - `ReadFile` 返回空指针后不要继续解引用。
-> - 节点变换和网格变换不要重复应用。
+> - 网格若已按某个节点的累计矩阵烘焙到世界坐标，就不要在该次绘制里再乘同一矩阵；要保留网格共享，则保留网格局部坐标，逐次绘制应用各节点矩阵。
 > - 递归遍历要同时处理当前节点的网格和全部子节点。
 > - 导入坐标单位不一定与引擎一致；DirectX 风格文件常需要转换 Z 轴方向。
 > - 大量模型宜使用 `aiProcess_OptimizeMeshes` 等后处理减少网格数量，但会改变原始结构。
 
 ## 一个正确处理的例子
 
-假设根节点平移 $(1,0,0)$，车身节点相对根节点平移 $(2,0,0)$，车身网格自身没有额外变换，则车身顶点的世界位置应比网格原始位置多偏移 $(3,0,0)$：
+假设根节点平移 $(1,0,0)$，车身节点相对根节点平移 $(2,0,0)$，则车身顶点的世界位置应比网格原始位置多偏移 $(3,0,0)$：
 
 $$
 M_{\text{world}}
-=M_{\text{root}}M_{\text{body}}M_{\text{mesh}}
-=I\cdot T(1,0,0)\cdot T(2,0,0)
+=M_{\text{root}}M_{\text{body}}
+=T(1,0,0)\cdot T(2,0,0)
 =T(3,0,0)
 $$
 
-如果程序只应用车身节点的局部变换，顶点会错误地停在偏移 $(2,0,0)$ 的位置；若又重复应用网格变换，则可能进一步重复偏移。==场景树遍历的核心是按父子层级正确组合变换矩阵。==
+如果程序只应用车身节点的局部变换，顶点会错误地停在偏移 $(2,0,0)$ 的位置；若先烘焙累计矩阵，再在绘制时重复应用该矩阵，偏移会变成 $(6,0,0)$。==场景树遍历的核心是按父子层级正确组合变换矩阵。==

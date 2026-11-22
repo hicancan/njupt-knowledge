@@ -64,7 +64,8 @@ const aiScene* scene = importer.ReadFile(
     aiProcess_GenSmoothNormals
 );
 
-if (!scene || scene->mErrorFlags != 0) {
+if (!scene || (scene->mFlags & AI_SCENE_FLAGS_INCOMPLETE) ||
+    !scene->mRootNode) {
     std::cerr << importer.GetErrorString() << '\n';
     return -1;
 }
@@ -74,13 +75,13 @@ if (!scene || scene->mErrorFlags != 0) {
 
 | 选项 | 作用 |
 |---|---|
-| `aiProcess_Triangulate` | 将多边形统一转换为三角形 |
+| `aiProcess_Triangulate` | 将多边形转换为三角形；点、线仍保留 |
 | `aiProcess_JoinIdenticalVertices` | 合并重复顶点 |
 | `aiProcess_GenSmoothNormals` | 生成平滑法线 |
 | `aiProcess_FlipUVs` | 翻转纹理坐标 |
 | `aiProcess_CalcTangentSpace` | 计算切线空间 |
 
-读取场景后，再遍历 `mRootNode` 及其子节点，处理每个节点的 `mTransformations`、网格、材质和纹理，并创建 VAO、VBO、EBO 与纹理对象。
+读取场景后，再遍历 `mRootNode` 及其子节点，累计各节点相对父节点的 `aiNode::mTransformation`，再处理节点引用的网格及网格所用的材质、纹理，并创建 VAO、VBO、EBO 与纹理对象。
 
 ## 与相近概念的区别
 
@@ -102,15 +103,15 @@ Assimp 并不能代替 OpenGL。它不会自动创建可用的 OpenGL 缓冲，�
 > [!WARNING]
 > - `ReadFile()` 失败时，`scene` 可能为空，必须先检查指针和错误信息。  
 > - 使用完 `aiScene` 前不要释放 `Assimp::Importer`；可在处理完毕后调用 `FreeScene()`。  
-> - OBJ 顶点索引通常从 1 开始，而 OpenGL 索引通常从 0 开始，需要转换：`glIndex = assimpIndex - 1`。  
+> - OBJ 源文件里的正顶点索引从 1 开始；导入后，`aiFace::mIndices` 已是本 `aiMesh` 顶点数组内的零起点下标。按该网格的顶点顺序上传时，直接使用面下标，不要再减 1。
 > - 纹理坐标原点方向可能与 OpenGL 不一致，可使用 `aiProcess_FlipUVs`。  
 > - 交叉网格宜采用三角形列表，不要依赖未明确指定的面拼接顺序。
 
-例如，OBJ 中一个面为 `1 2 3`，应转换为 OpenGL 索引 `0 1 2`。若顶点数据依次为位置、法线、纹理坐标，每个顶点包含 $3+3+2=8$ 个 `float`，则顶点缓冲步长为：
+例如，只有三个顶点、一个 `f 1 2 3` 面的 OBJ，导入后该面的下标是 `0 1 2`；再减 1 会让第一个下标无效。若顶点数据依次为位置、法线、纹理坐标，每个顶点包含 $3+3+2=8$ 个 `float`，则顶点缓冲步长为：
 
 $$
 \text{stride}=8\times\operatorname{sizeof}(\text{float})=32\text{ bytes}
 $$
 
 > [!IMPORTANT]
-> 正确配置的关键是：==链接 Assimp、检查导入结果、统一顶点格式，并正确转换索引与纹理坐标==。
+> 正确配置的关键是：==链接 Assimp、检查导入结果、统一顶点格式，并区分源文件索引与导入后的索引，检查纹理坐标方向==。
