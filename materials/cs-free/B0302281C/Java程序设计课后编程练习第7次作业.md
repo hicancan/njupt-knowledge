@@ -8,140 +8,177 @@ source: https://github.com/NJUPTFreeExams/NJUPT-CS-FREE/blob/main/%E3%80%90B0302
 
 # 《Java程序设计》课后编程练习第7次作业
 
-原件经识别和整理；“参考解答”是我们补的。
-
-用程序讲述故事——“魔法屋的故事”续集 2：魔法机器里的惊魂一刻！
-
-小明从魔法屋回来后，192 厘米的个子让他很是自豪，但时间长了有点鹤立鸡群的感觉，而且老是撞在门框上。他想把身高变矮一点，于是他又来到了魔法屋。
-
-老板：“好久不见，怎么？还想长高啊？！”
-
-“不不，我想变矮一点可以吗？”小明问道。
-
-老板：“可以啊，刚推出的服务，不过要超级 VIP 会员才可以享受欧！”
-
-小明：“多少钱变矮？”
-
-老板：“高矮一个价：男生每厘米 10 元，女生每厘米 5 元。”
-
-小明：“老板打折不？我口袋里没钱啊！”
-
-老板：“现在注册就送两个 50 元的红包。”
-
-小明：“贵了点，不过有了 100 元，我正好减 10 厘米，不用花钱。”小明打起了算盘。
-
-于是小明注册了超级 VIP 会员。来到地下室，魔法机器还在老地方，上面多了一个选择开关和一个数字键盘，小门上的牌子写道：“告示：本机版本已升级，可自动识别性别，普通 VIP 会员：女生每次增高 30 厘米，男生每次增高 40 厘米。超级 VIP 会员：可自由选择变高或变矮的尺寸，女生身高每变化 1 厘米收费 5 元，男生身高每变化 1 厘米收费 10 元。欢迎体验！”。小明把选择开关打到变矮，在键盘上输入 10 厘米。然后钻进了魔法机器……一阵嗡嗡的启动声后机器里突然闪烁起了耀眼的红光，伴随嘀嘀嘀的报警声，一个冷冰冰的声音说道：“错误：账户余额不足，机器停止工作！！！”接着是咔嚓的一声，小明赶紧去拉门把手，发现小门已经被自动反锁上了。“救命啊……快来人啊……我被卡在机器里了！！！”小明大声求救。
-
-![小明大声求救](Java程序设计课后编程练习第7次作业.assets/图1.jpg)
-
-老板及时赶到，把小明从机器里拽了出来。
-
-小明：“吓坏我了，什么破机器啊这是。”
-
-老板：“还好身高没变，实在是抱歉……”
-
-老板：“麻烦您查看一下账户余额，谢谢。”
-
-账户余额显示为：0 元
-
-小明：
-
-我€#&%
-
-老板：“啊，没钱你变个啥啊？”
-
-小明：“哦，我忘记把红包充值进去了。”
-
-老板：“原来是这样，不好意思让您受惊了。为了表示我们的歉意，我再送你 5 个 50 元红包吧。这次不要再忘了充值啊。”
-
-小明：
-
-小明把 350 元红包全部充值到账户上，再次钻进魔法机器。小明出来发现自己的身高成功地降低到了 182 厘米！
-
-小明：“哈哈哈……今天真是太开心了，还白赚了 250 元。”
-
-![小明开心](Java程序设计课后编程练习第7次作业.assets/图2.jpg)
-
-老板：“欢迎下次光临。不要忘了多介绍几个同学来照顾生意啊，我给打折。哈哈哈哈……”
-
-尝试编写程序描述上述故事。要求在程序中设计“魔法屋超级会员”的接口（注意：代码中应使用对应英文命名，例如 MagicHouseSVIP），为小明设计新的类并且创建对象：小明。修改原有的魔法机器的代码，使其可以通过该接口完成对超级会员身高的升高或降低操作。尝试设计并使用异常处理机制完成机器故障的错误检测。修改原有的魔法屋的代码，讲述本次作业的故事续集。
-
-## 提示
-
-1. 用程序讲述故事就是根据故事的描述，创建相应对象并使用对象，并在故事的不同阶段，同步在文本命令行窗口输出相应的信息。
-
-2. 建议在编写程序前先按照课堂上讲解的面向对象程序设计的方法设计好各个类以及类之间的关系。
-
-3. 在第 6 次作业项目的基础上完成本次作业，修改以及新增代码，与此同时，尽可能遵循开闭法则，即减少对第 6 次作业已有的代码的修改，但为简化程序设计，对只涉及到小明的代码可以编写新的版本。本次作业不需要在讲述续集 2 故事前重复讲述最初故事以及续集 1 故事。
-
-## 输出示例
-
-Output - assignment7 (run)
-
-并并并并并并并并并并并并并并并并并并并并并并并并并并并并并并
-
-魔法屋的故事续集 2---魔法机器里的惊魂一刻！
-
-老板：欢迎光临魔法屋！
-
-老板：好久不见，有什么能帮您的吗？
-
-小明：我想要变矮一点点，请问你们提供变矮服务吗？
-
-老板：您真幸运，我们刚推出了超级 VIP 会员！
-
-老板：超级 VIP 会员，可变高，可变矮，任君选择。
-
-老板：注册就送 50 元账户充值红包两个.
-
-小明：变矮多少钱？
-
-老板：高矮一个价：男生每厘米 10 元，女生每厘米 5 元
-
-小明：有点贵啊，试试吧，反正送了 100 元！我就减 10 厘米！
-
-进入魔法屋前
-
-小明的身高是：192 厘米
-
-小明使用魔法机器。。。
-
-\*oooooooooolooooooooook
-
-魔法机器：尊贵的超级 VIP，感谢您体验魔法机器
-
-魔法机器：超级 VIP 可以享受定制的增高或降低服务
-
-魔法机器：本次服务将收取费用：100 元
-
-魔法机器：错误：账户余额不足，机器停止工作！！
-
-紧急呼叫老板，魔法机器里面卡人了。。。
-
-小明：救命啊！！！！！！！我被卡在机器里了！！！
-
-老板打开机器，把小明拽了出来。
-
-小明：吓坏我了，什么破机器啊这是。
-
-老板拿出尺子量了量，小明的身高是：192 厘米
-
-老板：还好身高没变，实在是抱歉。。。
-
-老板：麻烦您查看一下账户余额，谢谢。
-
-小明：好。
-
-账户余额：0 元
-
-老板：啊，没钱你变个啥啊？
-
-![第 7 次作业提交方法](Java程序设计课后编程练习第7次作业.assets/图3.jpg)
-
-在 NetBeans 里完成了作业 7 的程序后，将你的两个文件（1）程序屏幕截图文件（在这个截图中需要包含源代码编辑窗口和结果输出窗口）(JPG 文件或 PNG 文件)（2）系统设计方案（即用 UML 描述的你在程序中所设计的各个类图以及它们之间的关系图，可参考课件上第 2 章、第 4 章、第 5 章等相应程序的系统设计图范例）(可在纸上手绘后拍照或直接用电脑软件作图，要求在一幅页面上绘制系统的设计方案，最后只能形成 1 个图像文件)（JPG 文件或 PNG 文件)上传到对应大班 QQ 群的“第 7 次作业提交”文件夹中即可。
-
-（1）程序屏幕截图文件的命名方法：学号_姓名_第 7 次作业_代码图.JPG. 例如：学号为 B18030101 的同学，姓名为“我是学霸”，则截图文件命名为：B18030101_我是学霸_第 7 次作业_代码图.JPG
-
-（2）系统设计方案文件的命名方法：学号_姓名_第 7 次作业_设计图.JPG. 例如：学号为 B18030101 的同学，姓名为“我是学霸”，则截图文件命名为：B18030101_我是学霸_第 7 次作业_设计图.JPG
-
-第 7 次作业提交的截止时间是 2021 年 5 月 26 日，请同学们在截止日期前完成作业提交，谢谢。
+原件来自南京邮电大学计算机学院（2021 年 4 月）。以下概述题意；代码、状态图和边界说明是补写，不是原件自带答案。
+
+## 两次使用机器，为什么结果不同？
+
+这次作业只讲「魔法屋」的第二段续集，不重演前两段。普通会员仍是每次按题设规定的档位增高 30 或 40 厘米。超级会员能选择增高或降低及厘米数；题设两个收费档位分别为每厘米 5 元和 10 元，方向不改变单价。本故事的主人公用 10 元档位，身高起点为 192 厘米。
+
+注册赠两个 50 元红包，但领取不等于充值。首次尝试降低 10 厘米时费用是 100 元，实际余额仍是零，机器报警并锁门，老板救援后身高仍为 192 厘米。再收到五个 50 元红包，合计 350 元充值；第二次同样扣 100 元，身高为 182 厘米，余额为 250 元。这些数值可在原件第 8—9 页的输出示例中逐项核对。
+
+| 状态 | 未充值红包 | 账户可用余额 | 身高 |
+|---|---:|---:|---:|
+| 注册后、首次尝试前 | 100 元 | 0 元 | 192 厘米 |
+| 报警、救援之后 | 100 元 | 0 元 | 192 厘米 |
+| 补偿并全部充值后 | 0 元 | 350 元 | 192 厘米 |
+| 第二次成功后 | 0 元 | 250 元 | 182 厘米 |
+
+**参考解答**
+
+> [!TIP]
+> ==题面写着「有红包却没余额」==，就把待充值红包和账户余额分成两个字段。==失败后身高不能变==，就先把新身高和费用都算完并校验，最后才更新两个字段。不能在抛出余额异常以后再靠反向加减做回滚。
+
+沿用[第 6 次作业](Java程序设计第6次作业.md)的 `Person`、`Bread`、`MagicHouseVIP`、`Member`。下面的类型分别保存为同名文件。新增的会员接口只暴露机器需要的能力：查询费用档位、原子更新费用和身高。这里的「原子」只指这份单线程作业中，要么两项都改，要么哪项都不改，不等价于多线程同步。
+
+```java
+public interface MagicHouseSVIP {
+    int pricePerCm();
+    void applyChange(int signedCm, int cost) throws InsufficientFunds;
+}
+```
+
+```java
+public class InsufficientFunds extends Exception {
+    public InsufficientFunds(int balance, int cost) {
+        super("余额 " + balance + " 元，需 " + cost + " 元");
+    }
+}
+```
+
+```java
+public class SuperMember implements MagicHouseSVIP {
+    public enum Rate {
+        FIVE(5), TEN(10);
+        private final int yuan;
+        Rate(int yuan) {
+            this.yuan = yuan;
+        }
+    }
+
+    private final Rate rate;
+    private int height;
+    private int pending;
+    private int balance;
+
+    public SuperMember(int height, Rate rate) {
+        if (height <= 0) throw new IllegalArgumentException("身高须为正");
+        this.height = height;
+        this.rate = java.util.Objects.requireNonNull(rate);
+    }
+
+    public int height() { return height; }
+    public int pending() { return pending; }
+    public int balance() { return balance; }
+
+    public void receiveRedPackets(int count) {
+        if (count <= 0) throw new IllegalArgumentException("红包数须为正");
+        pending = Math.addExact(pending, Math.multiplyExact(count, 50));
+    }
+
+    public void redeemAll() {
+        balance = Math.addExact(balance, pending);
+        pending = 0;
+    }
+
+    @Override
+    public int pricePerCm() {
+        return rate.yuan;
+    }
+
+    @Override
+    public void applyChange(int signedCm, int cost) throws InsufficientFunds {
+        if (signedCm == 0 || cost <= 0)
+            throw new IllegalArgumentException("尺寸和费用不合法");
+        int nextHeight = Math.addExact(height, signedCm);
+        if (nextHeight <= 0) throw new IllegalArgumentException("身高须为正");
+        if (cost > balance) throw new InsufficientFunds(balance, cost);
+        balance -= cost;
+        height = nextHeight;
+    }
+}
+```
+
+替换机器文件，保留原有两个 `grow` 入口，另加一个带方向和金额检查的入口。方向用独立的布尔量表示，厘米数为正，故降低时也要付正的费用；这样不会把降低误写成退款。
+
+```java
+public class MagicMachine {
+    public void grow(Person person) {
+        person.growBy(50);
+    }
+
+    public void grow(MagicHouseVIP member) {
+        member.receiveGrowth(member.growthPerVisit());
+    }
+
+    public void adjust(MagicHouseSVIP member, boolean grow, int cm)
+            throws InsufficientFunds {
+        if (cm <= 0) throw new IllegalArgumentException("尺寸须为正");
+        int price = member.pricePerCm();
+        if (price <= 0) throw new IllegalArgumentException("单价须为正");
+        int cost = Math.multiplyExact(cm, price);
+        member.applyChange(grow ? cm : -cm, cost);
+    }
+}
+```
+
+以下入口只讲本段故事，并以文本输出表示报警、锁门与救援。余额不足是业务异常；无效尺寸和整数溢出是不同的错误，不应一律解释为卡人。
+
+```java
+public class MagicHouse {
+    private final MagicMachine machine = new MagicMachine();
+
+    private void narrateAttempt(SuperMember member) {
+        try {
+            machine.adjust(member, false, 10);
+            System.out.println("变矮成功");
+        } catch (InsufficientFunds e) {
+            System.out.println("余额不足，报警并锁门：" + e.getMessage());
+            System.out.println("老板打开门救援");
+        }
+        System.out.printf("身高：%d 厘米，账户余额：%d 元%n",
+                member.height(), member.balance());
+    }
+
+    public static void main(String[] args) {
+        MagicHouse house = new MagicHouse();
+        SuperMember ming = new SuperMember(192, SuperMember.Rate.TEN);
+        ming.receiveRedPackets(2);
+        house.narrateAttempt(ming);
+        ming.receiveRedPackets(5);
+        ming.redeemAll();
+        System.out.printf("全部充值后账户余额：%d 元%n", ming.balance());
+        house.narrateAttempt(ming);
+    }
+}
+```
+
+将新增或替换的五个文件与沿用的四个文件放在同一目录编译，以 `MagicHouse` 为入口。第一次输出报警及救援，再显示 192 厘米、0 元；充值后先显示 350 元，第二次显示 182 厘米、250 元。还应验证余额恰好够时交易成功、长度为零不扣钱、降低到零不扣钱，以及收费乘法溢出时不会发生业务更新。
+
+## 交付图如何对应代码
+
+```mermaid
+classDiagram
+  class MagicHouse
+  class MagicMachine
+  class Person
+  class MagicHouseVIP {
+    <<interface>>
+  }
+  class MagicHouseSVIP {
+    <<interface>>
+    +pricePerCm() int
+    +applyChange(signedCm, cost)
+  }
+  class SuperMember
+  class InsufficientFunds
+  MagicHouse *-- MagicMachine : 持有
+  MagicHouse ..> SuperMember : 创建角色
+  MagicHouse ..> InsufficientFunds : 捕获
+  MagicMachine ..> Person : 保留非会员入口
+  MagicMachine ..> MagicHouseVIP : 保留普通会员入口
+  MagicMachine ..> MagicHouseSVIP : 调用收费接口
+  SuperMember ..|> MagicHouseSVIP : 实现
+  SuperMember ..> InsufficientFunds : 余额不足
+```
+
+在[接口](../../../topics/Java开发/接口的基础概念.md)的基础上，画[一页 UML](../../../topics/Java开发/UML模型图.md)时说明新增类型如何依赖旧接口，别把所有关系画成继承。未修改的旧类也可保留在整份作业项目的设计图中。历史提交要求是分别交一张同时显示源码和结果的截图、一张单页 UML 图，格式 JPG 或 PNG，以学号、姓名、作业序号和「代码图」「设计图」区分。原件所列截止时间为 2021 年 5 月 26 日，并非现行通知。
